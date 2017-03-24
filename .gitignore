@@ -1,0 +1,12 @@
+*~
+.vscode
+.cproject
+.project
+\#*
+.#*
+main
+*.out
+*.dot
+main.dSYM
+*.png
+scratch
