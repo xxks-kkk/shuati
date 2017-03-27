@@ -42,3 +42,27 @@ void deleteNode(struct ListNode* node) {
   node->next = ptr->next;
   free(ptr);
 }
+
+
+
+
+// My initial solution: work but ugly
+void deleteNode(struct ListNode* node) {
+  struct ListNode* ptr = node;
+  struct ListNode* tmp;
+  while(ptr->next != NULL)
+  {
+    ptr->val = ptr->next->val;
+    if(ptr->next->next == NULL)
+    {
+      tmp = ptr->next;
+      ptr->next = NULL;
+      break;
+    }
+    else
+    {
+      ptr = ptr->next;
+    }
+  }
+  free(tmp);
+}
