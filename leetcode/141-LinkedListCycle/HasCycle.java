@@ -18,6 +18,15 @@
 // If the current node is null, we have reached the end of the list
 // and it must not be cyclic.
 // If current node’s reference is in the hash table, then return true.
+//
+//
+// Time : O(n)
+//        We visit each of the n elements in the list at most once.
+//        Adding a node to the hash table costs only O(1) time.
+//
+// Space : O(n)
+//         The space depends on the number of elements added to the hash table,
+//         which contains at most nnn elements.
 public boolean hasCycle(ListNode head)
 {
   Set<ListNode> nodesSeen = new HashSet<>();
