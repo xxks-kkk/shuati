@@ -49,9 +49,10 @@
  * };
  */
 
-bool isValidBSTHelper(struct TreeNode* root,
-                      struct TreeNode* minNode,
-                      struct TreeNode* maxNode);
+bool 
+isValidBSTHelper(struct TreeNode* root,
+                 struct TreeNode* minNode,
+                 struct TreeNode* maxNode);
 
 bool
 isValidBST(struct TreeNode* root)
@@ -69,6 +70,10 @@ isValidBSTHelper(struct TreeNode* root,
      maxNode && root->val >= maxNode->val)
     return false;
   return
-    isValidBSTHelper(root->left, minNode, root) &&
-    isValidBSTHelper(root->right, root, maxNode);
+    isValidBSTHelper(root->left, 
+                     minNode, 
+                     root) &&
+    isValidBSTHelper(root->right, 
+                     root, 
+                     maxNode);
 }
