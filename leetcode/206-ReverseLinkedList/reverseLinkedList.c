@@ -44,3 +44,20 @@ struct ListNode* reverseList(struct ListNode* head)
   }
   return prev;
 }
+
+// Approach 3: insertion into a separate list
+struct ListNode* reverseList(struct ListNode* head)
+{
+  struct ListNode *newHead = malloc(sizeof(struct ListNode));
+  newHead->next = NULL; // !!Easy to forget!!
+  struct ListNode *current = head;
+  struct ListNode *hook = current;
+  while(current != NULL)
+  {
+    hook = current->next; // keep the reference to the old list
+    current->next = newHead->next;
+    newHead->next = current;
+    current = hook;
+  }
+  return newHead->next;
+}
