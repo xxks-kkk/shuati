@@ -17,6 +17,8 @@
  * 1. How to initialize an array of strings in C?
  * 2. How to store int as string in C?
  *
+ * http://stackoverflow.com/questions/21023605/initialize-array-of-strings
+ *
  * [Companies]
  */
 
