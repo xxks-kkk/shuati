@@ -9,4 +9,4 @@
 
 | Name    | Problems |
 |---------|----------|
-|[wo pointers](https://leetcode.com/articles/two-pointer-technique)|41, 19, 109 |
+|[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, |
