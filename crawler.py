@@ -1,13 +1,9 @@
-import sys
-reload(sys)
-sys.setdefaultencoding('utf-8') # https://stackoverflow.com/questions/31137552/unicodeencodeerror-ascii-codec-cant-encode-character-at-special-name
-
 from bs4 import BeautifulSoup
 import requests
 #import re
 
-url = "https://leetcode.com/problems/reverse-integer/"
-#url="https://leetcode.com/problems/reverse-linked-list-ii/#/description"
+#url = "https://leetcode.com/problems/reverse-integer/"
+url="https://leetcode.com/problems/reverse-linked-list-ii/#/description"
 r = requests.get(url)
 data = r.text
 soup = BeautifulSoup(data, "lxml")
@@ -35,7 +31,7 @@ for line in lines:
         if "click" in line:
             pass
         else:
-            target.write(" * " + line + "\n")
+            target.write(" * " + line.encode('utf-8') + "\n") # https://stackoverflow.com/questions/31137552/unicodeencodeerror-ascii-codec-cant-encode-character-at-special-name
     else:
         break
 target.write(" *          \n")
