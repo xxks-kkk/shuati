@@ -5,7 +5,9 @@
 #
 # Generate the source file of the question and pre-fixed head comment
 # 
-# Usage: scraper.py [leetcode question url]
+# Usage: scraper.py [leetcode question url] [extension]
+#
+# Example: scraper.py http://.... .c
 
 from bs4 import BeautifulSoup
 import requests
@@ -17,7 +19,7 @@ import os
 
 if __name__ == "__main__":
 
-    script, url = sys.argv
+    script, url, extension = sys.argv
 
     if not validators.url(url):
         print("Please enter a valid url!")
@@ -43,7 +45,6 @@ if __name__ == "__main__":
 
     # produce file name
     #
-    extension = ".c"
     pat = re.compile(r"^(\d+)-")
     m = re.search(pat, title)
     filename=title[:m.start()] + title[m.end():]
