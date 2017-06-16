@@ -8,11 +8,11 @@
 | [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | No clue |
 | [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/) | mathematics on reverse integer |
 | [389. Find the Difference](https://leetcode.com/problems/find-the-difference/#/description) | No clue |
-
+| [136. Single Number](https://leetcode.com/problems/single-number/#/description) | Bitwise: XOR usage |
 
 # RECURRING TECHNIQUES
 
 | Name    | Problems |
 |---------|----------|
 |[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, |
-|Bitwise | 461, |
+|Bitwise | 461, 136, |
