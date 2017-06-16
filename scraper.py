@@ -81,6 +81,10 @@ if __name__ == "__main__":
         else:
             break
     target.write(" *          \n")
+    target.write(" * [Comments]\n");
+    target.write(" *          \n")
+    target.write(" *          \n")
+    target.write(" *          \n")    
     target.write(" * [Companies]\n");
     target.write(" */          \n")
     target.write("\n\n")
