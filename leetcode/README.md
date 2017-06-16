@@ -7,6 +7,7 @@
 | [461. Hamming Distance](https://leetcode.com/problems/hamming-distance/#/description) | Bitwise: counting bits set|
 | [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | No clue |
 | [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/) | mathematics on reverse integer |
+| [389. Find the Difference](https://leetcode.com/problems/find-the-difference/#/description) | No clue |
 
 
 # RECURRING TECHNIQUES

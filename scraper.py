@@ -41,7 +41,8 @@ if __name__ == "__main__":
     # create the directory
     #
     path = "./leetcode/" + title
-    os.mkdir(path)
+    if not os.path.isdir(path):
+        os.mkdir(path)
 
     # produce file name
     #
