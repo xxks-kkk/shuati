@@ -10,10 +10,11 @@
 | [389. Find the Difference](https://leetcode.com/problems/find-the-difference/#/description) | No clue |
 | [136. Single Number](https://leetcode.com/problems/single-number/#/description) | Bitwise: XOR usage |
 | [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Floyd's Tortoise and Hare |
+| [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/#/description) | Floyd's Tortoise and Hare |
 
 # RECURRING TECHNIQUES
 
 | Name    | Problems |
 |---------|----------|
-|[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, |
+|[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142|
 |Bitwise | 461, 136, |
