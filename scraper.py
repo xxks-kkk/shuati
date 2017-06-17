@@ -70,9 +70,10 @@ if __name__ == "__main__":
     target.write(" * [Problem Description]\n");
     target.write(" *          \n")
 
+    pat2 = re.compile(r"click|Credits")
     for line in lines:
         if "Subscribe" not in line:
-            if "click" in line:
+            if bool(re.search(pat2, line)):
                 pass
             else:
                 # Remove CLR, "\n" if appears
