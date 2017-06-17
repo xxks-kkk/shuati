@@ -18,7 +18,7 @@
  * };
  */
 
-// The space complexity can be reduced to O(1)O(1)O(1) by considering
+// The space complexity can be reduced to O(1) by considering
 // two pointers at different speed - a slow pointer and a fast pointer.
 // The slow pointer moves one step at a time while the fast pointer moves
 // two steps at a time.
@@ -84,27 +84,21 @@ bool hasCycle(struct ListNode *head)
   return true;  
 }
 
-// My initial solution: work
-bool hasCycle(struct ListNode *head)
-{
-  struct ListNode* player1 = head;
-  struct ListNode* player2 = head;
-  while(player1 != NULL && player2 != NULL)
+// 06/17/17: I like this version
+bool hasCycle(struct ListNode *head) {
+  if (head == NULL || head->next == NULL)
+    return false;
+
+  struct ListNode *tortoise;
+  struct ListNode *hare;
+
+  tortoise = hare = head;
+
+  while(hare != NULL && hare->next != NULL)
   {
-    player1 = player1->next;
-    if(player2->next != NULL)
-    {
-      player2 = player2->next->next;
-    }
-    else
-    {
-      break;
-    }
-    if (player1 == player2)
-    {
-      return true;
-      break;
-    }
+    hare = hare->next->next;
+    tortoise = tortoise->next;
+    if (hare == tortoise) return true;
   }
   return false;
 }
