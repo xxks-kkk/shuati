@@ -8,6 +8,8 @@
 # Usage: scraper.py [leetcode question url] [extension]
 #
 # Example: scraper.py http://.... .c
+#
+# Supported extension: .java, .c, .sql
 
 from bs4 import BeautifulSoup
 import requests
@@ -55,7 +57,7 @@ if __name__ == "__main__":
 
     # Fetch the question describtion
     #
-    letters = soup.find_all("div", class_="question-content")
+    letters = soup.find_all("div", class_="question-description")
     rawText = letters[0].get_text()
     lines = rawText.split('\n')
     lines = list(filter(None, lines)) 
@@ -78,7 +80,15 @@ if __name__ == "__main__":
             else:
                 # Remove CLR, "\n" if appears
                 line = line.replace("\r", "").replace("\n", "")
-                target.write(" * " + line + "\n") 
+                # Break a lone line into multiple lines
+                while(len(line) > 80):
+                    # we want to keep line length around 80 and
+                    # we don't want to break a word into two lines
+                    # we also remove leading spaces of a line
+                    nearest_space = line[:80].rfind(' ', 0, 80)
+                    target.write(" * " + line[:nearest_space].lstrip(' ') + "\n")
+                    line = line[nearest_space:]
+                target.write(" * " + line.lstrip(' ') + "\n") 
         else:
             break
     target.write(" *          \n")

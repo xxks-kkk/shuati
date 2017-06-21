@@ -19,3 +19,12 @@
 |---------|----------|
 |[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142|
 |Bitwise | 461, 136, 476|
+
+# DIDN'T GET THE RIGHT
+
+I tried solutions and they show "accepted" but I haven't understood them. They 
+should be treated as "unsolved"
+
+| Problem |
+|---------|
+| [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/#/description)|
