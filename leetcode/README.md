@@ -12,6 +12,7 @@
 | [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Floyd's Tortoise and Hare |
 | [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/#/description) | Floyd's Tortoise and Hare |
 | [476. Number Complement](https://leetcode.com/problems/number-complement/#/description) | Bitwise|
+| [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/#/description) | SQL |
 
 # RECURRING TECHNIQUES
 
