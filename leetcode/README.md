@@ -14,6 +14,7 @@
 | [476. Number Complement](https://leetcode.com/problems/number-complement/#/description) | Bitwise|
 | [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/#/description) | SQL |
 | [182. Duplicate Emails](https://leetcode.com/problems/duplicate-emails/#/description) | SQL: group by, having basics |
+| [627. Swap Salary](https://leetcode.com/problems/swap-salary/#/description) | SQL: CASE WHEN |
 
 # RECURRING TECHNIQUES
 
