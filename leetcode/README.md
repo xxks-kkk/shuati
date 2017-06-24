@@ -13,6 +13,7 @@
 | [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/#/description) | Floyd's Tortoise and Hare |
 | [476. Number Complement](https://leetcode.com/problems/number-complement/#/description) | Bitwise|
 | [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/#/description) | SQL |
+| [182. Duplicate Emails](https://leetcode.com/problems/duplicate-emails/#/description) | SQL: group by, having basics |
 
 # RECURRING TECHNIQUES
 
