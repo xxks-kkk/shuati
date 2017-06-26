@@ -16,6 +16,7 @@
 | [182. Duplicate Emails](https://leetcode.com/problems/duplicate-emails/#/description) | SQL: group by, having basics |
 | [627. Swap Salary](https://leetcode.com/problems/swap-salary/#/description) | SQL: CASE WHEN |
 | [183. Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/#/description) | SQL: not in |
+| [197. Rising Temperature](https://leetcode.com/problems/rising-temperature/#/description) | SQL: DATE_SUB |
 
 # RECURRING TECHNIQUES
 
