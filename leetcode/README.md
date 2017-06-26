@@ -15,6 +15,7 @@
 | [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/#/description) | SQL |
 | [182. Duplicate Emails](https://leetcode.com/problems/duplicate-emails/#/description) | SQL: group by, having basics |
 | [627. Swap Salary](https://leetcode.com/problems/swap-salary/#/description) | SQL: CASE WHEN |
+| [183. Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/#/description) | SQL: not in |
 
 # RECURRING TECHNIQUES
 
