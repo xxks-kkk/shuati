@@ -17,6 +17,7 @@
 | [627. Swap Salary](https://leetcode.com/problems/swap-salary/#/description) | SQL: CASE WHEN |
 | [183. Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/#/description) | SQL: not in |
 | [197. Rising Temperature](https://leetcode.com/problems/rising-temperature/#/description) | SQL: DATE_SUB |
+| [500. Keyboard Row](https://leetcode.com/problems/keyboard-row/#/description) | Python: set, lower, issubset |
 
 # RECURRING TECHNIQUES
 
