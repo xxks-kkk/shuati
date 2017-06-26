@@ -9,7 +9,7 @@
 #
 # Example: scraper.py http://.... .c
 #
-# Supported extension: .java, .c, .sql
+# Supported extension: .java, .c, .sql, .py
 
 from bs4 import BeautifulSoup
 import requests
@@ -26,6 +26,12 @@ if __name__ == "__main__":
     if not validators.url(url):
         print("Please enter a valid url!")
         sys.exit()
+
+    commentBlock = "*"
+    pythonMode = False
+    if extension == ".py":
+        commentBlock = "#"
+        pythonMode = True
         
     r = requests.get(url)
     data = r.text
@@ -64,13 +70,14 @@ if __name__ == "__main__":
 
     # Construct the header comment of the file
     #
-    target.write("/*          \n")
-    target.write(" * [Source] \n")
-    target.write(" *          \n")
-    target.write(" * " + url + "\n")
-    target.write(" *          \n")
-    target.write(" * [Problem Description]\n");
-    target.write(" *          \n")
+    if not pythonMode:
+        target.write("/ " + commentBlock + "          \n")
+    target.write(" " + commentBlock + " [Source] \n")
+    target.write(" " + commentBlock + "          \n")
+    target.write(" " + commentBlock + " " + url + "\n")
+    target.write(" " + commentBlock + "          \n")
+    target.write(" " + commentBlock + " [Problem Description]\n");
+    target.write(" " + commentBlock + "          \n")
 
     pat2 = re.compile(r"click|Credits")
     for line in lines:
@@ -86,18 +93,19 @@ if __name__ == "__main__":
                     # we don't want to break a word into two lines
                     # we also remove leading spaces of a line
                     nearest_space = line[:80].rfind(' ', 0, 80)
-                    target.write(" * " + line[:nearest_space].lstrip(' ') + "\n")
+                    target.write(" " + commentBlock + " " + line[:nearest_space].lstrip(' ') + "\n")
                     line = line[nearest_space:]
-                target.write(" * " + line.lstrip(' ') + "\n") 
+                target.write(" " + commentBlock + " " + line.lstrip(' ') + "\n") 
         else:
             break
-    target.write(" *          \n")
-    target.write(" * [Comments]\n");
-    target.write(" *          \n")
-    target.write(" *          \n")
-    target.write(" *          \n")    
-    target.write(" * [Companies]\n");
-    target.write(" */          \n")
+    target.write(" " + commentBlock + "          \n")
+    target.write(" " + commentBlock + " [Comments]\n");
+    target.write(" " + commentBlock + "          \n")
+    target.write(" " + commentBlock + "          \n")
+    target.write(" " + commentBlock + "          \n")    
+    target.write(" " + commentBlock + " [Companies]\n");
+    if not pythonMode:
+        target.write(" */          \n")
     target.write("\n\n")
     
     target.close()
