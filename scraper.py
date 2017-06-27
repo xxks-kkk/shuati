@@ -71,7 +71,7 @@ if __name__ == "__main__":
     # Construct the header comment of the file
     #
     if not pythonMode:
-        target.write("/ " + commentBlock + "          \n")
+        target.write("/" + commentBlock + "          \n")
     target.write(" " + commentBlock + " [Source] \n")
     target.write(" " + commentBlock + "          \n")
     target.write(" " + commentBlock + " " + url + "\n")

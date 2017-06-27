@@ -18,6 +18,7 @@
 | [183. Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/#/description) | SQL: not in |
 | [197. Rising Temperature](https://leetcode.com/problems/rising-temperature/#/description) | SQL: DATE_SUB |
 | [500. Keyboard Row](https://leetcode.com/problems/keyboard-row/#/description) | Python: set, lower, issubset |
+| [268. Missing Number](https://leetcode.com/problems/missing-number/#/description) | Idea |
 
 # RECURRING TECHNIQUES
 
@@ -34,3 +35,9 @@ should be treated as "unsolved"
 | Problem |
 |---------|
 | [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/#/description)|
+
+# COMPANIES
+
+| Companies | Problems |
+|-----------|----------|
+| Microsoft | 268,     |
