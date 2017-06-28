@@ -40,4 +40,4 @@ should be treated as "unsolved"
 
 | Companies | Problems |
 |-----------|----------|
-| Microsoft | 268,     |
+| Microsoft | 268,105  |
