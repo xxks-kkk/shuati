@@ -21,6 +21,7 @@
 | [268. Missing Number](https://leetcode.com/problems/missing-number/#/description) | Idea |
 | [196. Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/#/description) | SQL, SQL: multi-table delete |
 | [178. Rank Scores](https://leetcode.com/problems/rank-scores/#/description) | SQL, SQL: user-defined variables |
+| [180. Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/#/description) | SQL |
 
 
 # RECURRING TECHNIQUES
