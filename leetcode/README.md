@@ -19,7 +19,9 @@
 | [197. Rising Temperature](https://leetcode.com/problems/rising-temperature/#/description) | SQL: DATE_SUB |
 | [500. Keyboard Row](https://leetcode.com/problems/keyboard-row/#/description) | Python: set, lower, issubset |
 | [268. Missing Number](https://leetcode.com/problems/missing-number/#/description) | Idea |
-| [196. Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/#/description) | SQL |
+| [196. Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/#/description) | SQL, SQL: multi-table delete |
+| [178. Rank Scores](https://leetcode.com/problems/rank-scores/#/description) | SQL, SQL: user-defined variables |
+
 
 # RECURRING TECHNIQUES
 
