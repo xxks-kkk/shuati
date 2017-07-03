@@ -29,7 +29,7 @@
 | Name    | Problems |
 |---------|----------|
 |[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142|
-|Bitwise | [191|461], 136, 476|
+|Bitwise | [191, 461], 136, 476|
 
 # DIDN'T GET THE RIGHT
 
