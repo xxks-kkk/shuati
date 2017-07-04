@@ -23,12 +23,13 @@
 | [178. Rank Scores](https://leetcode.com/problems/rank-scores/#/description) | SQL, SQL: user-defined variables |
 | [180. Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/#/description) | SQL |
 | [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/#/description) | OJ Complaints |
+| [184. Department Highest Salary](https://leetcode.com/problems/department-highest-salary/#/description) | SQL |
 
 # RECURRING TECHNIQUES
 
 | Name    | Problems |
 |---------|----------|
-|[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142|
+|[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142, 287|
 |Bitwise | [191, 461], 136, 476|
 
 # DIDN'T GET THE RIGHT
