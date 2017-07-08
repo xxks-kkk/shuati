@@ -24,6 +24,8 @@
 | [180. Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/#/description) | SQL |
 | [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/#/description) | OJ Complaints |
 | [184. Department Highest Salary](https://leetcode.com/problems/department-highest-salary/#/description) | SQL |
+| [601. Human Traffic Of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/#/description) | SQL |
+| [185. Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/#/description) | SQL: Nested Subqueries |
 
 # RECURRING TECHNIQUES
 
