@@ -27,6 +27,7 @@
 | [601. Human Traffic Of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/#/description) | SQL |
 | [185. Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/#/description) | SQL: Nested Subqueries |
 | [262. Trips and Users](https://leetcode.com/problems/trips-and-users/#/solutions) | SQL |
+| [575. Distribute Candies](https://leetcode.com/problems/distribute-candies/#/description) | Java: hashset |
 
 # RECURRING TECHNIQUES
 
