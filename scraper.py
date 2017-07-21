@@ -21,6 +21,7 @@ import validators
 #
 sys.path.append(os.path.abspath('scraper'))
 import leetcode
+import hackerrank
 
 def getSiteName(url):
     """get the site name from a given string
@@ -54,4 +55,4 @@ if __name__ == "__main__":
     if sitename == "leetcode":
         leetcode.leetcodeScraper(url, extension)
     if sitename == "hackerrank":
-        pass
+        hackerrank.hackerrankScraper(url, extension)
