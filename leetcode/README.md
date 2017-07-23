@@ -28,6 +28,7 @@
 | [185. Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/#/description) | SQL: Nested Subqueries |
 | [262. Trips and Users](https://leetcode.com/problems/trips-and-users/#/solutions) | SQL |
 | [575. Distribute Candies](https://leetcode.com/problems/distribute-candies/#/description) | Java: hashset |
+| [647. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/#/description) | Java: queue |
 
 # RECURRING TECHNIQUES
 
