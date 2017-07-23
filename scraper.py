@@ -10,6 +10,8 @@
 # Example: scraper.py http://.... .c
 #
 # Supported extension: .java, .c, .sql, .py
+#
+# Limitation: doesn't work for leetcode contest
 
 from bs4 import BeautifulSoup
 import requests
