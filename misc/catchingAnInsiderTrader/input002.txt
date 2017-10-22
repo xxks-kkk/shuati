@@ -1,0 +1,11 @@
+10
+0|10
+0|Kristi|BUY|25000
+0|Will|BUY|5000
+0|Tom|SELL|3000
+0|Shilpa|BUY|21000
+1|25
+1|Shilpa|BUY|10000
+2|35
+2|Kristi|SELL|20000
+3|5
