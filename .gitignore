@@ -11,3 +11,4 @@ main.dSYM
 *.png
 scratch
 *.class
+.idea/
