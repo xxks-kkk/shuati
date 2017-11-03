@@ -57,6 +57,8 @@ class LinkedList(object):
         :type l2: ListNode
         :rtype: ListNode
         """
+        # The idea is to use a stack for each list then we can keep pop the stacks and do the addition and append the
+        # result to the result list
         q1 = collections.deque()
         q2 = collections.deque()
         head = ListNode(0)
