@@ -6,6 +6,43 @@ Throughout this explanation, we'll use the word "bananas" for the demonstration
 
 ## Solution 1: Including characters
 
+Claim: When you increase `s` by one char, you could only increase 
+max palindrome length (i.e., `maxLength` in code) by 1 or 2, and
+the new palindrome with the max length includes this new char.
+
+Examples:
+
+- `s='a'`. `maxLength = 1` and the palindrome with the max length is `'a'`.
+Now, we include a new char `'a'` and we increase the max palindrome
+length by 1 (i.e., `maxLength = 2`) and the new palindrome with the
+max length is `'aa'`.
+
+- `s='an'`. `maxLength = 1` and the palindrome with the max length is `'a'`.
+Now, we include a new char `'a'` and we increase the max palindrome length
+by 2 (i.e., `maxLength = 3`) and the new palindrome with the max length
+is `'ana'`.
+
+Let's first proof this claim. Suppose by adding one more char, `maxLength`
+increased by 3 or more. Let the length of the original palindrome
+with the max palindrome length be $P$ and the length of the new palindrome
+with the max palindrome length be $Q$. Then we have $Q >= P + 3$.
+Then it would mean that even without this new char, there would be
+a palindromic substring ending in the last character, whose length is
+at least $Q-2$. Since $Q-2$ would be greater than $P$, this contrdicts
+the assumption that $P$ is the length of the original palindrome (without
+additional char) with the max palindrome length.
+
+For example, think about `s = 'abc'`. $P = 1$ (ie., `'a'`) and if
+we include a new char `'a'` and the new string is `s = 'abca'`. $Q = 1$,
+which does not satisfy our assumption. In order to have $Q = 4$, then
+our `s` should change to `s = 'abba'` for example (including the newly-added
+char). However, $P = 2$ now (i.e., `'bb'`), which is equal to $Q-2$.  
+
+So, it becomes simple, you only need to scan from beginning to the end, 
+adding one char at a time, keeping track of 
+`maxLength` and for each added char, 
+you check if the substrings ending with this new char, 
+with length P+1 or P+2, are palindromes, and update accordingly.
 
 ## Solution 2: Expand Around Center
 
