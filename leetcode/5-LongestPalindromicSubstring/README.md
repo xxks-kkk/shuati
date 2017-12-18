@@ -46,6 +46,19 @@ with length P+1 or P+2, are palindromes, and update accordingly.
 
 ## Solution 2: Expand Around Center
 
+We observe that a palindrome mirrors around its center. Therefore,
+a palindrome can be expanded from its center. There are two possible
+cases depend on whether the length of the Palindrome is even or odd
+
+- For odd, like `s= 'aba'`, the center of the palindrome is the central
+char of the substring (i.e., `'b'`) and we can expand our 
+palindrome from the central char.
+
+- For even, like `s = 'abba'`, the center of the palindrome is between
+`'b'` and `'b'`. Thus, we expand our palindrome from the first `'b'` to 
+the left and the second `'b'` to the right. 
+
+
 
 ## Solution 3: Dynamic Programming
 
@@ -165,6 +178,15 @@ where the longest palindrome starts (i.e., `palindromeBeginsAt`).
 
 ## Reference
 
+### Solution 1
+
+- https://discuss.leetcode.com/topic/7144/python-o-n-2-method-with-some-optimization-88ms
+
+### Solution 2
+
+- https://leetcode.com/articles/longest-palindromic-substring/
+
+### Solution 3
 
 - https://leetcode.com/problems/longest-palindromic-substring/solution/
 - http://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
