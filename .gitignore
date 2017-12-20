@@ -12,3 +12,4 @@ main.dSYM
 scratch
 *.class
 .idea/
+.DS_Store

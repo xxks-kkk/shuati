@@ -17,6 +17,8 @@ At every step, we find out the area formed between them, update `maxArea`
 and move the pointer pointing to the shorter line towards the other end by one step.
 The algorithm terminates when two pointers meet with each other.
 
+![image](algo.png)
+
 ### Understand Algorithm
 
 Initially we consider the area constituting the exterior most lines. 
