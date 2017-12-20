@@ -40,15 +40,10 @@ are equal to the area formed by `(1,6)`
 
 2) there are lines in-between 1 and 6 are smaller than the line height at 1. Then, those areas
 are smaller than the area formed by `(1,6)`. Since we try to find the max area, then it doesn't matter
->>>>>>> upstream/master
 to calculate those areas either.
 
 ## Reference
 
 - https://leetcode.com/articles/container-most-water/
 - https://discuss.leetcode.com/topic/3462/yet-another-way-to-see-what-happens-in-the-o-n-algorithm
-<<<<<<< HEAD
 - https://discuss.leetcode.com/topic/503/anyone-who-has-a-o-n-algorithm/3
-=======
-- https://discuss.leetcode.com/topic/503/anyone-who-has-a-o-n-algorithm/3
->>>>>>> upstream/master
