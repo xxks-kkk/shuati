@@ -32,14 +32,14 @@ instead of the longer one. The idea is based on the intuition (1): the area is l
 We won't get any area gain by moving the longer line. 
 
 Specifically, let's try to understand "Now if the left line is shorter than the right line, then all the elements left to 
-(1,6) on the first row have smaller volume, so we don't need to compute those cases (crossed by `---`).". The
-reason we don't need to compute all the elements left to (1,6) is that:
+`(1,6)` on the first row have smaller volume, so we don't need to compute those cases (crossed by `---`)". The
+reason we don't need to compute all the elements left to `(1,6)` is that:
 
 1) there are lines in-between 1 and 6 are greater than the line height at 1. Then, those areas
-are equal to the area formed by (1,6)
+are equal to the area formed by `(1,6)`
 
 2) there are lines in-between 1 and 6 are smaller than the line height at 1. Then, those areas
-are smaller than the area formed by (1,6). Since we try to find the max area, then it doesn't matter
+are smaller than the area formed by `(1,6)`. Since we try to find the max area, then it doesn't matter
 to calculate those areas either.
 
 ## Reference
