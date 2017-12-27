@@ -16,18 +16,18 @@ class Solution:
         :rtype: List[str]
         """
         mapping = ["0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
-        res = []
+        queue = []
         if (len(digits) == 0):
-            return res
-        res.append("")
+            return queue
+        queue.append("")
         for i, c in enumerate(digits):
             # This is actually a level-matter of BFS.
             # Very smart point is to use top element's length to determine the level of traversal
-            while len(res[0]) == i:
-                t = res.pop(0)
+            while len(queue[0]) == i:
+                t = queue.pop(0)
                 for s in list(mapping[int(c)]):
-                    res.append(t+s)
-        return res
+                    queue.append(t+s)
+        return queue
 
 
 if __name__ == "__main__":
