@@ -30,6 +30,15 @@ To go from `pre -> a -> b -> b.next` to `pre -> b -> a -> b.next`, we need to
 change those three references. Instead of thinking about in what order I change them, 
 I just change all three at once.
 
+In the implementation, we use `self` to initialize `pre`, which is the same as
+using a dummy ListNode object to initialize `pre`. In oter words, `self` is 
+equivalent with a dummy ListNode object. In addition, we set `pre = self` and
+`pre.next = head`, which is equivalent to `self.next = head` as `pre` and `self`
+pointing to the same memory address. Even though `pre` points to different
+memory addresses throughout the execution but `self` still points to the same
+memory address as it is first intialized. Thus, we
+can do `return self.next`.
+
 ## Reference
 
 - https://leetcode.com/problems/swap-nodes-in-pairs/discuss/11019
