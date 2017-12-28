@@ -29,3 +29,7 @@ I just use `self` instead. Again, `a` is the current node and `b` is the next no
 To go from `pre -> a -> b -> b.next` to `pre -> b -> a -> b.next`, we need to 
 change those three references. Instead of thinking about in what order I change them, 
 I just change all three at once.
+
+## Reference
+
+- https://leetcode.com/problems/swap-nodes-in-pairs/discuss/11019
