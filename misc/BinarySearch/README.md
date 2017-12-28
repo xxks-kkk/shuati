@@ -8,7 +8,7 @@
 
 3. 第三处是low的赋值，可以写成 low = mid 或者 low = mid + 1
 
-3. 第三处是high的赋值，可以写成 high = mid 或者 high = mid - 1
+3. 第四处是high的赋值，可以写成 high = mid 或者 high = mid - 1
 
 但是这些不同的写法并不能随机的组合，若high初始化为了len(nums)，那么就必须用low < high，
 low的赋值哪个都可以，但是high的赋值必须为high = mid。但是如果我们high初始化为 len(nums) - 1，
