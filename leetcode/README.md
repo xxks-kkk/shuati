@@ -30,6 +30,7 @@
 | [575. Distribute Candies](https://leetcode.com/problems/distribute-candies/#/description) | Java: hashset |
 | [647. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/#/description) | Java: queue |
 | [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)| Recursion, DFS |
+| [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | Matrix traversal |
 
 # RECURRING TECHNIQUES
 
