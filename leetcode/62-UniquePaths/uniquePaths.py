@@ -32,20 +32,20 @@
 
 class Solution(object):
     def uniquePaths(self, m, n):
-    """
-    :type m: int
-    :type n: int
-    :rtype: int
-    """
-    # How many steps we need to move in total
-    N = n + m - 2
-    # Number of steps we need to go down
-    K = m - 1
-    # Here we calculate the total possible path number
-    # Combination(N,K) = \frac{N!}{K!(N-K)!}
-    numerator = 1
-    denominator = 1
-    for i in range(1, K+1):
-        denominator *= i
-        numerator *= (N-K+i)
-    return numerator / denominator
+        """
+        :type m: int
+        :type n: int
+        :rtype: int
+        """
+        # How many steps we need to move in total
+        N = n + m - 2
+        # Number of steps we need to go down
+        K = m - 1
+        # Here we calculate the total possible path number
+        # Combination(N,K) = \frac{N!}{K!(N-K)!}
+        numerator = 1
+        denominator = 1
+        for i in range(1, K+1):
+            denominator *= i
+            numerator *= (N-K+i)
+        return numerator / denominator
