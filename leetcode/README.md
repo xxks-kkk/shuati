@@ -29,7 +29,7 @@
 | [262. Trips and Users](https://leetcode.com/problems/trips-and-users/#/solutions) | SQL |
 | [575. Distribute Candies](https://leetcode.com/problems/distribute-candies/#/description) | Java: hashset |
 | [647. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/#/description) | Java: queue |
-| [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)| Recursion, DFS |
+| [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)| Recursion, DFS, backtracking |
 | [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | Matrix traversal |
 
 # RECURRING TECHNIQUES
@@ -39,6 +39,7 @@
 |[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142, 287, 15, 16, 18, 11|
 |Bitwise | [191, 461], 136, 476|
 |Binary Search | 33, 34, 475 |
+|backtracking, dfs | 22, 39 |
 
 # DIDN'T GET THE RIGHT
 
