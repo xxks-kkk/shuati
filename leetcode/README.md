@@ -37,7 +37,7 @@
 |---------|----------|
 |[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142, 287, 15, 16, 18, 11|
 |Bitwise | [191, 461], 136, 476|
-|Binary Search | 33 |
+|Binary Search | 33, 34 |
 
 # DIDN'T GET THE RIGHT
 

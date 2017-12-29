@@ -14,3 +14,4 @@ if __name__ == "__main__":
     s = [2,4,5,6,9]
     for i in range(len(s)):
         assert binarySearch(s, s[i]) == i
+    assert binarySearch(s, 10) == -1

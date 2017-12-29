@@ -12,7 +12,7 @@
 
 但是这些不同的写法并不能随机的组合，若high初始化为了len(nums)，那么就必须用low < high，
 low的赋值哪个都可以，但是high的赋值必须为high = mid。但是如果我们high初始化为 len(nums) - 1，
-那么就必须用 low <= high. low的赋值必须为low = mid +1 但是right的赋值哪个都可以。
+那么就必须用 low <= high. low的赋值必须为low = mid +1 但是high的赋值哪个都可以。
 建议选择一套自己喜欢的写法，并且记住，实在不行就带简单的例子来一步一步执行，确定正确的写法也行。
 
 ## Reference
