@@ -15,6 +15,9 @@ low的赋值哪个都可以，但是high的赋值必须为high = mid。但是如
 那么就必须用 low <= high. low的赋值必须为low = mid +1 但是high的赋值哪个都可以。
 建议选择一套自己喜欢的写法，并且记住，实在不行就带简单的例子来一步一步执行，确定正确的写法也行。
 
+"binarySearch-2.py" contains two commonly-seen variations of the binary search:
+`findFirstGreaterEqualTo` and `findFirstGreaterTo`. It's better to remember those codes.
+
 ## Reference
 
 - http://www.cnblogs.com/grandyang/p/6854825.html
