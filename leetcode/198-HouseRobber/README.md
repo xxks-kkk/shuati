@@ -20,7 +20,7 @@ rob the second house because the third house and the second house are adjacent.
 Clearly, you would want to choose the larger of the two options at each step.
 Therefore, we could summarize the formula as following:
 
-- $f(k) = max(f(k – 2) + Ak, f(k – 1))$
+- $f(k) = max(f(k – 2) + A_k, f(k – 1))$
 
 We choose the base case as `f(–1) = f(0) = 0`, which will greatly simplify our code as you can see.
 
