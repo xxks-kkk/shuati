@@ -40,3 +40,5 @@ if __name__ == "__main__":
     s = [2,3,6,7]
     sol = Solution()
     print(sol.combinationSum(s, 7))
+    s = [10, 2, 7, 6, 1, 5]
+    print(sol.combinationSum(s, 8))
