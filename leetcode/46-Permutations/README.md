@@ -9,6 +9,7 @@ we need to use all the numbers in the collection and the order matters in permut
 (i.e., which position that `1` appears matters).
 - We use `visited` to avoid use the same number more than once in the permutation.
 
+Another solution is shown in [2nd link in reference section](http://www.cnblogs.com/grandyang/p/4358848.html)
 
 ## Reference
 
