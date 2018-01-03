@@ -10,7 +10,7 @@ it would go out of bounds or into a cell that was previously visited.
 Let the array have $R$ rows and $C$ columns. $\text{seen[r][c]}$ denotes that the cell on the
 $\text{r}$-th row and $\text{c}$-th column was previously visited. 
 Our current position is $\text{(r, c)}$, facing direction $\text{di}$, 
-and we want to visit $\text{R} x \text{C}$ total cells.
+and we want to visit $\text{R} \times \text{C}$ total cells.
 
 As we move through the matrix, our candidate next position is $\text{(cr, cc)}$. 
 If the candidate is in the bounds of the matrix and unseen, then it becomes our next position; 
