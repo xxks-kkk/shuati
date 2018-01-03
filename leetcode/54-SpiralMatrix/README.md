@@ -28,7 +28,12 @@ dc = [1, 0, -1, 0]
 
 In `dr`, `1` means moving downward, `0` means staying at the current row, and `-1` means moving upward.
 In `dc`, `1` means moving to the right, `0` means staying at the current column, and `-1` means 
-moving to the left. `di = (di + 1) % 4` means looping between direction offsets. 
+moving to the left. `di = (di + 1) % 4` means looping between direction offsets.
+
+- Time Complexity: $O(N)$, where $N$ is the total number of elements in the input matrix. 
+We add every element in the matrix to our final answer.
+
+- Space Complexity: $O(N)$, the information stored in `seen` and in `ans`. 
 
 
 ## Reference
