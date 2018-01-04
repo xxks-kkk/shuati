@@ -24,11 +24,11 @@ From this scenario follow several inequalities:
 - $ints[i].end < ints[j].start$
 - $ints[j].end < ints[k].start$ 
 - $ints[i].end \geq ints[k].start$ 
-​
+
 We can chain these inequalities to demonstrate a contradiction:
 
 - $ints[i].end < ints[j].start \leq ints[j].end < ints[k].start$ which is contradict with $ints[i].end \geq ints[k].start$ 
-​​ 
+ 
 Therefore, all mergeable intervals must occur in a contiguous run of the sorted list.
 
 - Time complexity : $O(nlgn)$ Other than the sort invocation, we do a simple linear scan of the list, 
