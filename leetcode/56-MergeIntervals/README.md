@@ -21,25 +21,21 @@ but neither interval `ints[i]` and interval `ints[j]` nor
 interval `ints[j]` and interval `ints[k]` can be merged. 
 From this scenario follow several inequalities:
 
-$$
-\begin{aligned} 
-ints[i].end < ints[j].start \\ 
-ints[j].end < ints[k].start \\ 
-ints[i].end \geq ints[k].start \\ 
-\end{aligned}
-$$
-​
+- $ints[i].end < ints[j].start$
+- $ints[j].end < ints[k].start$ 
+- $ints[i].end \geq ints[k].start$ 
 ​
 We can chain these inequalities to demonstrate a contradiction:
 
-$$
-\begin{aligned} 
-ints[i].end < ints[j].start \leq ints[j].end < ints[k].start \\ 
-ints[i].end \geq ints[k].start 
-\end{aligned}
-$$
+- $ints[i].end < ints[j].start \leq ints[j].end < ints[k].start$ which is contradict with $ints[i].end \geq ints[k].start$ 
 ​​ 
 Therefore, all mergeable intervals must occur in a contiguous run of the sorted list.
+
+- Time complexity : $O(nlgn)$ Other than the sort invocation, we do a simple linear scan of the list, 
+so the runtime is dominated by the $O(nlgn)$ complexity of sorting.
+
+- Space complexity : $O(1)$ (or $O(n)$). If we can sort intervals in place, we do not need more than constant additional space. 
+Otherwise, we must allocate linear space to store a copy of intervals and sort that.
 
 
 ## Reference
