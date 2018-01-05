@@ -85,7 +85,7 @@ $(n-2)! = (4-2)! = 2$ times. Thus, the 2nd digit is from $k'/(n-2)! = 2/2 = 1$, 
 2431
 ```
 
-- Now, there are only 2 permutations starting with $23$, $k=8$th permutation is the `k'' = k'%(n-2)! = 2%2 = 0`st
+- Now, there are only 2 permutations starting with $23$, $k=8$th permutation is the `k'' = k'%(n-2)! = 2%2 = 0`th
 one. For the 3rd digit, we can select from ${1,4}$ and by key observation, each number appears 
 $(n-3)! = (4-3)! = 1$ times. Thus, the 3rd digit is from $k''/(n-3)! = 0/1 = 0$, which is $1$.
 
@@ -94,7 +94,7 @@ $(n-3)! = (4-3)! = 1$ times. Thus, the 3rd digit is from $k''/(n-3)! = 0/1 = 0$,
 2341
 ```
 
-- The last digit is `k''' = k''\%(n-4)! = 0%0! = 0`. For the last digit, we can select from ${4}$ and by
+- The last digit is `k''' = k''%(n-4)! = 0%0! = 0`. For the last digit, we can select from ${4}$ and by
 key observation, each number appears $(n-4)! = (4-4)! = 1$ times. Thus, the last digit is from
 $k'''/(n-4)! = 0/1 = 0$, which is $4$.
 
