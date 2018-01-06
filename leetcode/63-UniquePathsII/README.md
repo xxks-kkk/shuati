@@ -47,8 +47,9 @@ The solution is implemented as `uniquePathsWithObstaclesOpt1`.
 
 ### Optimization 2
 
-Further inspecting the above code, keeping two vectors only serve for the purpose of recovering `preb[i]`, 
-which is simply `curr[i]` before its update. So we can use only one vector and the space is further optimized.
+Further inspecting the above code, keeping two vectors only serve for the purpose of recovering `prev[i]`, 
+which is simply `curr[i]` before its update. Thus, we can add `curr[i]` with itself (i.e.,
+$P(i,j-1)$) and `curr[i-1]` (i.e., $P(i-1,j)$). So we can use only one vector and the space is further optimized.
 Here, we don't implement the early termination strategy to have a cleaner code.
 
 The solution is implemented as `uniquePathsWithObstaclesOpt2`.
