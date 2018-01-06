@@ -40,6 +40,18 @@ When use the following snippet to handle the case when `k` is greater than the l
 fast = head
 k = k % list_len
 ```
+
+Also, be careful with the case, say `[1,2]` and `k = 2`. The rotation result is still `[1,2]`. This case
+is handled by:
+
+```python
+if fast == head:
+    return head
+```
+
+We need this special case handling because both `slow` and `fast` will start to move from head and
+the new head will be `None` when `fast` reaches the end because `slow` also reaches the end and
+`slow.next` is `None`
  
 Alternative solution exists, see [the 2nd link in the ref section](http://www.cnblogs.com/grandyang/p/4355505.html).
  
