@@ -20,6 +20,7 @@ Thus,
 - for the leftmost column, we have $P(i,0) = P(i-1,0) + 0 = P(i-1,0)$ if `obstacleGrid[i][j] != 1` and $0$ otherwise
 - for the uppermost column, we have $P(0,j) = 0 + P(0, j-1) = P(0, j-1)$ if `obstacleGrid[i][j] != 1` and $0$ otherwise 
 
+The base case is when there is only one grid and the start is the same as the end, which is $P(0,0) = 1$.
 The solution is implemented as `uniquePathsWithObstacles`.
 
 ### Optimization 1
