@@ -3,8 +3,8 @@
 The problem is also called [Dutch national flag problem](https://en.wikipedia.org/wiki/Dutch_national_flag_problem),which
 essentially deals with the partition step happens in the quicksort:
 
-Pick any element $v$ in S. This is called pivot. Partition $S-{v}$ (the remaining elements in $S$) into
-two disjoints groups: $S_1 = {X \in S-{v}|x \le v}$, and $S_2 = {x \in S-{v}|x \ge v}$.
+Pick any element $v$ in S. This is called pivot. Partition $S-\{v\}$ (the remaining elements in $S$) into
+two disjoints groups: $S_1 = \{X \in S-\{v\}|x \le v\}$, and $S_2 = \{x \in S-\{v\}|x \ge v\}$.
 
 We implement two solutions. `sortColors` keep a loop invariant that $[0,i)$, $[i, j)$, $[j, k)$ 
 are 0s, 1s and 2s sorted in place for $[0,k)$. The implementation is interesting because we always
