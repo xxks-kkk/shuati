@@ -36,12 +36,12 @@
 
 | Name    | Problems |
 |---------|----------|
-|[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142, 287, 15, 16, 18, 11|
+|[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142, 287, 15, 16, 18, 11, 61|
 |Bitwise | [191, 461], 136, 476|
-|Binary Search | 33, 34, 475 |
+|Binary Search | 33, 34, 74, 475 |
 |backtracking, dfs | 22, 39, 40, 46, 47, 77 |
-|matrix | 36, 48, 54, 59|
-|DP | 55, 198|
+|matrix | 36, 48, 54, 59, 73, 74|
+|DP | 55, 62, 63, 64, 198|
 |sorting | 56 |
 
 # DIDN'T GET THE RIGHT
