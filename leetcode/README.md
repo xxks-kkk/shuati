@@ -42,7 +42,7 @@
 |backtracking, dfs | 22, 39, 40, 46, 47, 77 |
 |matrix | 36, 48, 54, 59, 73, 74|
 |DP | 55, 62, 63, 64, 198|
-|sorting | 56 |
+|sorting | 56, 75 |
 
 # DIDN'T GET THE RIGHT
 
