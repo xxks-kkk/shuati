@@ -28,6 +28,22 @@ class Solution:
                 fast += 1
         return slow + 1
 
+    def removeDuplicates2(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        if n < 2:
+            return n
+        end = 0
+        for i in range(1, n):
+            if nums[i] == nums[end]:
+                continue
+            else:
+                end += 1
+                nums[end] = nums[i]
+        return end + 1
 
 if __name__ == "__main__":
     sol = Solution()
