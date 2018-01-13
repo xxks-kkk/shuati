@@ -20,4 +20,4 @@ Use `[0,1,2,4,5,6,7]` as an example. There are 7 ways of rotation:
 ## Reference
 
 - http://www.cnblogs.com/grandyang/p/4325648.html
-- [Leetcode Binary Search Summary](http://www.cnblogs.com/grandyang/p/6854825.html)
+- http://bangbingsyb.blogspot.com/2014/11/leetcode-search-in-rotated-sorted-array.html
