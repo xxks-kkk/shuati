@@ -43,7 +43,7 @@
 |matrix | 36, 48, 54, 59, 73, 74|
 |DP | 55, 62, 63, 64, 91, 198|
 |sorting | 56, 75 |
-|linked list | 82, 83 |
+|linked list | 82, 83, 92 |
 
 # DIDN'T GET THE RIGHT
 

@@ -23,6 +23,7 @@ struct ListNode* reverseList(struct ListNode* head)
 {
   if(head == NULL || head->next == NULL)
     return head;
+  // 1->2->3->4 reversed to (head) 1->2<-3<-4 (L)
   struct ListNode* L = reverseList(head->next);
   head->next->next = head;
   head->next = NULL;
