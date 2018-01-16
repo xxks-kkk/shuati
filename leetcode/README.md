@@ -39,7 +39,7 @@
 |[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142, 287, 15, 16, 18, 11, 26, 80, 61|
 |Bitwise | 89, [191, 461], 136, 476|
 |Binary Search | 33, 34, 74, 81, 153, 475 |
-|backtracking, dfs | 22, 39, 40, 46, 47, 77, 78, 79, 90 |
+|backtracking, dfs | 22, 39, 40, 46, 47, 77, 78, 79, 90, 93 |
 |matrix | 36, 48, 54, 59, 73, 74|
 |DP | 55, 62, 63, 64, 91, 198|
 |sorting | 56, 75 |
