@@ -37,8 +37,8 @@ right subtree given a root node value $j \in [1,i]$. The number of structurally 
 the same as finding the number of structurally unique BST's that store values $1 \dot j-1$, which
 is $DP[j-1]$. Similarly, the number of structurally unique right subtree is $DP[i-j]$. Again,
 the product of $DP[j-1]$ and $DP[i-j]$ is the number of structurally unique BST's for the root value $j$
-and we need to consider all possible root value $j$ in order to get $DP[i]$. Then we can return $DP[n]$
-as our final answer.
+and we need to consider all possible root value $j$ in order to get $DP[i]$. We can repeatedly calculate
+$i$ (i.e., $i \in [1,n]$) until `i == n`. Then, we can return $DP[n]$ as our final answer.
 
 ## Remark
 
