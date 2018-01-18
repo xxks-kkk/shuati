@@ -41,10 +41,10 @@
 |Binary Search | 33, 34, 74, 81, 153, 475 |
 |backtracking, dfs | 22, 39, 40, 46, 47, 77, 78, 79, 90, 93 |
 |matrix | 36, 48, 54, 59, 73, 74|
-|DP | 55, 62, 63, 64, 91, 198|
+|DP | 55, 62, 63, 64, 91, 96, 198|
 |sorting | 56, 75 |
 |linked list | 82, 83, 92 |
-|BST | 95 |
+|BST | 95, 96 |
 
 # DIDN'T GET THE RIGHT
 
