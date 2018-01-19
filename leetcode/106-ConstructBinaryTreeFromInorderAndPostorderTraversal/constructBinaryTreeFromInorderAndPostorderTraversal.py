@@ -22,15 +22,22 @@ class BT:
             i = 1
             while queue and i < len(nums):
                 node = queue.pop()
-                left = TreeNode(nums[i])
-                node.left = left
-                queue.insert(0, left)
-                i += 1
-                if i < len(nums):
-                    right = TreeNode(nums[i])
-                    node.right = right
-                    queue.insert(0, right)
+                if node:
+                    if nums[i]:
+                        left = TreeNode(nums[i])
+                        node.left = left
+                        queue.insert(0, left)
+                    else:
+                        node.left = None
                     i += 1
+                    if i < len(nums):
+                        if nums[i]:
+                            right = TreeNode(nums[i])
+                            node.right = right
+                            queue.insert(0, right)
+                        else:
+                            node.right = None
+                        i += 1
             return root
 
     def printTree(self, root):

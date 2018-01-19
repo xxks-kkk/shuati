@@ -39,13 +39,13 @@
 |[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142, 287, 15, 16, 18, 11, 26, 80, 61|
 |Bitwise | 89, [191, 461], 136, 476|
 |Binary Search | 33, 34, 74, 81, 153, 475 |
-|backtracking, dfs | 22, 39, 40, 46, 47, 77, 78, 79, 90, 93 |
+|backtracking, dfs | 22, 39, 40, 46, 47, 77, 78, 79, 90, 93, 113 |
 |bfs | 17, 102 |
 |matrix | 36, 48, 54, 59, 73, 74|
 |DP | 55, 62, 63, 64, 91, 96, 198|
 |sorting | 56, 75 |
 |linked list | 82, 83, 92 |
-|BST | 95, 96 |
+|Tree definition | 95, 96, 106 |
 
 # DIDN'T GET THE RIGHT
 
