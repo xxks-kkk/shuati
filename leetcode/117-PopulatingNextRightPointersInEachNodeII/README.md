@@ -6,7 +6,7 @@ Solution 1 implemented in `connect` comes up by myself. It handles various scena
 leaves here for restrospective purpose. This solution can be easily coded wrong. Please
 take a look at the solution 2.
 
-#### Solution 2 [Accepted]
+### Solution 2 [Accepted]
 
 The big idea is to do the level-order traversal. Here, we create a dummy node `dummy` that points
 to the first node of the next level. Then, we use `curr` to traverse the nodes on the current level
