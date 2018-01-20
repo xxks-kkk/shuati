@@ -107,11 +107,27 @@ class Solution:
                     else:
                         node.next = None
 
+    def connect2(self, root):
+        level_start = root
+        while level_start:
+            curr = level_start
+            while curr:
+                if curr.left:
+                    curr.left.next = curr.right
+                if curr.right and curr.next:
+                    curr.right.next = curr.next.left
+                curr = curr.next
+            level_start = level_start.left
+
+
 if __name__ == "__main__":
     bt = BT()
+    sol = Solution()
+
     root = bt.list2Tree([0,1,2,3,4,5,6])
+    sol.connect(root)
     print(bt.printTree(root))
 
-    sol = Solution()
-    sol.connect(root)
+    root = bt.list2Tree([0,1,2,3,4,5,6])
+    sol.connect2(root)
     print(bt.printTree(root))
