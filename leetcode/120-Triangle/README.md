@@ -46,6 +46,11 @@ By doing this way, we can achieve $O(1)$ space complexity.
 
 The implementation is `minimumTotal3`.
 
+## Takeaway
+
+One takeaway for this problem that we may be aware of the existence of both
+"top-down" and "bottom-up" DP approaches. "bottom-up" DP appraoch seems especially
+effective when working with the tree structure problem.
 
 ## Reference
 
