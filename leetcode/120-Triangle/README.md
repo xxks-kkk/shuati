@@ -37,7 +37,8 @@ The size of DP table equals to the number of elements in the last row, which exa
 number of rows in the triangle. We initialize DP table to be the last row of triangle and follow
 the procedure described above to get the min path sum.
 
-The implementation is `minimumTotal2`.
+The implementation is `minimumTotal2`. 
+$DP[j]$ is defined as "the path sum from the bottom row to the current row $j$th element".
 
 ### SOlution 4: DP [Accepted]
 
