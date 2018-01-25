@@ -45,7 +45,7 @@
 |DP | 55, 62, 63, 64, 91, 96, 120, 198|
 |sorting | 56, 75 |
 |linked list | 82, 83, 92 |
-|Tree definition | 95, 96, 106, 114 |
+|Tree definition | 95, 96, 106, 114, 236 |
 |Union-find | 130 |
 
 # DIDN'T GET THE RIGHT
