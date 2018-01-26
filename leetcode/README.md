@@ -43,7 +43,7 @@
 |bfs | 17, 102, 116, 117, 127 |
 |matrix | 36, 48, 54, 59, 73, 74|
 |DP | 55, 62, 63, 64, 91, 96, 120, 198|
-|sorting | 56, 75 |
+|sorting, partition | 56, 75, 215 |
 |linked list | 82, 83, 92 |
 |Tree definition | 95, 96, 106, 114, 236 |
 |Union-find | 130 |
