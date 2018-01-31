@@ -47,6 +47,7 @@
 |linked list | 82, 83, 92 |
 |Tree definition | 95, 96, 106, 114, 236 |
 |Union-find | 130 |
+|Graph | 133 |
 
 # DIDN'T GET THE RIGHT
 
