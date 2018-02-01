@@ -31,11 +31,11 @@ cost, which is a contradiction.
 
 - Let's prove by induction. we want to show if $\sum_{i=0}^{N-1} \text{gas}[i] \ge \sum_{i=0}^{N-1} \text{cost}[i]$,
 then there is a path that goes through all stations. Base case: $N=1$, which is trivially true. Now,
-suppose the induction hypothesis holds for $N=k$ and we want to show that the hypothesis also holds for $N=K+1$.
-The difference between $N=K+1$ and $N = K$ is that we add $\text{gas}[k+1]$ and $\text{cost}[k+1]$. We want
-to show that there is a path given $\sum_{i=0}^{(K+1)-1} \text{gas}[i] \ge \sum_{i=0}^{(K+1)-1} \text{cost}[i]$.
-This holds because we have a path for $N=K$ and since the $\text{gas}[k+1] \ge \text{cost}[k+1]$,
-the car can also goes from $K+1$ station to the first, which means there is a path.
+suppose the induction hypothesis holds for $N=k$ and we want to show that the hypothesis also holds for $N=k+1$.
+The difference between $N=k+1$ and $N = k$ is that we add $\text{gas}[k+1]$ and $\text{cost}[k+1]$. We want
+to show that there is a path given $\sum_{i=0}^{(k+1)-1} \text{gas}[i] \ge \sum_{i=0}^{(k+1)-1} \text{cost}[i]$.
+This holds because we have a path for $N=k$ and since the $\text{gas}[k+1] \ge \text{cost}[k+1]$,
+the car can also goes from $k+1$ station to the first, which means there is a path.
 
 
 2) Whenever the `total_gas` smaller than `0`, any station bewtween the `start_idx` and the current station
@@ -57,6 +57,10 @@ for any $k < m \le k+4$, `res[m] + ... + res[k + 4] <= res[k] + ... + res[k + 4]
 `res[m] + ... + res[k + 4] < 0` for $k < m \le k+4$. Thus, we can skip `k+1`, `k+2`, `k+3`, `k+4`
 and start with `k+5`.
 
+### Remarks
+
+This problem looks a lot like the "Maximum subsequence sum" problem and the solution resembles the
+algorithm 4 appeared in MAW p.29.
 
 ## Reference
 
