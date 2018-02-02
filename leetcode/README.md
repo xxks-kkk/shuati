@@ -37,7 +37,7 @@
 | Name    | Problems |
 |---------|----------|
 |[Two pointers](https://leetcode.com/articles/two-pointer-technique)|141, 19, 109, 142, 287, 15, 16, 18, 11, 26, 80, 61|
-|Bitwise | 89, [191, 461], 136, 476|
+|Bitwise | 89, [191, 461], 136, 137, 476|
 |Binary Search | 33, 34, 74, 81, 153, 475 |
 |backtracking, dfs | 22, 39, 40, 46, 47, 77, 78, 79, 90, 93, 113, 129 |
 |bfs | 17, 102, 116, 117, 127 |
