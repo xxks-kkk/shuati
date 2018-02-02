@@ -105,7 +105,7 @@ a b            c    a b
 
 and this is can be represented by `a=a&~b&~c + ~a&b&c` and `b` can do the same we , and we find that
 `b= ~a&b&~c+~a&~b&c`.
-,
+
 2. That's it!
 
 We need to use a temporary variable `ta` just because all the calculation is based upon the old `a` and
