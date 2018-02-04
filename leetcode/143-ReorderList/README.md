@@ -31,7 +31,7 @@ element falls on the middle point (i.e., $(7+1)/2 = 4$).
 - Finding middle point using two pointers is a very common technique. We need to remember the template
 of the snippet. Notice the fast pointer (`hare`) is initialized to `head.next` and slow pointer
 `tortoise` is initialized to `head`. Pay attent to loop condition and we update `hare` with
-`hare.next.next` NOT ~~`hare.next`~~.
+`hare.next.next` **NOT** ~~`hare.next`~~.
 
 ```python
 hare = head.next

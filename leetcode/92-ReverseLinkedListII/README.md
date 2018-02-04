@@ -10,6 +10,8 @@ and then we walk through the sublist and insert the following nodes after `prev`
 the node at the beginning of the sublist to be reversed will be the last node of the sublist after
 reversed and its next node should always connect the nodes after the sublist (i.e. `2` should link to the
 nodes after the sublist, which in this case is `5`). `cur.next = next.next` performs exactly this step.
+Note that `next` always points to the element that is to be inserted after `prev.next`.
+Thus, we have `cur.next = next.next`.
 
 ```
 1->2->3->4->5
