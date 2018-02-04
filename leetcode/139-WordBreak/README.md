@@ -60,6 +60,7 @@ leading to the complete string "catsanddog" also to satisfy the criteria.
 
 Now, we'll move onto the process of $\text{dp}$ array formation. 
 We make use of $\text{dp}$ array of size $n+1$, where $n$ is the length of the given string. 
+$DP[i]$ represents if $s$ of length $i$ can be segmented into a space-separated sequence of one or more dictionary words.
 We also use two index pointers $i$ and $j$, where $i$ refers to the length of the substring ($s'$) 
 considered currently starting from the beginning, and $j$ refers to the index partitioning the current substring 
 ($s'$) into smaller substrings $s'(0,j)$ and $s'(j+1,i)$. 
