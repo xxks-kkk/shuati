@@ -8,8 +8,8 @@ main
 *.out
 *.dot
 main.dSYM
-*.png
 scratch
 *.class
 .idea/
 .DS_Store
+*.dot.png
