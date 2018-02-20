@@ -41,7 +41,7 @@ class LinkedList(object):
         while head:
             elts.append(head.val)
             head = head.next
-        print elts
+        print(elts)
 
     def num2List(self, x):
         head = ListNode(0)
