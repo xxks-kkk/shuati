@@ -88,6 +88,6 @@ class Solution(object):
 if __name__ == "__main__":
     sol = Solution()
     bt = BT()
-    root = bt.list2Tree([1,2])
+    root = bt.list2Tree([1,2,3,4,5])
     new_root = sol.upsideDownBinaryTree(root)
     print(bt.printTree(new_root))

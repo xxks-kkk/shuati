@@ -22,7 +22,7 @@ recursive definition of the binary tree:
 ```
 
 The tree in the middle of the above graph is after the execution of 
-`new_root = self.upsideDownBinaryTree(root.left)` and `new_root` is `2`.
+`new_root = self.upsideDownBinaryTree(root.left)` and `new_root` is `4` and `root` is `1`.
 Then, we only need to fix the links among `1,2,3`.
 
 The iterative approach can be seen in the reference link.
