@@ -94,7 +94,7 @@ In this example, "1|Tom" is considered the only suspicious trade because
 - On day 0 the stock price gets set at \$20 - "0|20"
 - On day 1 Tom buys 150,000 stock "1|Tom|BUY|150000"
 - On day 3, 2 days later (i.e., within 3 days), the stock price increases
-from \$20 to \$25 - "3|25"
+from 20 to 25 - "3|25"
 - This represents a 25 - 20 = 5 difference in stock price
 - Tom's trade on day 1 therefore earned him a profit of \$5 * 150,000 = \$750,000,
 which is over our threshold
@@ -102,14 +102,14 @@ which is over our threshold
 Also, "8|Kristi" is a suspicious trade because:
 - On day 3 the stock price gets set at \$25 - "3|25"
 - On day 8 Kristi sells 60,000 stock "8|Kristi|SELL|60000"
-- On day 10, 2 days later (i.e., within 3 days), the stock price decreases from \$25
-to \$15 - "10|15"
+- On day 10, 2 days later (i.e., within 3 days), the stock price decreases from 25
+to 15 - "10|15"
 - This represents a 15 -25 = -\$10 difference in stock price
 - Kristi's trade on day 8 therefore prevented a loss of \$10 * 60,000 = \$600,000, 
 which is over our threshold
-- Note that on day 11 (also within 3 days) the stock price decreases again from \$15
-to \$5 = "11|5"
-- Compared to day 8, this represents a 5 - 25 = \$20 difference in stock price since 
+- Note that on day 11 (also within 3 days) the stock price decreases again from 15
+to 5 = "11|5"
+- Compared to day 8, this represents a 5 - 25 = 20 difference in stock price since 
 Kristi's purchase, which amounts to preventing a loss of \$1.2 million
 - However, Kristi's trade on day 8 was already flagged, so we should not add it to
 our result set because we do not want duplicates 
@@ -123,5 +123,5 @@ Similarly, Will is not considered to have a suspicious trade
 - Will has profited \$20 * 30,000 = \$600,000 TOTAL
 - The amount of profit earned by any one of his 3 individual trades is only
 \$20*10,000 = \$200,000
-- \$200,000 is less than the threshold amount of \$500,000 for any INDIVIDUAL
+- 200,000 is less than the threshold amount of \$500,000 for any INDIVIDUAL
 trade and thus it is not flagged
