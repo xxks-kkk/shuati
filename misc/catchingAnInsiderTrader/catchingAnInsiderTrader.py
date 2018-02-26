@@ -120,34 +120,103 @@ trade and thus it is not flagged
 
 
 Company:
-Palantir
+Palantir, Indeed
 """
+class Transaction:
+    def __init__(self, day, name, buy, amount):
+        self.day = day
+        self.buy = buy # boolean
+        self.name = name
+        self.amount = amount
 
-import sys
-import os
-
+class LargeKey(str):
+    def __lt__(x, y):
+        rec1 = x.split("|")
+        rec2 = y.split("|")
+        for i in range(len(rec1)):
+            if i == 0:
+                if int(rec1[i]) < int(rec2[i]):
+                    return True
+                if int(rec1[i]) > int(rec2[i]):
+                    return False
+            else:
+                if rec1[i] < rec2[i]:
+                    return True
+                if rec1[i] > rec2[i]:
+                    return False
 
 def findPotentialInsiderTraders(datafeed):
-    pass
+    priceMap = {} # Day: Price
+    transactionMap = {} # Day: List of transactions on that day
+    res = []
+    def initData(input):
+        checkpoint = 0
+        for record in input:
+            fields = record.split("|")
+            if len(fields) == 2:
+                priceMap[int(fields[0])] = int(fields[-1])
+                # Here, we want to fill out the prices when there is no change.
+                # Otherwise, we may get keyError
+                for i in range(int(fields[0])-1, checkpoint, -1):
+                    priceMap[i] = priceMap[checkpoint]
+                checkpoint = int(fields[0])
+            elif len(fields) == 4:
+                trans = Transaction(int(fields[0]), fields[1], fields[2] == 'BUY', int(fields[3]))
+                day = int(fields[0])
+                if day in transactionMap:
+                    transactionMap[day].append(trans)
+                else:
+                    transactionMap[day] = [trans]
+    initData(datafeed)
+    for day in sorted(transactionMap):
+        ops = transactionMap[day]
+        for trans in ops:
+            curVal = trans.amount * priceMap[trans.day]
+            for i in range(1,4):
+                if day + i in priceMap and priceMap[day + i] != priceMap[day]:
+                    diff = trans.amount * priceMap[day+i] - curVal
+                    if (trans.buy and diff >= 500000) or (not trans.buy and diff <= -500000):
+                        res.append(trans)
+                        break
+    if not res or len(res) == 0:
+        return [""]
+    arr = [""] * len(res)
+    for i in range(len(arr)):
+        arr[i] = str(res[i].day) + "|" + res[i].name
+    # We use our customized comparator
+    arr.sort(key=LargeKey)
+    return arr
 
+if __name__ == "__main__":
+    with open("input001.txt", 'r') as f:
+        content = f.readlines()
+        input001 = [line.rstrip('\n') for line in content]
+        input001 = input001[1:] # get rid of the first row
+    f.close()
+    with open("output001.txt", 'r') as f:
+        content = f.readlines()
+        output001 = [line.rstrip('\n') for line in content]
+    f.close()
+    assert findPotentialInsiderTraders(input001) == output001
 
-f = open(os.environ['OUTPUT_PATH'], 'w')
+    with open("input002.txt", 'r') as f:
+        content = f.readlines()
+        input002 = [line.rstrip('\n') for line in content]
+        input002 = input002[1:]
+    f.close()
+    with open("output002.txt", 'r') as f:
+        content = f.readlines()
+        output002 = [line.rstrip('\n') for line in content]
+    f.close()
+    assert findPotentialInsiderTraders(input002) == output002
 
-_datafeed_cnt = 0
-_datafeed_cnt = int(raw_input())
-_datafeed_i = 0
-_datafeed = []
-
-while _datafeed_i < _datafeed_cnt:
-    try:
-        _datafeed_item = raw_input()
-    except:
-        _datafeed_item = None
-    _datafeed.append(_datafeed_item)
-    _datafeed_i += 1
-
-res = findPotentialInsiderTraders(_datafeed)
-for res_cur in res:
-    f.write(str(res_cur) + "\n")
-
-f.close()
+    with open("input003.txt", 'r') as f:
+        content = f.readlines()
+        input003 = [line.rstrip('\n') for line in content]
+        input003 = input003[1:]
+    f.close()
+    with open("output003.txt", 'r') as f:
+        content = f.readlines()
+        output003 = [line.rstrip('\n') for line in content]
+    f.close()
+    assert findPotentialInsiderTraders(input003) == output003
