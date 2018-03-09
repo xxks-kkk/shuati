@@ -4,6 +4,46 @@ class LargerNumKey(str):
 
 class Solution:
     def royalNames(self, array):
+        # Version 1
+        def romanToInt(romanNumeral):
+            dict = {
+                "I": 1,
+                "V": 5,
+                "X": 10,
+                "L": 50,
+                "C": 100,
+                "D": 500,
+                "M": 1000
+            }
+            i, res = 0, 0
+            while i < len(romanNumeral):
+                s1 = dict[romanNumeral[i]]
+                if i + 1 < len(romanNumeral):
+                    s2 = dict[romanNumeral[i + 1]]
+                    if s1 >= s2:
+                        res += s1
+                        i += 1
+                    else:
+                        res = res + s2 - s1
+                        i = i + 2
+                else:
+                    res += s1
+                    i += 1
+            return res
+        res = []
+        dict = {}
+        for royalname in array:
+            name, romanNumeral = royalname.split(" ")
+            if name in dict:
+                dict[name].append((romanToInt(romanNumeral), romanNumeral))
+            else:
+                dict[name] = [(romanToInt(romanNumeral), romanNumeral)]
+        for key in sorted(dict.keys()):
+            res.extend([key + " " + str(i[-1]) for i in sorted(dict[key], reverse=True)])
+        return res
+
+    def royalNames1(self, array):
+        # Version 2
         def romanToInt(romanNumeral):
             dict = {
                 "I": 1,
@@ -41,4 +81,5 @@ class Solution:
 if __name__ == "__main__":
     sol = Solution()
     array = ["Albert II","Polo IV","Alw V","Elizabeth XXV", "Albert XL","Polo XLVI"]
+    print(sol.royalNames1(array))
     print(sol.royalNames(array))
