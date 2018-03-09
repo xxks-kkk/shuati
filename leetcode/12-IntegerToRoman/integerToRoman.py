@@ -18,3 +18,5 @@ class Solution(object):
 if __name__ == "__main__":
     sol = Solution()
     print(sol.intToRoman(1990))
+    print(sol.intToRoman(1996))
+    print(sol.intToRoman(996))
