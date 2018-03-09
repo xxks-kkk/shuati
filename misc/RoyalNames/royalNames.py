@@ -83,3 +83,5 @@ if __name__ == "__main__":
     array = ["Albert II","Polo IV","Alw V","Elizabeth XXV", "Albert XL","Polo XLVI"]
     print(sol.royalNames1(array))
     print(sol.royalNames(array))
+    array2 = ["Philippe I", "Philip II"]
+    print(sol.royalNames(array2))
