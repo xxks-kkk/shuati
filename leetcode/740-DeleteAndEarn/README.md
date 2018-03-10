@@ -1,0 +1,1 @@
+See [misc/DeleteAndEarn](https://github.com/xxks-kkk/shuati/tree/master/misc/DeleteAndEarn). Exactly the same.
