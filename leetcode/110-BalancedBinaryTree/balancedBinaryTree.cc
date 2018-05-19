@@ -34,6 +34,8 @@
 #include <queue>
 #include <assert.h>
 
+// We define NULLPTR as a way to allow us quickly test
+// the code's correctness. It's a hack.
 #define NULLPTR (-999)
 
 // Definition for a binary tree node.
