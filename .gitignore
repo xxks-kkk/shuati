@@ -13,3 +13,4 @@ scratch
 .idea/
 .DS_Store
 *.dot.png
+cmake-build-debug/
