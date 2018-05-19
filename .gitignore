@@ -14,3 +14,4 @@ scratch
 .DS_Store
 *.dot.png
 cmake-build-debug/
+*.dSYM
