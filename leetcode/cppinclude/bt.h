@@ -1,7 +1,7 @@
 #include <stdlib.h>  /* abs */
 #include <algorithm> /* max */
 #include <vector>
-#include <queue>
+#include <deque>
 #include <assert.h>
 
 // We define NULLPTR as a way to allow us quickly test

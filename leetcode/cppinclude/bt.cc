@@ -5,21 +5,21 @@ BT::list2Tree(std::vector<int> & nums)
 {
     if (!nums.empty())
     {
-        std::queue<TreeNode*> queue;
+        std::deque<TreeNode*> queue;
         auto root = new TreeNode(nums[0]);
-        queue.push(root);
+        queue.push_front(root);
         int i = 1;
         while (!queue.empty() && i < nums.size())
         {
             auto node = queue.back();
-            queue.pop();
+            queue.pop_back();
             if (node)
             {
                 if (nums[i] != NULLPTR)
                 {
                     auto left = new TreeNode(nums[i]);
                     node->left = left;
-                    queue.push(left);
+                    queue.push_front(left);
                 }
                 else
                 {
@@ -32,7 +32,7 @@ BT::list2Tree(std::vector<int> & nums)
                     {
                         auto right = new TreeNode(nums[i]);
                         node->right = right;
-                        queue.push(right);
+                        queue.push_front(right);
                     }
                     else
                     {
@@ -53,8 +53,8 @@ BT::printTree(TreeNode *root)
     std::vector<std::vector<int>> res;
     if (root != nullptr)
     {
-        std::queue<TreeNode *> queue;
-        queue.push(root);
+        std::deque<TreeNode *> queue;
+        queue.push_front(root);
         while(!queue.empty())
         {
             std::vector<int> path;
@@ -62,15 +62,15 @@ BT::printTree(TreeNode *root)
             for(int i = 0; i < levelLength; ++i)
             {
                 auto node = queue.back();
-                queue.pop();
+                queue.pop_back();
                 path.push_back(node->val);
                 if (node->left)
                 {
-                    queue.push(node->left);
+                    queue.push_front(node->left);
                 }
                 if (node->right)
                 {
-                    queue.push(node->right);
+                    queue.push_front(node->right);
                 }
             }
             res.push_back(path);
