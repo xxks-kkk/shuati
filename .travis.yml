@@ -10,7 +10,7 @@ os:
   - osx
 
 before_script:
-- cmake --build .
+- cmake .
 
 script:
 - make 101 110 234 235
