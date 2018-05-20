@@ -13,3 +13,8 @@ add_executable(110
 add_executable(101
         leetcode/101-SymmetricTree/symmetricTree.cc
         leetcode/cppinclude/bt.cc)
+
+add_executable(235
+        leetcode/235-LowestCommonAncestorofaBinarySearchTree/lowestCommonAncestorofaBinarySearchTree.cc
+        leetcode/cppinclude/bt.cc
+        leetcode/cppinclude/bst.cc)
