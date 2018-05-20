@@ -1,0 +1,20 @@
+sudo: false
+dist: trusty
+language: cpp
+
+compiler:
+  - gcc
+
+os:
+  - linux
+  - osx
+
+before_script:
+- cmake --build .
+
+script:
+- make 101 110 234 235
+- ./101
+- ./110
+- ./234
+- ./235
