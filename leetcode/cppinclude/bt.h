@@ -20,7 +20,7 @@ struct TreeNode
 class BT
 {
 public:
-    TreeNode* list2Tree(std::vector<int> & nums);
+    virtual TreeNode* list2Tree(std::vector<int> & nums);
     std::vector<std::vector<int>> printTree(TreeNode *root);
     void freeTree(TreeNode *root);
 };
