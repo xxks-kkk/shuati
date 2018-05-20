@@ -1,5 +1,7 @@
 # shuati
 
+[![Build Status](https://travis-ci.org/xxks-kkk/shuati.svg?branch=master)](https://travis-ci.org/xxks-kkk/shuati)
+
 This is the respository that put my [systematic algorithm learning](https://github.com/xxks-kkk/algo)
 into practice by solving various interview kind of questions.
 
