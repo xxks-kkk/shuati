@@ -42,6 +42,7 @@
 //    Could you devise a constant space solution?
 
 #include "bst.h"
+#include <iostream>
 
 /**
  * Definition for a binary tree node.
@@ -71,7 +72,57 @@ public:
     // We use morris traversal to have constant space complexity
     void recoverTree2(TreeNode* root)
     {
+        pre = nullptr;
+        first = nullptr;
+        second = nullptr;
+        TreeNode *rightmost = nullptr; // the rightmost node in the left subtree
+        TreeNode *current = root;
+        while (current != nullptr)
+        {
+            // for each node, we compare it with pre node as we did in in-order-traversal
+            if(first == nullptr && pre && pre->val > current->val)
+            {
+                first = pre;
+            }
+            if(first != nullptr && pre->val > current->val)
+            {
+                second = current;
+            }
+            if (current->left != nullptr)
+            {
+                //got left subtree, then let's locate its rightmost node in left subtree
+                rightmost = current->left;
+                while(rightmost->right != nullptr && rightmost->right != current)
+                {
+                    rightmost = rightmost->right;
+                }
 
+                // if this left subtree has been visited before, then we are done with it
+                // cut the connection with current node and start visit current's right subtree
+                if(rightmost->right == current)
+                {
+                    rightmost->right = nullptr;
+                    pre = current;
+                    current = current->right;
+                }
+                else
+                {
+                    //if this left subtree has not been visited before, then we create a link from rightmost node
+                    // to current node, so we can return to the start point after done the left subtree
+                    rightmost->right = current;
+                    current = current->left;
+                }
+            }
+            else
+            {
+                //no left subtree, then just visit its right subtree
+                pre = current;
+                current = current->right;
+            }
+        }
+        int tmp = first->val;
+        first->val = second->val;
+        second->val = tmp;
     }
 
 private:
@@ -120,5 +171,7 @@ int main()
 {
     void (Solution::*ptr2recoverTree)(TreeNode*);
     ptr2recoverTree = &Solution::recoverTree;
+    test(ptr2recoverTree);
+    ptr2recoverTree = &Solution::recoverTree2;
     test(ptr2recoverTree);
 }

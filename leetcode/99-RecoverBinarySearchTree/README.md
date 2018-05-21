@@ -29,6 +29,24 @@ Once we identified node A and node B, we can swap their value and solve the prob
 
 ### Solution 2: Morris Traversal
 
+We use Morris Traversal to reduce the space complexity to constant.
+
+Morris traversal is based on the threaded tree:
+
+    if a node has a `nullptr` left child, we make its left child link to its inorder predecessor, and
+    if a node has a `nullptr` right child, we make its right child link to its inorder successor.
+    The extra links are called threads.
+
+Then we perform the traversal on the threaded tree is called Morris traversal.
+
+Implementation-wise, before we visiting the left subtree of a root, we will build a link between rightmost node in
+left subtree and the root. So we can go back to the root node after we are done with the left subtree.
+Then we locate the rightmost node in left subtree again, cut the link, recover the tree structure and
+start visit right subtree. The detection of two incorrect TreeNodes is similar to iterative/recursive in-order traversal.
+
+
+- Time complexity: $O(n)$
+- Space complexity: $O(1)$ (there is no stack)
 
 ## Remarks
 
@@ -43,3 +61,4 @@ to `recoverTree`.
 
 - https://leetcode.com/problems/recover-binary-search-tree/discuss/32562/Share-my-solutions-and-detailed-explanation-with-recursiveiterative-in-order-traversal-and-Morris-traversal
 - https://leetcode.com/problems/recover-binary-search-tree/discuss/32535/No-Fancy-Algorithm-just-Simple-and-Powerful-In-Order-Traversal
+- https://en.wikipedia.org/wiki/Threaded_binary_tree
