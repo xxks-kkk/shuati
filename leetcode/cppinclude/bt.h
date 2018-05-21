@@ -26,5 +26,6 @@ public:
     // find one node containing the target value
     virtual TreeNode* find(TreeNode* root, int val);
     // find all the nodes containing the target value
-    virtual std::vector<TreeNode*> findAll(TreeNode* root, int val);
+    std::vector<TreeNode*> findAll(TreeNode* root, int val);
+    std::vector<int> tree2List(TreeNode* root);
 };
