@@ -54,7 +54,8 @@
  */
 class Solution {
 public:
-    void recoverTree(TreeNode* root) {
+    void recoverTree(TreeNode* root)
+    {
         pre = nullptr;
         first = nullptr;
         second = nullptr;
@@ -66,6 +67,13 @@ public:
             second->val = tmp;
         }
     }
+
+    // We use morris traversal to have constant space complexity
+    void recoverTree2(TreeNode* root)
+    {
+
+    }
+
 private:
     TreeNode *pre;
     TreeNode *first;
@@ -90,21 +98,27 @@ private:
     }
 };
 
-int main()
+void test(void (Solution::*pf)(TreeNode*))
 {
     BT bt;
     Solution sol;
     std::vector<int> nums = {1,3,NULLPTR,NULLPTR,2};
     auto root = bt.list2Tree(nums);
-    sol.recoverTree(root);
+    (sol.*pf)(root);
     std::vector<int> ans = {3,1,NULLPTR,NULLPTR,2, NULLPTR, NULLPTR};
     assert(bt.tree2List(root) == ans);
     bt.freeTree(root);
     nums = {3,1,4,NULLPTR,NULLPTR,2};
     root = bt.list2Tree(nums);
-    sol.recoverTree(root);
+    (sol.*pf)(root);
     ans = {2,1,4,NULLPTR,NULLPTR,3,NULLPTR,NULLPTR,NULLPTR};
-    auto sol1 = bt.tree2List(root);
     assert(bt.tree2List(root) == ans);
     bt.freeTree(root);
+}
+
+int main()
+{
+    void (Solution::*ptr2recoverTree)(TreeNode*);
+    ptr2recoverTree = &Solution::recoverTree;
+    test(ptr2recoverTree);
 }
