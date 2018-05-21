@@ -8,26 +8,26 @@ BST::list2Tree(std::vector<int> & nums)
     {
         if (x != NULLPTR)
         {
-            insert(&root, x);
+            insert(root, x);
         }
     }
     return root;
 }
 
 void
-BST::insert(TreeNode** root, int val)
+BST::insert(TreeNode* & root, int val)
 {
-    if(*root == nullptr)
+    if(root == nullptr)
     {
-        *root = new TreeNode(val);
+        root = new TreeNode(val);
     }
-    else if (val < (*root)->val)
+    else if (val < root->val)
     {
-        insert(&((*root)->left), val);
+        insert(root->left, val);
     }
-    else if (val > (*root)->val)
+    else if (val > root->val)
     {
-        insert(&((*root)->right), val);
+        insert(root->right, val);
     }
 }
 

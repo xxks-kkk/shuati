@@ -127,3 +127,30 @@ BT::findAll(TreeNode *root, int val)
     }
     return res;
 }
+
+std::vector<int>
+BT::tree2List(TreeNode* root)
+{
+    std::vector<int> res;
+    std::deque<TreeNode *> queue;
+    if (root)
+    {
+        queue.push_front(root);
+        while(!queue.empty())
+        {
+            auto node = queue.back();
+            queue.pop_back();
+            if(node)
+            {
+                res.push_back(node->val);
+                queue.push_front(node->left);
+                queue.push_front(node->right);
+            }
+            else
+            {
+                res.push_back(NULLPTR);
+            }
+        }
+    }
+    return res;
+}
