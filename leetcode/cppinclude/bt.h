@@ -20,7 +20,7 @@ struct TreeNode
 class BT
 {
 public:
-    virtual TreeNode* list2Tree(std::vector<int> & nums);
+    virtual TreeNode* list2Tree(const std::vector<int> & nums);
     std::vector<std::vector<int>> printTree(TreeNode *root);
     void freeTree(TreeNode *root);
     // find one node containing the target value
