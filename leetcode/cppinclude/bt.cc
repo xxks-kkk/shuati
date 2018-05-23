@@ -1,7 +1,7 @@
 #include "bt.h"
 
 TreeNode *
-BT::list2Tree(std::vector<int> &nums)
+BT::list2Tree(const std::vector<int> &nums)
 {
     if (!nums.empty())
     {

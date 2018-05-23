@@ -1,7 +1,7 @@
 #include "bst.h"
 
 TreeNode*
-BST::list2Tree(std::vector<int> & nums)
+BST::list2Tree(const std::vector<int> & nums)
 {
     TreeNode* root = nullptr;
     for (auto & x: nums)
