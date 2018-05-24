@@ -31,3 +31,7 @@ add_executable(235
 add_executable(236
         leetcode/236-LowestCommonAncestorOfABinaryTree/lowestCommonAncestorOfABinaryTree.cc
         leetcode/cppinclude/bt.cc)
+
+add_executable(298
+        leetcode/298-BinaryTreeLongestConsecutiveSequence/binaryTreeLongestConsecutiveSequence.cc
+        leetcode/cppinclude/bt.cc)

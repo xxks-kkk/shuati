@@ -65,7 +65,7 @@ public:
         return std::vector<int>{std::make_move_iterator(res.begin()), std::make_move_iterator(res.end())};
     }
 private:
-    void postorderTraversalHelper(TreeNode* root, vector<int> & res)
+    void postorderTraversalHelper(TreeNode* & root, vector<int> & res)
     {
         if(root == nullptr)
         {
