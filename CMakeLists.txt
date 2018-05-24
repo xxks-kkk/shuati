@@ -16,6 +16,10 @@ add_executable(110
         leetcode/110-BalancedBinaryTree/balancedBinaryTree.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(124
+        leetcode/124-BinaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cc
+        leetcode/cppinclude/bt.cc)
+
 add_executable(145
         leetcode/145-BinaryTreePostorderTraversal/binaryTreePostorderTraversal.cc
         leetcode/cppinclude/bt.cc)
