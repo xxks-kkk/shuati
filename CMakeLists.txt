@@ -43,3 +43,7 @@ add_executable(250
 add_executable(298
         leetcode/298-BinaryTreeLongestConsecutiveSequence/binaryTreeLongestConsecutiveSequence.cc
         leetcode/cppinclude/bt.cc)
+
+add_executable(366
+        leetcode/366-FindLeavesofBinaryTree/findLeavesofBinaryTree.cc
+        leetcode/cppinclude/bt.cc)
