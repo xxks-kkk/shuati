@@ -74,7 +74,7 @@ void test(ptr2levelOrderBottom pfcn)
     vector<int> nums = {3,9,20,NULLPTR,NULLPTR,15,7};
     auto root = bt.list2Tree(nums);
     std::vector<std::vector<int>> ans = {{15,7},{9,20},{3}};
-    assert(sol.levelOrderBottom(root) == ans);
+    assert((sol.*pfcn)(root) == ans);
     bt.freeTree(root);
 }
 
