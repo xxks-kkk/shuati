@@ -77,7 +77,7 @@ void test(ptr2sortedArrayToBST pfcn)
     BT bt;
     vector<int> nums = {-10, -3, 0, 5, 9};
     vector<int> ans = {0, -3, 9, -10, NULLPTR, 5, NULLPTR, NULLPTR, NULLPTR, NULLPTR, NULLPTR};
-    auto root = sol.sortedArrayToBST(nums);
+    auto root = (sol.*pfcn)(nums);
     assert(bt.tree2List(root) == ans);
     bt.freeTree(root);
 }
