@@ -16,6 +16,11 @@ add_executable(107
         leetcode/107-BinaryTreeLevelOrderTraversalII/binaryTreeLevelOrderTraversalII.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(108
+        leetcode/108-ConvertSortedArraytoBinarySearchTree/convertSortedArraytoBinarySearchTree.cc
+        leetcode/cppinclude/bst.cc
+        leetcode/cppinclude/bt.cc)
+
 add_executable(110
         leetcode/110-BalancedBinaryTree/balancedBinaryTree.cc
         leetcode/cppinclude/bt.cc)
