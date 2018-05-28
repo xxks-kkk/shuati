@@ -53,6 +53,11 @@ add_executable(250
         leetcode/250-CountUnivalueSubtrees/countUnivalueSubtrees.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(255
+        leetcode/255-VerifyPreorderSequenceinBinarySearchTree/verifyPreorderSequenceinBinarySearchTree.cc
+        leetcode/cppinclude/bt.cc
+        leetcode/cppinclude/bst.cc)
+
 add_executable(298
         leetcode/298-BinaryTreeLongestConsecutiveSequence/binaryTreeLongestConsecutiveSequence.cc
         leetcode/cppinclude/bt.cc)
