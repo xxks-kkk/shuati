@@ -66,6 +66,11 @@ add_executable(270
         leetcode/cppinclude/bt.cc
         leetcode/cppinclude/bst.cc)
 
+add_executable(272
+        leetcode/272-ClosestBinarySearchTreeValueII/closestBinarySearchTreeValueII.cc
+        leetcode/cppinclude/bt.cc
+        leetcode/cppinclude/bst.cc)
+
 add_executable(298
         leetcode/298-BinaryTreeLongestConsecutiveSequence/binaryTreeLongestConsecutiveSequence.cc
         leetcode/cppinclude/bt.cc)
