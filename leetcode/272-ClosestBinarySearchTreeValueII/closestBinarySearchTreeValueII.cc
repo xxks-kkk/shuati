@@ -224,16 +224,12 @@ private:
         while (left < right)
         {
             int mid = left + (right - left) / 2;
-            if (fabs(nums[mid] - target) <= fabs(nums[mid+k] - target))
+            if (target - nums[mid] <= nums[mid+k] - target)
             {
-                // nums[mid] is closer than nums[mid+k] but this doesn't guarantee that we already
-                // at the first index of the k **closest** values. Thus, we adjust right
                 right = mid;
             }
-            else // fabs(nums[mid] - target) > fabs(nums[mid+k] - target)
+            else
             {
-                // we see nums[mid+k] is more closer than nums[mid]. Thus, to make invariant holds (index of the first number),
-                // we adjust left
                 left = mid + 1;
             }
         }
@@ -285,6 +281,8 @@ void test(ptr2closestKValues pfcn)
     std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
     std::cout << "duration (ms): " << duration << std::endl;
+//    nums = {5,4,6,NULLPTR,NULLPTR,NULLPTR,9};
+//    root = bst.list2Tree(nums);
 }
 
 int main()
