@@ -216,7 +216,7 @@ private:
 
     // A variant of binary search that finds the k closest values for the given target
     // variant: the index of the first number that is among the k closest values for the given target
-    // is in [left, right]. See my post: https://zhu45.org/posts/2018/Jun/10/generalized-binary-search-idea/
+    // is in [left, right]. See my post: https://zhu45.org/posts/2018/Jun/10/generalized-binary-search/
     // for details.
     vector<int> kClosestValue(vector<int> & nums, double target, int k)
     {
