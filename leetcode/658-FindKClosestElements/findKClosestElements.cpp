@@ -61,6 +61,10 @@ void test(ptr2findClosestElements pfcn)
     nums = {5,4,3,2,1};
     ans = {5,4,3,2};
     assert(sol.findClosestElements(nums, k, x) == ans);
+    k = 4;
+    x = 2;
+    ans = {4,3,2,1}; // leetcode seems have a bug in this case
+    assert(sol.findClosestElements(nums, k, x) == ans);
 }
 
 int main()
