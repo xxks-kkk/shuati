@@ -61,6 +61,10 @@ add_executable(255
         leetcode/cppinclude/bt.cc
         leetcode/cppinclude/bst.cc)
 
+add_executable(257
+        leetcode/257-BinaryTreePaths/binaryTreePaths.cc
+        leetcode/cppinclude/bt.cc)
+
 add_executable(270
         leetcode/270-ClosestBinarySearchTreeValue/closestBinarySearchTreeValue.cc
         leetcode/cppinclude/bt.cc
