@@ -89,3 +89,8 @@ add_executable(366
 
 add_executable(658
         leetcode/658-FindKClosestElements/findKClosestElements.cpp)
+
+add_executable(669
+        leetcode/669-TrimaBinarySearchTree/trimaBinarySearchTree.cc
+        leetcode/cppinclude/bt.cc
+        leetcode/cppinclude/bst.cc)
