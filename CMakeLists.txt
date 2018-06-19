@@ -4,6 +4,10 @@ project(shuati)
 set(CMAKE_CXX_STANDARD 11)
 include_directories(leetcode/cppinclude)
 
+add_executable(98
+        leetcode/98-ValidateBinarySearchTree/validateBinarySearchTree.cc
+        leetcode/cppinclude/bt.cc)
+
 add_executable(99
         leetcode/99-RecoverBinarySearchTree/recoverBinarySearchTree.cc
         leetcode/cppinclude/bt.cc)
