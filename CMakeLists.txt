@@ -37,6 +37,9 @@ add_executable(145
         leetcode/145-BinaryTreePostorderTraversal/binaryTreePostorderTraversal.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(155
+        leetcode/155-MinStack/minStack.cc)
+
 add_executable(208
         leetcode/208-ImplementTrie/implementTrie.cc)
 
