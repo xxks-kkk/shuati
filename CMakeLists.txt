@@ -83,6 +83,10 @@ add_executable(298
         leetcode/298-BinaryTreeLongestConsecutiveSequence/binaryTreeLongestConsecutiveSequence.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(333
+        leetcode/333-LargestBSTSubtree/largestBSTSubtree.cc
+        leetcode/cppinclude/bt.cc)
+
 add_executable(337
         leetcode/337-HouseRobberIII/houseRobberIII.cc
         leetcode/cppinclude/bt.cc)
