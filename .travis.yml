@@ -13,10 +13,6 @@ before_script:
 
 script:
 
-- pwd
-- ls
 - make all
-- for a in $(ls | grep '^[0-9]*$')
-  do
-    ./$a
-  done
+- ls
+- "for a in $(ls | grep '^[0-9]*$'); do ./$a; done"
