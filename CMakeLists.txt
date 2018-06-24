@@ -52,7 +52,8 @@ add_executable(230
         leetcode/cppinclude/bt.cc)
 
 add_executable(234
-        leetcode/234-PalindromeLinkedList/palindromeLinkedList.cc)
+        leetcode/234-PalindromeLinkedList/palindromeLinkedList.cc
+        leetcode/cppinclude/linkedList.cc)
 
 add_executable(235
         leetcode/235-LowestCommonAncestorofaBinarySearchTree/lowestCommonAncestorofaBinarySearchTree.cc
