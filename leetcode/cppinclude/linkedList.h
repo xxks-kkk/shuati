@@ -20,12 +20,15 @@ class LinkedList
 {
 public:
     LinkedList();
-    ListNode *
-    list2list(std::vector<int> nums);
-    std::vector<int>
-    printList(ListNode *head);
-    void
-    freeList(ListNode *&head);
+    ~LinkedList();
+    // transform a vector to a corresponding linked list
+    ListNode* list2list(const std::vector<int> & nums);
+    // transform a linked list to a vector
+    std::vector<int> printList(ListNode* head);
+    // delete the linked list
+    void freeList(ListNode *&head);
 private:
-    ListNode *head;
+    class Impl;
+    std::unique_ptr<Impl> pImpl;
 };
+
