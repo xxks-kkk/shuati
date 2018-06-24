@@ -47,6 +47,10 @@ add_executable(222
         leetcode/222-CountCompleteTreeNodes/countCompleteTreeNodes.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(230
+        leetcode/230-KthSmallestElementinaBST/kthSmallestElementinaBST.cc
+        leetcode/cppinclude/bt.cc)
+
 add_executable(234
         leetcode/234-PalindromeLinkedList/palindromeLinkedList.cc)
 
