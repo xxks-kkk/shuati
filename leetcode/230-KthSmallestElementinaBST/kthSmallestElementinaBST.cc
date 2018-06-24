@@ -55,6 +55,7 @@ public:
         return res[k-1];
     }
 private:
+    // here, we do the early stop
     void kthSmallestHelper2(TreeNode* & root, vector<int> & res, int & k)
     {
         if(root == nullptr)
