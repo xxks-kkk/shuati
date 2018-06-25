@@ -22,7 +22,7 @@ $N-k$ elements)
 
 The idea is from merge sort: we do pair-wise linked ist merge until we get the final result. The process shown below:
 
-![Divide-and-Conquer image from offical solution](23_divide_and_conquer_new.png)
+![Divide-and-Conquer image from offical solution](img/23_divide_and_conquer_new.png)
 
 - Time: $O(N \log k)$ ( $O(\sum_{i=1}^{\log_2 k} N)$. We assume each linked list has $N$ elements, which overestimate
 the number of elements in each list)
