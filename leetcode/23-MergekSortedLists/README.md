@@ -28,6 +28,14 @@ The idea is from merge sort: we do pair-wise linked ist merge until we get the f
 the number of elements in each list)
 - Space: $O(N)$
 
+## Remarks
+
+Sample demo on how to create min-heap using priority queue and heap in C++. In addition, demonstrate custom comparator
+in two ways: function object (used in priority queue) and comparison function (used in heap). Additional material:
+
+- http://fusharblog.com/3-ways-to-define-comparison-functions-in-cpp/
+- https://stackoverflow.com/questions/2786398/is-there-an-easy-way-to-make-a-min-heap-in-c
+
 ## Reference
 
 - https://leetcode.com/problems/merge-k-sorted-lists/solution/
