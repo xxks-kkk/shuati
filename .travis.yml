@@ -14,5 +14,4 @@ before_script:
 script:
 
 - make all
-- ls
 - "for a in $(ls | grep '^[0-9]*$'); do ./$a; done"
