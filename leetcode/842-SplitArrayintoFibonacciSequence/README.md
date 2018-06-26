@@ -1,5 +1,7 @@
 ## Solution Explanation
 
+A classic DFS solution. This is also good for string usage in C++
+
 
 ## Reference
 
