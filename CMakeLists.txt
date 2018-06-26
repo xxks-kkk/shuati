@@ -107,6 +107,10 @@ add_executable(366
         leetcode/366-FindLeavesofBinaryTree/findLeavesofBinaryTree.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(369
+        leetcode/369-PlusOneLinkedList/plusOneLinkedList.cc
+        leetcode/cppinclude/linkedList.cc)
+
 add_executable(658
         leetcode/658-FindKClosestElements/findKClosestElements.cpp)
 
