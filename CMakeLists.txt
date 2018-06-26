@@ -110,6 +110,10 @@ add_executable(366
 add_executable(658
         leetcode/658-FindKClosestElements/findKClosestElements.cpp)
 
+add_executable(663
+        leetcode/663-EqualTreePartition/equalTreePartition.cc
+        leetcode/cppinclude/bt.cc)
+
 add_executable(669
         leetcode/669-TrimaBinarySearchTree/trimaBinarySearchTree.cc
         leetcode/cppinclude/bt.cc
