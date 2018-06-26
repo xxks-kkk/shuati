@@ -90,7 +90,7 @@ void test(ptr2checkEqualTree pfcn)
 {
   Solution sol;
   BT bt;
-  std::vector<int> nums = {-1,0,1};
+  std::vector<int> nums = {0,-1,1};
   auto root = bt.list2Tree(nums);
   assert(!(sol.*pfcn)(root));
   bt.freeTree(root);
