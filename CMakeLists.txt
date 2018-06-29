@@ -126,3 +126,6 @@ add_executable(669
         leetcode/669-TrimaBinarySearchTree/trimaBinarySearchTree.cc
         leetcode/cppinclude/bt.cc
         leetcode/cppinclude/bst.cc)
+
+add_executable(842
+        leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
