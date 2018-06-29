@@ -92,11 +92,11 @@ private:
             return;
         }
         currSum += root->val;
-        if (preSum.count(currSum - target))
+        if (preSum.count(currSum - target)) // cpp: 1st way to check if key exists in the map
         {
             count += preSum.at(currSum - target);
         }
-        if (preSum.find(currSum) == preSum.end())
+        if (preSum.find(currSum) == preSum.end()) // cpp: 2nd way to check if key exists in the map
         {
             preSum.emplace(currSum, 1);
         }
@@ -107,7 +107,9 @@ private:
 
         pathSum2Helper(root->left, currSum, target, preSum, count);
         pathSum2Helper(root->right, currSum, target, preSum, count);
-        preSum[currSum] = preSum.at(currSum) - 1; // backtracking, just like DFS "1" is from there is one way to get currSum.
+        // backtracking, just like DFS "1" is from there is one way to get currSum.
+        // cpp: update value for the corresponding key in map
+        preSum[currSum] = preSum.at(currSum) - 1;
     }
 };
 
