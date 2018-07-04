@@ -1,8 +1,4 @@
-#include <stdlib.h>  /* abs */
-#include <algorithm> /* max */
-#include <vector>
-#include <deque>
-#include <assert.h>
+#include "shared_headers.h"
 
 // We define NULLPTR as a way to allow us quickly test
 // the code's correctness. It's a hack.

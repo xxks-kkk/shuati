@@ -91,6 +91,12 @@ add_executable(272
         leetcode/cppinclude/bt.cc
         leetcode/cppinclude/bst.cc)
 
+add_executable(297
+        leetcode/297-SerializeandDeserializeBinaryTree/serializeandDeserializeBinaryTree.cc
+        leetcode/cppinclude/bt.cc
+        leetcode/cppinclude/cpputility.cc
+)
+
 add_executable(298
         leetcode/298-BinaryTreeLongestConsecutiveSequence/binaryTreeLongestConsecutiveSequence.cc
         leetcode/cppinclude/bt.cc)
