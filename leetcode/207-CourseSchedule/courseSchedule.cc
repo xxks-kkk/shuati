@@ -32,6 +32,7 @@ using namespace std;
 class Solution
 {
 public:
+    // BFS approach
     bool
     canFinish(int numCourses, vector<pair<int, int>> &prerequisites)
     {
@@ -75,6 +76,40 @@ public:
         }
         return true;
     }
+
+    // DFS
+    bool
+    canFinish2(int numCourses, vector<pair<int, int>> &prerequisites)
+    {
+        auto graph = Graph::edgeList2AdjacencyList(numCourses, prerequisites, false);
+        vector<bool> onPath(numCourses, false); // record the visited nodes of the current DFS visit
+        vector<bool> visited(numCourses, false); // record all the visited nodes
+        for(int i = 0; i < numCourses; ++i)
+        {
+            if(!visited[i] && checkCycle(graph, i, onPath, visited))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+private:
+    // perform cycle checking in the graph
+    bool checkCycle(vector<unordered_set<int>>& graph, int node, vector<bool>& onpath, vector<bool>& visited)
+    {
+        visited[node] = true;
+        onpath[node] = true;
+        for (auto & vertex: graph[node])
+        {
+            if(onpath[vertex] || checkCycle(graph, vertex, onpath, visited))
+            {
+                return true;
+            }
+        }
+        onpath[node] = false;
+        return false;
+    }
 };
 
 using ptr2canFinish = bool (Solution::*)(int, vector<pair<int, int>> &);
@@ -93,5 +128,7 @@ int
 main()
 {
     ptr2canFinish pfcn = &Solution::canFinish;
+    test(pfcn);
+    pfcn = &Solution::canFinish2;
     test(pfcn);
 }
