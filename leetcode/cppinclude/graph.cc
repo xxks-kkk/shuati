@@ -26,13 +26,21 @@ string2EdgeList(std::string edgeListStr)
 }
 
 std::vector<std::unordered_set<int>>
-edgeList2AdjacencyList(int numberOfVertex, std::vector<std::pair<int, int>> edgeListRepr)
+edgeList2AdjacencyList(int numberOfVertex, std::vector<std::pair<int, int>> edgeListRepr, bool sourceFront)
 {
     std::vector<std::unordered_set<int>> graph(numberOfVertex);
     for (auto &edge: edgeListRepr)
     {
-        // the edge format: [sink, source]
-        graph[edge.second].insert(edge.first);
+        if (sourceFront)
+        {
+            // the edge format: [source, sink]
+            graph[edge.first].insert(edge.second);
+        }
+        else
+        {
+            // the edge format: [sink, source]
+            graph[edge.second].insert(edge.first);
+        }
     }
     return graph;
 }

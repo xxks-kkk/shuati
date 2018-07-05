@@ -17,10 +17,11 @@ string2EdgeList(std::string edgeListStr);
  * return a graph using the adjacency list representation
  * @param numberOfVertex the number of vertex in the graph
  * @param edgeListRepr the edge list representation of the graph
+ * @param sourceFront the format of edge: true: [source, sink]; false: [sink, source]
  * @return the adjacency list representation of the graph
  */
 std::vector<std::unordered_set<int>>
-edgeList2AdjacencyList(int numberOfVertex, std::vector<std::pair<int, int>> edgeListRepr);
+edgeList2AdjacencyList(int numberOfVertex, std::vector<std::pair<int, int>> edgeListRepr, bool sourceFront);
 
 /**
  * compute the number of indegree for each vertex

@@ -36,7 +36,7 @@ public:
     canFinish(int numCourses, vector<pair<int, int>> &prerequisites)
     {
         // We apply toplogical sorting using MAW (cpp) Figure 9.7
-        auto graph = Graph::edgeList2AdjacencyList(numCourses, prerequisites);
+        auto graph = Graph::edgeList2AdjacencyList(numCourses, prerequisites, false);
         auto indegreeList = Graph::compute_indegree(numCourses, graph);
         queue<int> box;
         int count = 0;
