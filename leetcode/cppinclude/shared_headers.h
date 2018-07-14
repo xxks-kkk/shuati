@@ -12,6 +12,8 @@
 #include <algorithm> /* max */
 #include <deque>
 #include <assert.h>
+#include <stack>
+#include <unordered_set>
 
 
 #endif //SHUATI_SHARED_HEADERS_H
