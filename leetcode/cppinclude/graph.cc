@@ -49,9 +49,9 @@ std::vector<int>
 compute_indegree(int numberOfVertex, std::vector<std::unordered_set<int>> &adjacencyListRepr)
 {
     std::vector<int> indegree(numberOfVertex, 0);
-    for (auto &source : adjacencyListRepr)
+    for (auto &sinkVerticeSet : adjacencyListRepr)
     {
-        for (auto &sink : source)
+        for (auto &sink : sinkVerticeSet)
         {
             indegree[sink]++;
         }
