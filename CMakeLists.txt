@@ -47,6 +47,12 @@ add_executable(145
 add_executable(155
         leetcode/155-MinStack/minStack.cc)
 
+add_executable(207
+        leetcode/207-CourseSchedule/courseSchedule.cc
+        leetcode/cppinclude/graph.h
+        leetcode/cppinclude/graph.cc
+        leetcode/cppinclude/cpputility.cc)
+
 add_executable(208
         leetcode/208-ImplementTrie/implementTrie.cc)
 
@@ -97,8 +103,7 @@ add_executable(272
 add_executable(297
         leetcode/297-SerializeandDeserializeBinaryTree/serializeandDeserializeBinaryTree.cc
         leetcode/cppinclude/bt.cc
-        leetcode/cppinclude/cpputility.cc
-)
+        leetcode/cppinclude/cpputility.cc)
 
 add_executable(298
         leetcode/298-BinaryTreeLongestConsecutiveSequence/binaryTreeLongestConsecutiveSequence.cc
