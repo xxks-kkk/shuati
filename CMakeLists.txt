@@ -59,6 +59,9 @@ add_executable(207
 add_executable(208
         leetcode/208-ImplementTrie/implementTrie.cc)
 
+add_executable(213
+        leetcode/213-HouseRobberII/houseRobberII.cc)
+
 add_executable(222
         leetcode/222-CountCompleteTreeNodes/countCompleteTreeNodes.cc
         leetcode/cppinclude/bt.cc)
