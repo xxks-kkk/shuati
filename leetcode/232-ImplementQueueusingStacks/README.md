@@ -61,7 +61,7 @@ In the example above, the number of times pop operation can be called is limited
 before it. Although a single pop operation could be expensive, it is expensive only once per $n$ times (queue size),
 when `s2` is empty and there is a need for data transfer between `s1` and `s2`.
 Hence the total time complexity of the sequence is : $n$ (for push operations) + $2*n$$ (for first pop operation) +
-$n - 1$ ( for pop operations) which is $O(2*n)$. This gives $O(2n/2n)$ = $O(1)$ average time per operation.
+$n - 1$ ( for pop operations) which is $O(2*n)$$. This gives $O(2n/2n)$ = $O(1)$ average time per operation.
 
 **peek, empty**
 
