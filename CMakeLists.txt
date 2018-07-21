@@ -70,6 +70,9 @@ add_executable(230
         leetcode/230-KthSmallestElementinaBST/kthSmallestElementinaBST.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(232
+        leetcode/232-ImplementQueueusingStacks/implementQueueusingStacks.cc)
+
 add_executable(234
         leetcode/234-PalindromeLinkedList/palindromeLinkedList.cc
         leetcode/cppinclude/linkedList.cc)
