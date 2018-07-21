@@ -47,8 +47,8 @@ the worst case cannot occur again for a long time, thus amortizing its cost.
 
 Consider this example where we start with an empty queue with the following sequence of operations applied:
 
-$$\text{push}_1, \text{push}_2, \dots, \text{push}_n, \text{pop}_​1, \text{pop}_2, \dots, \text{pop}_​n$$
-​​
+$$\text{push}_1, \text{push}_2, \dots, \text{push}_n, \text{pop}_1, \text{pop}_2, \dots, \text{pop}_n$$
+
 The worst case time complexity of a single pop operation is $O(n)$. Since we have $n$ pop operations,
 using the worst-case per operation analysis gives us a total of $O(n^2)$ time.
 
