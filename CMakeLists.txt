@@ -4,6 +4,9 @@ project(shuati)
 set(CMAKE_CXX_STANDARD 11)
 include_directories(leetcode/cppinclude)
 
+add_executable(4
+        leetcode/4-MedianofTwoSortedArrays/medianofTwoSortedArrays.cc)
+
 add_executable(10
         leetcode/10-RegularExpressionMatching/regularExpressionMatching.cc)
 
