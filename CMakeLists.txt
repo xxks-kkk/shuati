@@ -7,6 +7,9 @@ include_directories(leetcode/cppinclude)
 add_executable(4
         leetcode/4-MedianofTwoSortedArrays/medianofTwoSortedArrays.cc)
 
+add_executable(9
+        leetcode/9-PalindromeNumber/palindromeNumber.cc)
+
 add_executable(10
         leetcode/10-RegularExpressionMatching/regularExpressionMatching.cc)
 

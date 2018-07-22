@@ -34,6 +34,7 @@ public:
         }
         // We search for C2
         int left = 0;
+        // We have n2*2 is to maintain the invariant as the cut can be at the position after the last element of array
         int right = n2 * 2;
         while (left <= right)
         {
