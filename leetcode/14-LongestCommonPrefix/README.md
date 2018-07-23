@@ -54,7 +54,7 @@ $LCP(S_i, \dots, S_j)$. To accomplish this we compare one by one of the characte
 
 ![Approach 2](img/approach-2.png)
 
-- Time complexity: $O(S)$, where $S$ is the number of all characters in the array, $S = m*n$.
+- Time complexity: $O(S)$, where $S$ is the number of all characters in the array, $S=m*n$.
 Time complexity is $2 \cdot T\left ( \frac{n}{2} \right ) + O(m)$.
 Therefore time complexity is $O(S)$.
 In the best case this algorithm performs $O(minLen \cdot n)$ comparisons,
