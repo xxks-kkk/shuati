@@ -83,6 +83,7 @@ public:
         {
             return "";
         }
+        // Be careful, we pass in `strs.size() - 1`.
         return longestCommonPrefix3Helper( strs, 0, strs.size() - 1 );
     }
 
