@@ -161,5 +161,8 @@ add_executable(669
         leetcode/cppinclude/bt.cc
         leetcode/cppinclude/bst.cc)
 
+add_executable(704
+        leetcode/704-BinarySearch/binarySearch.cc)
+
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
