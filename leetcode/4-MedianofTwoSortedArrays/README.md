@@ -47,8 +47,8 @@ array case.
 From the above observation, we obtain the relations between index of $L$, index of $R$, and $N$. In fact, the relations
 also hold for cut position. In other words, we have:
 
-- Index of $L$ is $(\text(cutPos) - 1)/2$
-- Index of $R$ is $(\text(cutPos))/2$
+- Index of $L$ is $(\text{cutPos} - 1)/2$
+- Index of $R$ is $(\text{cutPos})/2$
 
 To see this, let's add a few imaginary 'positions' (represented as #'s) in between numbers, and treat numbers as 'positions'.
 Doing so allows us to obtain position for cut as well:
@@ -64,7 +64,7 @@ position index         0 1 2 3 4 5  6 7  8 9 10    (N_Position = 11)
 As you can see, there are always exactly $2N+1$ 'positions' regardless of length $N$. Therefore,
 the middle cut should always be made on the $N$th position (0-based). Since index of $L$ is
 $(N-1)/2$ and index of $R$ is $N/2$ in this situation, we can infer that
-index of $L$ is $(\text(cutPos) - 1)/2$ and index of $R$ is $(\text(cutPos))/2$.
+index of $L$ is $(\text{cutPos} - 1)/2$ and index of $R$ is $(\text{cutPos})/2$.
 
 
 ### Two-array case
@@ -109,12 +109,12 @@ L2 = A2[(2-1)/2] = A2[0] = 1; R2 = A1[2/2] = A1[1] = 1;
 
 Now, to determine which two cuts we want, we have to use the definition of median by ensuring that
 
-$$L1 \le R1 \and L1 \le R2 \and L2 \le R1 \and L2 \le R2$$
+$$L1 \le R1 \land L1 \le R2 \land L2 \le R1 \land L2 \le R2$$
 
 This will make sure that we have all numbers in the left two subarrays $\le$ all numbers in the right two subarrays
 as L1, L2 are the greatest numbers on the left two subarrays and R1, R2 are the smallest numbers on the right two subarrays.
 Since both A1 and A2 are sorted, $L1 \le R1$ and $L2 \le R2$ are guaranteed. Thus, we only need to ensure that
-$L1 \le R2 \and L2 \le R1$. This is the invariant we want to keep in our binary search solution:
+$L1 \le R2 \land L2 \le R1$. This is the invariant we want to keep in our binary search solution:
 
 - If we have $L1 > R2$, this means there are too many large numbers on the left subarray of A1, thus we need to move C1 to
 the left, which means we move C2 to the right (as C1 + C2 = N1 + N2)
@@ -142,8 +142,8 @@ then $L$ = `INT_MIN`, and if any $R$ falls out of the right boundary, then R = `
 
 - Obtain $L$, $R$, cutPos relations:
 
-    - Index of $L$ is $(\text(cutPos) - 1)/2$
-    - Index of $R$ is $(\text(cutPos))/2$
+    - Index of $L$ is $(\text{cutPos} - 1)/2$
+    - Index of $R$ is $(\text{cutPos})/2$
 
 - Maintain the definition of median: all numbers in the left two subarrays $\le$ all numbers in the right two subarrays
 

@@ -13,6 +13,11 @@ add_executable(9
 add_executable(10
         leetcode/10-RegularExpressionMatching/regularExpressionMatching.cc)
 
+add_executable(14
+        leetcode/14-LongestCommonPrefix/longestCommonPrefix.cc
+        leetcode/cppinclude/trie.h
+        leetcode/cppinclude/trie.cc)
+
 add_executable(23
         leetcode/23-MergekSortedLists/mergekSortedLists.cc
         leetcode/cppinclude/linkedList.cc)
