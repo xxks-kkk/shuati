@@ -22,6 +22,11 @@ add_executable(23
         leetcode/23-MergekSortedLists/mergekSortedLists.cc
         leetcode/cppinclude/linkedList.cc)
 
+add_executable(25
+        leetcode/25-ReverseNodesink-Group/reverseNodesink-Group.cc
+        leetcode/cppinclude/linkedList.cc
+        leetcode/cppinclude/linkedList.h)
+
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
 

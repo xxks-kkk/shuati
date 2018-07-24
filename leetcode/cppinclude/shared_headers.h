@@ -14,6 +14,7 @@
 #include <assert.h>
 #include <stack>
 #include <unordered_set>
+#include <memory>
 
 
 #endif //SHUATI_SHARED_HEADERS_H
