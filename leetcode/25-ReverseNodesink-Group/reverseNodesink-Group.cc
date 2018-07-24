@@ -33,50 +33,37 @@ public:
     ListNode *
     reverseKGroup(ListNode *head, int k)
     {
-        auto end = head;
-        auto start = head;
-        auto newHead = head;
-        auto prev = head;
-        int i = 0;
-        int times = 0;
-        while(end != nullptr)
+        auto node = head;
+        for(int i = 0; i < k; ++i)
         {
-            while (i < k)
+            if (node == nullptr)
             {
-                prev = end;
-                end = end->next;
-                if (end == nullptr)
-                {
-                    return newHead;
-                }
-                i++;
+                return head;
             }
-            start = reverseLinkedList(start, end, prev);
-            if (times == 0)
-            {
-                newHead = start;
-                times++;
-            }
-            start = end;
-            i = 0;
+            node = node->next;
         }
-        return newHead;
+        auto new_head = reverseLinkedList(head, node);
+        head->next = reverseKGroup(node, k);
+        return new_head;
     }
 private:
     ListNode*
-    reverseLinkedList(ListNode *head, ListNode* end, ListNode* prev)
+    reverseLinkedList(ListNode *head, ListNode* end)
     {
         auto current = head;
-        auto next = head;
-        auto prior = prev;
+        ListNode* next;
+        // This line is important. That is how we still hold
+        // the rest of the list after reversing: k = 2, 1->2->3->4->5
+        // we get 2->1->3->4->5
+        auto prev = end;
         while (current != end)
         {
             next = current->next;
-            current->next = prior;
-            prior = current;
+            current->next = prev;
+            prev = current;
             current = next;
         }
-        return prior;
+        return prev;
     }
 };
 
@@ -90,6 +77,7 @@ void test(ptr2reverseKGroup pfcn)
     auto head = l.list2list(nums);
     std::vector<int> ans = {2,1,4,3,5};
     assert(l.printList((sol.*pfcn)(head, 2)) == ans);
+    head = l.list2list(nums);
     ans = {3,2,1,4,5};
     assert(l.printList((sol.*pfcn)(head, 3)) == ans);
 }
