@@ -27,6 +27,9 @@ add_executable(25
         leetcode/cppinclude/linkedList.cc
         leetcode/cppinclude/linkedList.h)
 
+add_executable(27
+        leetcode/27-RemoveElement/removeElement.cc)
+
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
 
