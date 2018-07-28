@@ -30,6 +30,9 @@ add_executable(25
 add_executable(27
         leetcode/27-RemoveElement/removeElement.cc)
 
+add_executable(30
+        leetcode/30-SubstringwithConcatenationofAllWords/substringwithConcatenationofAllWords.cc)
+
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
 
