@@ -177,3 +177,8 @@ add_executable(704
 
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
+
+add_executable(000
+        leetcode/cppinclude/queue.h
+        leetcode/cppinclude/queue.tpp
+        misc/QueueArrayImplementation/queueArrayImplementation.cc)
