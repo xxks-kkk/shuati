@@ -40,6 +40,9 @@ public:
     Object
     getFront();
 
+    int
+    getCurrSize();
+
 private:
     Object theArray[CAPACITY]; // the array
     int front;                 // front of the queue

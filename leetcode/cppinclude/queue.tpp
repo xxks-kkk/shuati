@@ -76,3 +76,10 @@ Queue<Object>::getFront()
 {
     return theArray[front];
 }
+
+template<typename Object>
+int
+Queue<Object>::getCurrSize()
+{
+    return currSize;
+}

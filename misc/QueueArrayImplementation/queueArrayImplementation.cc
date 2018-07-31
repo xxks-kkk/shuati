@@ -25,12 +25,9 @@ int main()
     assert(q->isEmpty());
     q->enqueue(6);
     q->printQueue();
-    q->enqueue(4);
-    q->enqueue(5);
-    q->enqueue(2);
-    q->dequeue();
-    q->dequeue();
-    q->dequeue();
-    q->enqueue(6);
-    q->dequeue();
+    auto r = std::unique_ptr<Queue<char>>(new Queue<char>());
+    r->enqueue('h');
+    r->enqueue('z');
+    r->enqueue('y');
+    assert(r->getCurrSize() == 3);
 }
