@@ -33,6 +33,9 @@ add_executable(27
 add_executable(30
         leetcode/30-SubstringwithConcatenationofAllWords/substringwithConcatenationofAllWords.cc)
 
+add_executable(32
+        leetcode/32-LongestValidParentheses/longestValidParentheses.cc)
+
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
 
