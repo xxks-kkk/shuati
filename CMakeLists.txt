@@ -36,6 +36,9 @@ add_executable(30
 add_executable(32
         leetcode/32-LongestValidParentheses/longestValidParentheses.cc)
 
+add_executable(35
+        leetcode/35-SearchInsertPosition/searchInsertPosition.cc)
+
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
 
