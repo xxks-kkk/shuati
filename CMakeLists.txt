@@ -42,6 +42,9 @@ add_executable(35
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
 
+add_executable(62
+        leetcode/62-UniquePaths/uniquePaths.cc)
+
 add_executable(98
         leetcode/98-ValidateBinarySearchTree/validateBinarySearchTree.cc
         leetcode/cppinclude/bt.cc)
