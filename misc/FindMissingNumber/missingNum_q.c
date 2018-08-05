@@ -47,6 +47,27 @@ int findMissing2( int* a, int len ) {
   return left + a[0];
 }
 
+// O(logN) solution using binary search
+int findMissing3( int* a, int len ) {
+  // invariant: missing number \in [left, right]
+  int left = 0;
+  int right = len - 1;
+  while(left <= right)
+  {
+    int mid = left + (right - left)/2;
+    if (a[mid] > mid + a[0])
+    {
+      right = mid-1;
+    }
+    else
+    {
+      left = mid + 1;
+    }
+  }
+  return left + a[0];
+}
+
+
 int
 main() {
 
@@ -61,4 +82,10 @@ main() {
    assert( findMissing2( c, 6 ) == 5 );
    assert( findMissing2( d, 6 ) == 8 );
    assert( findMissing2( e, 6 ) == 10 );
+
+   assert( findMissing3( a, 5 ) == 6 );
+   assert( findMissing3( b, 6 ) == 7 );
+   assert( findMissing3( c, 6 ) == 5 );
+   assert( findMissing3( d, 6 ) == 8 );
+   assert( findMissing3( e, 6 ) == 10 );   
 }
