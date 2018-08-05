@@ -20,6 +20,7 @@
 #include <cassert>
 #include <cmath>
 #include "trie.h"
+#include <memory>
 
 using namespace std;
 
@@ -129,7 +130,7 @@ public:
     string
     longestCommonPrefix5( vector<string> &strs )
     {
-        auto trie = new Trie();
+        auto trie = std::unique_ptr<Trie>(new Trie());
         for ( auto &str: strs )
         {
             trie->insert( str );
