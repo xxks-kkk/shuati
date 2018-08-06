@@ -21,6 +21,19 @@ when both `left` and `right` aren't `nullptr`, that means each subtree of the ro
 Thus, by definition of LCA, we know the root is LCA in this case.  When both target nodes are in the same subtree,
 whenever we find one of the target nodes, we can immediately return. This also follows the definition of LCA.
 
+## Application
+
+In [OSTEP: Chapter 41 Locality and The Fast File System](http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf),
+we perform an empirical study of the file access locality using SEER traces. In the SEER traces, we measure 
+the distance between two file open by caclulating the distance between the files and their common ancestor.
+
+Example:
+
+- Open `dir/f` followed by opening `dir/g`. The distance between the two file accesses is 1 as they
+share the same directory but are not the same file.
+- Open `proj/src/foo.c` followed by `proj/obj/foo.o`. The distance between these two accesses is two,
+as `proj` is the common ancestor.
+
 
 ## Reference
 
