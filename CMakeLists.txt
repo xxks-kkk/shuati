@@ -81,6 +81,9 @@ add_executable(145
 add_executable(155
         leetcode/155-MinStack/minStack.cc)
 
+add_executable(165
+        leetcode/165-CompareVersionNumbers/compareVersionNumbers.c)
+
 add_executable(207
         leetcode/207-CourseSchedule/courseSchedule.cc
         leetcode/cppinclude/graph.h
