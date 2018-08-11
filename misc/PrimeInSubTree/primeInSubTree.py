@@ -60,10 +60,15 @@ def primeQuery(n, u, v, values, queries):
             count += 1
         for node in adjacencyList[root]:
             if node != root:
-                count += query(node)
+                if node not in d:
+                    sr = query(node)
+                    d[node] = sr
+                count += d[node]
         return count
 
-    adjacencyList = [-999] # add a dummy value
+    adjacencyList = [-999] # add a dummy value to all 1-index
+    d = {} # {node : # of prime nodes in the subtree with root `node`}
+
     for i in range(n):
         adjacencyList.append([])
     for i,j in zip(u,v):
@@ -71,8 +76,12 @@ def primeQuery(n, u, v, values, queries):
     # print(adjacencyList)
     res = []
     for q in queries:
-        res.append(query(q))
+        if q not in d:
+            ans = query(q)
+            d[q] = ans
+        res.append(d[q])
     # print(res)
+    # print(d)
     return res
 
 if __name__ == "__main__":
