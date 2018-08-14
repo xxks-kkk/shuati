@@ -28,11 +28,6 @@ import collections
 # 6
 # 2
 
-class Vetex:
-    def __init__(self, n, x):
-        self.n = n # numbering
-        self.val = x
-
 def is_prime(n):
   if n == 2 or n == 3: return True
   if n < 2 or n%2 == 0: return False
@@ -46,20 +41,21 @@ def is_prime(n):
     f +=6
   return True
 
-def primeQuery(n, u, v, values, queries):
+def primeQuery(n, first, second, values, queries):
     # note: the tree here is a generic term. It doesn't
     # necessarily contain one parent for a given node.
     # print(f'n: {n}')
-    # print(f'u: {u}')
-    # print(f'v: {v}')
+    # print(f'first: {first}')
+    # print(f'second: {second}')
     # print(f'values: {values}')
     # print(f'queries: {queries}')
     def query(root):
         count = 0
+        visited.add(root)
         if(is_prime(values[root-1])):
             count += 1
         for node in adjacencyList[root]:
-            if node != root:
+            if node != root and node not in visited:
                 if node not in d:
                     sr = query(node)
                     d[node] = sr
@@ -72,14 +68,16 @@ def primeQuery(n, u, v, values, queries):
 
     for i in range(n):
         adjacencyList.append([])
-    for i,j in zip(u,v):
+    for i,j in zip(first,second):
         adjacencyList[i].append(j)
+        # Key is here: because node 1 is root, we allow duplicate elements in the adjacency list representation
+        # as long as we use visited set to keep track of nodes that we have visited before.
+        adjacencyList[j].append(i)
     # print(adjacencyList)
     res = []
+    visited = set()
+    query(1)
     for q in queries:
-        if q not in d:
-            ans = query(q)
-            d[q] = ans
         res.append(d[q])
     # print(res)
     # print(d)
@@ -107,4 +105,8 @@ if __name__ == "__main__":
     for i in range(nquery):
         queries.append(int(input_string_list.popleft()))
 
-    assert primeQuery(n, u, v, values, queries) == [4, 1, 0, 1, 2]
+    filename = fileinput.filename()
+    if filename == 'input000.txt':
+        assert primeQuery(n, u, v, values, queries) == [4, 1, 0, 1, 2]
+    elif filename == 'input001.txt':
+        assert primeQuery(n, u, v, values, queries) == [7, 5, 2, 1, 0, 1]
