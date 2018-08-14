@@ -1,0 +1,7 @@
+3
+jim likes mary
+kate likes tom
+tom does not like jim
+2
+jim tom
+likes
