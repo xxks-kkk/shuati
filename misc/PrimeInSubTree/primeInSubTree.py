@@ -64,6 +64,7 @@ def primeQuery(n, u, v, values, queries):
                     sr = query(node)
                     d[node] = sr
                 count += d[node]
+        d[root] = count
         return count
 
     adjacencyList = [-999] # add a dummy value to all 1-index
