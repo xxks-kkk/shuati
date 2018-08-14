@@ -24,4 +24,8 @@ if __name__ == "__main__":
     while len(input_string_list) > 0:
         votes.append(input_string_list.popleft())
 
-    assert electionWinner(votes) == 'Mary'
+    filename = fileinput.filename()
+    if filename == 'input000.txt':
+        assert electionWinner(votes) == 'Mary'
+    elif filename == 'input001.txt':
+        assert electionWinner(votes) == 'Michael'
