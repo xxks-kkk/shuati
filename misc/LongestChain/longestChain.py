@@ -19,6 +19,7 @@ def longestChain(words):
         d[word] = 1
     for word in sorted_words:
         # key: iterate the words from the shortest one to the longest one
+        # Try input001.txt without order here to get a sense (i.e. for word in words: )
         for i in range(len(word)):
             new_word = str(word[:i]) + str(word[i+1:])
             if new_word in d and d[new_word] + 1 > d[word]:
