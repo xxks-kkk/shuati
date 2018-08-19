@@ -29,31 +29,32 @@ class Solution
 public:
     // Approach 1: Horizontal scanning
     string
-    longestCommonPrefix(vector<string>& strs) {
-        if(!strs.size())
+    longestCommonPrefix( vector<string> &strs )
+    {
+        if ( !strs.size())
         {
             return "";
         }
         string prefix = strs[0];
-        for(int i = 1; i < strs.size(); ++i)
+        for ( int i = 1; i < strs.size(); ++i )
         {
+            int minLen = min( strs[i].length(), prefix.length());
             int j;
-            for(j = 0; j < prefix.length(); ++j)
+            for ( j = 0; j < minLen; ++j )
             {
-                if (prefix[j] != strs[i][j])
+                if ( prefix[j] != strs[i][j] )
                 {
                     break;
                 }
             }
-            if (j == 0)
+            if ( j == 0 )
             {
                 return "";
             }
-            prefix = prefix.substr(0, j);
+            prefix = prefix.substr( 0, j );
         }
         return prefix;
     }
-
 
 
     // Approach 2: Vertical Scanning
@@ -133,7 +134,7 @@ public:
     string
     longestCommonPrefix5( vector<string> &strs )
     {
-        auto trie = std::unique_ptr<Trie>(new Trie());
+        auto trie = std::unique_ptr<Trie>( new Trie());
         for ( auto &str: strs )
         {
             trie->insert( str );
