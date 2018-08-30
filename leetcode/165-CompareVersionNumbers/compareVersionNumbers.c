@@ -12,7 +12,7 @@ compareVersion( char *version1, char *version2 )
     int num2 = 0;
     int version1ReachEnd = 0;
     int version2ReachEnd = 0;
-    while (version1[i] != '\0' || version2[j] != '\0')
+    while (!version1ReachEnd || !version2ReachEnd)
     {
         while(version1ReachEnd == 0 && version1[i] != '.')
         {
