@@ -172,6 +172,9 @@ add_executable(437
         leetcode/437-PathSumIII/pathSumIII.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(582
+        leetcode/582-KillProcess/killProcess.cc)
+
 add_executable(658
         leetcode/658-FindKClosestElements/findKClosestElements.cpp)
 
