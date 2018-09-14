@@ -120,6 +120,9 @@ add_executable(236
         leetcode/236-LowestCommonAncestorOfABinaryTree/lowestCommonAncestorOfABinaryTree.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(242
+        leetcode/242-ValidAnagram/validAnagram.cc)
+
 add_executable(250
         leetcode/250-CountUnivalueSubtrees/countUnivalueSubtrees.cc
         leetcode/cppinclude/bt.cc)
