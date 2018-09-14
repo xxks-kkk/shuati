@@ -163,6 +163,9 @@ add_executable(337
         leetcode/337-HouseRobberIII/houseRobberIII.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(346
+        leetcode/346-MovingAveragefromDataStream/movingAveragefromDataStream.cc)
+
 add_executable(366
         leetcode/366-FindLeavesofBinaryTree/findLeavesofBinaryTree.cc
         leetcode/cppinclude/bt.cc)
