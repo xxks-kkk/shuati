@@ -4,6 +4,10 @@ project(shuati)
 set(CMAKE_CXX_STANDARD 11)
 include_directories(leetcode/cppinclude)
 
+add_executable(2
+        leetcode/2-AddTwoNumbers/addTwoNumbers.cc
+        leetcode/cppinclude/linkedList.cc)
+
 add_executable(4
         leetcode/4-MedianofTwoSortedArrays/medianofTwoSortedArrays.cc)
 
