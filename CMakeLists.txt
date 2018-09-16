@@ -82,6 +82,9 @@ add_executable(145
         leetcode/145-BinaryTreePostorderTraversal/binaryTreePostorderTraversal.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(146
+        leetcode/146-LRUCache/lRUCache.cc)
+
 add_executable(155
         leetcode/155-MinStack/minStack.cc)
 
