@@ -210,3 +210,6 @@ add_executable(000
         leetcode/cppinclude/queue.h
         leetcode/cppinclude/queue.tpp
         misc/QueueArrayImplementation/queueArrayImplementation.cc)
+
+add_executable(001
+        misc/ClimbTheHill/climbTheHill.cc)
