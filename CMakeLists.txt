@@ -187,6 +187,9 @@ add_executable(369
         leetcode/369-PlusOneLinkedList/plusOneLinkedList.cc
         leetcode/cppinclude/linkedList.cc)
 
+add_executable(387
+        leetcode/387-FirstUniqueCharacterinaString/firstUniqueCharacterinaString.cc)
+
 add_executable(437
         leetcode/437-PathSumIII/pathSumIII.cc
         leetcode/cppinclude/bt.cc)
@@ -208,6 +211,9 @@ add_executable(669
 
 add_executable(704
         leetcode/704-BinarySearch/binarySearch.cc)
+
+add_executable(739
+        leetcode/739-DailyTemperatures/dailyTemperatures.cc)
 
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
