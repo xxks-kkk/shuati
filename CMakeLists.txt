@@ -22,6 +22,9 @@ add_executable(14
         leetcode/cppinclude/trie.h
         leetcode/cppinclude/trie.cc)
 
+add_executable(20
+        leetcode/20-ValidParentheses/validParentheses.cc)
+
 add_executable(23
         leetcode/23-MergekSortedLists/mergekSortedLists.cc
         leetcode/cppinclude/linkedList.cc)
@@ -161,6 +164,9 @@ add_executable(297
 add_executable(298
         leetcode/298-BinaryTreeLongestConsecutiveSequence/binaryTreeLongestConsecutiveSequence.cc
         leetcode/cppinclude/bt.cc)
+
+add_executable(301
+        leetcode/301-RemoveInvalidParentheses/removeInvalidParentheses.cc)
 
 add_executable(333
         leetcode/333-LargestBSTSubtree/largestBSTSubtree.cc
