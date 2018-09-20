@@ -168,6 +168,9 @@ add_executable(298
 add_executable(301
         leetcode/301-RemoveInvalidParentheses/removeInvalidParentheses.cc)
 
+add_executable(322
+        leetcode/322-CoinChange/coinChange.cc)
+
 add_executable(333
         leetcode/333-LargestBSTSubtree/largestBSTSubtree.cc
         leetcode/cppinclude/bt.cc)
