@@ -156,6 +156,9 @@ add_executable(272
         leetcode/cppinclude/bt.cc
         leetcode/cppinclude/bst.cc)
 
+add_executable(278
+        leetcode/278-FirstBadVersion/firstBadVersion.cc)
+
 add_executable(297
         leetcode/297-SerializeandDeserializeBinaryTree/serializeandDeserializeBinaryTree.cc
         leetcode/cppinclude/bt.cc
