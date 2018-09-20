@@ -215,6 +215,9 @@ add_executable(704
 add_executable(739
         leetcode/739-DailyTemperatures/dailyTemperatures.cc)
 
+add_executable(796
+        leetcode/796-RotateString/rotateString.cc)
+
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
 
