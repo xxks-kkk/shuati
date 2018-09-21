@@ -91,6 +91,9 @@ add_executable(146
 add_executable(155
         leetcode/155-MinStack/minStack.cc)
 
+add_executable(159
+        leetcode/159-LongestSubstringWithAtMostTwoDistinctCharacters/longestSubstringWithAtMostTwoDistinctCharacters.cc)
+
 add_executable(165
         leetcode/165-CompareVersionNumbers/compareVersionNumbers.c)
 
