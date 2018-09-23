@@ -83,7 +83,7 @@ public:
     vector<vector<string>>
     findDuplicate( string path )
     {
-
+        // C++ 17 has a nice filesystem package can greatly simplify the directory traversal
     }
 };
 
