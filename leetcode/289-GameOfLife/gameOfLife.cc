@@ -124,7 +124,7 @@ class Solution2
 public:
     // Solution for when board is too large for the memory
     void
-    gameOfLife( string inputFile, string outputFile )
+    gameOfLife( const string& inputFile, const string& outputFile )
     {
         Solution sol;
         ifstream infile(inputFile);
