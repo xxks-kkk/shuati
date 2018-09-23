@@ -13,6 +13,10 @@ namespace CPPUtility
 // split the string by the given delimiter
 std::vector <std::string>
 split(const std::string &str, const std::string &delim);
+
+// convert the vector<string> to vector<int>
+std::vector<int>
+convertToInt(const std::vector<std::string>& input);
 }
 
 #endif

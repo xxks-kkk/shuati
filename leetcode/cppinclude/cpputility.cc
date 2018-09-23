@@ -20,4 +20,15 @@ split(const std::string &str, const std::string &delim)
     while (pos < str.length() && prev < str.length());
     return tokens;
 }
+
+std::vector<int>
+convertToInt(const std::vector<std::string>& input)
+{
+    std::vector<int> res;
+    for(auto& i : input)
+    {
+        res.push_back(std::stoi(i));
+    }
+    return res;
+}
 }
