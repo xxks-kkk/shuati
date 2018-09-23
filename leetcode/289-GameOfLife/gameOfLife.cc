@@ -21,50 +21,20 @@ public:
         {
             for ( int j = 0; j < n; ++j )
             {
-                int live = 0;
-                int dead = 0;
-                if ((i - 1) >= 0 && (j - 1) >= 0 )
+                int lives = 0;
+                for(int x = max(0, i-1); x <= min(i+1, m-1); ++x)
                 {
-                    (board[i - 1][j - 1] == 1) ? live++ : dead++;
+                    for(int y = max(0, j-1); y <= min(j+1, n-1); ++y)
+                    {
+                        lives += board[x][y];
+                    }
                 }
-                if ((i - 1) >= 0 )
+                lives -= board[i][j];
+                if (board[i][j] == 1 && lives >= 2 && lives <= 3)
                 {
-                    (board[i - 1][j] == 1) ? live++ : dead++;
+                    updated_board[i][j] = 1;
                 }
-                if ((i - 1) >= 0 && (j + 1) < n )
-                {
-                    (board[i - 1][j + 1] == 1) ? live++ : dead++;
-                }
-                if ((j - 1) >= 0 )
-                {
-                    (board[i][j - 1] == 1) ? live++ : dead++;
-                }
-                if ((j + 1) < n )
-                {
-                    (board[i][j + 1] == 1) ? live++ : dead++;
-                }
-                if ((i + 1) < m && (j - 1) >= 0 )
-                {
-                    (board[i + 1][j - 1] == 1) ? live++ : dead++;
-                }
-                if ((i + 1) < m )
-                {
-                    (board[i + 1][j] == 1) ? live++ : dead++;
-                }
-                if ((i + 1) < m && (j + 1) < n )
-                {
-                    (board[i + 1][j + 1] == 1) ? live++ : dead++;
-                }
-                if ( board[i][j] == 1 )
-                {
-                    if ( live < 2 )
-                        updated_board[i][j] = 0;
-                    if ( live == 2 || live == 3 )
-                        updated_board[i][j] = 1;
-                    if ( live > 3 )
-                        updated_board[i][j] = 0;
-                }
-                if ( board[i][j] == 0 && live == 3 )
+                else if (board[i][j] == 0 && lives == 3)
                 {
                     updated_board[i][j] = 1;
                 }
