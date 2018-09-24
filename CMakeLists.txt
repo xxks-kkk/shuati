@@ -210,6 +210,9 @@ add_executable(437
 add_executable(582
         leetcode/582-KillProcess/killProcess.cc)
 
+add_executable(609
+        leetcode/609-FindDuplicateFileinSystem/findDuplicateFileinSystem.cc)
+
 add_executable(658
         leetcode/658-FindKClosestElements/findKClosestElements.cpp)
 
