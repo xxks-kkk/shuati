@@ -192,6 +192,9 @@ add_executable(337
 add_executable(346
         leetcode/346-MovingAveragefromDataStream/movingAveragefromDataStream.cc)
 
+add_executable(349
+        leetcode/349-IntersectionOfTwoArrays/intersectionOfTwoArrays.cc)
+
 add_executable(366
         leetcode/366-FindLeavesofBinaryTree/findLeavesofBinaryTree.cc
         leetcode/cppinclude/bt.cc)
