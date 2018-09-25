@@ -234,6 +234,9 @@ add_executable(739
 add_executable(796
         leetcode/796-RotateString/rotateString.cc)
 
+add_executable(811
+        leetcode/811-SubdomainVisitCount/subdomainVisitCount.cc)
+
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
 
