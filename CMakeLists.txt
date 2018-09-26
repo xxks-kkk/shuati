@@ -250,3 +250,6 @@ add_executable(000
 
 add_executable(001
         misc/GetFruits/getFruits.cc)
+
+add_executable(002
+        misc/HDRT/simplePrint.c)
