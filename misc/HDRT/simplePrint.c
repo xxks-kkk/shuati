@@ -12,7 +12,7 @@ void function(char** c)
 int main()
 {
     char* s;
-    function(&s); // modify herefunction(s);
+    function(&s); // modify here
     puts(s);
     return 0;
 }
