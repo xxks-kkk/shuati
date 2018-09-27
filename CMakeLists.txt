@@ -52,6 +52,9 @@ add_executable(42
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
 
+add_executable(54
+        leetcode/54-SpiralMatrix/spiralMatrix.cc)
+
 add_executable(62
         leetcode/62-UniquePaths/uniquePaths.cc)
 
