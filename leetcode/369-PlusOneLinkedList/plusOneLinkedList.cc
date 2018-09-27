@@ -26,30 +26,27 @@
 class Solution {
 public:
     ListNode* plusOne(ListNode* head) {
-        int next = 1;
-        plusOneHelper(head, next);
-        if (next == 1)
+        int carry = 1;
+        plusOneHelper(head, carry);
+        auto newHead = head;
+        if (carry)
         {
-            auto newHead = new ListNode(1);
+            newHead = new ListNode(carry);
             newHead->next = head;
-            return newHead;
         }
-        else
-        {
-            return head;
-        }
+        return newHead;
     }
 private:
-    void plusOneHelper(ListNode* head, int & next)
+    void plusOneHelper(ListNode* head, int & carry)
     {
         if(head == nullptr)
         {
             return;
         }
-        plusOneHelper(head->next, next);
-        head->val = (head->val + next) % 10;
+        plusOneHelper(head->next, carry);
+        head->val = (head->val + carry) % 10;
         if (head->val > 0)
-            next = 0;
+            carry = 0;
     }
 };
 
