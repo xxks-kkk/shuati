@@ -46,6 +46,9 @@ add_executable(32
 add_executable(35
         leetcode/35-SearchInsertPosition/searchInsertPosition.cc)
 
+add_executable(42
+        leetcode/42-TrappingRainWater/trappingRainWater.cc)
+
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
 
