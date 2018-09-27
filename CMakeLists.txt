@@ -103,6 +103,9 @@ add_executable(159
 add_executable(165
         leetcode/165-CompareVersionNumbers/compareVersionNumbers.c)
 
+add_executable(186
+        leetcode/186-ReverseWordsInAStringII/reverseWordsInAStringII.cc)
+
 add_executable(207
         leetcode/207-CourseSchedule/courseSchedule.cc
         leetcode/cppinclude/graph.h
