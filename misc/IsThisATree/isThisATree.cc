@@ -22,13 +22,18 @@ public:
             "E5 Any other error"       //4   // could be the case where a node has multiple parents
         };
         int numVertices = 0;
-        map<string, vector<string>> graph = parseNodes(nodes, numVertices);
+        bool error = false;
+        map<string, vector<string>> graph = parseNodes(nodes, numVertices, error);
+        if (error)
+        {
+            return error_code[4]; // E5
+        }
         return generateSExpression(error_code, graph, numVertices);
     }
 
 
 private:
-    map<string,vector<string>> parseNodes( string nodes, int& numVertices)
+    map<string,vector<string>> parseNodes( string nodes, int& numVertices, bool& error)
     {
         map<string, vector<string>> graph;
         stringstream ss(nodes);
@@ -36,6 +41,11 @@ private:
         unordered_set<string> vertex;
         while(getline(ss, token, ' '))
         {
+            if (token.length() != 5)
+            {
+                error = true;
+                return graph;
+            }
             string first = string(1, token[1]);
             string second = string(1, token[3]);
             if (!vertex.count(first))
@@ -129,6 +139,22 @@ void test(ptr2SEexpression pfcn)
     Solution sol;
     string nodes = "(B,D) (D,E) (A,B) (C,F) (E,G) (A,C)";
     string ans = "(A(B(D(E(G))))(C(F)))";
+    assert((sol.*pfcn)(nodes) == ans);
+
+    nodes = "(A,B) (A,C) (A,D)";
+    ans = "E1 More than 2 children";
+    assert((sol.*pfcn)(nodes) == ans);
+
+    nodes = "(A,B) (B,A)";
+    ans = "E2 Duplicate Edges";
+    assert((sol.*pfcn)(nodes) == ans);
+
+    nodes = "(A,B) (B,C) (C,A)";
+    ans = "E3 Cycle present";
+    assert((sol.*pfcn)(nodes) == ans);
+
+    nodes = "(A,C) (B,C)";
+    ans = "E4 Multiple roots";
     assert((sol.*pfcn)(nodes) == ans);
 }
 
