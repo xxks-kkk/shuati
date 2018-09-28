@@ -93,6 +93,10 @@ add_executable(124
         leetcode/124-BinaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(141
+        leetcode/141-LinkedListCycle/linkedListCycle.cc
+        leetcode/cppinclude/linkedList.cc)
+
 add_executable(145
         leetcode/145-BinaryTreePostorderTraversal/binaryTreePostorderTraversal.cc
         leetcode/cppinclude/bt.cc)
