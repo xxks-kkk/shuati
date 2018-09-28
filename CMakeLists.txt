@@ -262,3 +262,6 @@ add_executable(003
 
 add_executable(004
         misc/MaximizingProfitFromStocks/maximizingProfitFromStocks.cc)
+
+add_executable(005
+        misc/IsThisATree/isThisATree.cc)
