@@ -110,6 +110,10 @@ add_executable(155
 add_executable(159
         leetcode/159-LongestSubstringWithAtMostTwoDistinctCharacters/longestSubstringWithAtMostTwoDistinctCharacters.cc)
 
+add_executable(160
+        leetcode/160-IntersectionofTwoLinkedLists/intersectionofTwoLinkedLists.cc
+        leetcode/cppinclude/linkedList.cc)
+
 add_executable(165
         leetcode/165-CompareVersionNumbers/compareVersionNumbers.c)
 
