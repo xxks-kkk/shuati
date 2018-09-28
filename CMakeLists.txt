@@ -259,3 +259,6 @@ add_executable(002
 
 add_executable(003
         misc/ReformattingDates/reformattingDates.cc)
+
+add_executable(004
+        misc/MaximizingProfitFromStocks/maximizingProfitFromStocks.cc)
