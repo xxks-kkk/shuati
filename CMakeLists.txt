@@ -274,3 +274,6 @@ add_executable(005
 
 add_executable(006
         misc/FindTheWinner/findTheWinner.cc)
+
+add_executable(007
+        misc/SmartSale/smartSale.cc)
