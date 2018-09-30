@@ -256,3 +256,12 @@ add_executable(001
 
 add_executable(002
         misc/HDRT/simplePrint.c)
+
+add_executable(003
+        misc/ReformattingDates/reformattingDates.cc)
+
+add_executable(004
+        misc/MaximizingProfitFromStocks/maximizingProfitFromStocks.cc)
+
+add_executable(005
+        misc/IsThisATree/isThisATree.cc)
