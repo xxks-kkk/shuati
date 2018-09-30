@@ -271,3 +271,6 @@ add_executable(004
 
 add_executable(005
         misc/IsThisATree/isThisATree.cc)
+
+add_executable(006
+        misc/FindTheWinner/findTheWinner.cc)
