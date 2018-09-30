@@ -149,6 +149,9 @@ add_executable(257
         leetcode/257-BinaryTreePaths/binaryTreePaths.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(261
+        leetcode/261-GraphValidTree/graphValidTree.cc)
+        
 add_executable(268
         leetcode/268-MissingNumber/missingNumber.cc)
 
