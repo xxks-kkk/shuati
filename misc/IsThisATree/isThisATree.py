@@ -10,6 +10,8 @@ def SExpression(nodes):
     # keep track of edges we have processed so far
     visited = set()
     # 最多26个node所以只要26*3的array存可能的link
+    # rows: 26 characters
+    # cols: parent, child1, child2
     links = [[None, None, None] for i in range(26)]
 
     # parse input，为了简化改了input格式，用分号分开各edges，不影响解题
@@ -93,9 +95,7 @@ def SExpression(nodes):
         tmp2 = sExp(links[node][2])
         return '(%s%s%s)' % (chr(65  + node), tmp2, tmp)
 
-    res = sExp(root)
-    print(res)
-    return res
+    return sExp(root)
 
 
 def test(pfcn):
@@ -121,7 +121,6 @@ def test(pfcn):
 
     nodes = "(A,B) (A,C) (B,D) (D,C)"
     ans = "E3 Cycle present"
-    print(pfcn(nodes))
     assert pfcn(nodes) == ans
 
     nodes = "(B,A) (B,C) (A,D)"
