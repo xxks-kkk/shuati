@@ -1,5 +1,6 @@
 // http://likemyblogger.blogspot.com/2016/02/mj-53-tree-s-expression.html
 // http://massivealgorithms.blogspot.com/2016/05/tree-s-expression.html
+// |- https://github.com/xieqilu/Qilu-leetcode/blob/master/B219.GetSExpressionBT.cs
 // http://www.1point3acres.com/bbs/thread-131422-1-1.html
 
 #include <string>
@@ -10,13 +11,13 @@
 #include <unordered_set>
 #include <stack>
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
 class Solution
 {
 public:
-    // My attempt
     string
     SExpression(string nodes)
     {
@@ -27,116 +28,139 @@ public:
             "E4 Multiple roots",       //3
             "E5 Any other error"       //4   // could be the case where a node has multiple parents
         };
-        int numVertices = 0;
-        bool error = false;
-        map<string, vector<string>> graph = parseNodes(nodes, numVertices, error);
-        if (error)
+        auto group = parseNodes(error_code, nodes);
+        if (!group.second.empty())
         {
-            return error_code[4]; // E5
+            // there is error message during the process of the given nodes
+            return group.second;
         }
-        return generateSExpression(error_code, graph, numVertices);
+        auto graph = group.first;
+        assert(graph.size() != 0);
+
+        // search for the root
+        string root = "";
+        for (auto& item : graph)
+        {
+            // check if a node has parent
+            if (item.second.first.empty())
+            {
+                if (!root.empty())
+                {
+                    // E3
+                    return error_code[3];
+                }
+                else
+                {
+                    root = item.first;
+                }
+            }
+        }
+        if (root.empty())
+        {
+            // No root => cycle exists
+            // E3
+            return error_code[2];
+        }
+
+        // check for cycles
+        unordered_set<string> seen;
+        queue<string> layer;
+        layer.push(root);
+        while(!layer.empty())
+        {
+            auto node = layer.front();
+            layer.pop();
+            if(seen.count(node))
+            {
+                // E3
+                return error_code[2];
+            }
+            seen.insert(node);
+            for(auto& child : graph[node].second)
+            {
+                layer.push(child);
+            }
+        }
+
+        // generate S-expression
+        return generateSExpression(graph, root);
     }
 
 private:
-    map<string, vector<string>>
-    parseNodes(string nodes, int &numVertices, bool &error)
+    pair<map<string, pair<string, vector<string>>>, string>
+    parseNodes(vector<string> &error_code, string &nodes)
     {
-        map<string, vector<string>> graph;
+        // key: node
+        // vale: (node's parent, a vector of its children)
+        map<string, pair<string, vector<string>>> graph;
         stringstream ss(nodes);
         string token;
-        unordered_set<string> vertex;
+        // keep track of the edges we have processed so far
+        vector<pair<string, string>> edges;
         while (getline(ss, token, ' '))
         {
-            if (token.length() != 5)
-            {
-                error = true;
-                return graph;
-            }
             string first = string(1, token[1]);
             string second = string(1, token[3]);
-            if (!vertex.count(first))
+            if (!isupper(first[0]) || !isalpha(first[0]) || !isalpha(second[0]) || !isupper(second[0]))
             {
-                vertex.insert(first);
+                // E5
+                return make_pair(graph, error_code[4]);
             }
-            if (!vertex.count(second))
+            auto edge = make_pair(first, second);
+            if (find(edges.begin(), edges.end(),edge) != edges.end())
             {
-                vertex.insert(second);
+                // E2
+                return make_pair(graph, error_code[1]);
             }
+            edges.push_back(edge);
             if (graph.find(first) != graph.end())
             {
-                graph[first].push_back(second);
+                graph[first].second.push_back(second);
+                if (graph[first].second.size() > 2)
+                {
+                    // E1
+                    return make_pair(graph, error_code[0]);
+                }
             }
             else
             {
-                graph[first] = {second};
+                graph[first] = make_pair("", vector<string>{second});
+            }
+            if (graph.count(second))
+            {
+                // when there are multiple parents for a node, we simply overriding here instead of return some error
+                // message. Here, the tree is a rather generic term in graph => can have multiple parents.
+                graph[second].first = first;
+            }
+            else
+            {
+                graph[second] = make_pair(first, vector<string>{});
             }
         }
         for (auto &item : graph)
         {
-            sort(item.second.begin(), item.second.end());
+            sort(item.second.second.begin(), item.second.second.end());
         }
-        numVertices = vertex.size();
-        return graph;
+        return make_pair(graph, "");
     }
 
     string
-    generateSExpression(const vector<string> &error_code, map<string, vector<string>> &graph, int numVertices)
+    generateSExpression(map<string, pair<string, vector<string>>>& graph, string root)
     {
-        stringstream ss;
-        unordered_set<string> visited;
-        stack<string> st;
-        // keep tracking of # of pop we have done
-        int counter = 0;
-        // maintain a set of vertex that has incoming edge
-        unordered_set<string> incomingEdges;
-        // assume the begin() is the smallest element ('A')
-        st.push(graph.begin()->first);
-        while (!st.empty())
+        if (graph[root].second.empty())
         {
-            auto item = st.top();
-            st.pop();
-            counter++;
-            if (graph[item].size() > 2)
-            {
-                return error_code[0]; // E1
-            }
-            ss << "(" << item;
-            visited.insert(item);
-            if (graph[item].size() == 0)
-            {
-                // we reach the child of the tree
-                while (counter > st.size())
-                {
-                    counter--;
-                    ss << ")";
-                }
-            }
-            // assume vector is ordered like [B,C]
-            for (int i = graph[item].size() - 1; i >= 0; --i)
-            {
-                if (visited.count(graph[item][i]))
-                {
-                    return error_code[2]; // E3
-                }
-                if (graph.find(graph[item][i]) != graph.end() &&
-                    find(graph[graph[item][i]].begin(), graph[graph[item][i]].end(), item) !=
-                        graph[graph[item][i]].end())
-                {
-                    return error_code[1]; // E2
-                }
-                incomingEdges.insert(graph[item][i]);
-                st.push(graph[item][i]);
-            }
-            cout << "IncomingEdges size: " << incomingEdges.size() << endl;
+            return "(" + root + ")";
         }
-        cout << "numVertices: " << numVertices << endl;
-        cout << "IncomingEdges size: " << incomingEdges.size() << endl;
-        if (incomingEdges.size() < (numVertices - 1))
+        auto comp1 = generateSExpression(graph, graph[root].second[0]);
+        if (graph[root].second.size() == 1)
         {
-            return error_code[3]; // E4
+            return "(" + root + comp1 + ")";
         }
-        cout << "string: " << ss.str();
-        return ss.str();
+        else
+        {
+            auto comp2 = generateSExpression(graph, graph[root].second[1]);
+            return "(" + root + comp1 + comp2 + ")";
+        }
     }
 };
 
@@ -154,7 +178,7 @@ test(ptr2SEexpression pfcn)
     ans = "E1 More than 2 children";
     assert((sol.*pfcn)(nodes) == ans);
 
-    nodes = "(A,B) (B,A)";
+    nodes = "(A,B) (A,B)";
     ans = "E2 Duplicate Edges";
     assert((sol.*pfcn)(nodes) == ans);
 

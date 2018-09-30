@@ -265,6 +265,3 @@ add_executable(004
 
 add_executable(005
         misc/IsThisATree/isThisATree.cc)
-
-add_executable(005-1
-        misc/IsThisATree/isThisATree2.cc)
