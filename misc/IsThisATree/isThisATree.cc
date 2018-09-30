@@ -3,6 +3,8 @@
 // |- https://github.com/xieqilu/Qilu-leetcode/blob/master/B219.GetSExpressionBT.cs
 // http://www.1point3acres.com/bbs/thread-131422-1-1.html
 
+// Citadel OA 2019
+
 #include <string>
 #include <cassert>
 #include <vector>

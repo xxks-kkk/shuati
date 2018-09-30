@@ -1,3 +1,5 @@
+// Citadel OA 2019
+
 #include <cassert>
 #include <string>
 #include <fstream>
