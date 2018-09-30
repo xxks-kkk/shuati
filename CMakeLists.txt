@@ -151,6 +151,9 @@ add_executable(257
 
 add_executable(261
         leetcode/261-GraphValidTree/graphValidTree.cc)
+        
+add_executable(268
+        leetcode/268-MissingNumber/missingNumber.cc)
 
 add_executable(270
         leetcode/270-ClosestBinarySearchTreeValue/closestBinarySearchTreeValue.cc
@@ -259,3 +262,12 @@ add_executable(001
 
 add_executable(002
         misc/HDRT/simplePrint.c)
+
+add_executable(003
+        misc/ReformattingDates/reformattingDates.cc)
+
+add_executable(004
+        misc/MaximizingProfitFromStocks/maximizingProfitFromStocks.cc)
+
+add_executable(005
+        misc/IsThisATree/isThisATree.cc)
