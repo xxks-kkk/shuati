@@ -283,3 +283,6 @@ add_executable(008
 
 add_executable(009
         misc/RemovingChocolates/removingChocolates.cc)
+
+add_executable(010
+        misc/ConsecutiveSum/consecutiveSum.cc)
