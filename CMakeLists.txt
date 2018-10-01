@@ -289,3 +289,6 @@ add_executable(010
 
 add_executable(011
         misc/ThePerfectTeam/thePerfectTeam.cc)
+
+add_executable(012
+        misc/WorkSchedule/workSchedule.cc)
