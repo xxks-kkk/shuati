@@ -280,3 +280,6 @@ add_executable(007
 
 add_executable(008
         misc/WebsitePagination/websitePagination.cc)
+
+add_executable(009
+        misc/RemovingChocolates/removingChocolates.cc)

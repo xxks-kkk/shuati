@@ -15,6 +15,7 @@ public:
     fetchItemsToDisplay(vector<vector<string>> &items, int sortParameter, int sortOrder, int x, int y)
     {
         vector<string> res;
+        // C++: how we define a custom comparator
         typedef function<bool(vector<string>, vector<string>)> Comparator;
         Comparator comp = [sortOrder, sortParameter](vector<string> item1, vector<string>item2) -> bool {
             if (sortOrder == 0)
@@ -50,6 +51,7 @@ public:
                 }
             }
         };
+        // C++: how we use the custom comparator in the priority queue
         priority_queue<vector<string>, vector<vector<string>>, Comparator> pq(comp);
         for(auto& item : items)
         {
