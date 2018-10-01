@@ -286,3 +286,6 @@ add_executable(009
 
 add_executable(010
         misc/ConsecutiveSum/consecutiveSum.cc)
+
+add_executable(011
+        misc/ThePerfectTeam/thePerfectTeam.cc)
