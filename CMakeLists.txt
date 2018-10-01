@@ -292,3 +292,6 @@ add_executable(011
 
 add_executable(012
         misc/WorkSchedule/workSchedule.cc)
+
+add_executable(013
+        misc/MergeString/mergeString.cc)
