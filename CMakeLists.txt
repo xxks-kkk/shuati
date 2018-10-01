@@ -295,3 +295,6 @@ add_executable(012
 
 add_executable(013
         misc/MergeString/mergeString.cc)
+
+add_executable(014
+        misc/BudgetShopping/budgetShopping.cc)
