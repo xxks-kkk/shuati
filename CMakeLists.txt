@@ -277,3 +277,6 @@ add_executable(006
 
 add_executable(007
         misc/SmartSale/smartSale.cc)
+
+add_executable(008
+        misc/WebsitePagination/websitePagination.cc)
