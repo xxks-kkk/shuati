@@ -13,7 +13,7 @@ using namespace std;
 class Solution
 {
 public:
-    vector<string> findSchedules(int work_hours, int day_hours, string pattern)
+    vector<string> findSchedules(int workHours, int dayHours, string pattern)
     {
         int given_hours = 0;
         vector<int> emptySpots;
@@ -29,8 +29,8 @@ public:
                 emptySpots.push_back(i);
             }
         }
-        int target_hour = work_hours - given_hours;
-        vector<int> num(target_hour+1);
+        int target_hour = workHours - given_hours;
+        vector<int> num(dayHours+1);
         for(int i = 0; i < num.size(); ++i)
         {
             num[i] = i;
@@ -72,9 +72,10 @@ private:
     {
         // We fill in the the short path (e.g. 4) with trailing 0s to make it have
         // the length as the number of empty spots (e.g. 40).
+        int n = path.size();
         if (path.size() < emptySpots.size())
         {
-            for(int i = 0; i < emptySpots.size() - path.size(); ++i)
+            for(int i = 0; i < emptySpots.size() - n; ++i)
             {
                 path.push_back(0);
             }
@@ -103,6 +104,26 @@ void test(ptr2findSchedules pfcn)
         "0840840"
     };
     assert((sol.*pfcn)(work_hours, day_hours, pattern) == ans);
+
+    pattern = "???8???";
+    work_hours = 56;
+    day_hours = 8;
+    ans = {
+        "8888888"
+    };
+    assert((sol.*pfcn)(work_hours, day_hours, pattern) == ans);
+
+    pattern = "??2??00";
+    work_hours = 3;
+    day_hours = 2;
+    ans = {
+        "0020100",
+        "0021000",
+        "0120000",
+        "1020000"
+    };
+    assert((sol.*pfcn)(work_hours, day_hours, pattern) == ans);
+
 }
 
 int main()
