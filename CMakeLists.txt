@@ -298,3 +298,6 @@ add_executable(013
 
 add_executable(014
         misc/BudgetShopping/budgetShopping.cc)
+
+add_executable(015
+        misc/DistinctPairs/distinctPairs.cc)
