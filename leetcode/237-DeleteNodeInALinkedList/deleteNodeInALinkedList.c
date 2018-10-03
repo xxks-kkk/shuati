@@ -36,33 +36,46 @@
 //
 // Because we know that the node we want to delete is not the tail of the list,
 // we can guarantee that this approach is possible.
-void deleteNode(struct ListNode* node) {
-  struct ListNode* ptr = node->next;
-  node->val = ptr->val;
-  node->next = ptr->next;
-  free(ptr);
+void
+deleteNode(struct ListNode *node)
+{
+    struct ListNode *ptr = node->next;
+    node->val = ptr->val;
+    node->next = ptr->next;
+    free(ptr);
 }
 
-
-
+// We can't really delete the node, but we can kinda achieve the same effect by
+// instead removing the next node after copying its data into the node that we were asked to delete.
+// https://leetcode.com/problems/delete-node-in-a-linked-list/discuss/65455/1-3-lines-C%2B%2BJavaPythonCCJavaScriptRuby
+void
+deleteNode(struct ListNode *node)
+{
+    // node->next is the pointer to the next node
+    // *node->next (i.e. *(node->next)) access the content of that node.
+    // *node = *node->next: copy the content of the next node to the current node
+    *node = *node->next;
+}
 
 // My initial solution: work but ugly
-void deleteNode(struct ListNode* node) {
-  struct ListNode* ptr = node;
-  struct ListNode* tmp;
-  while(ptr->next != NULL)
-  {
-    ptr->val = ptr->next->val;
-    if(ptr->next->next == NULL)
+void
+deleteNode(struct ListNode *node)
+{
+    struct ListNode *ptr = node;
+    struct ListNode *tmp;
+    while (ptr->next != NULL)
     {
-      tmp = ptr->next;
-      ptr->next = NULL;
-      break;
+        ptr->val = ptr->next->val;
+        if (ptr->next->next == NULL)
+        {
+            tmp = ptr->next;
+            ptr->next = NULL;
+            break;
+        }
+        else
+        {
+            ptr = ptr->next;
+        }
     }
-    else
-    {
-      ptr = ptr->next;
-    }
-  }
-  free(tmp);
+    free(tmp);
 }
