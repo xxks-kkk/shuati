@@ -278,3 +278,33 @@ add_executable(004
 
 add_executable(005
         misc/IsThisATree/isThisATree.cc)
+
+add_executable(006
+        misc/FindTheWinner/findTheWinner.cc)
+
+add_executable(007
+        misc/SmartSale/smartSale.cc)
+
+add_executable(008
+        misc/WebsitePagination/websitePagination.cc)
+
+add_executable(009
+        misc/RemovingChocolates/removingChocolates.cc)
+
+add_executable(010
+        misc/ConsecutiveSum/consecutiveSum.cc)
+
+add_executable(011
+        misc/ThePerfectTeam/thePerfectTeam.cc)
+
+add_executable(012
+        misc/WorkSchedule/workSchedule.cc)
+
+add_executable(013
+        misc/MergeString/mergeString.cc)
+
+add_executable(014
+        misc/BudgetShopping/budgetShopping.cc)
+
+add_executable(015
+        misc/DistinctPairs/distinctPairs.cc)
