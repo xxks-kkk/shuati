@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.9)
 project(shuati)
 
 set(CMAKE_CXX_STANDARD 11)
+include_directories(leetcode)
+# FIXME: Remove this line as we may get clash with our c headers. Gradually fix all the #include "queue.h" to
+# #include "cppinclude/queue.h" and then remove this line.
 include_directories(leetcode/cppinclude)
 
 add_executable(2
@@ -24,6 +27,10 @@ add_executable(14
 
 add_executable(20
         leetcode/20-ValidParentheses/validParentheses.cc)
+
+add_executable(21
+        leetcode/21-MergeTwoSortedList/mergeTwoSortedList.c
+        leetcode/cinclude/linkedlist.c)
 
 add_executable(23
         leetcode/23-MergekSortedLists/mergekSortedLists.cc
