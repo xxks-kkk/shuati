@@ -26,50 +26,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <assert.h>
+#include <ctype.h>
 
 /**
  * Return an array of size *returnSize.
  * Note: The returned array must be malloced, assume caller calls free().
  */
-char** fizzBuzz(int n, int* returnSize)
+char **
+fizzBuzz(int n, int *returnSize)
 {
-  *returnSize = n;
-  char** array = malloc(n * sizeof(char*));
-  int i;
-  for(i = 1; i <= n; i++)
-  {
-    if (i % 3 == 0 && i % 5 != 0)
+    char **returnArray = malloc(sizeof(char *) * n);
+    *returnSize = n;
+    for (int i = 1; i < n + 1; ++i)
     {
-      array[i-1] = malloc(sizeof(char) * strlen("Fizz"));
-      sprintf(array[i-1], "Fizz");
+        if (i % 3 == 0 && i % 5 == 0)
+            returnArray[i - 1] = "FizzBuzz";
+        else if (i % 3 == 0)
+            returnArray[i - 1] = "Fizz";
+        else if (i % 5 == 0)
+            returnArray[i - 1] = "Buzz";
+        else
+        {
+            // C: how we convert int to string (i.e. char*)
+            int length = snprintf(NULL, 0, "%d", i) + 1;
+            char *str = malloc(length);
+            snprintf(str, length, "%d", i);
+            returnArray[i - 1] = str;
+        }
     }
-    else if (i % 3 != 0 && i % 5 == 0)
-    {
-      array[i-1] = malloc(sizeof(char) * strlen("Buzz"));
-      sprintf(array[i-1], "Buzz");
-    }
-    else if (i % 3 == 0 && i % 5 == 0)
-    {
-      array[i-1] = malloc(sizeof(char) * strlen("FizzBuzz"));
-      sprintf(array[i-1], "FizzBuzz"); 
-    }
-    else
-    {
-      array[i-1] = malloc(sizeof(char));
-      sprintf(array[i-1], "%d", i); // how we store int as string in C
-    }
-  }
-  return array;
+    return returnArray;
 }
 
 int
 main()
 {
-  int returnSize = 0;
-  char** array = fizzBuzz(15, &returnSize);
-  int i;
-  for(i = 0; i < returnSize; i++){
-    printf("Line #%d(length: %lu): %s\n", i, strlen(array[i]),array[i]);
-  } 
-  return 0;
+    // TODO: Add assertions test
+    int returnSize = 0;
+    char **array = fizzBuzz(15, &returnSize);
+    int i;
+    for (i = 0; i < returnSize; i++)
+    {
+        printf("Line #%d(length: %lu): %s\n", i, strlen(array[i]), array[i]);
+    }
+    return 0;
 }
