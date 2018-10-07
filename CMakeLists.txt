@@ -59,6 +59,9 @@ add_executable(53
 add_executable(62
         leetcode/62-UniquePaths/uniquePaths.cc)
 
+add_executable(70
+        leetcode/70-ClimbingStairs/climbingStairs.cc)
+
 add_executable(98
         leetcode/98-ValidateBinarySearchTree/validateBinarySearchTree.cc
         leetcode/cppinclude/bt.cc)
@@ -258,6 +261,9 @@ add_executable(796
 
 add_executable(811
         leetcode/811-SubdomainVisitCount/subdomainVisitCount.cc)
+
+add_executable(829
+        leetcode/829-ConsecutiveNumbersSum/consecutiveNumbersSum.cc)
 
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
