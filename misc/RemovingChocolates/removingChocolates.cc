@@ -36,9 +36,16 @@ public:
     int
     numberofWays2(int n)
     {
-        int a = 0; // prev prev step
-        int b = 0; // prev step
-        int c = 1; // current step
+        /*
+         *  a      b    c
+         *  |      |    |
+         *  prev  prev  curr
+         *  prev
+         *  0      0    1
+         */
+        int a = 0; //  # of ways to reach prev prev step
+        int b = 0; //  # of ways to reach prev step
+        int c = 1; //  # of ways to reach current step
         int i = 0;
         while (i < n)
         {
