@@ -222,6 +222,9 @@ add_executable(369
 add_executable(387
         leetcode/387-FirstUniqueCharacterinaString/firstUniqueCharacterinaString.cc)
 
+add_executable(412
+        leetcode/412-FizzBuzz/fizzBuzz.c)
+
 add_executable(437
         leetcode/437-PathSumIII/pathSumIII.cc
         leetcode/cppinclude/bt.cc)
