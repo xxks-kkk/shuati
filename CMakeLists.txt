@@ -262,6 +262,9 @@ add_executable(796
 add_executable(811
         leetcode/811-SubdomainVisitCount/subdomainVisitCount.cc)
 
+add_executable(829
+        leetcode/829-ConsecutiveNumbersSum/consecutiveNumbersSum.cc)
+
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
 
