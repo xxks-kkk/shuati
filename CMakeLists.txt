@@ -74,6 +74,11 @@ add_executable(101
         leetcode/101-SymmetricTree/symmetricTree.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(102
+        leetcode/102-BinaryTreeLevelOrderTraversal/binaryTreeLevelOrderTraversal.cc
+        leetcode/cppinclude/bt.cc
+        leetcode/cppinclude/cpputility.cc)
+
 add_executable(107
         leetcode/107-BinaryTreeLevelOrderTraversalII/binaryTreeLevelOrderTraversalII.cc
         leetcode/cppinclude/bt.cc)

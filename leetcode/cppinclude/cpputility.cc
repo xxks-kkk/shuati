@@ -31,4 +31,19 @@ convertToInt(const std::vector<std::string>& input)
     }
     return res;
 }
+
+void print2DVector(std::vector<std::vector<int>>& nums)
+{
+    std::cout << "[" << std::endl;
+    for(auto& vec : nums)
+    {
+        std::cout << " [";
+        for(auto& element: vec)
+        {
+            std::cout << element << ",";
+        }
+        std::cout << "]," << std::endl;
+    }
+    std::cout << "]" << std::endl;
+}
 }
