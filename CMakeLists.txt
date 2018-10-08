@@ -178,6 +178,10 @@ add_executable(272
 add_executable(278
         leetcode/278-FirstBadVersion/firstBadVersion.cc)
 
+add_executable(285
+        leetcode/285-InorderSuccessorinBST/inorderSuccessorInBST.c
+        leetcode/cinclude/bst.c)
+
 add_executable(289
         leetcode/289-GameOfLife/gameOfLife.cc
         leetcode/cppinclude/cpputility.cc)
