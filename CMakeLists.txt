@@ -123,6 +123,10 @@ add_executable(222
         leetcode/222-CountCompleteTreeNodes/countCompleteTreeNodes.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(226
+        leetcode/226-InvertBinaryTree/invertBinaryTree.cc
+        leetcode/cppinclude/bt.cc)
+
 add_executable(230
         leetcode/230-KthSmallestElementinaBST/kthSmallestElementinaBST.cc
         leetcode/cppinclude/bt.cc)
