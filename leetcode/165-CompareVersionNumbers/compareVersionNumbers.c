@@ -48,21 +48,24 @@ compareVersion( char *version1, char *version2 )
     return 0;
 }
 
-void test()
+typedef int (*ptr2compareVersion) (char*, char*);
+
+void test(ptr2compareVersion pfcn)
 {
     char* version1 = "0.1";
     char* version2 = "0.2";
-    assert(compareVersion(version1, version2) == -1);
+    assert((*pfcn)(version1, version2) == -1);
     version1 = "1.0.1";
     version2 = "1";
-    assert(compareVersion(version1, version2) == 1);
+    assert((*pfcn)(version1, version2) == 1);
     version1 = "7.5.2.4";
     version2 = "7.5.3";
-    assert(compareVersion(version1, version2) == -1);
+    assert((*pfcn)(version1, version2) == -1);
 }
 
 
 int main()
 {
-    test();
+    ptr2compareVersion pfcn = &compareVersion;
+    test(pfcn);
 }

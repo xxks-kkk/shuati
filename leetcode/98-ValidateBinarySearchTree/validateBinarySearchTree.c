@@ -39,41 +39,24 @@
  * [Companies]
  */
 
-
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-
-bool 
-isValidBSTHelper(struct TreeNode* root,
-                 struct TreeNode* minNode,
-                 struct TreeNode* maxNode);
-
 bool
-isValidBST(struct TreeNode* root)
+isValidBSTHelper(struct TreeNode *root, struct TreeNode *lowerBound, struct TreeNode *upperBound)
 {
-  return isValidBSTHelper(root, NULL, NULL);
+    if (root == NULL)
+    {
+        return true;
+    }
+    if ((upperBound && upperBound->val <= root->val) ||
+        (lowerBound && lowerBound->val >= root->val))
+    {
+        return false;
+    }
+    return isValidBSTHelper(root->left, lowerBound, root) &&
+        isValidBSTHelper(root->right, root, upperBound);
 }
 
 bool
-isValidBSTHelper(struct TreeNode* root,
-                 struct TreeNode* minNode,
-                 struct TreeNode* maxNode)
+isValidBST(struct TreeNode *root)
 {
-  if(!root) return true;
-  if(minNode && root->val <= minNode->val ||
-     maxNode && root->val >= maxNode->val)
-    return false;
-  return
-    isValidBSTHelper(root->left, 
-                     minNode, 
-                     root) &&
-    isValidBSTHelper(root->right, 
-                     root, 
-                     maxNode);
+    return isValidBSTHelper(root, NULL, NULL);
 }

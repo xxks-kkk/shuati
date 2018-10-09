@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.9)
 project(shuati)
 
 set(CMAKE_CXX_STANDARD 11)
+include_directories(leetcode)
+# FIXME: Remove this line as we may get clash with our c headers. Gradually fix all the #include "queue.h" to
+# #include "cppinclude/queue.h" and then remove this line.
 include_directories(leetcode/cppinclude)
 
 add_executable(2
@@ -24,6 +27,10 @@ add_executable(14
 
 add_executable(20
         leetcode/20-ValidParentheses/validParentheses.cc)
+
+add_executable(21
+        leetcode/21-MergeTwoSortedList/mergeTwoSortedList.c
+        leetcode/cinclude/linkedlist.c)
 
 add_executable(23
         leetcode/23-MergekSortedLists/mergekSortedLists.cc
@@ -58,9 +65,12 @@ add_executable(54
 add_executable(62
         leetcode/62-UniquePaths/uniquePaths.cc)
 
+add_executable(70
+        leetcode/70-ClimbingStairs/climbingStairs.cc)
+        
 add_executable(88
         leetcode/88-MergeSortedArray/mergeSortedArray.cc)
-
+        
 add_executable(98
         leetcode/98-ValidateBinarySearchTree/validateBinarySearchTree.cc
         leetcode/cppinclude/bt.cc)
@@ -172,6 +182,12 @@ add_executable(257
         leetcode/257-BinaryTreePaths/binaryTreePaths.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(261
+        leetcode/261-GraphValidTree/graphValidTree.cc)
+        
+add_executable(268
+        leetcode/268-MissingNumber/missingNumber.cc)
+
 add_executable(270
         leetcode/270-ClosestBinarySearchTreeValue/closestBinarySearchTreeValue.cc
         leetcode/cppinclude/bt.cc
@@ -241,6 +257,9 @@ add_executable(369
 add_executable(387
         leetcode/387-FirstUniqueCharacterinaString/firstUniqueCharacterinaString.cc)
 
+add_executable(412
+        leetcode/412-FizzBuzz/fizzBuzz.c)
+        
 add_executable(414
         leetcode/414-ThirdMaximumNumber/thirdMaximumNumber.cc)
 
@@ -284,6 +303,9 @@ add_executable(796
 add_executable(811
         leetcode/811-SubdomainVisitCount/subdomainVisitCount.cc)
 
+add_executable(829
+        leetcode/829-ConsecutiveNumbersSum/consecutiveNumbersSum.cc)
+
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
 
@@ -297,3 +319,42 @@ add_executable(001
 
 add_executable(002
         misc/HDRT/simplePrint.c)
+
+add_executable(003
+        misc/ReformattingDates/reformattingDates.cc)
+
+add_executable(004
+        misc/MaximizingProfitFromStocks/maximizingProfitFromStocks.cc)
+
+add_executable(005
+        misc/IsThisATree/isThisATree.cc)
+
+add_executable(006
+        misc/FindTheWinner/findTheWinner.cc)
+
+add_executable(007
+        misc/SmartSale/smartSale.cc)
+
+add_executable(008
+        misc/WebsitePagination/websitePagination.cc)
+
+add_executable(009
+        misc/RemovingChocolates/removingChocolates.cc)
+
+add_executable(010
+        misc/ConsecutiveSum/consecutiveSum.cc)
+
+add_executable(011
+        misc/ThePerfectTeam/thePerfectTeam.cc)
+
+add_executable(012
+        misc/WorkSchedule/workSchedule.cc)
+
+add_executable(013
+        misc/MergeString/mergeString.cc)
+
+add_executable(014
+        misc/BudgetShopping/budgetShopping.cc)
+
+add_executable(015
+        misc/DistinctPairs/distinctPairs.cc)
