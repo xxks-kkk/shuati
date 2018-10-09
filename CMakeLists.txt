@@ -251,6 +251,9 @@ add_executable(437
 add_executable(443
         leetcode/443-StringCompression/stringCompression.cc)
 
+add_executable(460
+        leetcode/460-LFUCache/lFUCache.cc)
+
 add_executable(582
         leetcode/582-KillProcess/killProcess.cc)
 
