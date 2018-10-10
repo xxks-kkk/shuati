@@ -173,6 +173,9 @@ add_executable(250
         leetcode/250-CountUnivalueSubtrees/countUnivalueSubtrees.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(253
+        leetcode/253-MeetingRoomsII/meetingRoomsII.cc)
+
 add_executable(255
         leetcode/255-VerifyPreorderSequenceinBinarySearchTree/verifyPreorderSequenceinBinarySearchTree.cc
         leetcode/cppinclude/bt.cc
