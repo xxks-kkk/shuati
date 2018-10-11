@@ -273,6 +273,9 @@ add_executable(437
 add_executable(443
         leetcode/443-StringCompression/stringCompression.cc)
 
+add_executable(451
+        leetcode/451-SortCharactersByFrequency/sortCharactersByFrequency.cc)
+
 add_executable(460
         leetcode/460-LFUCache/lFUCache.cc)
 
