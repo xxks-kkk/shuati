@@ -315,9 +315,9 @@ add_executable(829
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
 
-add_executable(000
-        leetcode/cppinclude/queue.h
+add_executable(00
         leetcode/cppinclude/queue.tpp
+        leetcode/cppinclude/queue.h
         misc/QueueArrayImplementation/queueArrayImplementation.cc)
 
 add_executable(001
@@ -364,3 +364,6 @@ add_executable(014
 
 add_executable(015
         misc/DistinctPairs/distinctPairs.cc)
+
+add_executable(016
+        leetcode/cppinclude/segmentTree.cc)
