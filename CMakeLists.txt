@@ -96,6 +96,9 @@ add_executable(110
         leetcode/110-BalancedBinaryTree/balancedBinaryTree.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(121
+        leetcode/121-BestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cc)
+
 add_executable(122
         leetcode/122-BestTimetoBuyandSellStockII/bestTimetoBuyandSellStockII.cc)
 
