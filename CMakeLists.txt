@@ -216,6 +216,10 @@ add_executable(278
 add_executable(283
         leetcode/283-MoveZeroes/moveZeroes.cc)
 
+add_executable(285
+        leetcode/285-InorderSuccessorinBST/inorderSuccessorInBST.c
+        leetcode/cinclude/bst.c)
+
 add_executable(289
         leetcode/289-GameOfLife/gameOfLife.cc
         leetcode/cppinclude/cpputility.cc)
