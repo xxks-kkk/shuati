@@ -304,6 +304,10 @@ add_executable(609
 add_executable(658
         leetcode/658-FindKClosestElements/findKClosestElements.cpp)
 
+add_executable(662
+        leetcode/662-MaximumWidthOfBinaryTree/maximumWidthOfBinaryTree.cc
+        leetcode/cppinclude/bt.cc)
+
 add_executable(663
         leetcode/663-EqualTreePartition/equalTreePartition.cc
         leetcode/cppinclude/bt.cc)
