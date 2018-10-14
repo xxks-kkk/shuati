@@ -148,6 +148,9 @@ add_executable(208
 add_executable(213
         leetcode/213-HouseRobberII/houseRobberII.cc)
 
+add_executable(214
+        leetcode/214-ShortestPalindrome/shortestPalindrome.cc)
+
 add_executable(222
         leetcode/222-CountCompleteTreeNodes/countCompleteTreeNodes.cc
         leetcode/cppinclude/bt.cc)
@@ -373,3 +376,6 @@ add_executable(015
 
 add_executable(016
         leetcode/cppinclude/segmentTree.cc)
+
+add_executable(017
+        misc/findAncestor/findAncestor.cc)
