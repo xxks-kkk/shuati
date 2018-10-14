@@ -326,6 +326,9 @@ add_executable(739
 add_executable(796
         leetcode/796-RotateString/rotateString.cc)
 
+add_executable(797
+        leetcode/797-AllPathsFromSourceToTarget/allPathsFromSourceToTarget.cc)
+
 add_executable(811
         leetcode/811-SubdomainVisitCount/subdomainVisitCount.cc)
 
