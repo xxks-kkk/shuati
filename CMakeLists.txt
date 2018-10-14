@@ -266,6 +266,9 @@ add_executable(369
         leetcode/369-PlusOneLinkedList/plusOneLinkedList.cc
         leetcode/cppinclude/linkedList.cc)
 
+add_executable(380
+        leetcode/380-InsertDeleteGetRandomO1/insertDeleteGetRandomO1.cc)
+
 add_executable(387
         leetcode/387-FirstUniqueCharacterinaString/firstUniqueCharacterinaString.cc)
 
