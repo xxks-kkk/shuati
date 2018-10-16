@@ -298,6 +298,9 @@ add_executable(460
 add_executable(463
         leetcode/463-IslandPerimeter/islandPerimeter.cc)
 
+add_executable(567
+        leetcode/567-PermutationInString/permutationInString.cc)
+
 add_executable(582
         leetcode/582-KillProcess/killProcess.cc)
 
