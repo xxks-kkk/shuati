@@ -53,15 +53,24 @@ add_executable(32
 add_executable(35
         leetcode/35-SearchInsertPosition/searchInsertPosition.cc)
 
+add_executable(42
+        leetcode/42-TrappingRainWater/trappingRainWater.cc)
+
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
+
+add_executable(54
+        leetcode/54-SpiralMatrix/spiralMatrix.cc)
 
 add_executable(62
         leetcode/62-UniquePaths/uniquePaths.cc)
 
 add_executable(70
         leetcode/70-ClimbingStairs/climbingStairs.cc)
-
+        
+add_executable(88
+        leetcode/88-MergeSortedArray/mergeSortedArray.cc)
+        
 add_executable(98
         leetcode/98-ValidateBinarySearchTree/validateBinarySearchTree.cc
         leetcode/cppinclude/bt.cc)
@@ -87,9 +96,22 @@ add_executable(110
         leetcode/110-BalancedBinaryTree/balancedBinaryTree.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(121
+        leetcode/121-BestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cc)
+
+add_executable(122
+        leetcode/122-BestTimetoBuyandSellStockII/bestTimetoBuyandSellStockII.cc)
+
 add_executable(124
         leetcode/124-BinaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cc
         leetcode/cppinclude/bt.cc)
+
+add_executable(140
+        leetcode/140-WordBreakII/wordBreakII.cc)
+
+add_executable(141
+        leetcode/141-LinkedListCycle/linkedListCycle.cc
+        leetcode/cppinclude/linkedList.cc)
 
 add_executable(145
         leetcode/145-BinaryTreePostorderTraversal/binaryTreePostorderTraversal.cc
@@ -104,8 +126,15 @@ add_executable(155
 add_executable(159
         leetcode/159-LongestSubstringWithAtMostTwoDistinctCharacters/longestSubstringWithAtMostTwoDistinctCharacters.cc)
 
+add_executable(160
+        leetcode/160-IntersectionofTwoLinkedLists/intersectionofTwoLinkedLists.cc
+        leetcode/cppinclude/linkedList.cc)
+
 add_executable(165
         leetcode/165-CompareVersionNumbers/compareVersionNumbers.c)
+
+add_executable(186
+        leetcode/186-ReverseWordsInAStringII/reverseWordsInAStringII.cc)
 
 add_executable(207
         leetcode/207-CourseSchedule/courseSchedule.cc
@@ -118,6 +147,9 @@ add_executable(208
 
 add_executable(213
         leetcode/213-HouseRobberII/houseRobberII.cc)
+
+add_executable(214
+        leetcode/214-ShortestPalindrome/shortestPalindrome.cc)
 
 add_executable(222
         leetcode/222-CountCompleteTreeNodes/countCompleteTreeNodes.cc
@@ -150,6 +182,9 @@ add_executable(250
         leetcode/250-CountUnivalueSubtrees/countUnivalueSubtrees.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(253
+        leetcode/253-MeetingRoomsII/meetingRoomsII.cc)
+
 add_executable(255
         leetcode/255-VerifyPreorderSequenceinBinarySearchTree/verifyPreorderSequenceinBinarySearchTree.cc
         leetcode/cppinclude/bt.cc
@@ -178,6 +213,13 @@ add_executable(272
 add_executable(278
         leetcode/278-FirstBadVersion/firstBadVersion.cc)
 
+add_executable(283
+        leetcode/283-MoveZeroes/moveZeroes.cc)
+
+add_executable(285
+        leetcode/285-InorderSuccessorinBST/inorderSuccessorInBST.c
+        leetcode/cinclude/bst.c)
+
 add_executable(289
         leetcode/289-GameOfLife/gameOfLife.cc
         leetcode/cppinclude/cpputility.cc)
@@ -205,6 +247,9 @@ add_executable(337
         leetcode/337-HouseRobberIII/houseRobberIII.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(344
+        leetcode/344-ReverseString/reverseString.cc)
+
 add_executable(346
         leetcode/346-MovingAveragefromDataStream/movingAveragefromDataStream.cc)
 
@@ -214,6 +259,9 @@ add_executable(347
 add_executable(349
         leetcode/349-IntersectionOfTwoArrays/intersectionOfTwoArrays.cc)
 
+add_executable(350
+        leetcode/350-IntersectionofTwoArraysII/intersectionofTwoArraysII.cc)
+
 add_executable(366
         leetcode/366-FindLeavesofBinaryTree/findLeavesofBinaryTree.cc
         leetcode/cppinclude/bt.cc)
@@ -222,15 +270,36 @@ add_executable(369
         leetcode/369-PlusOneLinkedList/plusOneLinkedList.cc
         leetcode/cppinclude/linkedList.cc)
 
+add_executable(380
+        leetcode/380-InsertDeleteGetRandomO1/insertDeleteGetRandomO1.cc)
+
 add_executable(387
         leetcode/387-FirstUniqueCharacterinaString/firstUniqueCharacterinaString.cc)
 
 add_executable(412
         leetcode/412-FizzBuzz/fizzBuzz.c)
+        
+add_executable(414
+        leetcode/414-ThirdMaximumNumber/thirdMaximumNumber.cc)
 
 add_executable(437
         leetcode/437-PathSumIII/pathSumIII.cc
         leetcode/cppinclude/bt.cc)
+
+add_executable(443
+        leetcode/443-StringCompression/stringCompression.cc)
+
+add_executable(451
+        leetcode/451-SortCharactersByFrequency/sortCharactersByFrequency.cc)
+
+add_executable(460
+        leetcode/460-LFUCache/lFUCache.cc)
+
+add_executable(463
+        leetcode/463-IslandPerimeter/islandPerimeter.cc)
+
+add_executable(567
+        leetcode/567-PermutationInString/permutationInString.cc)
 
 add_executable(582
         leetcode/582-KillProcess/killProcess.cc)
@@ -240,6 +309,10 @@ add_executable(609
 
 add_executable(658
         leetcode/658-FindKClosestElements/findKClosestElements.cpp)
+
+add_executable(662
+        leetcode/662-MaximumWidthOfBinaryTree/maximumWidthOfBinaryTree.cc
+        leetcode/cppinclude/bt.cc)
 
 add_executable(663
         leetcode/663-EqualTreePartition/equalTreePartition.cc
@@ -259,6 +332,9 @@ add_executable(739
 add_executable(796
         leetcode/796-RotateString/rotateString.cc)
 
+add_executable(797
+        leetcode/797-AllPathsFromSourceToTarget/allPathsFromSourceToTarget.cc)
+
 add_executable(811
         leetcode/811-SubdomainVisitCount/subdomainVisitCount.cc)
 
@@ -268,9 +344,9 @@ add_executable(829
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
 
-add_executable(000
-        leetcode/cppinclude/queue.h
+add_executable(00
         leetcode/cppinclude/queue.tpp
+        leetcode/cppinclude/queue.h
         misc/QueueArrayImplementation/queueArrayImplementation.cc)
 
 add_executable(001
@@ -317,3 +393,9 @@ add_executable(014
 
 add_executable(015
         misc/DistinctPairs/distinctPairs.cc)
+
+add_executable(016
+        leetcode/cppinclude/segmentTree.cc)
+
+add_executable(017
+        misc/findAncestor/findAncestor.cc)

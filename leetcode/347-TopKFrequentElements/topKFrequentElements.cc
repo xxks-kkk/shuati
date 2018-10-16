@@ -39,6 +39,9 @@ public:
         // how to think: whether the incoming element greater than the top of the heap?
         //               If yes, move the incoming element below the top element
         //               If no, incoming element becomes new top element
+        // Alternatively:
+        // - less<T>: smallest element at the below -> max heap
+        // - greater<T>: greatest element at the below -> min heap
         // By default, priority queue is max heap with less<T>
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
         for ( auto &element: table )

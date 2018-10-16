@@ -1,3 +1,6 @@
+#include "cinclude/bst.h"
+#include <stdio.h>
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -6,16 +9,26 @@
  *     struct TreeNode *right;
  * };
  */
-struct TreeNode* inorderSuccessor(struct TreeNode* root, struct TreeNode* p) {
+
+/**
+ * Note that if we can access the parent node, we can certainly
+ * find the successor given only one node p. See "findNext" in "cinclude/bst.c"
+ * @param root
+ * @param p
+ * @return
+ */
+struct TreeNode *
+inorderSuccessor(struct TreeNode *root, struct TreeNode *p)
+{
     if (root == NULL || p == NULL)
     {
         return NULL;
     }
     // The solution resembles the binary search
-    struct TreeNode* successor = NULL;
-    while(root != NULL)
+    struct TreeNode *successor = NULL;
+    while (root != NULL)
     {
-        if(root->val <= p->val)
+        if (root->val <= p->val)
         {
             // Similar to binary search, if root->val <= p->val, that means all the left nodes of the root
             // can be discarded. Their values are definitely smaller than p->val and thus cannot be its successor
@@ -31,4 +44,21 @@ struct TreeNode* inorderSuccessor(struct TreeNode* root, struct TreeNode* p) {
         }
     }
     return successor;
+}
+
+typedef struct TreeNode *(*ptr2inorderSuccessor)(struct TreeNode *, struct TreeNode *);
+
+void
+test(ptr2inorderSuccessor pfcn)
+{
+    int values[] = {8, 4, 12, 1, 7, 11, 20};
+    struct TreeNode *t = buildTree(values, sizeof values / sizeof *values);
+    printBst(t);
+}
+
+int
+main(int argc, const char **argv)
+{
+    ptr2inorderSuccessor pfcn = &inorderSuccessor;
+    test(pfcn);
 }
