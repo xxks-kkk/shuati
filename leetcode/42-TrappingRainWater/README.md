@@ -5,7 +5,7 @@
 The basic idea for trapping a water is very simple: for a given `height[i]` (i.e., the 1 unit long
 column), the water it can trap determined by the minimum value of the two maximum values:
 the maximum height to the left of `height[i]` and the maximum height to the right of `height[i]`.
-Let's say those two maximum values are $height[l]$ with $l \le i$ and $height[r]$ with $r \ge i$.
+Let's say those two maximum values are `height[l]` with `l <= i` and `height[r]` with `r >= i`.
 Then, the amount of water we can trap for `height[i]` is calculated as
 `min(height[l],height[r]) - height[i]`. We calculate the water can trap for every possible `height[i]`
 to get our final answer.

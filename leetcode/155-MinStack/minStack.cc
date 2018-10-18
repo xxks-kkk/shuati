@@ -26,6 +26,7 @@ public:
     MinStack() {}
 
     void push(int x) {
+        // s2 always contains the minimum value of the stack
         if(s2.empty() || x <= getMin())
         {
             s2.push(x);

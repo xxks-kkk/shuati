@@ -1,10 +1,14 @@
 //    Given n processes, each process has a unique PID (process id) and its PPID (parent process id).
 //
-//    Each process only has one parent process, but may have one or more children processes. This is just like a tree structure. Only one process has PPID that is 0, which means this process has no parent process. All the PIDs will be distinct positive integers.
+//    Each process only has one parent process, but may have one or more children processes. This is just like a tree structure.
+//    Only one process has PPID that is 0, which means this process has no parent process. All the PIDs will be distinct positive integers.
 //
-//    We use two list of integers to represent a list of processes, where the first list contains PID for each process and the second list contains the corresponding PPID.
+//    We use two list of integers to represent a list of processes, where the first list contains PID for each process
+//    and the second list contains the corresponding PPID.
 //
-//    Now given the two lists, and a PID representing a process you want to kill, return a list of PIDs of processes that will be killed in the end. You should assume that when a process is killed, all its children processes will be killed. No order is required for the final answer.
+//    Now given the two lists, and a PID representing a process you want to kill, return a list of PIDs of processes
+//    that will be killed in the end. You should assume that when a process is killed, all its children processes will
+//    be killed. No order is required for the final answer.
 //
 //    Example 1:
 //    Input:
@@ -13,11 +17,11 @@
 //    kill = 5
 //    Output: [5,10]
 //    Explanation:
-//    3
-//    /   \
+//                3
+//              /  \
 //            1     5
-//    /
-//    10
+//                 /
+//               10
 //    Kill 5 will also kill 10.
 //    Note:
 //    The given kill id is guaranteed to be one of the given PIDs.
@@ -37,11 +41,11 @@ public:
     killProcess( vector<int> &pid, vector<int> &ppid, int kill )
     {
         vector<int> res;
+        // <parent pid, its children pid>
         unordered_map<int, vector<int>> dict;
         for ( auto &id: ppid )
         {
-            pair<int, vector<int>> group( id, {} );
-            dict.insert( group );
+            dict.insert( pair<int, vector<int>>(id, {}) );
         }
         for ( int i = 0; i < pid.size(); ++i )
         {
@@ -68,6 +72,7 @@ public:
         {
             return;
         }
+        // C++: std::unordered_map::at returns the corresponding value of the given key in the dictionary
         for ( auto &id : dict.at( target ))
         {
             if ( visited.find( id ) == visited.end())
