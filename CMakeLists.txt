@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.9)
 project(shuati)
 
 set(CMAKE_CXX_STANDARD 11)
+
+add_subdirectory(misc/ExternGroupBy)
+
 include_directories(leetcode)
 # FIXME: Remove this line as we may get clash with our c headers. Gradually fix all the #include "queue.h" to
 # #include "cppinclude/queue.h" and then remove this line.
@@ -402,3 +405,6 @@ add_executable(016
 
 add_executable(017
         misc/findAncestor/findAncestor.cc)
+
+add_executable(018
+        misc/RangeQueryForText/rangeQueryForText.cc)
