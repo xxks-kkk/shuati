@@ -52,9 +52,6 @@ externGroupByBaseline()
     }
 }
 
-/**
- * Our actual implementation
- */
 void
 externGroupBy()
 {
@@ -63,8 +60,11 @@ externGroupBy()
     // A knob to determine whether we should estimate the queue size limit
     bool estimate = true;
     unsigned long queue_size_limit;
+    // The number of temp files we want to use
+    unsigned long numFiles = 2;
     int runNum = 0;
     bool startRun = true;
+
     typedef std::function<bool(std::pair<std::string,std::string>, std::pair<std::string,std::string>)> Comparator;
     Comparator comp = [](std::pair<std::string,std::string> item1, std::pair<std::string,std::string> item2) -> bool{
         return item1.first > item2.first;
@@ -75,6 +75,7 @@ externGroupBy()
                         Comparator> pq(comp);
     std::queue<std::pair<std::string, std::string>> buffer;
     std::ofstream outfile;
+
     // We first build runs
     for (std::string line; std::getline(std::cin, line);)
     {
@@ -97,7 +98,7 @@ externGroupBy()
             }
             if (!outfile.is_open())
             {
-                outfile.open("run" + std::to_string(runNum));
+                outfile.open("run" + std::to_string(runNum % numFiles), std::ios_base::app);
             }
             if (startRun)
             {
@@ -146,7 +147,7 @@ externGroupBy()
     }
     if (!outfile.is_open())
     {
-        outfile.open("run" + std::to_string(runNum));
+        outfile.open("run" + std::to_string(runNum % numFiles), std::ios_base::app);
     }
     while(buffer.size() > 0)
     {
