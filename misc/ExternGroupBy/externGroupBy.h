@@ -17,14 +17,15 @@
 #include <sstream>
 #include <vector>
 #include <map>
+#include <fstream>
+
+using ptr2ExternGroupBy = void (*)();
 
 namespace ExternGroupBy
 {
 void
 externGroupByBaseline();
 
-static std::string
-join(const std::vector<std::string> &vec, const char *delim);
 }
 
 #endif //SHUATI_EXTERNGROUPBY_H

@@ -10,13 +10,10 @@
 
 #include "externGroupBy.h"
 
-using ptr2ExternGroupBy = void (*)();
-
-class UnitTests
-{
-
-};
-
+/**
+ * Benchmark the external GroupBy implementation
+ * @param pfcn the function pointer to a specific external GroupBy implementation
+ */
 void
 benchmark(ptr2ExternGroupBy pfcn)
 {
@@ -26,15 +23,5 @@ benchmark(ptr2ExternGroupBy pfcn)
 int
 main()
 {
-    //TODO: A tempory workaround for CLion. Remove to submit
-    // https://youtrack.jetbrains.com/issue/CPP-3153
-    // https://stackoverflow.com/questions/10150468/how-to-redirect-cin-and-cout-to-files
-    std::freopen("input-small.txt", "r", stdin);
-    std::freopen("test-output-small.txt", "w", stdout);
 
-    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupByBaseline;
-    benchmark(pfcn);
-
-    std::fclose(stdin);
-    std::fclose(stdout);
 }

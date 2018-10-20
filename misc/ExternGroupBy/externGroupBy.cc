@@ -9,6 +9,7 @@
  ************************************************************************/
 
 #include "externGroupBy.h"
+#include "utility.h"
 
 namespace ExternGroupBy
 {
@@ -47,22 +48,7 @@ externGroupByBaseline()
     for (auto &item : key_dict)
     {
         std::sort(item.second.begin(), item.second.end());
-        std::cout << item.first << " " << ExternGroupBy::join(item.second, " ") << std::endl;
+        std::cout << item.first << " " << Utility::join(item.second, " ") << std::endl;
     }
-}
-
-/**
- * A helper method to join the std::vector<std::string> with delimiter and output one single string
- * @param vec a vector<string>
- * @param delim the delimiter
- * @return the joined string
- */
-static std::string
-join(const std::vector<std::string> &vec, const char *delim)
-{
-    std::stringstream res;
-    std::copy(vec.begin(), vec.end(), std::ostream_iterator<std::string>(res, delim));
-    unsigned long size = res.str().size();
-    return res.str().substr(0, size-1);
 }
 }
