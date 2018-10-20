@@ -18,6 +18,8 @@
 #include <vector>
 #include <map>
 #include <fstream>
+#include <queue>
+#include <functional>
 
 using ptr2ExternGroupBy = void (*)();
 
@@ -26,6 +28,8 @@ namespace ExternGroupBy
 void
 externGroupByBaseline();
 
+void
+externGroupBy();
 }
 
 #endif //SHUATI_EXTERNGROUPBY_H

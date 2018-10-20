@@ -60,4 +60,3 @@ Test failed! Peak memory usage was 768 kilobytes.
 ### Submission
 
 After completion of the assignment, please zip the folder containing your source code and tests, and email us the zip file as your submission.
-Please do NOT upload the assignment or your submission to any public location.

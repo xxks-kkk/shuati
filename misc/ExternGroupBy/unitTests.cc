@@ -176,4 +176,7 @@ main()
     UnitTests unitTests = UnitTests(config);
     ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupByBaseline;
     unitTests.test(pfcn);
+
+    pfcn = &ExternGroupBy::externGroupBy;
+    unitTests.test(pfcn);
 }

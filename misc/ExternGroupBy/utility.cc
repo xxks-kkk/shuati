@@ -23,8 +23,9 @@ join(const std::vector <std::string> &vec, const char *delim)
 {
     std::stringstream res;
     std::copy(vec.begin(), vec.end(), std::ostream_iterator<std::string>(res, delim));
-    unsigned long size = res.str().size();
-    return res.str().substr(0, size - 1);
+    std::string ret = res.str();
+    ret.pop_back();
+    return ret;
 }
 
 /**
