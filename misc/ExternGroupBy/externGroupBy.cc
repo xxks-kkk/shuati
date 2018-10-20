@@ -73,6 +73,7 @@ externGroupBy()
     std::priority_queue<std::pair<std::string, std::string>,
                         std::vector<std::pair<std::string, std::string>>,
                         Comparator> pq(comp);
+    std::queue<std::pair<std::string, std::string>> buffer;
     std::ofstream outfile;
     // We first build runs
     for (std::string line; std::getline(std::cin, line);)
@@ -80,7 +81,6 @@ externGroupBy()
         std::stringstream ss(line);
         std::string buf;
         std::vector<std::string> tokens;
-        std::vector<std::pair<std::string, std::string>> buffer;
         while (ss >> buf)
         {
             tokens.emplace_back(buf);
@@ -105,7 +105,7 @@ externGroupBy()
                 {
                     pq.push(std::pair<std::string, std::string>{key, val});
                 }
-                else
+                if (pq.size() == queue_size_limit)
                 {
                     startRun = false;
                 }
@@ -123,23 +123,36 @@ externGroupBy()
                     }
                     else
                     {
-                        buffer.push_back(std::pair<std::string, std::string>{key, val});
+                        buffer.push(std::pair<std::string, std::string>{key, val});
                     }
                 }
-                else
+                if (pq.empty())
                 {
                     outfile.close();
                     runNum++;
+                    if (buffer.size() < queue_size_limit)
+                    {
+                        startRun = true;
+                    }
                     while (buffer.size() > 0)
                     {
-                        auto item = buffer.back();
+                        auto item = buffer.front();
                         pq.push(item);
-                        buffer.pop_back();
+                        buffer.pop();
                     }
-                    startRun = true;
                 }
             }
         }
+    }
+    if (!outfile.is_open())
+    {
+        outfile.open("run" + std::to_string(runNum));
+    }
+    while(buffer.size() > 0)
+    {
+        auto item = buffer.front();
+        pq.push(item);
+        buffer.pop();
     }
     // It's possible that our priority_queue is large and there are still some pairs left in the queue
     while (!pq.empty())
