@@ -1,0 +1,4 @@
+# The configuration file that is used to setup the test cases
+# The fields are: mem_limit num_pairs key_length value_length
+100 10 1 5
+10000000 1000000 3 10
