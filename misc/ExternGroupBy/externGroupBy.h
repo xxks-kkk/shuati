@@ -20,6 +20,8 @@
 #include <fstream>
 #include <queue>
 #include <functional>
+#include <tuple>
+#include <numeric>
 
 using ptr2ExternGroupBy = void (*)();
 

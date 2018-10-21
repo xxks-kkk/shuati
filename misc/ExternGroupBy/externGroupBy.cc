@@ -52,6 +52,9 @@ externGroupByBaseline()
     }
 }
 
+/**
+ * Our actual implementation
+ */
 void
 externGroupBy()
 {
@@ -61,12 +64,14 @@ externGroupBy()
     bool estimate = true;
     unsigned long queue_size_limit;
     // The number of temp files we want to use
+    // This number should not be greater than the queue_size_limit
     unsigned long numFiles = 2;
     int runNum = 0;
     bool startRun = true;
 
-    typedef std::function<bool(std::pair<std::string,std::string>, std::pair<std::string,std::string>)> Comparator;
-    Comparator comp = [](std::pair<std::string,std::string> item1, std::pair<std::string,std::string> item2) -> bool{
+    typedef std::function<bool(std::pair<std::string, std::string>, std::pair<std::string, std::string>)> Comparator;
+    Comparator comp = [](std::pair<std::string, std::string> item1, std::pair<std::string, std::string> item2) -> bool
+    {
         return item1.first > item2.first;
     };
     // define a min heap
@@ -129,6 +134,8 @@ externGroupBy()
                 }
                 if (pq.empty())
                 {
+                    // marker to separate runs within a file
+                    outfile << std::endl;
                     outfile.close();
                     runNum++;
                     if (buffer.size() < queue_size_limit)
@@ -145,23 +152,131 @@ externGroupBy()
             }
         }
     }
-    if (!outfile.is_open())
-    {
-        outfile.open("run" + std::to_string(runNum % numFiles), std::ios_base::app);
-    }
-    while(buffer.size() > 0)
-    {
-        auto item = buffer.front();
-        pq.push(item);
-        buffer.pop();
-    }
     // It's possible that our priority_queue is large and there are still some pairs left in the queue
+    // The elements inside the queue belong to the run we haven't finished in the loop.
     while (!pq.empty())
     {
         auto target = pq.top();
         outfile << target.first << " " << target.second << std::endl;
         pq.pop();
     }
+    outfile << std::endl;
+    runNum++;
     outfile.close();
+
+    // The leftout elements in buffer belongs to a new run
+    if (!outfile.is_open())
+    {
+        outfile.open("run" + std::to_string(runNum % numFiles), std::ios_base::app);
+    }
+    while (buffer.size() > 0)
+    {
+        auto item = buffer.front();
+        pq.push(item);
+        buffer.pop();
+    }
+    while (!pq.empty())
+    {
+        auto target = pq.top();
+        outfile << target.first << " " << target.second << std::endl;
+        pq.pop();
+    }
+    outfile << std::endl;
+    runNum++;
+    outfile.close();
+
+    // Now, we merge the result
+    // We first create another file for polyphase merge
+    outfile.open("run" + std::to_string(numFiles), std::ios_base::app);
+    outfile.close();
+    // A bitmap to keep track of which files are empty (ie. 0)
+    std::vector<int> emptyFile(numFiles + 1, 1);
+    // Keep track of which file to use next
+    int FileToUseNext = numFiles;
+    // The newly created one is empty
+    emptyFile[FileToUseNext] = 0;
+    std::string lastKey;
+
+    // <key,value, filename, read position from last time>
+    typedef std::function<bool(std::tuple<std::string, std::string, int, long int>,
+                               std::tuple<std::string, std::string, int, long int>)>
+        Comparator2;
+    Comparator2 comp2 =
+        [](std::tuple<std::string, std::string, int, long int> item1,
+           std::tuple<std::string, std::string, int, long int> item2) -> bool
+        {
+            return std::get<0>(item1) > std::get<0>(item2);
+        };
+    // define a min heap
+    std::priority_queue<std::tuple<std::string, std::string, int, long int>,
+                        std::vector<std::tuple<std::string, std::string, int, long int>>,
+                        Comparator2> pq2(comp2);
+
+    std::ifstream infile;
+
+    while (std::accumulate(emptyFile.begin(), emptyFile.end(), 0) != 1)
+    {
+        for (int i = 0; i < numFiles; ++i)
+        {
+            infile.open("run" + std::to_string(i));
+            for (std::string line; std::getline(infile, line);)
+            {
+                long int pos = infile.tellg();
+                std::stringstream ss(line);
+                std::string buf;
+                std::vector<std::string> tokens;
+                while (ss >> buf)
+                {
+                    tokens.emplace_back(buf);
+                }
+                if (!tokens.empty())
+                {
+                    auto key = tokens[0];
+                    auto val = tokens[1];
+                    pq2.push(std::tuple<std::string, std::string, int, long int>{key, val, i, pos});
+                    break;
+                }
+            }
+            infile.close();
+        }
+
+        outfile.open("run" + std::to_string(FileToUseNext));
+        while (!pq2.empty())
+        {
+            auto item = pq2.top();
+            outfile << std::get<0>(item) << " " << std::get<1>(item) << std::endl;
+            pq2.pop();
+            infile.open("run" + std::to_string(std::get<2>(item)));
+            infile.seekg(std::get<3>(item));
+            std::string line;
+            std::getline(infile, line);
+            std::stringstream ss(line);
+            std::string buf;
+            std::vector<std::string> tokens;
+            while (ss >> buf)
+            {
+                tokens.emplace_back(buf);
+            }
+            if (!tokens.empty())
+            {
+                auto key = tokens[0];
+                auto val = tokens[1];
+                pq2.push(std::tuple<std::string, std::string, int, long int>{key, val, std::get<2>(item),
+                                                                             infile.tellg()});
+            }
+            if (infile.eof())
+            {
+                FileToUseNext = std::get<2>(item);
+                emptyFile[FileToUseNext] = 0;
+            }
+            infile.close();
+        }
+        outfile << std::endl;
+        outfile.close();
+    }
+
+    // By here, all the key values records are conslidated into one file with the key in the sorted order
+    // Now we can merge the same keys and output the result to the stdout
+
 }
 }
