@@ -195,7 +195,11 @@ externGroupBy()
     int FileToUseNext = numFiles;
     // The newly created one is empty
     emptyFile[FileToUseNext] = 0;
-    std::string lastKey;
+    // Keep track of which part of the file we should begin to read
+    std::vector<long int> fileStart(numFiles + 1);
+    // Keep track of runs we have process so far. We reset when all the ith run of each
+    // file has been processed
+    int numRuns = 0;
 
     // <key,value, filename, read position from last time>
     typedef std::function<bool(std::tuple<std::string, std::string, int, long int>,
@@ -216,31 +220,39 @@ externGroupBy()
 
     while (std::accumulate(emptyFile.begin(), emptyFile.end(), 0) != 1)
     {
-        for (int i = 0; i < numFiles; ++i)
+
+        for (int i = 0; i < emptyFile.size(); ++i)
         {
-            infile.open("run" + std::to_string(i));
-            for (std::string line; std::getline(infile, line);)
+            if (emptyFile[i] == 1)
             {
-                long int pos = infile.tellg();
-                std::stringstream ss(line);
-                std::string buf;
-                std::vector<std::string> tokens;
-                while (ss >> buf)
+                infile.open("run" + std::to_string(i));
+                infile.seekg(fileStart[i]);
+                long int pos;
+                for (std::string line; std::getline(infile, line);)
                 {
-                    tokens.emplace_back(buf);
+                    pos = infile.tellg();
+                    std::stringstream ss(line);
+                    std::string buf;
+                    std::vector<std::string> tokens;
+                    while (ss >> buf)
+                    {
+                        tokens.emplace_back(buf);
+                    }
+                    if (!tokens.empty())
+                    {
+                        auto key = tokens[0];
+                        auto val = tokens[1];
+                        pq2.push(std::tuple<std::string, std::string, int, long int>{key, val, i, pos});
+                        break;
+                    }
                 }
-                if (!tokens.empty())
-                {
-                    auto key = tokens[0];
-                    auto val = tokens[1];
-                    pq2.push(std::tuple<std::string, std::string, int, long int>{key, val, i, pos});
-                    break;
-                }
+                fileStart[i] = pos;
+                infile.close();
             }
-            infile.close();
         }
 
         outfile.open("run" + std::to_string(FileToUseNext));
+        emptyFile[FileToUseNext] = 1;
         while (!pq2.empty())
         {
             auto item = pq2.top();
@@ -264,14 +276,32 @@ externGroupBy()
                 pq2.push(std::tuple<std::string, std::string, int, long int>{key, val, std::get<2>(item),
                                                                              infile.tellg()});
             }
-            if (infile.eof())
+            else
+            {
+                // we read empty line, which means we have finished processing a run
+                numRuns++;
+                if (numRuns == numFiles)
+                {
+                    // All the ith run of each file has been processed. We can insert a blank line to the end
+                    outfile << std::endl;
+                    numRuns = 0;
+                }
+            }
+            fileStart[std::get<2>(item)] = infile.tellg();
+            std::string tmp;
+            // Check whether we have reached the EOF
+            while (!getline(infile, tmp))
             {
                 FileToUseNext = std::get<2>(item);
                 emptyFile[FileToUseNext] = 0;
+                std::ofstream infile2;
+                infile2.open("run" + std::to_string(FileToUseNext));
+                infile2.close();
+                fileStart[FileToUseNext] = 0;
+                break;
             }
             infile.close();
         }
-        outfile << std::endl;
         outfile.close();
     }
 
