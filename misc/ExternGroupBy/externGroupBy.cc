@@ -81,7 +81,9 @@ externGroupBy()
     std::queue<std::pair<std::string, std::string>> buffer;
     std::ofstream outfile;
 
-    // We first build runs
+    /**
+     *  We first build runs
+     */
     for (std::string line; std::getline(std::cin, line);)
     {
         std::stringstream ss(line);
@@ -185,7 +187,9 @@ externGroupBy()
     runNum++;
     outfile.close();
 
-    // Now, we merge the result
+    /**
+     * We do polyphase merge to merge the result
+     */
     // We first create another file for polyphase merge
     outfile.open("run" + std::to_string(numFiles), std::ios_base::app);
     outfile.close();
@@ -305,8 +309,64 @@ externGroupBy()
         outfile.close();
     }
 
-    // By here, all the key values records are conslidated into one file with the key in the sorted order
-    // Now we can merge the same keys and output the result to the stdout
-
+    /**
+     *  By here, all the key values records are conslidated into one file with the key in the sorted order
+     *  Now we can merge the same keys and output the result to the stdout
+     */
+    // We use this to consolidate all the duplicate key's values
+    std::pair<std::string, std::vector<std::string>> record;
+    // We figure out which file we want to open. There should be only one file contains our final result that
+    // is about to output
+    for(auto& result: emptyFile)
+    {
+        if (result == 1)
+        {
+            infile.open("run" + std::to_string(result));
+            break;
+        }
+    }
+    for (std::string line; std::getline(infile, line);)
+    {
+        std::stringstream ss(line);
+        std::string buf;
+        std::vector<std::string> tokens;
+        while (ss >> buf)
+        {
+            tokens.emplace_back(buf);
+        }
+        if (!tokens.empty())
+        {
+            auto key = tokens[0];
+            auto val = tokens[1];
+            if (record.second.empty())
+            {
+                record.first = key;
+                record.second.push_back(val);
+            }
+            else
+            {
+                if (record.first == key)
+                {
+                    // We encounter the duplicate key, we push its values to the record
+                    record.second.push_back(val);
+                }
+                else
+                {
+                    // The key is different, we can print out the record and clear it.
+                    std::cout << record.first << " " << Utility::join(record.second, " ") << std::endl;
+                    record.second.erase(record.second.begin(), record.second.end());
+                    record.first = key;
+                    record.second.push_back(val);
+                }
+            }
+        }
+    }
+    std::cout << record.first << " " << Utility::join(record.second, " ") << std::endl;
+    infile.close();
+    for(int i = 0; i < emptyFile.size(); ++i)
+    {
+        std::string cmd = "rm run" + std::to_string(i);
+        Utility::exec(cmd.c_str());
+    }
 }
 }

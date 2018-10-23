@@ -88,13 +88,22 @@ public:
         for (auto &item: tokens)
         {
             std::cout << "Testing: config file row " << numbering << " ";
-            create_input(item);
+//            create_input(item);
             generate_ans();
             generate_res(pfcn);
             check();
             numbering++;
             std::cout << "pass" << std::endl;
         }
+    }
+
+    ~UnitTests() {
+        std::string cmd = "rm " + _output_path;
+        Utility::exec(cmd.c_str());
+        cmd = "rm " + _test_output_path;
+        Utility::exec(cmd.c_str());
+        cmd = "rm " + _input_path;
+        Utility::exec(cmd.c_str());
     }
 private:
     /**
@@ -174,9 +183,9 @@ main()
                                    BRUTE_FORCE_PATH,
                                    GENERATE_PATH);
     UnitTests unitTests = UnitTests(config);
-    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupByBaseline;
-    unitTests.test(pfcn);
+//    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupByBaseline;
+//    unitTests.test(pfcn);
 
-    pfcn = &ExternGroupBy::externGroupBy;
+    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupBy;
     unitTests.test(pfcn);
 }
