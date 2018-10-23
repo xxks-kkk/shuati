@@ -225,7 +225,7 @@ externGroupBy()
     while (std::accumulate(emptyFile.begin(), emptyFile.end(), 0) != 1)
     {
 
-        for (int i = 0; i < numFiles+1; ++i)
+        for (int i = 0; i < numFiles + 1; ++i)
         {
             if (i != FileToUseNext)
             {
@@ -250,11 +250,81 @@ externGroupBy()
                         break;
                     }
                 }
+                // Check whether we have reached the EOF
+                std::string tmp;
+                while (!getline(infile, tmp))
+                {
+                    emptyFile[i] = 0;
+                    std::ofstream outfile2;
+                    outfile2.open("run" + std::to_string(i));
+                    outfile2.close();
+                    fileStart[i] = 0;
+                    break;
+                }
                 fileStart[i] = pos;
                 infile.close();
             }
         }
 
+        int sum = 0;
+        for (int i = 0; i < emptyFile.size(); ++i)
+        {
+            sum += emptyFile[i];
+            if (emptyFile[i] == 0)
+            {
+                FileToUseNext = i;
+            }
+        }
+
+        bool special_case =  false;
+        if (sum == 1 && !special_case)
+        {
+            // We know that there is only one file is non-empty. However, we need to make sure that there is only one run
+            // within the file and if there are two runs within the same file, we need to copy one run to another to finish the merge.
+
+            // locate the non-empty file
+            int j;
+            for (j = 0; j < emptyFile.size(); ++j)
+            {
+                if (emptyFile[j] == 1)
+                {
+                    infile.open("run" + std::to_string(j));
+                    break;
+                }
+            }
+            std::ofstream outfile("run" + std::to_string(FileToUseNext));
+            fileStart[FileToUseNext] = 0;
+            for (std::string line; std::getline(infile, line);)
+            {
+                if (line.empty())
+                {
+                    special_case = true;
+                    outfile.close();
+                    emptyFile[FileToUseNext] = 1;
+                    fileStart[j] = infile.tellg();
+                    for(int i = 0; i < emptyFile.size(); ++i)
+                    {
+                        if (emptyFile[i] == 0)
+                        {
+                            FileToUseNext = i;
+                            fileStart[i] = 0;
+                            break;
+                        }
+                    }
+                    break;
+                }
+                else
+                {
+                    outfile << line << std::endl;
+                }
+            }
+            outfile.close();
+            if (std::accumulate(emptyFile.begin(), emptyFile.end(), 0) == 1)
+            {
+                break;
+            }
+        }
+        infile.close();
         outfile.open("run" + std::to_string(FileToUseNext), std::ios_base::app);
         emptyFile[FileToUseNext] = 1;
         while (!pq2.empty())
@@ -293,17 +363,6 @@ externGroupBy()
             }
             fileStart[std::get<2>(item)] = infile.tellg();
             std::string tmp;
-            // Check whether we have reached the EOF
-            while (!getline(infile, tmp))
-            {
-                FileToUseNext = std::get<2>(item);
-                emptyFile[FileToUseNext] = 0;
-                std::ofstream infile2;
-                infile2.open("run" + std::to_string(FileToUseNext));
-                infile2.close();
-                fileStart[FileToUseNext] = 0;
-                break;
-            }
             infile.close();
         }
         outfile.close();
@@ -317,7 +376,7 @@ externGroupBy()
     std::pair<std::string, std::vector<std::string>> record;
     // We figure out which file we want to open. There should be only one file contains our final result that
     // is about to output
-    for(auto& result: emptyFile)
+    for (auto &result: emptyFile)
     {
         if (result == 1)
         {
@@ -325,6 +384,7 @@ externGroupBy()
             break;
         }
     }
+
     for (std::string line; std::getline(infile, line);)
     {
         std::stringstream ss(line);
@@ -363,7 +423,7 @@ externGroupBy()
     }
     std::cout << record.first << " " << Utility::join(record.second, " ") << std::endl;
     infile.close();
-    for(int i = 0; i < emptyFile.size(); ++i)
+    for (int i = 0; i < emptyFile.size(); ++i)
     {
         std::string cmd = "rm run" + std::to_string(i);
         Utility::exec(cmd.c_str());
