@@ -225,9 +225,9 @@ externGroupBy()
     while (std::accumulate(emptyFile.begin(), emptyFile.end(), 0) != 1)
     {
 
-        for (int i = 0; i < emptyFile.size(); ++i)
+        for (int i = 0; i < numFiles+1; ++i)
         {
-            if (emptyFile[i] == 1)
+            if (i != FileToUseNext)
             {
                 infile.open("run" + std::to_string(i));
                 infile.seekg(fileStart[i]);
@@ -255,7 +255,7 @@ externGroupBy()
             }
         }
 
-        outfile.open("run" + std::to_string(FileToUseNext));
+        outfile.open("run" + std::to_string(FileToUseNext), std::ios_base::app);
         emptyFile[FileToUseNext] = 1;
         while (!pq2.empty())
         {

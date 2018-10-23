@@ -7,12 +7,6 @@
 #
 #    Compile the external GroupBy project
 
-add_executable(benchmark
-        benchmark.cc
-        externGroupBy.cc
-        utility.cc
-        )
-
 add_executable(unitTests
         unitTests.cc
         externGroupBy.cc
