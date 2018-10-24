@@ -45,7 +45,7 @@ In this approach, we make use of the fact that two consecutive numbers `nums[i]`
 
 ### Solution 2: Binary Search [Accepted]
 
-We can view any given sequence in numsnums array as alternating ascending and descending sequences. 
+We can view any given sequence in `nums` array as alternating ascending and descending sequences. 
 By making use of this, and the fact that we can return any peak as the result, 
 we can make use of Binary Search to find the required peak element.
 

@@ -137,6 +137,9 @@ add_executable(160
         leetcode/160-IntersectionofTwoLinkedLists/intersectionofTwoLinkedLists.cc
         leetcode/cppinclude/linkedList.cc)
 
+add_executable(162
+        leetcode/162-FindPeakElement/findPeakElement.cc)
+
 add_executable(165
         leetcode/165-CompareVersionNumbers/compareVersionNumbers.c)
 
