@@ -74,6 +74,9 @@ add_executable(70
         
 add_executable(88
         leetcode/88-MergeSortedArray/mergeSortedArray.cc)
+
+add_executable(95
+        leetcode/95-UniqueBinarySearchTreesII/uniqueBinarySearchTreesII.cc)
         
 add_executable(98
         leetcode/98-ValidateBinarySearchTree/validateBinarySearchTree.cc
@@ -416,8 +419,8 @@ add_executable(016
 add_executable(017
         misc/findAncestor/findAncestor.cc)
 
-add_executable(018
-        misc/RangeQueryForText/rangeQueryForText.cc)
+#add_executable(018
+#        misc/RangeQueryForText/rangeQueryForText.cc)
 
 configure_file(misc/BleedingInk/input001.txt input001.txt COPYONLY)
 add_executable(019
