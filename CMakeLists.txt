@@ -271,6 +271,9 @@ add_executable(349
 add_executable(350
         leetcode/350-IntersectionofTwoArraysII/intersectionofTwoArraysII.cc)
 
+add_executable(362
+        leetcode/362-DesignHitCounter/designHitCounter.cc)
+
 add_executable(366
         leetcode/366-FindLeavesofBinaryTree/findLeavesofBinaryTree.cc
         leetcode/cppinclude/bt.cc)
