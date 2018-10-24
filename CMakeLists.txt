@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.9)
 project(shuati)
 
 set(CMAKE_CXX_STANDARD 11)
+
+# Specify the build directory
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/cmake-build-debug)
+
 include_directories(leetcode)
 # FIXME: Remove this line as we may get clash with our c headers. Gradually fix all the #include "queue.h" to
 # #include "cppinclude/queue.h" and then remove this line.
@@ -411,3 +415,10 @@ add_executable(016
 
 add_executable(017
         misc/findAncestor/findAncestor.cc)
+
+add_executable(018
+        misc/RangeQueryForText/rangeQueryForText.cc)
+
+configure_file(misc/BleedingInk/input001.txt input001.txt COPYONLY)
+add_executable(019
+        misc/BleedingInk/bleedingInk.cc)
