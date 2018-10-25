@@ -8,6 +8,8 @@
     C++ Solution for BleedingInk.
 
     Indeed OA #18
+
+    Only pass 2/18 test cases. Not sure why.
  ************************************************************************/
 
 #include <fstream>
