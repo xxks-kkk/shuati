@@ -15,6 +15,8 @@
 //    minStack.top();      --> Returns 0.
 //    minStack.getMin();   --> Returns -2.
 
+// State Street 10/25/18
+
 #include <stack>
 #include <cassert>
 #include <climits>
@@ -100,6 +102,37 @@ private:
     std::stack<int> s;
 };
 
+// Solution learned from interviewing at the state street
+class MinStack3 {
+public:
+    MinStack3() {
+
+    }
+
+    void push(int x) {
+        s.push(std::make_pair(x, std::min(x, getMin())));
+    }
+
+    void pop() {
+        s.pop();
+    }
+
+    int top() {
+        return s.top().first;
+    }
+
+    int getMin() {
+        if (s.empty())
+        {
+            return INT_MAX;
+        }
+        return s.top().second;
+    }
+private:
+    // <element, the minimum value in the stack>
+    std::stack<std::pair<int, int>> s;
+};
+
 /**
  * Your MinStack object will be instantiated and called as such:
  * MinStack obj = new MinStack();
@@ -127,4 +160,13 @@ int main()
     obj2.pop();
     assert(obj2.top() == 0);
     assert(obj2.getMin() == -2);
+
+    MinStack3 obj3 = MinStack3();
+    obj3.push(-2);
+    obj3.push(0);
+    obj3.push(-3);
+    assert(obj3.getMin() == -3);
+    obj3.pop();
+    assert(obj3.top() == 0);
+    assert(obj3.getMin() == -2);
 }
