@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.9)
 project(shuati)
 
 set(CMAKE_CXX_STANDARD 11)
+
+# Specify the build directory
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/cmake-build-debug)
+
 include_directories(leetcode)
 # FIXME: Remove this line as we may get clash with our c headers. Gradually fix all the #include "queue.h" to
 # #include "cppinclude/queue.h" and then remove this line.
@@ -70,6 +74,9 @@ add_executable(70
         
 add_executable(88
         leetcode/88-MergeSortedArray/mergeSortedArray.cc)
+
+add_executable(95
+        leetcode/95-UniqueBinarySearchTreesII/uniqueBinarySearchTreesII.cc)
         
 add_executable(98
         leetcode/98-ValidateBinarySearchTree/validateBinarySearchTree.cc
@@ -81,6 +88,10 @@ add_executable(99
 
 add_executable(101
         leetcode/101-SymmetricTree/symmetricTree.cc
+        leetcode/cppinclude/bt.cc)
+
+add_executable(103
+        leetcode/103-BinaryTreeZigzagLevelOrderTraversal/binaryTreeZigzagLevelOrderTraversal.cc
         leetcode/cppinclude/bt.cc)
 
 add_executable(107
@@ -130,11 +141,17 @@ add_executable(160
         leetcode/160-IntersectionofTwoLinkedLists/intersectionofTwoLinkedLists.cc
         leetcode/cppinclude/linkedList.cc)
 
+add_executable(162
+        leetcode/162-FindPeakElement/findPeakElement.cc)
+
 add_executable(165
         leetcode/165-CompareVersionNumbers/compareVersionNumbers.c)
 
 add_executable(186
         leetcode/186-ReverseWordsInAStringII/reverseWordsInAStringII.cc)
+
+add_executable(200
+        leetcode/200-NumberOfIslands/numberOfIslands.cc)
 
 add_executable(207
         leetcode/207-CourseSchedule/courseSchedule.cc
@@ -194,6 +211,9 @@ add_executable(257
         leetcode/257-BinaryTreePaths/binaryTreePaths.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(260
+        leetcode/260-SingleNumberIII/singleNumberIII.cc)
+
 add_executable(261
         leetcode/261-GraphValidTree/graphValidTree.cc)
         
@@ -209,6 +229,9 @@ add_executable(272
         leetcode/272-ClosestBinarySearchTreeValueII/closestBinarySearchTreeValueII.cc
         leetcode/cppinclude/bt.cc
         leetcode/cppinclude/bst.cc)
+
+add_executable(273
+        leetcode/273-IntegerToEnglishWords/integerToEnglishWords.cc)
 
 add_executable(278
         leetcode/278-FirstBadVersion/firstBadVersion.cc)
@@ -261,6 +284,9 @@ add_executable(349
 
 add_executable(350
         leetcode/350-IntersectionofTwoArraysII/intersectionofTwoArraysII.cc)
+
+add_executable(362
+        leetcode/362-DesignHitCounter/designHitCounter.cc)
 
 add_executable(366
         leetcode/366-FindLeavesofBinaryTree/findLeavesofBinaryTree.cc
@@ -399,3 +425,10 @@ add_executable(016
 
 add_executable(017
         misc/findAncestor/findAncestor.cc)
+
+#add_executable(018
+#        misc/RangeQueryForText/rangeQueryForText.cc)
+
+configure_file(misc/BleedingInk/input001.txt input001.txt COPYONLY)
+add_executable(019
+        misc/BleedingInk/bleedingInk.cc)
