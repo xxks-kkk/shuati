@@ -440,3 +440,7 @@ add_executable(020
 add_executable(021
         misc/Fib/fib.c
         misc/Fib/list.h)
+
+add_executable(022
+        misc/FindMissing/find.c
+        misc/FindMissing/main.c)
