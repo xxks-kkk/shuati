@@ -459,3 +459,9 @@ add_executable(025
 
 add_executable(026
         misc/Questions/c_programming.c)
+
+add_executable(027
+        misc/Questions/ptr_thing.c)
+
+add_executable(028
+        misc/Questions/performance.cpp)
