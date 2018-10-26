@@ -465,3 +465,7 @@ add_executable(027
 
 add_executable(028
         misc/Questions/performance.cpp)
+
+add_executable(029
+        misc/DictionaryTask/dictionary.cc
+        misc/DictionaryTask/test.cc)
