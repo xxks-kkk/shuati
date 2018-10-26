@@ -432,3 +432,36 @@ add_executable(017
 configure_file(misc/BleedingInk/input001.txt input001.txt COPYONLY)
 add_executable(019
         misc/BleedingInk/bleedingInk.cc)
+
+add_executable(020
+        misc/Arrays/main.c
+        misc/Arrays/arrays.c)
+
+add_executable(021
+        misc/Fib/fib.c
+        misc/Fib/list.h)
+
+add_executable(022
+        misc/FindMissing/find.c
+        misc/FindMissing/main.c)
+
+add_executable(023
+        misc/Merge/merge.c
+        misc/Merge/main.c)
+
+add_executable(024
+        misc/RemoveMatches/remove_matches.c
+        misc/RemoveMatches/main.c
+        misc/RemoveMatches/list.c)
+
+add_executable(025
+        misc/Vercmp/vercmp.c)
+
+add_executable(026
+        misc/Questions/c_programming.c)
+
+add_executable(027
+        misc/Questions/ptr_thing.c)
+
+add_executable(028
+        misc/Questions/performance.cpp)
