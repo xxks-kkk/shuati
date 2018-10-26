@@ -448,3 +448,8 @@ add_executable(022
 add_executable(023
         misc/Merge/merge.c
         misc/Merge/main.c)
+
+add_executable(024
+        misc/RemoveMatches/remove_matches.c
+        misc/RemoveMatches/main.c
+        misc/RemoveMatches/list.c)
