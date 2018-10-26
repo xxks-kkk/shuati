@@ -432,3 +432,7 @@ add_executable(017
 configure_file(misc/BleedingInk/input001.txt input001.txt COPYONLY)
 add_executable(019
         misc/BleedingInk/bleedingInk.cc)
+
+add_executable(020
+        misc/Arrays/main.c
+        misc/Arrays/arrays.c)
