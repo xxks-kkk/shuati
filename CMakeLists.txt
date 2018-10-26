@@ -453,3 +453,6 @@ add_executable(024
         misc/RemoveMatches/remove_matches.c
         misc/RemoveMatches/main.c
         misc/RemoveMatches/list.c)
+
+add_executable(025
+        misc/Vercmp/vercmp.c)
