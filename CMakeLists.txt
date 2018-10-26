@@ -456,3 +456,6 @@ add_executable(024
 
 add_executable(025
         misc/Vercmp/vercmp.c)
+
+add_executable(026
+        misc/Questions/c_programming.c)
