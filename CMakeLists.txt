@@ -444,3 +444,7 @@ add_executable(021
 add_executable(022
         misc/FindMissing/find.c
         misc/FindMissing/main.c)
+
+add_executable(023
+        misc/Merge/merge.c
+        misc/Merge/main.c)
