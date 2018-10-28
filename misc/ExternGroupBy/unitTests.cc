@@ -13,10 +13,9 @@
 
 #include <cassert>
 
-const std::string WORK_DIR = "/Users/zeyuan/Documents/projects/shuati/misc/ExternGroupBy/";
-const std::string CONFIG_PATH = WORK_DIR + "config.txt";
-const std::string BRUTE_FORCE_PATH = WORK_DIR + "scripts/brute_force.py";
-const std::string GENERATE_PATH = WORK_DIR + "scripts/gen_test_data.py";
+const std::string CONFIG_PATH = "config.txt";
+const std::string BRUTE_FORCE_PATH = "scripts/brute_force.py";
+const std::string GENERATE_PATH = "scripts/gen_test_data.py";
 
 
 /**
@@ -74,9 +73,9 @@ class UnitTests
 public:
     explicit UnitTests(ConfigFile config) : _config(std::move(config))
     {
-        _input_path = WORK_DIR + "input.txt";
-        _output_path = WORK_DIR + "output.txt";
-        _test_output_path = WORK_DIR + "test-output.txt";
+        _input_path = "input.txt";
+        _output_path = "output.txt";
+        _test_output_path = "test-output.txt";
     }
 
     void
@@ -88,7 +87,7 @@ public:
         for (auto &item: tokens)
         {
             std::cout << "Testing: config file row " << numbering << " ";
-//            create_input(item);
+            create_input(item);
             generate_ans();
             generate_res(pfcn);
             check();
@@ -183,9 +182,9 @@ main()
                                    BRUTE_FORCE_PATH,
                                    GENERATE_PATH);
     UnitTests unitTests = UnitTests(config);
-//    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupByBaseline;
-//    unitTests.test(pfcn);
-
-    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupBy;
+    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupByBaseline;
     unitTests.test(pfcn);
+
+//    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupBy;
+//    unitTests.test(pfcn);
 }

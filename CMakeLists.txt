@@ -3,6 +3,9 @@ project(shuati)
 
 set(CMAKE_CXX_STANDARD 11)
 
+# Specify the build directory
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/cmake-build-debug)
+
 add_subdirectory(misc/ExternGroupBy)
 
 include_directories(leetcode)
