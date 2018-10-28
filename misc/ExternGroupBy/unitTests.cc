@@ -97,12 +97,12 @@ public:
     }
 
     ~UnitTests() {
-        std::string cmd = "rm " + _output_path;
-        Utility::exec(cmd.c_str());
-        cmd = "rm " + _test_output_path;
-        Utility::exec(cmd.c_str());
-        cmd = "rm " + _input_path;
-        Utility::exec(cmd.c_str());
+//        std::string cmd = "rm " + _output_path;
+//        Utility::exec(cmd.c_str());
+//        cmd = "rm " + _test_output_path;
+//        Utility::exec(cmd.c_str());
+//        cmd = "rm " + _input_path;
+//        Utility::exec(cmd.c_str());
     }
 private:
     /**
@@ -182,9 +182,9 @@ main()
                                    BRUTE_FORCE_PATH,
                                    GENERATE_PATH);
     UnitTests unitTests = UnitTests(config);
-    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupByBaseline;
-    unitTests.test(pfcn);
-
-//    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupBy;
+//    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupByBaseline;
 //    unitTests.test(pfcn);
+
+    ptr2ExternGroupBy pfcn = &ExternGroupBy::externGroupBy;
+    unitTests.test(pfcn);
 }

@@ -409,5 +409,5 @@ add_executable(016
 add_executable(017
         misc/findAncestor/findAncestor.cc)
 
-add_executable(018
-        misc/RangeQueryForText/rangeQueryForText.cc)
+#add_executable(018
+#        misc/RangeQueryForText/rangeQueryForText.cc)

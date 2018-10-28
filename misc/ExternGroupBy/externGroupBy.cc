@@ -64,12 +64,13 @@ struct Comparator
 /**
  * Save the buffer to the file. The function will sort the entries in the buffer, increment the runNum, and
  * clear the buffer.
- * @param runNum int used to determine the filename
  * @param buffer a vector of key-value entries that is to be saved
  */
 static void
-saveBuffer(int &runNum, std::vector<std::pair<std::string, std::string>> &buffer)
+saveBuffer(std::vector<std::pair<std::string, std::string>> &buffer)
 {
+    // used to determine the filename
+    static int runNum = 0;
     typedef std::function<bool(std::pair<std::string, std::string>, std::pair<std::string, std::string>)> Comparator;
     Comparator comp = [](std::pair<std::string, std::string> item1, std::pair<std::string, std::string> item2) -> bool
     {
@@ -110,8 +111,6 @@ externGroupBy()
     std::vector<std::pair<std::string, std::string>> buffer;
     unsigned long accumulateSize = 0;
 
-    int runNum = 0;
-
     for (std::string line; std::getline(std::cin, line);)
     {
         std::stringstream ss(line);
@@ -126,15 +125,13 @@ externGroupBy()
             auto key = tokens[0];
             auto val = tokens[1];
             unsigned long keyValSize = key.length() + val.length();
-            if (accumulateSize + keyValSize < L)
+            if (accumulateSize + keyValSize > L)
             {
-                buffer.push_back(std::pair<std::string, std::string>{key, val});
-                accumulateSize += keyValSize;
+                accumulateSize -= buffer.size();
+                saveBuffer(buffer);
             }
-            else
-            {
-                saveBuffer(runNum, buffer);
-            }
+            buffer.emplace_back(std::pair<std::string, std::string>{key, val});
+            accumulateSize += keyValSize;
         }
     }
 }
