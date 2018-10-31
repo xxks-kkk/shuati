@@ -153,6 +153,9 @@ add_executable(165
 add_executable(186
         leetcode/186-ReverseWordsInAStringII/reverseWordsInAStringII.cc)
 
+add_executable(189
+        leetcode/189-RotateArray/rotateArray.cc)
+
 add_executable(200
         leetcode/200-NumberOfIslands/numberOfIslands.cc)
 
