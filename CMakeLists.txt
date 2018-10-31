@@ -317,6 +317,9 @@ add_executable(412
 add_executable(414
         leetcode/414-ThirdMaximumNumber/thirdMaximumNumber.cc)
 
+add_executable(426
+        leetcode/426-ConvertBinarySearchTreeToSortedDoublyLinkedList/convertBinarySearchTreeToSortedDoublyLinkedList.cc)
+
 add_executable(437
         leetcode/437-PathSumIII/pathSumIII.cc
         leetcode/cppinclude/bt.cc)
