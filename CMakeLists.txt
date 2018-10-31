@@ -305,6 +305,9 @@ add_executable(380
 add_executable(387
         leetcode/387-FirstUniqueCharacterinaString/firstUniqueCharacterinaString.cc)
 
+add_executable(394
+        leetcode/394-DecodeString/decodeString.cc)
+
 add_executable(412
         leetcode/412-FizzBuzz/fizzBuzz.c)
         
