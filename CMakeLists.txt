@@ -117,6 +117,9 @@ add_executable(124
         leetcode/124-BinaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(128
+        leetcode/128-LongestConsecutiveSequence/longestConsecutiveSequence.cc)
+
 add_executable(140
         leetcode/140-WordBreakII/wordBreakII.cc)
 
