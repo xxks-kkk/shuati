@@ -308,6 +308,9 @@ add_executable(387
 add_executable(394
         leetcode/394-DecodeString/decodeString.cc)
 
+add_executable(403
+        leetcode/403-FrogJump/frogJump.cc)
+
 add_executable(412
         leetcode/412-FizzBuzz/fizzBuzz.c)
         
