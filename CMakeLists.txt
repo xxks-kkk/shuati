@@ -327,6 +327,9 @@ add_executable(437
         leetcode/437-PathSumIII/pathSumIII.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(438
+        leetcode/438-FindAllAnagramsInAString/findAllAnagramsInAString.cc)
+
 add_executable(443
         leetcode/443-StringCompression/stringCompression.cc)
 
