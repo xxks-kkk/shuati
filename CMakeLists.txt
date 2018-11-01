@@ -117,6 +117,9 @@ add_executable(124
         leetcode/124-BinaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(128
+        leetcode/128-LongestConsecutiveSequence/longestConsecutiveSequence.cc)
+
 add_executable(140
         leetcode/140-WordBreakII/wordBreakII.cc)
 
@@ -149,6 +152,9 @@ add_executable(165
 
 add_executable(186
         leetcode/186-ReverseWordsInAStringII/reverseWordsInAStringII.cc)
+
+add_executable(189
+        leetcode/189-RotateArray/rotateArray.cc)
 
 add_executable(200
         leetcode/200-NumberOfIslands/numberOfIslands.cc)
@@ -302,15 +308,27 @@ add_executable(380
 add_executable(387
         leetcode/387-FirstUniqueCharacterinaString/firstUniqueCharacterinaString.cc)
 
+add_executable(394
+        leetcode/394-DecodeString/decodeString.cc)
+
+add_executable(403
+        leetcode/403-FrogJump/frogJump.cc)
+
 add_executable(412
         leetcode/412-FizzBuzz/fizzBuzz.c)
         
 add_executable(414
         leetcode/414-ThirdMaximumNumber/thirdMaximumNumber.cc)
 
+add_executable(426
+        leetcode/426-ConvertBinarySearchTreeToSortedDoublyLinkedList/convertBinarySearchTreeToSortedDoublyLinkedList.cc)
+
 add_executable(437
         leetcode/437-PathSumIII/pathSumIII.cc
         leetcode/cppinclude/bt.cc)
+
+add_executable(438
+        leetcode/438-FindAllAnagramsInAString/findAllAnagramsInAString.cc)
 
 add_executable(443
         leetcode/443-StringCompression/stringCompression.cc)
