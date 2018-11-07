@@ -159,6 +159,9 @@ add_executable(189
 add_executable(200
         leetcode/200-NumberOfIslands/numberOfIslands.cc)
 
+add_executable(204
+        leetcode/204-CountPrimes/countPrimes.cc)
+
 add_executable(207
         leetcode/207-CourseSchedule/courseSchedule.cc
         leetcode/cppinclude/graph.h
