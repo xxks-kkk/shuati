@@ -259,6 +259,9 @@ add_executable(289
         leetcode/289-GameOfLife/gameOfLife.cc
         leetcode/cppinclude/cpputility.cc)
 
+add_executable(295
+        leetcode/295-FindMedianfromDataStream/findMedianfromDataStream.cc)
+
 add_executable(297
         leetcode/297-SerializeandDeserializeBinaryTree/serializeandDeserializeBinaryTree.cc
         leetcode/cppinclude/bt.cc
