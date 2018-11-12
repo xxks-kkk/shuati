@@ -159,6 +159,9 @@ add_executable(189
 add_executable(200
         leetcode/200-NumberOfIslands/numberOfIslands.cc)
 
+add_executable(204
+        leetcode/204-CountPrimes/countPrimes.cc)
+
 add_executable(207
         leetcode/207-CourseSchedule/courseSchedule.cc
         leetcode/cppinclude/graph.h
@@ -197,6 +200,9 @@ add_executable(235
 add_executable(236
         leetcode/236-LowestCommonAncestorOfABinaryTree/lowestCommonAncestorOfABinaryTree.cc
         leetcode/cppinclude/bt.cc)
+
+add_executable(238
+        leetcode/238-ProductofArrayExceptSelf/productofArrayExceptSelf.cc)
 
 add_executable(242
         leetcode/242-ValidAnagram/validAnagram.cc)
@@ -252,6 +258,9 @@ add_executable(285
 add_executable(289
         leetcode/289-GameOfLife/gameOfLife.cc
         leetcode/cppinclude/cpputility.cc)
+
+add_executable(295
+        leetcode/295-FindMedianfromDataStream/findMedianfromDataStream.cc)
 
 add_executable(297
         leetcode/297-SerializeandDeserializeBinaryTree/serializeandDeserializeBinaryTree.cc
