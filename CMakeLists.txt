@@ -245,6 +245,9 @@ add_executable(272
 add_executable(273
         leetcode/273-IntegerToEnglishWords/integerToEnglishWords.cc)
 
+add_executable(274
+        leetcode/274-H-index/h-index.cc)
+
 add_executable(278
         leetcode/278-FirstBadVersion/firstBadVersion.cc)
 
