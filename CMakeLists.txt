@@ -274,6 +274,9 @@ add_executable(298
 add_executable(301
         leetcode/301-RemoveInvalidParentheses/removeInvalidParentheses.cc)
 
+add_executable(305
+        leetcode/305-NumberOfIslandsII/numberOfIslandsII.cc)
+
 add_executable(322
         leetcode/322-CoinChange/coinChange.cc)
 
