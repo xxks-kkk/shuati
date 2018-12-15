@@ -21,3 +21,6 @@ CMakeCache.txt
 CMakeFiles/
 gdb.txt
 shuati.cbp
+GPATH
+GRTAGS
+GTAGS
