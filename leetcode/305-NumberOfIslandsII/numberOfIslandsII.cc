@@ -40,6 +40,7 @@
 
 #include <vector>
 #include <assert.h>
+#include <iostream>
 
 using namespace std;
 
@@ -48,12 +49,9 @@ public:
     explicit UnionFind(int n)
     {
         count = 0;
-        for(int i = 0; i < n; ++i)
-        {
-            // Note: normally we would set id[i] = i but in this problem, since
-            // there is no island initially, we set id[i] = -1
-            id[i] = -1;
-        }
+        // Note: normally we would set id[i] = i but in this problem, since
+        // there is no island initially, we set id[i] = -1
+        id = vector<int>(n,-1);
         // Accordingly, sizes are all intialize to 0
         size = vector<int>(n,0);
     }
@@ -104,7 +102,7 @@ public:
      * @param node
      * @return
      */
-    bool add(int node)
+    void add(int node)
     {
         id[node] = node;
         count++;
@@ -156,6 +154,7 @@ public:
                 tmp.push_back(x*n + y+1);
             }
             int node = x*n + y;
+            s.add(node);
             for(auto& neighbor: tmp)
             {
                 s.unionId(node, neighbor);
@@ -177,7 +176,8 @@ void test(ptr2numIslands2 pfcn)
     vector<pair<int,int>> positions = {
         {0,0}, {0,1}, {1,2}, {2,1}
     };
-    assert((sol.*pfcn)(m,n,positions) == vector<int>{1,1,2,3});
+    vector<int> ans = {1,1,2,3};
+    assert((sol.*pfcn)(m,n,positions) == ans);
 }
 
 
