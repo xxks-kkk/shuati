@@ -363,6 +363,9 @@ add_executable(582
 add_executable(609
         leetcode/609-FindDuplicateFileinSystem/findDuplicateFileinSystem.cc)
 
+add_executable(636
+        leetcode/636-ExclusiveTimeofFunctions/exclusiveTimeofFunctions.cc)
+      
 add_executable(658
         leetcode/658-FindKClosestElements/findKClosestElements.cpp)
 
