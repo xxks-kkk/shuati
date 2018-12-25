@@ -181,6 +181,9 @@ add_executable(222
         leetcode/222-CountCompleteTreeNodes/countCompleteTreeNodes.cc
         leetcode/cppinclude/bt.cc)
 
+add_executable(224
+        leetcode/224-BasicCalculator/basicCalculator.cc)
+
 add_executable(230
         leetcode/230-KthSmallestElementinaBST/kthSmallestElementinaBST.cc
         leetcode/cppinclude/bt.cc)
@@ -247,7 +250,7 @@ add_executable(273
 
 add_executable(274
         leetcode/274-H-index/h-index.cc)
-
+      
 add_executable(278
         leetcode/278-FirstBadVersion/firstBadVersion.cc)
 
@@ -276,6 +279,9 @@ add_executable(298
 
 add_executable(301
         leetcode/301-RemoveInvalidParentheses/removeInvalidParentheses.cc)
+
+add_executable(305
+        leetcode/305-NumberOfIslandsII/numberOfIslandsII.cc)
 
 add_executable(322
         leetcode/322-CoinChange/coinChange.cc)
@@ -363,6 +369,9 @@ add_executable(582
 add_executable(609
         leetcode/609-FindDuplicateFileinSystem/findDuplicateFileinSystem.cc)
 
+add_executable(636
+        leetcode/636-ExclusiveTimeofFunctions/exclusiveTimeofFunctions.cc)
+      
 add_executable(658
         leetcode/658-FindKClosestElements/findKClosestElements.cpp)
 
