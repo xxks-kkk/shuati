@@ -24,3 +24,5 @@ shuati.cbp
 GPATH
 GRTAGS
 GTAGS
+Cargo.lock
+target
