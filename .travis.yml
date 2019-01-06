@@ -3,17 +3,17 @@ dist: trusty
 matrix:
   include:
     - language: cpp
-    - compiler: gcc
-    - os: osx
-    - before_script:
-      - cmake .
-    - script:
-      - make all
-      - "for a in $(ls | grep '^[0-9]*$'); do ./$a; done"
+      compiler: gcc
+      os: osx
+      before_script:
+       - cmake .
+      script:
+       - make all
+       - "for a in $(ls | grep '^[0-9]*$'); do ./$a; done"
 
-  include:
     - language: rust
-    - rust: nightly
-    - os: osx
-    - script:
-      - cd leetcode/rust/ && cargo test    
+      rust: nightly
+      os: osx
+      script:
+       - pwd
+       - cd leetcode/rust/ && cargo test    
