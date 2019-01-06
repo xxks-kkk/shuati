@@ -231,8 +231,8 @@ add_executable(260
 
 add_executable(261
         leetcode/261-GraphValidTree/graphValidTree.cc)
-        
-add_executable(268
+
+      add_executable(268
         leetcode/268-MissingNumber/missingNumber.cc)
 
 add_executable(270
@@ -250,7 +250,7 @@ add_executable(273
 
 add_executable(274
         leetcode/274-H-index/h-index.cc)
-      
+
 add_executable(278
         leetcode/278-FirstBadVersion/firstBadVersion.cc)
 
@@ -264,6 +264,9 @@ add_executable(285
 add_executable(289
         leetcode/289-GameOfLife/gameOfLife.cc
         leetcode/cppinclude/cpputility.cc)
+
+      add_executable(291
+        leetcode/291-WordPatternII/wordPatternII.cc)
 
 add_executable(295
         leetcode/295-FindMedianfromDataStream/findMedianfromDataStream.cc)
