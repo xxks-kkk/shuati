@@ -1,6 +1,7 @@
 sudo: false
 dist: trusty
-language: cpp
+language: cpp, rust
+rust: nightly
 
 compiler:
   - gcc
@@ -15,3 +16,4 @@ script:
 
 - make all
 - "for a in $(ls | grep '^[0-9]*$'); do ./$a; done"
+- cd leetcode/rust/ && cargo test
