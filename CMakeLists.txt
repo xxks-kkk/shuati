@@ -184,6 +184,9 @@ add_executable(222
 add_executable(224
         leetcode/224-BasicCalculator/basicCalculator.cc)
 
+add_executable(225
+        leetcode/225-ImplementStackUsingQueues/implementStackUsingQueues.cc)
+      
 add_executable(230
         leetcode/230-KthSmallestElementinaBST/kthSmallestElementinaBST.cc
         leetcode/cppinclude/bt.cc)
