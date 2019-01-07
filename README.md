@@ -27,7 +27,7 @@ To build Java solutions, find `Makefile` inside the directory that program resid
 To build all Rust solutions, run
 
 ``` shell
-$ cd leetcode/rust
+$ cd rust
 $ cargo test
 ```
 
