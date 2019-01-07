@@ -16,4 +16,4 @@ matrix:
       os: osx
       script:
        - pwd
-       - cd leetcode/rust/ && cargo test    
+       - cd rust/ && cargo test    
