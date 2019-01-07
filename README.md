@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/xxks-kkk/shuati.svg?branch=master)](https://travis-ci.com/xxks-kkk/shuati)
 
 This is the respository that I put my [systematic algorithm learning](https://github.com/xxks-kkk/algo)
-into practice by solving various interview questions. This is also the place where I learn different programming languages.
+into practice by solving various interview questions. This is also the place where I practice different programming languages.
 
 ## Steps to developing a usable algorithm.
 
