@@ -19,7 +19,6 @@
 //     You may assume that the given Sudoku puzzle will have a single unique
 //     solution. The given board size is always 9x9.
 
-use bit_vec::BitVec;
 use std::char;
 
 struct Solution {}
@@ -27,17 +26,17 @@ struct Solution {}
 // Enacpsulates a single cell on a Sudoku board
 #[derive(Clone)]
 struct Cell {
-    value: usize,          // cell value 1..9 or 0 if unset
-    numPossibilities: i32, // number of possible (unconstrained) values for the cell
-    constraints: BitVec,   // if BitSet[v] is true the value can't be v
+    value: usize,           // cell value 1..9 or 0 if unset
+    num_possibilities: i32, // number of possible (unconstrained) values for the cell
+    constraints: Vec<bool>, // if BitSet[v] is true the value can't be v
 }
 
 impl Cell {
     pub fn new() -> Self {
         Cell {
             value: 0,
-            numPossibilities: 9,
-            constraints: BitVec::from_elem(10, false),
+            num_possibilities: 9,
+            constraints: vec![false; 10],
         }
     }
 }
@@ -68,25 +67,25 @@ impl Data {
             return false;
         }
         self.cells[i][j].value = v;
-        self.cells[i][j].numPossibilities = 1;
+        self.cells[i][j].num_possibilities = 1;
         // since we already set the value v, then it's impossible to set it to other values. Thus, we update constrainits
-        self.cells[i][j].constraints = BitVec::from_elem(10, true);
-        self.cells[i][j].constraints.set(v, false);
+        self.cells[i][j].constraints = vec![true; 10];
+        self.cells[i][j].constraints[v] = false;
 
         // propagting constraints
         for k in 0..9 {
             // to the row
-            if i != k && !Data::updateConstraints(self, k, j, v) {
+            if i != k && !Data::update_constraints(self, k, j, v) {
                 return false;
             }
             // to the column
-            if j != k && !Data::updateConstraints(self, i, k, v) {
+            if j != k && !Data::update_constraints(self, i, k, v) {
                 return false;
             }
             // to the 3x3 square
             let ix = (i / 3) * 3 + k / 3;
             let jx = (j / 3) * 3 + k % 3;
-            if ix != i && jx != j && !Data::updateConstraints(self, ix, jx, v) {
+            if ix != i && jx != j && !Data::update_constraints(self, ix, jx, v) {
                 return false;
             }
         }
@@ -96,18 +95,18 @@ impl Data {
     /// update constraints of the cells[i][j] by excluding possibility of 'excludedValue'
     /// once there's one possibility left the function recurses back into set()
     /// function returns true if cells[i][j] has no conflict with excludedValue; otherwise, false
-    fn updateConstraints(&mut self, i: usize, j: usize, excludedValue: usize) -> bool {
-        // cells[i][j] cannot be set to the excludedvalue
-        if self.cells[i][j].constraints[excludedValue] {
+    fn update_constraints(&mut self, i: usize, j: usize, excluded_value: usize) -> bool {
+        // cells[i][j] cannot be set to the excluded_value
+        if self.cells[i][j].constraints[excluded_value] {
             return true;
         }
-        // cells[i][j] = excludedValue => there is a conflict, return false
-        if self.cells[i][j].value == excludedValue {
+        // cells[i][j] = excluded_value => there is a conflict, return false
+        if self.cells[i][j].value == excluded_value {
             return false;
         }
-        self.cells[i][j].constraints.set(excludedValue, true);
-        self.cells[i][j].numPossibilities -= 1;
-        if self.cells[i][j].numPossibilities > 1 {
+        self.cells[i][j].constraints[excluded_value] = true;
+        self.cells[i][j].num_possibilities -= 1;
+        if self.cells[i][j].num_possibilities > 1 {
             // it's still possible to set to other values for cells[i][j]
             return true;
         }
@@ -120,7 +119,7 @@ impl Data {
     }
 
     /// find values for empty cells
-    fn findValuesForEmptyCells(&mut self) -> bool {
+    fn find_values_for_empty_cells(&mut self) -> bool {
         // collecting all empty cells
         self.bt.clear();
         for i in 0..9 {
@@ -130,12 +129,12 @@ impl Data {
                 }
             }
         }
-        // making backtracking efficient by pre-sorting empty cells by numPossibilities
+        // making backtracking efficient by pre-sorting empty cells by num_possibilities
         let mut bt_cpy = self.bt.clone();
         bt_cpy.sort_by(|a, b| {
             self.cells[a.0][a.1]
-                .numPossibilities
-                .cmp(&self.cells[b.0][b.1].numPossibilities)
+                .num_possibilities
+                .cmp(&self.cells[b.0][b.1].num_possibilities)
         });
         self.bt = bt_cpy;
         Data::backtrack(self, 0)
@@ -189,7 +188,7 @@ impl Solution {
         }
         // if we're lucky we've already got a solution,
         // however, if we have empty cells we need to use backtracking to fill them
-        if !data.findValuesForEmptyCells() {
+        if !data.find_values_for_empty_cells() {
             return; // sudoku is unsolvable
         }
 
@@ -229,4 +228,5 @@ fn test_37() {
         vec!['2', '8', '7', '4', '1', '9', '6', '3', '5'],
         vec!['3', '4', '5', '2', '8', '6', '1', '7', '9'],
     ];
+    assert_eq!(board, board_correct);
 }
