@@ -37,7 +37,7 @@ impl Cell {
         Cell {
             value: 0,
             numPossibilities: 9,
-            constraints: BitVec::from_elem(10, true),
+            constraints: BitVec::from_elem(10, false),
         }
     }
 }
@@ -55,17 +55,21 @@ impl Data {
         }
     }
 
-    /// set the value of the cell to `v`
+    /// set the value of the cells[i][j] to `v`
     /// the function also propagates constraints to other cells and deduce new values where possible
+    /// The function returns true if cells[i][j] = 'v' otherwise, returns false
     fn set(&mut self, i: usize, j: usize, v: usize) -> bool {
+        // cells[i][j] = v already, return true
         if self.cells[i][j].value == v {
             return true;
         }
+        // we cannot set cells[i][j] to v due to the constraints
         if self.cells[i][j].constraints[v] {
             return false;
         }
         self.cells[i][j].value = v;
         self.cells[i][j].numPossibilities = 1;
+        // since we already set the value v, then it's impossible to set it to other values. Thus, we update constrainits
         self.cells[i][j].constraints = BitVec::from_elem(10, true);
         self.cells[i][j].constraints.set(v, false);
 
@@ -91,16 +95,20 @@ impl Data {
 
     /// update constraints of the cells[i][j] by excluding possibility of 'excludedValue'
     /// once there's one possibility left the function recurses back into set()
+    /// function returns true if cells[i][j] has no conflict with excludedValue; otherwise, false
     fn updateConstraints(&mut self, i: usize, j: usize, excludedValue: usize) -> bool {
+        // cells[i][j] cannot be set to the excludedvalue
         if self.cells[i][j].constraints[excludedValue] {
             return true;
         }
+        // cells[i][j] = excludedValue => there is a conflict, return false
         if self.cells[i][j].value == excludedValue {
             return false;
         }
         self.cells[i][j].constraints.set(excludedValue, true);
         self.cells[i][j].numPossibilities -= 1;
         if self.cells[i][j].numPossibilities > 1 {
+            // it's still possible to set to other values for cells[i][j]
             return true;
         }
         for v in 1..10 {
@@ -108,7 +116,6 @@ impl Data {
                 return Data::set(self, i, j, v);
             }
         }
-        assert_eq!(true, false);
         true
     }
 
@@ -135,6 +142,7 @@ impl Data {
     }
 
     /// Finds value for all empty cells with index >= k
+    /// return true if we have find values for all empty cells with index >= k; otherwise, false
     fn backtrack(&mut self, k: usize) -> bool {
         if k >= self.bt.len() {
             return true;
@@ -168,8 +176,6 @@ impl Solution {
     /// Optimized solution (i.e., C++ one is a basic one)
     pub fn solve_sudoku(board: &mut Vec<Vec<char>>) {
         let mut data = Data::new();
-        // clear array
-        data.cells.clear();
         // Decoding input board into the internal cell matrix.
         // As we do it - constraints are propagated and even additional values are set as we go
         // (in the case if it is possible to unambiguously deduce them)
