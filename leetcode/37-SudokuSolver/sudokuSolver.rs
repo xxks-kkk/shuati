@@ -22,16 +22,7 @@
 use bit_vec::BitVec;
 use std::char;
 
-
-//TODO:
-// 1. Leetcode doesn't allow us to modify the `struct Solution {}`. Thus, we need to have a new
-// struct to contain `cells` and `bt` and work with our new struct throughout the solution
-// 2. Test and debug current implementation
-
-struct Solution {
-    cells: Vec<Vec<Cell>>, 
-    bt: Vec<(usize, usize)>,   // backtracking state - list of empty cells
-}
+struct Solution {}
 
 // Enacpsulates a single cell on a Sudoku board
 #[derive(Clone)]
@@ -46,46 +37,21 @@ impl Cell {
         Cell {
             value: 0,
             numPossibilities: 9,
-            constraints: BitVec::from_elem(10, true)
+            constraints: BitVec::from_elem(10, true),
         }
     }
 }
 
-impl Solution {
-    pub fn new() -> Self {
-        Solution {
-            cells: vec![vec![Cell::new();  9]; 9],
-            bt: Vec::new()
-        }
-    }
-    
-    /// Optimized solution (i.e., C++ one is a basic one)
-    pub fn solve_sudoku(&mut self, board: &mut Vec<Vec<char>>) {
-        // clear array
-        self.cells.clear();
-        // Decoding input board into the internal cell matrix.
-        // As we do it - constraints are propagated and even additional values are set as we go
-        // (in the case if it is possible to unambiguously deduce them)
-        for i in 0..9 {
-            for j in 0..9 {
-                if board[i][j] != '.' && !Solution::set(self, i, j, board[i][j].to_digit(10).unwrap() as usize) {
-                    return; // sudoku is either incorrect or unsolvable
-                }
-            }
-        }
-        // if we're lucky we've already got a solution,
-        // however, if we have empty cells we need to use backtracking to fill them
-        if (!Solution::findValuesForEmptyCells(self)) {
-            return; // sudoku is unsolvable
-        }
+struct Data {
+    cells: Vec<Vec<Cell>>,
+    bt: Vec<(usize, usize)>, // backtracking state - list of empty cells
+}
 
-        // copying the solution back to the board
-        for i in 0..9 {
-            for j in 0..9 {
-                if self.cells[i][j].value > 0 {
-                    board[i][j] = char::from_digit(self.cells[i][j].value as u32, 10).unwrap();
-                }
-            }
+impl Data {
+    pub fn new() -> Self {
+        Data {
+            cells: vec![vec![Cell::new(); 9]; 9],
+            bt: Vec::new(),
         }
     }
 
@@ -106,17 +72,17 @@ impl Solution {
         // propagting constraints
         for k in 0..9 {
             // to the row
-            if i != k && !Solution::updateConstraints(self, k,j,v) {
+            if i != k && !Data::updateConstraints(self, k, j, v) {
                 return false;
             }
             // to the column
-            if j != k && !Solution::updateConstraints(self, i,k,v) {
+            if j != k && !Data::updateConstraints(self, i, k, v) {
                 return false;
             }
             // to the 3x3 square
-            let ix = (i/3)*3 + k/3;
-            let jx = (j/3)*3 + k % 3;
-            if ix != i && jx != j && !Solution::updateConstraints(self, ix, jx, v) {
+            let ix = (i / 3) * 3 + k / 3;
+            let jx = (j / 3) * 3 + k % 3;
+            if ix != i && jx != j && !Data::updateConstraints(self, ix, jx, v) {
                 return false;
             }
         }
@@ -139,7 +105,7 @@ impl Solution {
         }
         for v in 1..10 {
             if !self.cells[i][j].constraints[v] {
-                return Solution::set(self, i, j, v);
+                return Data::set(self, i, j, v);
             }
         }
         assert_eq!(true, false);
@@ -151,17 +117,21 @@ impl Solution {
         // collecting all empty cells
         self.bt.clear();
         for i in 0..9 {
-            for j in 0 .. 9 {
+            for j in 0..9 {
                 if self.cells[i][j].value == 0 {
-                    self.bt.push((i,j));
+                    self.bt.push((i, j));
                 }
             }
         }
         // making backtracking efficient by pre-sorting empty cells by numPossibilities
         let mut bt_cpy = self.bt.clone();
-        bt_cpy.sort_by(|a, b| self.cells[a.0][a.1].numPossibilities.cmp(&self.cells[b.0][b.1].numPossibilities));
+        bt_cpy.sort_by(|a, b| {
+            self.cells[a.0][a.1]
+                .numPossibilities
+                .cmp(&self.cells[b.0][b.1].numPossibilities)
+        });
         self.bt = bt_cpy;
-        Solution::backtrack(self, 0)
+        Data::backtrack(self, 0)
     }
 
     /// Finds value for all empty cells with index >= k
@@ -173,15 +143,15 @@ impl Solution {
         let j = self.bt[k].1;
         // fast path - only 1 possibility
         if self.cells[i][j].value > 0 {
-            return Solution::backtrack(self, k+1);
+            return Data::backtrack(self, k + 1);
         }
         // slow path > 1 possibility.
         // making snapshot of the state
         let snapshot: Vec<Vec<Cell>> = self.cells.clone();
         for v in 1..10 {
             if !self.cells[i][j].constraints[v] {
-                if Solution::set(self, i, j, v) {
-                    if Solution::backtrack(self, k+1) {
+                if Data::set(self, i, j, v) {
+                    if Data::backtrack(self, k + 1) {
                         return true;
                     }
                 }
@@ -194,5 +164,63 @@ impl Solution {
     }
 }
 
+impl Solution {
+    /// Optimized solution (i.e., C++ one is a basic one)
+    pub fn solve_sudoku(board: &mut Vec<Vec<char>>) {
+        let mut data = Data::new();
+        // clear array
+        data.cells.clear();
+        // Decoding input board into the internal cell matrix.
+        // As we do it - constraints are propagated and even additional values are set as we go
+        // (in the case if it is possible to unambiguously deduce them)
+        for i in 0..9 {
+            for j in 0..9 {
+                if board[i][j] != '.' && !data.set(i, j, board[i][j].to_digit(10).unwrap() as usize)
+                {
+                    return; // sudoku is either incorrect or unsolvable
+                }
+            }
+        }
+        // if we're lucky we've already got a solution,
+        // however, if we have empty cells we need to use backtracking to fill them
+        if !data.findValuesForEmptyCells() {
+            return; // sudoku is unsolvable
+        }
+
+        // copying the solution back to the board
+        for i in 0..9 {
+            for j in 0..9 {
+                if data.cells[i][j].value > 0 {
+                    board[i][j] = char::from_digit(data.cells[i][j].value as u32, 10).unwrap();
+                }
+            }
+        }
+    }
+}
+
 #[test]
-fn test_37() {}
+fn test_37() {
+    let mut board: Vec<Vec<char>> = vec![
+        vec!['5', '3', '.', '.', '7', '.', '.', '.', '.'],
+        vec!['6', '.', '.', '1', '9', '5', '.', '.', '.'],
+        vec!['.', '9', '8', '.', '.', '.', '.', '6', '.'],
+        vec!['8', '.', '.', '.', '6', '.', '.', '.', '3'],
+        vec!['4', '.', '.', '8', '.', '3', '.', '.', '1'],
+        vec!['7', '.', '.', '.', '2', '.', '.', '.', '6'],
+        vec!['.', '6', '.', '.', '.', '.', '2', '8', '.'],
+        vec!['.', '.', '.', '4', '1', '9', '.', '.', '5'],
+        vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
+    ];
+    Solution::solve_sudoku(&mut board);
+    let board_correct: Vec<Vec<char>> = vec![
+        vec!['5', '3', '4', '6', '7', '8', '9', '1', '2'],
+        vec!['6', '7', '2', '1', '9', '5', '3', '4', '8'],
+        vec!['1', '9', '8', '3', '4', '2', '5', '6', '7'],
+        vec!['8', '5', '9', '7', '6', '1', '4', '2', '3'],
+        vec!['4', '2', '6', '8', '5', '3', '7', '9', '1'],
+        vec!['7', '1', '3', '9', '2', '4', '8', '5', '6'],
+        vec!['9', '6', '1', '5', '3', '7', '2', '8', '4'],
+        vec!['2', '8', '7', '4', '1', '9', '6', '3', '5'],
+        vec!['3', '4', '5', '2', '8', '6', '1', '7', '9'],
+    ];
+}
