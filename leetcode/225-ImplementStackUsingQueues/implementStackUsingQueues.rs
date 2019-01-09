@@ -79,7 +79,7 @@ impl MyStack {
  */
 
 #[test]
-fn test() {
+fn test_225() {
     let mut obj = MyStack::new();
     obj.push(1);
     obj.push(2);
