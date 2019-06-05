@@ -105,6 +105,9 @@ add_executable(54
 add_executable(62
         leetcode/62-UniquePaths/uniquePaths.cc)
 
+add_executable(78
+        leetcode/78-Subsets/subsets.cc)
+
 add_executable(70
         leetcode/70-ClimbingStairs/climbingStairs.cc)
         
