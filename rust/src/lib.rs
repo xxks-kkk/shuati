@@ -1,8 +1,5 @@
 #![allow(dead_code)]
 
-extern crate bit_set;
-extern crate bit_vec;
-
 #[allow(non_snake_case)]
 #[path = "../../leetcode/225-ImplementStackUsingQueues/implementStackUsingQueues.rs"]
 mod implementStackUsingQueues;

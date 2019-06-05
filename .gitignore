@@ -26,3 +26,5 @@ GRTAGS
 GTAGS
 Cargo.lock
 target
+.idea-clion/
+.idea-python
