@@ -96,6 +96,9 @@ add_executable(37
 add_executable(42
         leetcode/42-TrappingRainWater/trappingRainWater.cc)
 
+add_executable(44
+        leetcode/44-WildcardMatching/wildcardMatching.cc)
+
 add_executable(53
         leetcode/53-MaximumSubarray/maximumSubarray.cc)
 
