@@ -54,6 +54,36 @@
 
 using namespace std;
 
+//class Solution {
+//public:
+//    bool isMatch(string s, string p) {
+//        if (s.empty()) {
+//            if (p.empty()) {
+//                return true;
+//            }
+//            else {
+//                for(auto&& item: p) {
+//                    if (item != '*') return false;
+//                }
+//                return true;
+//            }
+//        }
+//        if (s[0] != p[0] && p[0] != '*' && p[0] != '?') return false;
+//        else if (s[0] == p[0] || p[0] == '?') {
+//            return isMatch(s.substr(1), p.substr(1));
+//        }
+//        else {
+//            assert(p[0] == '*');
+//            for(int i = s.size(); i >= 0; --i) {
+//                if (isMatch(s.substr(0), s.substr(0,i) + p.substr(1))) {
+//                    return true;
+//                }
+//            }
+//            return false;
+//        }
+//    }
+//};
+
 class Solution {
 public:
     bool isMatch(string s, string p) {
