@@ -439,6 +439,9 @@ add_executable(704
 add_executable(739
         leetcode/739-DailyTemperatures/dailyTemperatures.cc)
 
+add_executable(784
+        leetcode/784-LetterCasePermutation/letterCasePermutation.cc)
+
 add_executable(796
         leetcode/796-RotateString/rotateString.cc)
 
