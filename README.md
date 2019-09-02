@@ -16,15 +16,24 @@ into practice by solving various interview questions. This is also the place whe
 
 ## Usage
 
+The repo contains a mixture of different programming languages. To build and test solutions written in specific
+language, follow steps below:
+
+### C, C++
+
 To build all C, C++ solutions, run
 
 ``` shell
 $ mkdir -p build && cd build && cmake .. && make -j4
 ```
 
+### Java
+
 To build Java solutions, find `Makefile` inside the directory that program resides, and run `make`
 
-To build all Rust solutions, run
+### Rust
+
+To test all Rust solutions, run
 
 ``` shell
 $ cd rust
