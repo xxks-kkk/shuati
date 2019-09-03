@@ -15,5 +15,9 @@ matrix:
       rust: nightly
       os: osx
       script:
-       - pwd
-       - cd rust/ && cargo test    
+       - cd rust/ && cargo test
+
+    - language: go
+      go: 1.12.x
+      script:
+        - go test ./...
