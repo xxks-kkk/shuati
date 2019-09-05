@@ -35,11 +35,24 @@ func readBinaryWatch(num int) []string {
 			fmt.Fprintf(os.Stderr, "readBinarywatch: %v\n", err)
 			os.Exit(1)
 		}
+		time := strings.Split(conv_res, ":")
+		hour, err := strconv.Atoi(time[0])
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "readBinarywatch: %v\n", err)
+		}
+		minutes, err := strconv.Atoi(time[1])
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "readBinarywatch: %v\n", err)
+		}
+		if hour >= 12 || minutes >= 60 {
+			continue
+		}
 		res_str = append(res_str, conv_res)
 	}
 	return res_str
 }
 
+// TODO: interesting to learn more about Go
 func backtrack(num int, tmp []int, res [][]int) [][]int {
 	//fmt.Printf("num: %d, tmp: %v, res: %v, 10-len(tmp): %v\n", num, tmp, res, 10-len(tmp))
 	if num > 10-len(tmp) {
