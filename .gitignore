@@ -28,3 +28,4 @@ Cargo.lock
 target
 .idea-clion/
 .idea-python
+go.test
