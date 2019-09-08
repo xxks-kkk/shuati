@@ -52,31 +52,22 @@ func readBinaryWatch(num int) []string {
 	return res_str
 }
 
-// TODO: interesting to learn more about Go
 func backtrack(num int, tmp []int, res [][]int) [][]int {
-	//fmt.Printf("num: %d, tmp: %v, res: %v, 10-len(tmp): %v\n", num, tmp, res, 10-len(tmp))
 	if num > 10-len(tmp) {
-		//fmt.Println("hit1")
 		return res
 	} else if num == 0 {
 		for len(tmp) < 10 {
 			tmp = append(tmp, 0)
 		}
-		tmp2 := tmp
-		res = append(res, tmp2)
-		//fmt.Printf("res (num == 0): %v\n", res)
-		//fmt.Println("hit2")
+		res = append(res, tmp)
 	} else {
-		//fmt.Println("hit3")
 		for _, i := range [...]int{0, 1} {
 			if i == 1 {
 				num -= 1
 			}
 			tmp := append(tmp, i)
 			res = backtrack(num, tmp, res)
-			//fmt.Printf("res (else): %v\n", res)
 			tmp = tmp[:len(tmp)-1]
-			//fmt.Printf("tmp:%v, len(tmp):%v\n", tmp, len(tmp))
 		}
 	}
 	return res
