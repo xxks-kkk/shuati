@@ -2,7 +2,9 @@
 package goinclude
 
 import (
+	"fmt"
 	"reflect"
+	"strings"
 )
 
 // TODO: can make this more generic to compare two slice of elements with any type
@@ -23,4 +25,17 @@ func StringSliceCompare(s1 []string, s2 []string) bool {
 		}
 	}
 	return reflect.DeepEqual(seen_s1, seen_s2)
+}
+
+func IntNestedSliceCompare(n1 [][]int, n2 [][]int) bool {
+	var n1_string, n2_string []string
+	for _, num := range n1 {
+		tmp := strings.Trim(strings.Join(strings.Fields(fmt.Sprint(num)), ","), "[]")
+		n1_string = append(n1_string, tmp)
+	}
+	for _, num := range n2 {
+		tmp := strings.Trim(strings.Join(strings.Fields(fmt.Sprint(num)), ","), "[]")
+		n2_string = append(n1_string, tmp)
+	}
+	return StringSliceCompare(n1_string, n2_string)
 }
