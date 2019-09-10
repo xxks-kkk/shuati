@@ -28,7 +28,9 @@ func permute(nums []int) [][]int {
 // `tmp`
 func backtrack(nums []int, tmp []int, invalid_pos []bool, res [][]int) [][]int {
 	if len(tmp) == len(nums) {
-		res = append(res, tmp)
+		tmp2 := make([]int, len(tmp))
+		copy(tmp2, tmp)
+		res = append(res, tmp2)
 	} else {
 		for i, num := range nums {
 			if invalid_pos[i] {

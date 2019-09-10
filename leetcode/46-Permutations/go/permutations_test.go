@@ -52,3 +52,9 @@ func TestPermuteInParallel(t *testing.T) {
 		t.Error(err)
 	}
 }
+
+func BenchmarkPermute(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		permute([]int{5, 4, 6, 2})
+	}
+}
