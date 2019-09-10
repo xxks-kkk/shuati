@@ -40,3 +40,11 @@ $ cd rust
 $ cargo test
 ```
 
+### Go
+
+To test all Go solutions, run
+
+```
+$ cd shuati
+$ go test ./...
+```
