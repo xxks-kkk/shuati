@@ -69,6 +69,9 @@ add_executable(21
         leetcode/21-MergeTwoSortedList/mergeTwoSortedList.c
         leetcode/cinclude/linkedlist.c)
 
+add_executable(22
+        leetcode/22-GenerateParentheses/generateParentheses.cc)
+      
 add_executable(23
         leetcode/23-MergekSortedLists/mergekSortedLists.cc
         leetcode/cppinclude/linkedList.cc)
