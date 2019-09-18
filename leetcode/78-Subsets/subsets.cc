@@ -27,28 +27,28 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-        vector<vector<int>> sol;
-        vector<bool> a;
-        backtrack(a, nums, sol);
-        return sol;
+        vector<vector<int>> res;
+        vector<bool> selections;
+        backtrack(nums, res, selections);
+        return res;
     }
 private:
     // Follow the "Algorithm Design Manual (2nd edition)" Backtracking template (section 7.1)
-    void backtrack(vector<bool>& a, vector<int>& nums, vector<vector<int>>& sol) {
-        if (a.size() == nums.size()) {
+  void backtrack(vector<int>& nums, vector<vector<int>>& res, vector<bool>& selections) {
+        if (selections.size() == nums.size()) {
             vector<int> tmp;
-            for(int i = 0; i < nums.size(); ++i) {
-                if (a[i] == true) tmp.push_back(nums[i]);
+            for(int i = 0; i < selections.size(); ++i) {
+                if (selections[i]) tmp.push_back(nums[i]);
             }
-            sol.push_back(tmp);
+            res.push_back(tmp);
         }
         else {
             // For each num in nums, we have two choice: pick ('true') or not pick ('false')
             vector<bool> cand = {true, false};
             for(auto &&item: cand) {
-                a.push_back(item);
-                backtrack(a, nums, sol);
-                a.pop_back();
+                selections.push_back(item);
+                backtrack(nums, res, selections);
+                selections.pop_back();
             }
         }
     }
