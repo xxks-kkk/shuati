@@ -20,82 +20,29 @@ public:
   vector<string> generateParenthesis(int n)
   {
     vector<string> res;
-    string currentState;
-    backtrack(res, currentState, 0, n);
+    string cand;
+    backtrack(res, 0, 0, cand, n);
     return res;
   }
 private:
-  // isValid checks whether it is valid to apply "(" or ")" (noted as
-  // `action`) to the `currentState` given the number of pairs of parentheses `n`
-  bool isValid(string currentState, string action, int n)
+  // backtrack constructs all the valid pairs of parenthesis. The key idea is to keep track of the number of left parenthesis
+  // (`left_parenthesis_used`) and the number of right parenthesis we have used. The valid pairs of parentheses can only
+  // happen when 1. left_parenthesis_used < n or 2. left_parenthesis_used > right_parenthesis_used (otherwise, creates string like
+  // '())')
+  void backtrack(vector<string>& res, int left_parenthesis_used, int right_parenthesis_used, string cand, int n)
   {
-    currentState += action;
-    int num_left_parentheses = 0;
-    int num_right_parentheses = 0;
-    stack<char> stk;
-    for (auto&& c: currentState)
+    if (cand.length() == 2*n)
     {
-      switch(c)
-      {
-      case '(':
-        stk.push(')');
-        num_left_parentheses += 1;
-        if (num_left_parentheses > n) return false;
-        break;
-      case ')':
-        stk.pop();
-        num_right_parentheses += 1;
-        if (num_right_parentheses > n) return false;
-        break;
-      }
+      res.push_back(cand);
+      return;
     }
-    if (num_right_parentheses > num_left_parentheses)
+    if (left_parenthesis_used < n)
     {
-      return false;
+      backtrack(res, left_parenthesis_used + 1, right_parenthesis_used, cand + '(', n);
     }
-    return true;
-  }
-
-  // generatePairs will take in `currentState` and generate valid pairs of parentheses
-  string generatePairs(string currentState)
-  {
-    // Implementation idea is inspired by 20-ValidParentheses
-    stack<char> stk;
-    for (auto&& c : currentState)
+    if (left_parenthesis_used > right_parenthesis_used)
     {
-      switch(c)
-      {
-      case '(': stk.push(')'); break;
-      default:
-        stk.pop();
-      }
-    }
-    while (!stk.empty())
-    {
-      currentState += stk.top();
-      stk.pop();
-    }
-    return currentState;
-  }
-
-  void backtrack(vector<string>& res, string currentState, int num_used_left_parentheses, int n)
-  {
-    if (num_used_left_parentheses == n) {
-      res.push_back(generatePairs(currentState));
-    }
-    else
-    {
-      string nextState;
-      if (isValid(currentState, ")", n))
-      {
-          nextState = currentState + ")";
-          backtrack(res, nextState, num_used_left_parentheses, n);
-      }
-      if (isValid(currentState, "(", n))
-      {
-          nextState = currentState + "(";
-          backtrack(res, nextState, num_used_left_parentheses + 1, n);
-      }
+      backtrack(res, left_parenthesis_used, right_parenthesis_used + 1, cand + ')', n);
     }
   }
 };
