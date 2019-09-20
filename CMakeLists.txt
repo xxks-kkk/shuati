@@ -95,6 +95,9 @@ add_executable(35
 
 add_executable(37
         leetcode/37-SudokuSolver/sudokuSolver.cc)
+
+add_executable(39
+        leetcode/39-CombinationSum/combinationSum.cc)
   
 add_executable(42
         leetcode/42-TrappingRainWater/trappingRainWater.cc)
