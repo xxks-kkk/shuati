@@ -565,3 +565,6 @@ add_executable(028
 add_executable(029
         misc/DictionaryTask/dictionary.cc
         misc/DictionaryTask/test.cc)
+
+add_executable(030
+        misc/FibNumber/fibNumber.cc)
