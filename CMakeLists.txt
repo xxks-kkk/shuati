@@ -222,6 +222,9 @@ add_executable(213
 add_executable(214
         leetcode/214-ShortestPalindrome/shortestPalindrome.cc)
 
+add_executable(216
+        leetcode/216-CombinationSumIII/combinationSumIII.cc)
+      
 add_executable(222
         leetcode/222-CountCompleteTreeNodes/countCompleteTreeNodes.cc
         leetcode/cppinclude/bt.cc)
