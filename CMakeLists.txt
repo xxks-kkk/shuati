@@ -460,6 +460,9 @@ add_executable(829
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
 
+add_executable(977
+        leetcode/977-SquaresofaSortedArray/squaresofaSortedArray.cc)
+      
 add_executable(00
         leetcode/cppinclude/queue.tpp
         leetcode/cppinclude/queue.h
