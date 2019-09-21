@@ -283,7 +283,7 @@ add_executable(260
 add_executable(261
         leetcode/261-GraphValidTree/graphValidTree.cc)
 
-      add_executable(268
+add_executable(268
         leetcode/268-MissingNumber/missingNumber.cc)
 
 add_executable(270
@@ -316,7 +316,7 @@ add_executable(289
         leetcode/289-GameOfLife/gameOfLife.cc
         leetcode/cppinclude/cpputility.cc)
 
-      add_executable(291
+add_executable(291
         leetcode/291-WordPatternII/wordPatternII.cc)
 
 add_executable(295
@@ -332,10 +332,13 @@ add_executable(298
         leetcode/cppinclude/bt.cc)
 
 add_executable(301
-        leetcode/301-RemoveInvalidParentheses/removeInvalidParentheses.cc)
+  leetcode/301-RemoveInvalidParentheses/removeInvalidParentheses.cc)
 
 add_executable(305
-        leetcode/305-NumberOfIslandsII/numberOfIslandsII.cc)
+  leetcode/305-NumberOfIslandsII/numberOfIslandsII.cc)
+
+add_executable(320
+  leetcode/320-GeneralizedAbbreviation/generalizedAbbreviation.cc)
 
 add_executable(322
         leetcode/322-CoinChange/coinChange.cc)
