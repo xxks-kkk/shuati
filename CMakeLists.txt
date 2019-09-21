@@ -116,7 +116,10 @@ add_executable(78
 
 add_executable(70
         leetcode/70-ClimbingStairs/climbingStairs.cc)
-        
+
+add_executable(77
+        leetcode/77-Combinations/combinations.cc)
+      
 add_executable(88
         leetcode/88-MergeSortedArray/mergeSortedArray.cc)
 
