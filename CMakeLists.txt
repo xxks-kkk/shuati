@@ -69,6 +69,9 @@ add_executable(21
         leetcode/21-MergeTwoSortedList/mergeTwoSortedList.c
         leetcode/cinclude/linkedlist.c)
 
+add_executable(22
+        leetcode/22-GenerateParentheses/generateParentheses.cc)
+      
 add_executable(23
         leetcode/23-MergekSortedLists/mergekSortedLists.cc
         leetcode/cppinclude/linkedList.cc)
@@ -92,6 +95,9 @@ add_executable(35
 
 add_executable(37
         leetcode/37-SudokuSolver/sudokuSolver.cc)
+
+add_executable(39
+        leetcode/39-CombinationSum/combinationSum.cc)
   
 add_executable(42
         leetcode/42-TrappingRainWater/trappingRainWater.cc)
@@ -110,7 +116,10 @@ add_executable(78
 
 add_executable(70
         leetcode/70-ClimbingStairs/climbingStairs.cc)
-        
+
+add_executable(77
+        leetcode/77-Combinations/combinations.cc)
+      
 add_executable(88
         leetcode/88-MergeSortedArray/mergeSortedArray.cc)
 
@@ -216,6 +225,9 @@ add_executable(213
 add_executable(214
         leetcode/214-ShortestPalindrome/shortestPalindrome.cc)
 
+add_executable(216
+        leetcode/216-CombinationSumIII/combinationSumIII.cc)
+      
 add_executable(222
         leetcode/222-CountCompleteTreeNodes/countCompleteTreeNodes.cc
         leetcode/cppinclude/bt.cc)
@@ -457,6 +469,9 @@ add_executable(829
 add_executable(842
         leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
 
+add_executable(977
+        leetcode/977-SquaresofaSortedArray/squaresofaSortedArray.cc)
+      
 add_executable(00
         leetcode/cppinclude/queue.tpp
         leetcode/cppinclude/queue.h
@@ -556,3 +571,6 @@ add_executable(028
 add_executable(029
         misc/DictionaryTask/dictionary.cc
         misc/DictionaryTask/test.cc)
+
+add_executable(030
+        misc/FibNumber/fibNumber.cc)
