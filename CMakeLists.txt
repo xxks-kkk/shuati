@@ -322,6 +322,9 @@ add_executable(289
 add_executable(291
         leetcode/291-WordPatternII/wordPatternII.cc)
 
+add_executable(294
+  leetcode/294-FlipGameII/flipGameII.cc)
+      
 add_executable(295
         leetcode/295-FindMedianfromDataStream/findMedianfromDataStream.cc)
 
