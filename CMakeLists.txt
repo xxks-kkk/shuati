@@ -430,7 +430,10 @@ add_executable(582
         leetcode/582-KillProcess/killProcess.cc)
 
 add_executable(609
-        leetcode/609-FindDuplicateFileinSystem/findDuplicateFileinSystem.cc)
+  leetcode/609-FindDuplicateFileinSystem/findDuplicateFileinSystem.cc)
+
+add_executable(632
+  leetcode/632-SmallestRangeCoveringElementsfromKLists/smallestRangeCoveringElementsfromKLists.cc)      
 
 add_executable(636
         leetcode/636-ExclusiveTimeofFunctions/exclusiveTimeofFunctions.cc)
