@@ -583,3 +583,6 @@ add_executable(030
 
 add_executable(031
   misc/Quora2020/addStringdigits.cc)
+
+add_executable(032
+  misc/Quora2020/distinctTriplet.cc)
