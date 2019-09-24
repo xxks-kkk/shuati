@@ -579,4 +579,7 @@ add_executable(029
         misc/DictionaryTask/test.cc)
 
 add_executable(030
-        misc/FibNumber/fibNumber.cc)
+  misc/FibNumber/fibNumber.cc)
+
+add_executable(031
+  misc/Quora2020/addStringdigits.cc)
