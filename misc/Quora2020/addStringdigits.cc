@@ -106,7 +106,8 @@ public:
     };
     vector<testCase> test_cases = {
       { "19", "22", "311"},
-      { "20", "2032", "2052"}
+      { "20", "2032", "2052"},
+      { "99", "99", "1818"},
     };
     for(auto && test_case: test_cases) {
       string res = (sol.addStringDigits2)(test_case.a, test_case.b);

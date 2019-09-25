@@ -575,8 +575,8 @@ add_executable(028
         misc/Questions/performance.cpp)
 
 add_executable(029
-        misc/DictionaryTask/dictionary.cc
-        misc/DictionaryTask/test.cc)
+  misc/DictionaryTask/dictionary.cc
+  misc/DictionaryTask/test.cc)
 
 add_executable(030
   misc/FibNumber/fibNumber.cc)
@@ -586,3 +586,7 @@ add_executable(031
 
 add_executable(032
   misc/Quora2020/distinctTriplet.cc)
+
+add_executable(033
+  misc/Quora2020/sortdiagonal.cc
+  leetcode/cppinclude/cpputility.h)
