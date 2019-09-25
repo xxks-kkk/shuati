@@ -166,10 +166,14 @@ add_executable(124
         leetcode/cppinclude/bt.cc)
 
 add_executable(128
-        leetcode/128-LongestConsecutiveSequence/longestConsecutiveSequence.cc)
+  leetcode/128-LongestConsecutiveSequence/longestConsecutiveSequence.cc)
+
+add_executable(133
+  leetcode/133-CloneGraph/cloneGraph.cc
+  leetcode/cppinclude/graph_leetcode.h)
 
 add_executable(140
-        leetcode/140-WordBreakII/wordBreakII.cc)
+  leetcode/140-WordBreakII/wordBreakII.cc)
 
 add_executable(141
         leetcode/141-LinkedListCycle/linkedListCycle.cc
