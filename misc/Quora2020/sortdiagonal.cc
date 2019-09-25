@@ -44,6 +44,7 @@ public:
     };
     vector<testCase> test_cases = {
       {{{1,4,7}, {7,3,2}, {5,2,2}}, {{1,2,7},{2,2,4},{5,7,3}}},
+      {{{1,4,3}, {5,10,2}, {7,1,5}, {10,24,3}}, {{1,2,3},{1,5,4},{7,3,10}, {10,24,5}}},      
     };
     for(auto&& test_case: test_cases) {
       auto test_case_cpy = test_case.matrix;
