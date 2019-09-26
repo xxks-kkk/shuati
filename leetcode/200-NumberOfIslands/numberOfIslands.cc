@@ -22,6 +22,8 @@
 #include <stdio.h>
 #include "cpputility.h"
 
+#define FUNC_DEF(func, check_grid) { func, #func, check_grid },
+
 using namespace std;
 
 class UnionFind {
@@ -177,8 +179,14 @@ private:
 
 using ptr2numIslands = int (Solution::*)(vector<vector<char>> &);
 
+struct testFuncsInfo{
+  ptr2numIslands pfcn;
+  const char* func_name;
+  bool check_grid;
+};
+
 void
-test(ptr2numIslands pfcn, bool check_grid)
+test(vector<testFuncsInfo>& func_arrays)
 {
     Solution sol;
     struct testCase {
@@ -199,30 +207,35 @@ test(ptr2numIslands pfcn, bool check_grid)
         {'0', '0', '0', '1', '1'}
         }, 3},
     };
-    for(auto&& test_case: test_cases) {
-      auto grid2(test_case.grid);
-      int got = (sol.*pfcn)(test_case.grid);
-      if (got != test_case.expected) {
-        // check if the function result is correct
-        printf("pfcn(%s) = %s\n",
-               CPPUtility::matrixStr(test_case.grid).c_str(),
-               to_string(got).c_str());
-      }
-      if (check_grid && grid2 != test_case.grid) {
-        // check if board is modified after invoking function
-        printf("pfcn(%s) modified grid: %s\n",
-               CPPUtility::matrixStr(test_case.grid).c_str(),
-               CPPUtility::matrixStr(grid2).c_str()
-          );
-      }
+    for(auto&& func: func_arrays) {
+      for(auto&& test_case: test_cases) {
+        auto grid2(test_case.grid);
+        int got = (sol.*(func.pfcn))(test_case.grid);
+        if (got != test_case.expected) {
+          // check if the function result is correct
+          printf("%s(%s) = %s\n",
+                 func.func_name,
+                 CPPUtility::matrixStr(test_case.grid).c_str(),
+                 to_string(got).c_str());
+        }
+        if (func.check_grid && grid2 != test_case.grid) {
+          // check if board is modified after invoking function
+          printf("%s(%s) modified grid: %s\n",
+                 func.func_name,
+                 CPPUtility::matrixStr(test_case.grid).c_str(),
+                 CPPUtility::matrixStr(grid2).c_str()
+            );
+        }
+      }      
     }
 };
 
 int
 main()
 {
-    ptr2numIslands pfcn = &Solution::numIslands;
-    test(pfcn, true);
-    pfcn = &Solution::numIslands2;
-    test(pfcn, false);
+  vector<testFuncsInfo> func_array = {
+    FUNC_DEF(&Solution::numIslands, true)
+    FUNC_DEF(&Solution::numIslands2, false)
+  };
+  test(func_array);
 }
