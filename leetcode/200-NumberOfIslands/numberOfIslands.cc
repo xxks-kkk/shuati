@@ -20,6 +20,7 @@
 #include <vector>
 #include <cassert>
 #include <stdio.h>
+#include "cpputility.h"
 
 using namespace std;
 
@@ -181,7 +182,7 @@ test(ptr2numIslands pfcn, bool check_grid)
 {
     Solution sol;
     struct testCase {
-      vector<vector<char>>& grid;
+      vector<vector<char>> grid;
       int expected;
     };
     vector<testCase> test_cases = {
@@ -200,13 +201,19 @@ test(ptr2numIslands pfcn, bool check_grid)
     };
     for(auto&& test_case: test_cases) {
       auto grid2(test_case.grid);
-      if ((sol.*pfcn)(test_case.grid) != test_case.expected) {
+      int got = (sol.*pfcn)(test_case.grid);
+      if (got != test_case.expected) {
         // check if the function result is correct
-        
+        printf("pfcn(%s) = %s\n",
+               CPPUtility::matrixStr(test_case.grid).c_str(),
+               to_string(got).c_str());
       }
       if (check_grid && grid2 != test_case.grid) {
         // check if board is modified after invoking function
-        
+        printf("pfcn(%s) modified grid: %s\n",
+               CPPUtility::matrixStr(test_case.grid).c_str(),
+               CPPUtility::matrixStr(grid2).c_str()
+          );
       }
     }
 };
