@@ -9,14 +9,44 @@
 
 namespace CPPUtility
 {
+  // split the string by the given delimiter
+  std::vector <std::string>
+  split(const std::string &str, const std::string &delim);
 
-// split the string by the given delimiter
-std::vector <std::string>
-split(const std::string &str, const std::string &delim);
+  // convert the vector<string> to vector<int>
+  std::vector<int>
+  convertToInt(const std::vector<std::string>& input);
 
-// convert the vector<string> to vector<int>
-std::vector<int>
-convertToInt(const std::vector<std::string>& input);
+  // generate string representation of the given 2D vectors (e.g., matrix)
+  template <typename T>
+  std::string matrixStr(std::vector<std::vector<T>> matrix)
+  {
+    std::string cand = "\n[";
+    for(int j = 0; j < matrix.size(); ++j)
+    {
+      j == 0 ? cand += "[" : cand += " [";
+      int i;
+      auto vec = matrix[j];
+      for(i = 0; i < vec.size(); ++i)
+      {
+        // TODO: https://www.fluentcpp.com/2017/06/06/using-tostring-custom-types-cpp/
+        // Assume T has implemented / overridden the to_string method
+        cand += std::to_string(vec[i]);
+        i != vec.size() - 1 ? cand += "," : cand += "";
+      }
+      j == matrix.size() - 1 ? cand += "]" : cand += "]\n";
+    }
+    cand += "]\n";
+    return cand;
+  }
+
+  // pretty print matrix
+  template <typename T>
+  void prettyPrintMatrix(std::ostream& theStream, std::vector<std::vector<T>> matrix)
+  {
+    auto rep = matrixStr(matrix);
+    theStream << rep;
+  }
 }
 
 #endif
