@@ -19,7 +19,7 @@ namespace CPPUtility
 
   // generate string representation of the given 2D vectors (e.g., matrix)
   template <typename T>
-  std::string matrixStr(std::vector<std::vector<T>> matrix)
+  std::string twoDVectorStr(std::vector<std::vector<T>> matrix)
   {
     std::string cand = "\n[";
     for(int j = 0; j < matrix.size(); ++j)
@@ -40,12 +40,23 @@ namespace CPPUtility
     return cand;
   }
 
-  // pretty print matrix
+  // pretty print 2D vector
   template <typename T>
-  void prettyPrintMatrix(std::ostream& theStream, std::vector<std::vector<T>> matrix)
+  void prettyPrint2DVector(std::ostream& theStream, std::vector<std::vector<T>> matrix)
   {
-    auto rep = matrixStr(matrix);
+    auto rep = twoDVectorStr(matrix);
     theStream << rep;
+  }
+
+  template <typename T>
+  std::string oneDVectorStr(const std::vector<T>& vec) {
+    std::string cand = "[";
+    for(int i = 0; i < vec.size(); ++i) {
+      cand += std::to_string(vec[i]);
+      i != vec.size() - 1 ? cand += "," : cand += "";
+    }
+    cand += "]";
+    return cand;
   }
 }
 
