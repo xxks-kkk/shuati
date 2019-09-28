@@ -166,10 +166,14 @@ add_executable(124
         leetcode/cppinclude/bt.cc)
 
 add_executable(128
-        leetcode/128-LongestConsecutiveSequence/longestConsecutiveSequence.cc)
+  leetcode/128-LongestConsecutiveSequence/longestConsecutiveSequence.cc)
+
+add_executable(133
+  leetcode/133-CloneGraph/cloneGraph.cc
+  leetcode/cppinclude/graph_leetcode.h)
 
 add_executable(140
-        leetcode/140-WordBreakII/wordBreakII.cc)
+  leetcode/140-WordBreakII/wordBreakII.cc)
 
 add_executable(141
         leetcode/141-LinkedListCycle/linkedListCycle.cc
@@ -202,10 +206,11 @@ add_executable(186
         leetcode/186-ReverseWordsInAStringII/reverseWordsInAStringII.cc)
 
 add_executable(189
-        leetcode/189-RotateArray/rotateArray.cc)
+  leetcode/189-RotateArray/rotateArray.cc)
 
 add_executable(200
-        leetcode/200-NumberOfIslands/numberOfIslands.cc)
+  leetcode/200-NumberOfIslands/numberOfIslands.cc
+  leetcode/cppinclude/cpputility.h)
 
 add_executable(204
         leetcode/204-CountPrimes/countPrimes.cc)
@@ -578,8 +583,18 @@ add_executable(028
         misc/Questions/performance.cpp)
 
 add_executable(029
-        misc/DictionaryTask/dictionary.cc
-        misc/DictionaryTask/test.cc)
+  misc/DictionaryTask/dictionary.cc
+  misc/DictionaryTask/test.cc)
 
 add_executable(030
-        misc/FibNumber/fibNumber.cc)
+  misc/FibNumber/fibNumber.cc)
+
+add_executable(031
+  misc/Quora2020/addStringdigits.cc)
+
+add_executable(032
+  misc/Quora2020/distinctTriplet.cc)
+
+add_executable(033
+  misc/Quora2020/sortdiagonal.cc
+  leetcode/cppinclude/cpputility.h)
