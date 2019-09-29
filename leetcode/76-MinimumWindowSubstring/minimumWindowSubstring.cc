@@ -1,6 +1,7 @@
 #include<string>
 #include<unordered_map>
 #include<vector>
+#include<limits>
 
 using namespace std;
 
@@ -9,15 +10,14 @@ using namespace std;
 class Solution {
 public:
   string minWindow(string s, string t) {
-    string res = "";
+    string res;
     int lower_bound, upper_bound;
     unordered_map<char, int> char_count;
-    int diff = s.length();
+    int diff = numeric_limits<int>::max();
     for(auto&& ch : t) {
         char_count[ch]++;
     }
-    int left_ptr = 0;
-    int count = 0;
+    int left_ptr = 0, count = 0;
     for(int right_ptr = 0; right_ptr < s.length(); ++right_ptr) {
       if (--char_count[s[right_ptr]] >= 0) count++;
       while(count == t.length()) {
@@ -25,6 +25,7 @@ public:
           if (interval_diff < diff) {
               lower_bound = left_ptr;
               upper_bound = right_ptr;
+              diff = interval_diff;
           }
           if (++char_count[s[left_ptr]] > 0) count--;
           left_ptr++;
@@ -53,6 +54,8 @@ void test(ptr2minWindow pfcn, const char* pfcn_name) {
   };
   vector<testCase> test_cases = {
     {"ADOBECODEBANC", "ABC", "BANC"},
+    {"a", "a", "a"},
+    {"cabwefgewcwaefgcf", "cae", "cwae"},
   };
   for(auto&& test_case: test_cases) {
     string got = (sol.*pfcn)(test_case.s, test_case.t);
