@@ -58,6 +58,20 @@ namespace CPPUtility
     cand += "]";
     return cand;
   }
+
+  // return string representation of vector<pair<T,U>>
+  template <typename T, typename U>
+  std::string oneDVectorPairStr(const std::vector<std::pair<T,U>>& vec) {
+    std::string tmp = "";
+    for(int i = 0; i < vec.size(); ++i) {
+      tmp += "(";
+      tmp += std::to_string(vec[i].first);
+      tmp += ",";
+      tmp += std::to_string(vec[i].second);
+      tmp += ")";
+    }
+    return tmp;
+  }
 }
 
 #endif

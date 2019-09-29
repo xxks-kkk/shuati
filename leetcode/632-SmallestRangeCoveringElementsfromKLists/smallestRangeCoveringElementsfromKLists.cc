@@ -21,6 +21,7 @@
 #include <stdio.h>
 #include "cpputility.h"
 #include <cassert>
+#include <unordered_map>
 
 #define FUNC_DEF(func) { func, #func },
 
@@ -28,38 +29,37 @@ using namespace std;
 
 class Solution {
 public:
-  // WARNING: BRUTE FORCE APPROACH TO ILLUSTRATE IDEA
   vector<int> smallestRange(vector<vector<int>>& nums) {
-    int minx = 0;
-    int miny = std::numeric_limits<int>::max();
-    for(int i = 0; i < nums.size(); ++i) {
-      for(int j = 0; j < nums[i].size(); ++j) {
-        for(int k = i; k < nums.size(); ++k) {
-          for(int l = (k == i? j: 0); l < nums[k].size(); ++l) {
-            int min = nums[i][j] > nums[k][l] ? nums[k][l] : nums[i][j];
-            int max = nums[i][j] > nums[k][l] ? nums[i][j] : nums[k][l];
-            int n, m;
-            for(m = 0; m < nums.size(); ++m) {
-              for(n = 0; n < nums[m].size(); ++n) {
-                if (nums[m][n] >= min && nums[m][n] <= max) {
-                  break;
-                }
-              }
-              if (n == nums[m].size())
-                break;
-            }
-            if (m == nums.size()) {
-              if (miny - minx > max - min ||
-                  (miny - minx == max -min && minx > min)) {
-                miny = max;
-                minx = min;
-              }
-            }
-          }
-        }
+    vector<int> res;
+    vector<pair<int, int>> cand; // vector<pair<num in the list with list_label, list_label>>
+    unordered_map<int, int> m;   // unordered_map<list_label, count of list_label appearance>
+    int diff = numeric_limits<int>::max();
+    int num_lists = nums.size();    
+    for(int i = 0; i < num_lists; ++i) {
+      for(auto&& num: nums[i]) {
+        cand.push_back(make_pair(num, i));
       }
     }
-    return {minx, miny};
+    sort(cand.begin(), cand.end());
+    int left_ptr = 0;
+    int right_ptr;
+    int count = 0; // count the number of distinct list label appearance
+    for(right_ptr = 0; right_ptr < cand.size(); ++right_ptr) {
+      if (m[cand[right_ptr].second] == 0) count++;
+      m[cand[right_ptr].second]++;
+      while(count == num_lists && left_ptr <= right_ptr) {
+        int lower_bound = cand[left_ptr].first;
+        int upper_bound = cand[right_ptr].first;
+        int interval_diff = upper_bound - lower_bound;
+        if (diff > interval_diff) {
+          diff = interval_diff;
+          res = {lower_bound, upper_bound};
+        }
+        if(--m[cand[left_ptr].second] == 0) count--;
+        left_ptr++;
+      }
+    }
+    return res;
   }
 };
 
@@ -78,6 +78,28 @@ void test(ptr2smallestRange pfcn, const char* pfcn_name) {
   };
   vector<testCase> test_cases = {
     {{{4,10,15,24,26}, {0,9,12,20}, {5,18,22,30}}, {20,24}},
+    {{{4,5},{4,4}}, {4,4}},
+    {{{1,2,3},{1,2,3},{1,2,3}}, {1,1}},
+    {{{10},{11}}, {10,11}},
+    {{{1,3,5,7,9,10},{2,4,6,8,10}},{10,10}},
+    {{{11,38,83,84,84,85,88,89,89,92},
+      {28,61,89},
+      {52,77,79,80,81},
+      {21,25,26,26,26,27},
+      {9,83,85,90},
+      {84,85,87},
+      {26,68,70,71},
+      {36,40,41,42,45},
+      {-34,21},
+      {-28,-28,-23,1,13,21,28,37,37,38},
+      {-74,1,2,22,33,35,43,45},
+      {54,96,98,98,99},
+      {43,54,60,65,71,75},
+      {43,46},
+      {50,50,58,67,69},
+      {7,14,15},
+      {78,80,89,89,90},
+      {35,47,63,69,77,92,94}}, {15,84}},
   };
   for(auto&& test_case: test_cases) {
     vector<int> get = (sol.*pfcn)(test_case.nums);

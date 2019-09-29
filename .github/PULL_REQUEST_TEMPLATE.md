@@ -8,6 +8,7 @@
 <!-- To Learn: what can be further learned from this question (technique, algorithm, theory?) -->
 <!-- Questions: What questions need further investigation -->
 <!-- Languages: highlight of language usage -->
+<!-- Failure Attempts: failure attempts and lesson learned from those attempts -->
 
 ## Summary
 
@@ -33,3 +34,6 @@ Resolves: [Leetcode #](https://leetcode.com/problems/#)
 
 
 ## Language
+
+
+## Failure Attempts
