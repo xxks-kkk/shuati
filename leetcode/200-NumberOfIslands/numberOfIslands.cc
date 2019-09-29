@@ -228,15 +228,15 @@ test(ptr2numIslands pfcn, const char* func_name, bool check_grid)
         // check if the function result is correct
         printf("%s(%s) = %s\n",
                func_name,
-               CPPUtility::matrixStr(grid2).c_str(),
+               CPPUtility::twoDVectorStr(grid2).c_str(),
                to_string(got).c_str());
       }
       if (check_grid && grid2 != test_case.grid) {
         // check if board is modified after invoking function
         printf("%s(%s) modified grid: %s\n",
                func_name,
-               CPPUtility::matrixStr(grid2).c_str(),
-               CPPUtility::matrixStr(test_case.grid).c_str()
+               CPPUtility::twoDVectorStr(grid2).c_str(),
+               CPPUtility::twoDVectorStr(test_case.grid).c_str()
           );
       }
     }
