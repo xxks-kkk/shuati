@@ -109,19 +109,23 @@ add_executable(54
         leetcode/54-SpiralMatrix/spiralMatrix.cc)
 
 add_executable(62
-        leetcode/62-UniquePaths/uniquePaths.cc)
+  leetcode/62-UniquePaths/uniquePaths.cc)
 
 add_executable(78
-        leetcode/78-Subsets/subsets.cc)
+  leetcode/78-Subsets/subsets.cc)
 
 add_executable(70
-        leetcode/70-ClimbingStairs/climbingStairs.cc)
+  leetcode/70-ClimbingStairs/climbingStairs.cc)
 
+add_executable(76
+  leetcode/76-MinimumWindowSubstring/minimumWindowSubstring.cc
+  leetcode/cppinclude/cpputility.h)
+      
 add_executable(77
-        leetcode/77-Combinations/combinations.cc)
+  leetcode/77-Combinations/combinations.cc)
       
 add_executable(88
-        leetcode/88-MergeSortedArray/mergeSortedArray.cc)
+  leetcode/88-MergeSortedArray/mergeSortedArray.cc)
 
 add_executable(95
         leetcode/95-UniqueBinarySearchTreesII/uniqueBinarySearchTreesII.cc)
