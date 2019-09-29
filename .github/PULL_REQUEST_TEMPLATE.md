@@ -5,6 +5,7 @@
 <!-- Performance: Performance measures about the solution -->
 <!-- Performance Metrics from OJ Platform: Performance reported from OJ Platform (e.g., Leetcode) -->
 <!-- Performance Improved Since Last Change: Performance improved compared to the existing solution in the codebase -->
+<!-- Implementation Notice: places where we should be careful during implementation; places that are easy to make mistakes -->
 <!-- Implementation Tricks: Engineering/Implementation tricks -->
 <!-- To Learn: what can be further learned from this question (technique, algorithm, theory?) -->
 <!-- Questions: What questions need further investigation -->
@@ -26,6 +27,8 @@ Resolves: [Leetcode #](https://leetcode.com/problems/#)
 ### Performance Metrics from OJ Platform
 
 ### Performance Improved Since Last Change
+
+## Implementation Notice
 
 ## Implementation Tricks
 
