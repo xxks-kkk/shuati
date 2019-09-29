@@ -51,8 +51,8 @@ public:
       sol.sortDiagonal(test_case.matrix);
       if (test_case.matrix != test_case.expected) {
         printf("sortDiagonal(%s) = %s\n",
-               CPPUtility::matrixStr<int>(test_case_cpy).c_str(),
-               CPPUtility::matrixStr<int>(test_case.matrix).c_str());
+               CPPUtility::twoDVectorStr<int>(test_case_cpy).c_str(),
+               CPPUtility::twoDVectorStr<int>(test_case.matrix).c_str());
       }
     }
   }
