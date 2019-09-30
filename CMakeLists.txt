@@ -268,26 +268,30 @@ add_executable(236
         leetcode/cppinclude/bt.cc)
 
 add_executable(238
-        leetcode/238-ProductofArrayExceptSelf/productofArrayExceptSelf.cc)
+  leetcode/238-ProductofArrayExceptSelf/productofArrayExceptSelf.cc)
 
 add_executable(242
-        leetcode/242-ValidAnagram/validAnagram.cc)
+  leetcode/242-ValidAnagram/validAnagram.cc)
 
 add_executable(250
-        leetcode/250-CountUnivalueSubtrees/countUnivalueSubtrees.cc
-        leetcode/cppinclude/bt.cc)
+  leetcode/250-CountUnivalueSubtrees/countUnivalueSubtrees.cc
+  leetcode/cppinclude/bt.cc)
 
+add_executable(252
+  leetcode/252-MeetingRooms/meetingRooms.cc
+  leetcode/cppinclude/cpputility.h)
+    
 add_executable(253
-        leetcode/253-MeetingRoomsII/meetingRoomsII.cc)
+  leetcode/253-MeetingRoomsII/meetingRoomsII.cc)
 
 add_executable(255
-        leetcode/255-VerifyPreorderSequenceinBinarySearchTree/verifyPreorderSequenceinBinarySearchTree.cc
-        leetcode/cppinclude/bt.cc
-        leetcode/cppinclude/bst.cc)
+  leetcode/255-VerifyPreorderSequenceinBinarySearchTree/verifyPreorderSequenceinBinarySearchTree.cc
+  leetcode/cppinclude/bt.cc
+  leetcode/cppinclude/bst.cc)
 
 add_executable(257
-        leetcode/257-BinaryTreePaths/binaryTreePaths.cc
-        leetcode/cppinclude/bt.cc)
+  leetcode/257-BinaryTreePaths/binaryTreePaths.cc
+  leetcode/cppinclude/bt.cc)
 
 add_executable(260
         leetcode/260-SingleNumberIII/singleNumberIII.cc)
