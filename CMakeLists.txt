@@ -603,3 +603,6 @@ add_executable(032
 add_executable(033
   misc/Quora2020/sortdiagonal.cc
   leetcode/cppinclude/cpputility.h)
+
+add_executable(034
+  misc/isValidISBN/isValidISBN.cc)
