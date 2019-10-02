@@ -2,28 +2,30 @@
 #include <string>
 #include <vector>
 #include <stdio.h>
+#include <cassert>
 
 using namespace std;
 
 bool isValidISBN(string& isbn) {
   int n = isbn.length();
-  if (n != 10 || n != 13) return false;
+  if (n != 10 && n != 13) return false;
   if (isbn[0] == '-' || isbn[n-1] == '-') return false;
   int sum = 0;
   int num_dashes = 0;
   int num_count = 0;
+  int digit = 0;
   for(int i = 0; i < n-1; ++i) {
     if (isbn[i] == '-' && isbn[i+1] == '-') return false;
     if (isbn[i] == '-') {
       num_dashes++;
     } else {
       num_count++;
+      digit = isbn[i] - '0';
+      if (0 > digit || digit > 9) return false;
+      sum += (digit * num_count);
     }
-    int digit = isbn[i] - '0';
-    if (0 > digit || digit > 9) return false;
-    sum += (digit * (num_count+1));
   }
-  if (num_dashes != 0 || num_dashes != 3) {
+  if (num_dashes != 0 && num_dashes != 3) {
     return false;
   }
   char last = isbn[n-1];
@@ -52,6 +54,7 @@ int main() {
     bool got = isValidISBN(test_case.isbn);
     if (got != test_case.expected) {
       printf("isValidISBN(%s) = %s\n", test_case.isbn.c_str(), got == false? "false": "true");
+      assert(false);
     }
   }
 }
