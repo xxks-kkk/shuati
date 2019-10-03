@@ -603,3 +603,8 @@ add_executable(032
 add_executable(033
   misc/Quora2020/sortdiagonal.cc
   leetcode/cppinclude/cpputility.h)
+
+configure_file(hackerrank/IPAddressValidation/input001.txt input001.txt COPYONLY)
+configure_file(hackerrank/IPAddressValidation/output001_exp.txt output001_exp.txt COPYONLY)
+add_executable(034
+  hackerrank/IPAddressValidation/ipAddressValidation.cc)
