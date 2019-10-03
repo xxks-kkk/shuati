@@ -29,3 +29,4 @@ target
 .idea-clion/
 .idea-python
 go.test
+venv
