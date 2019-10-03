@@ -93,7 +93,7 @@ namespace CPPUtility
   }
 
   // compare given two files to see if they are equal
-  bool compare_files(const std::string& filename1, const std::string& filename2)
+  static bool check_file_identical(const std::string& filename1, const std::string& filename2)
   {
     std::ifstream file1(filename1);
     std::ifstream file2(filename2);
