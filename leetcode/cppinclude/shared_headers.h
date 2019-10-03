@@ -16,6 +16,7 @@
 #include <unordered_set>
 #include <memory>
 #include <limits>
-
+#include <iterator>
+#include <fstream>
 
 #endif //SHUATI_SHARED_HEADERS_H

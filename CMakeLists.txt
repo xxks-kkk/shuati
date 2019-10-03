@@ -607,7 +607,8 @@ add_executable(033
 configure_file(hackerrank/IPAddressValidation/input001.txt input001.txt COPYONLY)
 configure_file(hackerrank/IPAddressValidation/output001_exp.txt output001_exp.txt COPYONLY)
 add_executable(034
-  hackerrank/IPAddressValidation/ipAddressValidation.cc)
+  hackerrank/IPAddressValidation/ipAddressValidation.cc
+  leetcode/cppinclude/cpputility.h)
 
-add_executable(034
+add_executable(035
   misc/isValidISBN/isValidISBN.cc)

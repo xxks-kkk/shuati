@@ -32,6 +32,7 @@
 #include <algorithm>
 #include <fstream>
 #include <regex>
+#include "cppinclude/cpputility.h"
 
 using namespace std;
 
@@ -51,19 +52,32 @@ void ipAddressValidation() {
 }
 
 void
-test(const vector<string> &filenames) {
-  for(auto &filename: filenames) {
-    std::ifstream in(filename);
-    std::streambuf *cinbuf = std::cin.rdbuf(); //save old buf
-    std::cin.rdbuf(in.rdbuf()); //redirect std::cin to in.txt!
+test(const vector<string> &input_filenames,
+     const vector<string> &output_filenames,
+     const vector<string> &expected) {
+  assert(input_filenames.size() == output_filenames.size());
+  for(int i = 0; i < input_filenames.size(); ++i) {
+    std::ifstream in(input_filenames[i]);
+    std::ofstream out(output_filenames[i]);
+    std::streambuf *cinbuf = std::cin.rdbuf();
+    std::streambuf *coutbuf = std::cout.rdbuf();
+    std::cin.rdbuf(in.rdbuf());
+    std::cout.rdbuf(out.rdbuf());
     ipAddressValidation();
-    std::cin.rdbuf(cinbuf);   //reset to standard input again    
+    std::cin.rdbuf(cinbuf);
+    std::cout.rdbuf(coutbuf);
+    if (!CPPUtility::compare_files(output_filenames[i], expected[i])) {
+      printf("%s and %s are different\n", output_filenames[i].c_str(), expected[i].c_str());
+      assert(false);
+    }
   }
 }
 
 
 int main() {
   /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-  vector<string> filenames = {"input001.txt"};
-  test(filenames);
+  vector<string> input_filenames = {"input001.txt"};
+  vector<string> output_filenames = {"output001.txt"};
+  vector<string> expected = {"output001_exp.txt"};
+  test(input_filenames, output_filenames, expected);
 }
