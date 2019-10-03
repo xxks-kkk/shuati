@@ -608,3 +608,6 @@ configure_file(hackerrank/IPAddressValidation/input001.txt input001.txt COPYONLY
 configure_file(hackerrank/IPAddressValidation/output001_exp.txt output001_exp.txt COPYONLY)
 add_executable(034
   hackerrank/IPAddressValidation/ipAddressValidation.cc)
+
+add_executable(034
+  misc/isValidISBN/isValidISBN.cc)
