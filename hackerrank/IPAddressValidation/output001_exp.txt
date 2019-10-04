@@ -1,0 +1,3 @@
+Neither
+IPv4
+IPv6

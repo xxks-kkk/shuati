@@ -27,7 +27,7 @@ void listAppend( struct node** listP, int val ){
 void listPrint( struct node* list ){
   while( list ){
     printf( "%d", list->val);
-    if( list = list->next ) {
+    if( (list = list->next) ) {
       printf( "->" );
     }
   }
@@ -37,7 +37,7 @@ void listPrint( struct node* list ){
 void listSprint( struct node* list, char* buf ){
   while( list ){
     buf += sprintf( buf, "%d", list->val);
-    if( list = list->next ) {
+    if( (list = list->next) ) {
       buf += sprintf( buf, "->" );
     }
   }
