@@ -66,7 +66,7 @@ test(const vector<string> &input_filenames,
     ipAddressValidation();
     std::cin.rdbuf(cinbuf);
     std::cout.rdbuf(coutbuf);
-    if (!CPPUtility::compare_files(output_filenames[i], expected[i])) {
+    if (!CPPUtility::check_file_identical(output_filenames[i], expected[i])) {
       printf("%s and %s are different\n", output_filenames[i].c_str(), expected[i].c_str());
       assert(false);
     }
