@@ -612,3 +612,7 @@ add_executable(034
 
 add_executable(035
   misc/isValidISBN/isValidISBN.cc)
+
+add_executable(036
+  misc/Quora2020/goodTuple.cc
+  leetcode/cppinclude/cpputility.h)

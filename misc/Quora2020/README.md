@@ -31,6 +31,24 @@ Output -> [
 [5,7,3]
 ]
 
+## GoodTuple
+
+Give an array and find the count of a pair number and a single number combination in a row of this array. 
+Target array is a[i - 1], a, a[i + 1]
+
+Example：
+- Input: a = [1, 1, 2, 1, 5, 3, 2, 3]
+- Output: 3
+
+Explain:
+[1, 1, 2] -> two 1 and one 2(O)
+[1, 2, 1] -> two 1 and one 2(O)
+[2, 1, 5] -> one 2, one 1 and one five(X)
+[1, 5, 3] -> (X)
+[5, 3, 2] -> (X)
+[3, 2, 3] -> (O)
+
+
 ## matrix
 
 v1: 输入为n*n数字矩阵，要求其中数字按照出现频率升序排列，相同频率按照大小升序排列。比如 1 0 3 2 2 3  0 0 0，排序后为1 2 2 3 3 0 0 0 0。 返回一个n*n矩阵，矩阵中的数字为排序后数字按照平行反对角线方向从右下到左上依次填充。说的很难理解，看个例子：假设排序后数字为1 2 3 4 5 6 7 8 9，返回
