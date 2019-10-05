@@ -52,6 +52,35 @@ Explain:
 
 之前面经有过的题。输入一组words和一组valid letters，判断有多少个words是valid。判断条件是words里的所有upper and lower letter必须在valid letters里面。如果word里面有special character不用管。注意valid letter只有小写，但是words里面有大写的也算valid。比如words = [hEllo##, This^^], valid letter = [h, e, l, 0, t, h, s]; "hello##" 就是valid，因为h，e，l，o都在valid letter 里面， “This^^” 不valid, 因为i不在valid letter里面
 
+## Rotate matrix among Diagnals
+
+转K次 但是 diag不转
+
+Example：
+[[1, 2, 3],
+ [4, 5, 6],
+ [7, 8, 9]]
+-->
+[[1, 4, 3],
+ [8, 5, 2],
+ [7, 6, 9]]
+(k=1)
+
+[ [1, 2, 3, 4, 5],
+  [6, 7, 8, 9, 10],
+  [11,12,13,14,15],
+  [16,17,18,19,20],
+  [21,22,23,24,25]]
+-->
+[ [1, 6,  11, 16,  5],
+  [22, 7,  12, 9,  2],
+  [23, 18, 13, 8,  3],
+  [24, 17, 14, 19, 4],
+  [21, 10, 15, 20, 25]]
+(k=1)
+
+Note: the rotation example may not match with actual problem
+
 ## matrix
 
 v1: 输入为n*n数字矩阵，要求其中数字按照出现频率升序排列，相同频率按照大小升序排列。比如 1 0 3 2 2 3  0 0 0，排序后为1 2 2 3 3 0 0 0 0。 返回一个n*n矩阵，矩阵中的数字为排序后数字按照平行反对角线方向从右下到左上依次填充。说的很难理解，看个例子：假设排序后数字为1 2 3 4 5 6 7 8 9，返回

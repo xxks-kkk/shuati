@@ -620,3 +620,7 @@ add_executable(036
 add_executable(037
   misc/Quora2020/validLetters.cc
   leetcode/cppinclude/cpputility.h)
+
+add_executable(038
+  misc/Quora2020/rotataMatrixAmongDiagonals.cc
+  leetcode/cppinclude/cpputility.h)
