@@ -159,3 +159,25 @@ output: 新的A 的长度
 
 从B中最多能选几个数字使得 A 变成一个任意两个数之间的差‍‌‌‍‌‌‍‍‍‌‌‌‍‌‌‌‌是相等的数组， 例如：[0, 4, 8, 12, 16, 20]
 千年难题，还是不会
+
+## divisor substring
+
+Given an int `n` and int `k`, return the number of substring of `n` with length `k` that is divisor of `n`
+(i.e., n % substring of `n` == 0)
+
+e.g., n = 120, k = 2, then return 2 because "120" substring with length 2 is "12", "20" and both of them are divisors
+
+## Divide array
+
+Given an array, divide it into two equal length subarray. return empty array if no such division exists
+
+## Cool feature
+
+given `vector<int> a`, `vector<int> b`, and `vector<vector<int>> query`:
+
+- `query` is a collection of queries of two forms:
+  - [0,i,x] means assign b[i] with x
+  - [1,x] means find all pairs of a[i] and b[j] such that a[i]+b[j] = x; return the number of such pairs
+
+e.g., a = [1,2,3], b = [3,4], query = [[1,5],[0,0,1],[1,5]] return [2,1]
+      a = [1,2,2], b = [2,3], query = [[1,4],[0,0,3],[1,5]] return [3,4]
