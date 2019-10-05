@@ -612,3 +612,19 @@ add_executable(034
 
 add_executable(035
   misc/isValidISBN/isValidISBN.cc)
+
+add_executable(036
+  misc/Quora2020/goodTuple.cc
+  leetcode/cppinclude/cpputility.h)
+
+add_executable(037
+  misc/Quora2020/validLetters.cc
+  leetcode/cppinclude/cpputility.h)
+
+add_executable(038
+  misc/Quora2020/rotataMatrixAmongDiagonals.cc
+  leetcode/cppinclude/cpputility.h)
+
+add_executable(039
+  misc/Quora2020/cutRibbon.cc
+  leetcode/cppinclude/cpputility.h)

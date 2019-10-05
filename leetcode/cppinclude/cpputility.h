@@ -67,6 +67,8 @@ namespace CPPUtility
     theStream << rep;
   }
 
+  // returns string representation of vector with type T that to_string()
+  // can be applied
   template <typename T>
   std::string oneDVectorStr(const std::vector<T>& vec) {
     std::string cand = "[";
@@ -78,6 +80,30 @@ namespace CPPUtility
     return cand;
   }
 
+  // a specific implementation of oneDVectorStr on vector<string>
+  // motiviation: https://stackoverflow.com/a/13636569/1460102
+  template <>
+  inline std::string oneDVectorStr<std::string>(const std::vector<std::string>& vec) {
+    std::string cand = "[";
+    for(int i = 0; i < vec.size(); ++i) {
+      cand += vec[i];
+      i != vec.size() - 1 ? cand += "," : cand += "";
+    }
+    cand += "]";
+    return cand;
+  }
+
+  template <>
+  inline std::string oneDVectorStr<char>(const std::vector<char>& vec) {
+    std::string cand = "[";
+    for(int i = 0; i < vec.size(); ++i) {
+      cand += (std::string() + vec[i]);
+      i != vec.size() - 1 ? cand += "," : cand += "";
+    }
+    cand += "]";
+    return cand;
+  }
+  
   // return string representation of vector<pair<T,U>>
   template <typename T, typename U>
   std::string oneDVectorPairStr(const std::vector<std::pair<T,U>>& vec) {
@@ -93,7 +119,7 @@ namespace CPPUtility
   }
 
   // compare given two files to see if they are equal
-  static bool check_file_identical(const std::string& filename1, const std::string& filename2)
+  inline bool check_file_identical(const std::string& filename1, const std::string& filename2)
   {
     std::ifstream file1(filename1);
     std::ifstream file2(filename2);
