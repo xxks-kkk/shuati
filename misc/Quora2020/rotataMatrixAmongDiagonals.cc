@@ -9,69 +9,44 @@ class Solution {
 public:
   vector<vector<int>> rotateMatrixAmongDiagonals(vector<vector<int>>& matrix, int k) {
     int rotated_times = k % 4;
-    int n = matrix.size();
-    vector<vector<int>> res(n, vector<int>(n));    
     if (rotated_times == 0) {
       return matrix;
     }
+    for(int i = 0; i < rotated_times; ++i) {
+      matrix = rotate(matrix);
+    }
+    return matrix;
+  }
+private:
+  vector<vector<int>> rotate(vector<vector<int>>& matrix) {
+    int n = matrix.size();
+    vector<vector<int>> res(n, vector<int>(n));    
     for(int i = 0; i < n; ++i) {
       for(int j = 0; j < n; ++j) {
         if (i == j || j == n-1-i) {
           res[i][j] = matrix[i][j];
         } else {
           if ((n % 2 == 1 && 0 < j  && j < n-1 && i >= 0 && i < n / 2) ||
-              (n % 2 == 0 && 0 < j  && j < n-1 && i >= 0 && i < (n-1)/2)) {
-              switch (rotated_times) {
-              case 1:
-                res[i][j] = matrix[j][i];
-                break;
-              case 2:
-                res [i][j] = matrix[n-i-1][j];
-                break;
-              case 3:
-                res[i][j] = matrix[j][n-i-1];
-                break;
-              }
+              (n % 2 == 0 && 0 < j  && j < n-1 && i >= 0 && i < (n-1)/2))
+          {
+            // upper section of matrix
+            res[i][j] = matrix[j][i];
           } else if ((n % 2 == 1 && i > 0 && i < n-1 && j > n/2 && j <= n-1) ||
-                     (n % 2 == 0 && i > 0 && i < n-1 && j > n/2 && j <= n-1)){
-              switch (rotated_times) {
-              case 1:
-                res[i][j] = matrix[n-j-1][i];
-                break;
-              case 2:
-                res [i][j] = matrix[i][n-j-1];
-                break;
-              case 3:
-                res[i][j] = matrix[j][i];
-                break;
-              }              
+                     (n % 2 == 0 && i > 0 && i < n-1 && j > n/2 && j <= n-1))
+          {
+            // right section of matrix
+            res[i][j] = matrix[n-j-1][i];
           } else if ((n%2 == 1 && i <= n-1 && i > n/2 && j > 0 && j < n-1) ||
-                     (n%2 == 0 && i <= n-1 && i > n/2 && j > 0 && j < n-1)){
-              switch (rotated_times) {
-              case 1:
-                res[i][j] = matrix[j][i];
-                break;
-              case 2:
-                res [i][j] = matrix[n-i-1][j];
-                break;
-              case 3:
-                res[i][j] = matrix[j][n-i-1];
-                break;
-              }              
+                     (n%2 == 0 && i <= n-1 && i > n/2 && j > 0 && j < n-1))
+          {
+            // bottom section of matrix
+            res[i][j] = matrix[j][i];
           } else if ((n%2 == 1 && i > 0 && i < n-1 && j >= 0 && j < n / 2) ||
-                     (n%2 == 0 && i > 0 && i < n-1 && j >= 0 && j < (n-1)/2)){
-              switch (rotated_times) {
-              case 1:
-                res[i][j] = matrix[n-j-1][i];
-                break;
-              case 2:
-                res [i][j] = matrix[i][n-j-1];
-                break;
-              case 3:
-                res[i][j] = matrix[j][i];
-                break;
-              }              
-            }
+                     (n%2 == 0 && i > 0 && i < n-1 && j >= 0 && j < (n-1)/2))
+          {
+            // left section of matrix
+            res[i][j] = matrix[n-j-1][i];
+          }
         }
       }
     }
