@@ -636,3 +636,7 @@ add_executable(040
 add_executable(041
   misc/Quora2020/divideArray.cc
   leetcode/cppinclude/cpputility.h)
+
+add_executable(042
+  misc/Quora2020/coolFeature.cc
+  leetcode/cppinclude/cpputility.h)
