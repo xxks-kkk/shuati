@@ -628,3 +628,16 @@ add_executable(038
 add_executable(039
   misc/Quora2020/cutRibbon.cc
   leetcode/cppinclude/cpputility.h)
+
+add_executable(040
+  misc/Quora2020/divisorSubstring.cc
+  leetcode/cppinclude/cpputility.h)
+
+add_executable(041
+  misc/Quora2020/divideArray.cc
+  leetcode/cppinclude/cpputility.h)
+
+add_executable(042
+  misc/Quora2020/coolFeature.cc
+  leetcode/cppinclude/cpputility.h)
+

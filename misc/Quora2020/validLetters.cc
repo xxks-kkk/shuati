@@ -29,7 +29,7 @@ public:
 
 class Test {
 public:
-  void test_goodTuples() {
+  void test_validLetters() {
     Solution sol;
     struct testCase {
       vector<string> words;
@@ -54,5 +54,5 @@ public:
 
 int main() {
   Test test;
-  test.test_goodTuples();
+  test.test_validLetters();
 }
