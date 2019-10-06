@@ -131,6 +131,23 @@ namespace CPPUtility
 
     return range_equal(begin1, end, begin2, end);
   }
+
+  // check if given two 2D vector has the same content (e.g., same elements but may not be the same order)
+  template<typename T>
+  inline bool check_twoDVector_equal(std::vector<std::vector<T>> v1,
+                                     std::vector<std::vector<T>> v2) {
+    if (v1.size() != v2.size()) return false;
+    for(int i = 0; i < v1.size(); ++i) {
+      std::sort(v1[i].begin(), v1[i].end());
+      std::sort(v2[i].begin(), v2[i].end());
+    }
+    for(auto && vec: v1) {
+      if (find(v2.begin(), v2.end(), vec) == v2.end()) {
+        return false;
+      }
+    }
+    return true;
+  }
 }
 
 #endif

@@ -632,3 +632,7 @@ add_executable(039
 add_executable(040
   misc/Quora2020/divisorSubstring.cc
   leetcode/cppinclude/cpputility.h)
+
+add_executable(041
+  misc/Quora2020/divideArray.cc
+  leetcode/cppinclude/cpputility.h)

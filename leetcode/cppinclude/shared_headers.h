@@ -18,5 +18,6 @@
 #include <limits>
 #include <iterator>
 #include <fstream>
+#include <set>
 
 #endif //SHUATI_SHARED_HEADERS_H
