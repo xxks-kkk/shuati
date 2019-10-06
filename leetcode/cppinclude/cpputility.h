@@ -7,6 +7,11 @@
 //#pragma message "We use utiltiy.h from cppinclude"
 //#warning "We use correct utility.h"
 
+// generate {func, func's name} struct (usage: see LC76)
+#define FUNC_DEF(func) { func, #func },
+// generate the given func's name (usage: see LC438)
+#define FUNC_DEF_NAME(func) #func
+
 namespace CPPUtility
 {
   // Use anoymous namespace to keep private stuff in the namespace

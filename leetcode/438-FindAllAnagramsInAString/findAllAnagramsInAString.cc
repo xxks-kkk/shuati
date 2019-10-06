@@ -32,6 +32,7 @@
 #include <string>
 #include <unordered_map>
 #include <cassert>
+#include "cpputility.h"
 
 using namespace std;
 
@@ -48,16 +49,17 @@ public:
         }
         vector<int> res;
         unordered_map<char, int> table;
-        unordered_map<char, int> counter;
+        unordered_map<char, int> window;
         for (auto &c: p)
         {
             table[c]++;
         }
         for(int i = 0; i < p.length(); ++i)
         {
-            counter[s[i]]++;
+          // initialize sliding window
+          window[s[i]]++;
         }
-        if (counter == table)
+        if (window == table)
         {
             res.push_back(0);
         }
@@ -66,18 +68,18 @@ public:
         for (int i = p.length(); i < s.length(); ++i)
         {
             // window extends one step to the right. counter for s[i] is incremented
-            counter[s[i]]++;
+            window[s[i]]++;
             // since we added one element to the right,
             // one element to the left should be forgotten.
             // counter for s[i-p.size()] is decremented
-            counter[s[i-p.length()]]--;
-            if (counter[s[i-p.length()]] == 0)
+            window[s[i-p.length()]]--;
+            if (window[s[i-p.length()]] == 0)
             {
-                counter.erase(s[i-p.length()]);
+                window.erase(s[i-p.length()]);
             }
             // if after move to the right the anagram can be composed,
             // add new position of window's left point to the result 
-            if (counter == table)
+            if (window == table)
             {
                 res.push_back(i-p.length()+1);
             }
@@ -89,18 +91,34 @@ public:
 using ptr2findAnagrams = vector<int> (Solution::*)(string, string);
 
 void
-test(ptr2findAnagrams pfcn)
+test(ptr2findAnagrams pfcn, const char* pfcn_name)
 {
     Solution sol;
-    string s = "cbaebabacd";
-    string p = "abc";
-    vector<int> res = {0,6};
-    assert((sol.*pfcn)(s, p) == res);
+    struct testCase {
+      string s;
+      string p;
+      vector<int> expected;
+    };
+    vector<testCase> test_cases = {
+      { "cbaebabacd", "abc", {0,6}},
+      { "abab", "ab", {0,1,2}},      
+    };
+    for(auto&& test_case : test_cases) {
+      auto got = (sol.*pfcn)(test_case.s, test_case.p);
+      if (got != test_case.expected) {
+        printf("%s(%s,%s) = %s\n",
+               pfcn_name,
+               test_case.s.c_str(),
+               test_case.p.c_str(),
+               CPPUtility::oneDVectorStr<int>(got).c_str());
+        assert(false);
+      }
+    }
 }
 
 int
 main()
 {
     ptr2findAnagrams pfcn = &Solution::findAnagrams;
-    test(pfcn);
+    test(pfcn, FUNC_DEF_NAME(pfcn));
 }
