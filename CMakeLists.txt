@@ -424,16 +424,19 @@ add_executable(443
         leetcode/443-StringCompression/stringCompression.cc)
 
 add_executable(451
-        leetcode/451-SortCharactersByFrequency/sortCharactersByFrequency.cc)
+  leetcode/451-SortCharactersByFrequency/sortCharactersByFrequency.cc)
 
 add_executable(460
-        leetcode/460-LFUCache/lFUCache.cc)
+  leetcode/460-LFUCache/lFUCache.cc)
 
 add_executable(463
-        leetcode/463-IslandPerimeter/islandPerimeter.cc)
+  leetcode/463-IslandPerimeter/islandPerimeter.cc)
+
+add_executable(490
+  leetcode/490-TheMaze/theMaze.cc)
 
 add_executable(567
-        leetcode/567-PermutationInString/permutationInString.cc)
+  leetcode/567-PermutationInString/permutationInString.cc)
 
 add_executable(582
   leetcode/582-KillProcess/killProcess.cc)
