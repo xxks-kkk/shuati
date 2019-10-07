@@ -15,8 +15,8 @@ public:
 private:
   bool hasPathAtPoint(vector<vector<int>>& maze,
                       vector<vector<int>>& hasPathTable,
-                      vector<int> start,
-                      vector<int> destination,
+                      vector<int>& start,
+                      vector<int>& destination,
                       const vector<pair<int,int>>& dirs) {
     int m = maze.size();
     int n = maze[0].size();
