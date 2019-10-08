@@ -432,6 +432,9 @@ add_executable(460
 add_executable(463
   leetcode/463-IslandPerimeter/islandPerimeter.cc)
 
+add_executable(490
+  leetcode/490-TheMaze/theMaze.cc)
+
 add_executable(505
   leetcode/505-TheMazeII/theMazeII.cc)
 
