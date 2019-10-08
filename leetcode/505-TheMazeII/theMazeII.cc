@@ -1,4 +1,5 @@
 #include "cpputility.h"
+#include <queue>
 
 using namespace std;
 
@@ -15,6 +16,41 @@ public:
     int res = shortestDistanceAtPointTable[destination[0]][destination[1]];
     return res == INT_MAX ? -1 : res;
   }
+
+  // BFS Approach 
+  int shortestDistance2(vector<vector<int>>& maze, vector<int>& start, vector<int>& destination) {
+    if (maze.empty() || maze[0].empty()) return -1;
+    int m = maze.size(), n = maze[0].size();
+    // shortestDistanceAtPointTable[i][j] = shortest distance to reach point [i][j] from start    
+    vector<vector<int>> shortestDistanceAtPointTable(m, vector<int>(n, INT_MAX));
+    queue<pair<int, int>> q;
+    vector<pair<int,int>> dirs = {{0,1}, {0,-1}, {1,0}, {-1,0}};
+    shortestDistanceAtPointTable[start[0]][start[1]] = 0;
+    q.push({start[0], start[1]});
+    while (!q.empty()) {
+      auto coord = q.front(); q.pop();
+      for (auto&& dir: dirs) {
+        int start_x = coord.first;
+        int start_y = coord.second;
+        int dist = shortestDistanceAtPointTable[start_x][start_y];
+        while (start_x >= 0 && start_x < m && start_y >= 0 && start_y < n && maze[start_x][start_y] != 1) {
+          start_x += dir.first;
+          start_y += dir.second;
+          dist++;
+        }
+        start_x -= dir.first;
+        start_y -= dir.second;
+        dist--;
+        if (dist < shortestDistanceAtPointTable[start_x][start_y]) {
+          shortestDistanceAtPointTable[start_x][start_y] = dist;
+          if (start_x != destination[0] || start_y != destination[1]) q.push({start_x, start_y});
+        }
+      }
+    }
+    int res = shortestDistanceAtPointTable[destination[0]][destination[1]];
+    return  res == INT_MAX ? -1 : res;
+  }
+  
 private:
   void shortestDistanceFromPoint(vector<vector<int>>& maze,
                                  vector<int>& start,
@@ -95,6 +131,7 @@ void test(ptr2shortestDistance pfcn, const char* pfcn_name) {
 int main() {
   vector<testFuncsInfo> func_array = {
     FUNC_DEF(&Solution::shortestDistance)
+    FUNC_DEF(&Solution::shortestDistance2)
   };
   for(auto&& func : func_array) {
     test(func.pfcn, func.pfcn_name);
