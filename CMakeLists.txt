@@ -435,6 +435,9 @@ add_executable(463
 add_executable(490
   leetcode/490-TheMaze/theMaze.cc)
 
+add_executable(505
+  leetcode/505-TheMazeII/theMazeII.cc)
+
 add_executable(567
   leetcode/567-PermutationInString/permutationInString.cc)
 
