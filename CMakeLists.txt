@@ -455,38 +455,42 @@ add_executable(636
   leetcode/636-ExclusiveTimeofFunctions/exclusiveTimeofFunctions.cc)
       
 add_executable(658
-        leetcode/658-FindKClosestElements/findKClosestElements.cpp)
+  leetcode/658-FindKClosestElements/findKClosestElements.cpp)
 
 add_executable(662
-        leetcode/662-MaximumWidthOfBinaryTree/maximumWidthOfBinaryTree.cc
-        leetcode/cppinclude/bt.cc)
+  leetcode/662-MaximumWidthOfBinaryTree/maximumWidthOfBinaryTree.cc
+  leetcode/cppinclude/bt.cc)
 
 add_executable(663
-        leetcode/663-EqualTreePartition/equalTreePartition.cc
-        leetcode/cppinclude/bt.cc)
+  leetcode/663-EqualTreePartition/equalTreePartition.cc
+  leetcode/cppinclude/bt.cc)
 
 add_executable(669
-        leetcode/669-TrimaBinarySearchTree/trimaBinarySearchTree.cc
-        leetcode/cppinclude/bt.cc
-        leetcode/cppinclude/bst.cc)
+  leetcode/669-TrimaBinarySearchTree/trimaBinarySearchTree.cc
+  leetcode/cppinclude/bt.cc
+  leetcode/cppinclude/bst.cc)
 
+add_executable(675
+  leetcode/675-CutOffTreesforGolfEvent/cutOffTreesforGolfEvent.cc
+  leetcode/cppinclude/cpputility.h)
+        
 add_executable(704
-        leetcode/704-BinarySearch/binarySearch.cc)
+  leetcode/704-BinarySearch/binarySearch.cc)
 
 add_executable(739
-        leetcode/739-DailyTemperatures/dailyTemperatures.cc)
+  leetcode/739-DailyTemperatures/dailyTemperatures.cc)
 
 add_executable(784
-        leetcode/784-LetterCasePermutation/letterCasePermutation.cc)
+  leetcode/784-LetterCasePermutation/letterCasePermutation.cc)
 
 add_executable(796
-        leetcode/796-RotateString/rotateString.cc)
+  leetcode/796-RotateString/rotateString.cc)
 
 add_executable(797
-        leetcode/797-AllPathsFromSourceToTarget/allPathsFromSourceToTarget.cc)
+  leetcode/797-AllPathsFromSourceToTarget/allPathsFromSourceToTarget.cc)
 
 add_executable(811
-        leetcode/811-SubdomainVisitCount/subdomainVisitCount.cc)
+  leetcode/811-SubdomainVisitCount/subdomainVisitCount.cc)
 
 add_executable(829
         leetcode/829-ConsecutiveNumbersSum/consecutiveNumbersSum.cc)
