@@ -53,6 +53,11 @@ private:
 
 using ptr2shortestDistance = int (Solution::*)(vector<vector<int>>&, vector<int>&, vector<int>&);
 
+struct testFuncsInfo {
+  ptr2shortestDistance pfcn;
+  const char* pfcn_name;
+};
+
 void test(ptr2shortestDistance pfcn, const char* pfcn_name) {
   Solution sol;
   struct testCase {
@@ -88,6 +93,10 @@ void test(ptr2shortestDistance pfcn, const char* pfcn_name) {
 }
 
 int main() {
-  ptr2shortestDistance pfcn = &Solution::shortestDistance;
-  test(pfcn, FUNC_DEF_NAME(&Solution::shortestDistance));
+  vector<testFuncsInfo> func_array = {
+    FUNC_DEF(&Solution::shortestDistance)
+  };
+  for(auto&& func : func_array) {
+    test(func.pfcn, func.pfcn_name);
+  }
 }
