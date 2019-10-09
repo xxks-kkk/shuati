@@ -10,69 +10,66 @@ public:
   {
     if (forest.empty() || forest[0].empty())
       return 0;
-    auto comp = [](vector<int> &a, vector<int> &b) { return a[2] > b[2]; };
-    priority_queue<vector<int>, vector<vector<int>>, decltype(comp)> pq(comp);
-    queue<vector<int>> starts;
-    starts.push({0,0});
     int dist = 0;
     int m = forest.size(), n = forest[0].size();
-    for (int i = 0; i < m; ++i)
-    {
-      for (int j = 0; j < n; ++j)
-      {
+    vector<int> start = {0, 0};
+    
+    // {height, i, j}
+    vector<tuple<int, int, int>> trees;
+    for (int i = 0; i < m; ++i) {
+      for (int j = 0; j < n; ++j) {
         if (forest[i][j] != 0) {
-          pq.push({i, j, forest[i][j]});          
+          trees.push_back({forest[i][j], i, j});
         }
       }
     }
-    while(!pq.empty()) {
-      auto q = pq.top(); pq.pop();
-      vector<int> destination = {q[0], q[1]};
-      auto start = starts.front(); starts.pop();
+    sort(trees.begin(), trees.end());
+    
+    for(int i = 0; i < trees.size(); ++i) {
+      vector<int> destination = {get<1>(trees[i]), get<2>(trees[i])};
       int shortestPath = findShortestPath(forest, start, destination);
-      if (shortestPath == -1) return -1;
+      if (shortestPath == INT_MAX) return -1;
       else dist += shortestPath;
-      starts.push(destination);
+      start = destination;
     }
     return dist;
   }
 private:
+  // min steps go from `start` to `destination`
   int findShortestPath(vector<vector<int>>& forest,
                         vector<int>& start,
                         vector<int>& destination) {
-    int m = forest.size(), n = forest.size();
-    // shortestDistanceAtPointTable[i][j] = shortest distance to reach point
-    // [i][j] from start
-    vector<vector<int>> shortestDistanceAtPointTable(m, vector<int>(n, INT_MAX));
+    int m = forest.size(), n = forest[0].size();
     queue<pair<int, int>> q;
     vector<pair<int, int>> dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-    shortestDistanceAtPointTable[start[0]][start[1]] = 0;
-    q.push({start[0], start[1]});
-    while (!q.empty())
-    {
-      auto coord = q.front();
-      q.pop();
-      for (auto &&dir : dirs)
-      {
+    auto visited = vector<vector<int>>(m, vector<int>(n, 0));
+    q.emplace(start[0], start[1]);
+    int dist = 0;
+    while (!q.empty()) {
+      int num_nodes_for_current_level = q.size();
+      while(num_nodes_for_current_level--) {
+        auto coord = q.front(); q.pop();
         int start_x = coord.first;
         int start_y = coord.second;
-        int dist = shortestDistanceAtPointTable[start_x][start_y];
-        start_x += dir.first;
-        start_y += dir.second;
-        if (start_x >= 0 && start_x < m && start_y >= 0 && start_y < n && forest[start_x][start_y] != 0)
-        {
-          dist++;
-          if (dist < shortestDistanceAtPointTable[start_x][start_y])
-          {
-            shortestDistanceAtPointTable[start_x][start_y] = dist;
-            if (start_x != destination[0] || start_y != destination[1])
-              q.push({start_x, start_y});
+        if (start_x == destination[0] && start_y == destination[1])
+          return dist;        
+        for (auto &&dir : dirs) {
+          start_x = coord.first;
+          start_y = coord.second;        
+          start_x += dir.first;
+          start_y += dir.second;
+          if (start_x >= 0 && start_x < m &&
+              start_y >= 0 && start_y < n &&
+              forest[start_x][start_y] != 0 &&
+              visited[start_x][start_y] != 1) {
+            q.emplace(start_x, start_y);
+            visited[start_x][start_y] = 1;
           }
         }
       }
+      dist++;
     }
-    int res = shortestDistanceAtPointTable[destination[0]][destination[1]];
-    return res == INT_MAX ? -1 : res;    
+    return INT_MAX;
   }
 };
 
