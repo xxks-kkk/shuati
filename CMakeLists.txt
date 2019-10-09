@@ -641,3 +641,6 @@ add_executable(042
   misc/Quora2020/coolFeature.cc
   leetcode/cppinclude/cpputility.h)
 
+add_executable(043
+  misc/Amazon/buyFruits.cc
+  leetcode/cppinclude/cpputility.h)
