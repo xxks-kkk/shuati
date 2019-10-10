@@ -104,7 +104,7 @@ score gathering, 输入一个unsorted integer array,  给这个array 打分，�
 
 输出 4:2,2:1,5:2,1:1，，，6:1
 
-
+- https://github.com/xxks-kkk/shuati/blob/a68f66519e6abfa563515cae35bc54fe7c559a0b/misc/Amazon/scoreGathering.cc
 
 # Reference
 

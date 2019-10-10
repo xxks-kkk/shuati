@@ -36,6 +36,8 @@ TreeNode* list2Tree(const std::vector<int> & nums) {
 
 // NOTE: the output format & structure may be different
 // (e.g., output "4:2,2:1,..." instead of `vector<pair<int,int>>`
+// Also, the output in description prints empty node as well, which I didn't
+// handle in the implementation but it should be easy.
 vector<pair<int,int>> scoreGathering(vector<int>& array) {
   auto root = list2Tree(array);
   // BFS
