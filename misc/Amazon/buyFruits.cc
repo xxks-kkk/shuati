@@ -4,7 +4,6 @@
 using namespace std;
 
 void dfs(vector<string>& tmp,
-         vector<int>& visited,
          vector<vector<string>>& res,
          const vector<string>& fruits,
          int anything_pos_size) {
@@ -13,13 +12,9 @@ void dfs(vector<string>& tmp,
     return;
   }
   for(int i = 0; i < fruits.size(); ++i) {
-    if (visited[i] == 0) {
       tmp.push_back(fruits[i]);
-      visited[i] = 1;
-      dfs(tmp, visited, res, fruits, anything_pos_size);
-      visited[i] = 0;
+      dfs(tmp, res, fruits, anything_pos_size);
       tmp.pop_back();
-    }
   }
 }
 
@@ -43,10 +38,9 @@ vector<vector<string>> generate_cands(vector<string> code, const unordered_map<s
   for(auto&& item: m) {
     fruits.push_back(item.first);
   }
-  vector<int> visited(fruits.size(), 0);
   vector<string> tmp;
   vector<vector<string>> cands;
-  dfs(tmp, visited, cands, fruits, anything_pos.size());
+  dfs(tmp, cands, fruits, anything_pos.size());
   for(auto&& v : cands) {
     for(int i = 0; i < anything_pos.size(); ++i) {
       code[anything_pos[i]] = v[i];
@@ -100,20 +94,23 @@ void test(ptr2checkWinner pfcn, const char* pfcn_name) {
     int expected;
   };
   vector<testCase> test_cases = {
-    {{{"apple", "apple"}, {"orange", "banana", "orange"}},
-     {"orange", "apple", "apple", "orange", "banana", "orange"},
-     1},
-    {{{"orange", "banana", "orange"}, {"apple", "apple"}},
-     {"orange", "apple", "apple", "orange", "banana", "orange"},
-     0},
-    {{{"apple", "apple"}, {"orange", "banana", "orange"}, {"pear", "orange", "grape"}},
-     {"orange", "apple", "apple", "orange", "banana", "orange", "pear", "grape"},
-     0},
-    {{{"apple", "apple"}, {"orange", "anything", "orange"}},
-     {"orange", "apple", "apple", "orange", "mango", "orange"},
-     1},
-    {{{"apple", "apple"}, {"orange", "banana", "orange"}},
-     {"orange", "apple", "apple", "orange", "apple", "orange", "banana", "orange"},
+//    {{{"apple", "apple"}, {"orange", "banana", "orange"}},
+//     {"orange", "apple", "apple", "orange", "banana", "orange"},
+//     1},
+//    {{{"orange", "banana", "orange"}, {"apple", "apple"}},
+//     {"orange", "apple", "apple", "orange", "banana", "orange"},
+//     0},
+//    {{{"apple", "apple"}, {"orange", "banana", "orange"}, {"pear", "orange", "grape"}},
+//     {"orange", "apple", "apple", "orange", "banana", "orange", "pear", "grape"},
+//     0},
+//    {{{"apple", "apple"}, {"orange", "anything", "orange"}},
+//     {"orange", "apple", "apple", "orange", "mango", "orange"},
+//     1},
+//    {{{"apple", "apple"}, {"orange", "banana", "orange"}},
+//     {"orange", "apple", "apple", "orange", "apple", "orange", "banana", "orange"},
+//     1},
+    {{{"anything", "anything"}},
+     {"orange", "apple", "grape"},
      1},
   };
   for(auto&& test_case: test_cases) {
