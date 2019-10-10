@@ -23,6 +23,10 @@ void dfs(vector<string>& tmp,
   }
 }
 
+// generate_cands replace possible appearance of "anything" appeard in `code` with all possible
+// kinds of fruits tracked in `m` and returns the resulting set of `code` variants.
+// Example: `code` has {"orange", "anything", "orange"}; `m` has {"orange", "apple", "mongo"}
+// The return are: {"orange", "orange", "orange"}, {"orange", "apple", "orange"}, {"orange", "mongo", "orange"}
 vector<vector<string>> generate_cands(vector<string> code, const unordered_map<string,int>& m) {
   vector<int> anything_pos;
   vector<vector<string>> res;
@@ -69,6 +73,8 @@ int checkWinner (vector<vector<string>> codeList, vector<string> shoppingCart) {
       for(auto&& cand: code_set) {
         if (v == cand) {
           if (i >= matched_index) {
+            // we check `matched_index` as the ordering of appearance of `code` in the `shoppingCart`
+            // has to be consistent with ordering of appearance of `code` in `codeList`
             matched_index = i;
             goto endloop;
           } else {
