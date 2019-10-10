@@ -654,3 +654,7 @@ add_executable(042
 add_executable(043
   misc/Amazon/buyFruits.cc
   leetcode/cppinclude/cpputility.h)
+
+add_executable(044
+  misc/Amazon/scoreGathering.cc
+  leetcode/cppinclude/cpputility.h)

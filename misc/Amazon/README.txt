@@ -89,8 +89,26 @@ return 1, 虽然[apple, apple] 和 [orange, banana, orange] 中间插入了[oran
 
 - "Anything" 是和单一水果匹配
 
+## Score Gathering
+
+score gathering, 输入一个unsorted integer array,  给这个array 打分，基本就是建BST, 然后 BFS 输出
+
+4, 2, 5, 5, 6, 1, 4
+
+[num] :［出现次数］
+
+变成
+        4:2
+  2:1       5:2
+1:1            6:1
+
+输出 4:2,2:1,5:2,1:1，，，6:1
+
+
+
 # Reference
 
 - https://www.1point3acres.com/bbs/thread-225078-1-1.html
 - https://www.1point3acres.com/bbs/thread-288738-1-1.html
 - https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=289918&highlight=amazon%2Boa
+- https://www.1point3acres.com/bbs/thread-192414-1-1.html
