@@ -13,35 +13,31 @@ struct TreeNode
   TreeNode(int x) : key(x), val(1), left(nullptr), right(nullptr) {}
 };
 
-class BST {
-public:
-  TreeNode* list2Tree(const std::vector<int> & nums) {
-    TreeNode* root = nullptr;
-    for (auto&& x: nums)
-    {
-      insert(root, x);
-    }
-    return root;    
+void insert(TreeNode* & root, int key) {
+  if (root == nullptr) {
+    root = new TreeNode(key);
+  } else if (key == root->key) {
+    root->val++;
+  } else if (key > root->key) {
+    insert(root->right, key);
+  } else if (key < root->key) {
+    insert(root->left, key);
   }
-private:
-  void insert(TreeNode* & root, int key) {
-    if (root == nullptr) {
-      root = new TreeNode(key);
-    } else if (key == root->key) {
-      root->val++;
-    } else if (key > root->key) {
-      insert(root->right, key);
-    } else if (key < root->key) {
-      insert(root->left, key);
-    }
+}
+
+TreeNode* list2Tree(const std::vector<int> & nums) {
+  TreeNode* root = nullptr;
+  for (auto&& x: nums)
+  {
+    insert(root, x);
   }
-};
+  return root;    
+}
 
 // NOTE: the output format & structure may be different
 // (e.g., output "4:2,2:1,..." instead of `vector<pair<int,int>>`
 vector<pair<int,int>> scoreGathering(vector<int>& array) {
-  BST bt;
-  auto root = bt.list2Tree(array);
+  auto root = list2Tree(array);
   // BFS
   vector<pair<int,int>> res;
   queue<TreeNode*> q;
