@@ -65,7 +65,7 @@ namespace CPPUtility
   }
 
   template <>
-  std::string twoDVectorStr<std::string>(std::vector<std::vector<std::string>> matrix)
+  inline std::string twoDVectorStr<std::string>(std::vector<std::vector<std::string>> matrix)
   {
     std::string cand = "\n[";
     for(int j = 0; j < matrix.size(); ++j)
