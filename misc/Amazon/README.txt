@@ -106,6 +106,24 @@ score gathering, 输入一个unsorted integer array,  给这个array 打分，�
 
 - https://github.com/xxks-kkk/shuati/blob/a68f66519e6abfa563515cae35bc54fe7c559a0b/misc/Amazon/scoreGathering.cc
 
+## construct BST 后找俩node之间distance
+
+Given a list of unique integers, construct the binary tree by given order without rebalancing,
+then find out the distance between two nodes.
+
+public static int bstDistance(int[] values, int n, int node1, int node2)
+
+for example:
+
+values= [5,6,3,1,2,4], n is the size of values, node1 is 2, node2 is 4, then function return 3
+构建完BST如下，2和4呢，距离就是3
+      5
+   3      6
+1     4
+  2
+
+- Similar to LC863 in terms of how to solve it (https://www.cnblogs.com/grandyang/p/10686922.html)
+
 # Reference
 
 - https://www.1point3acres.com/bbs/thread-225078-1-1.html

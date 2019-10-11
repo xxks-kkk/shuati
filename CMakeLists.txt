@@ -658,3 +658,7 @@ add_executable(043
 add_executable(044
   misc/Amazon/scoreGathering.cc
   leetcode/cppinclude/cpputility.h)
+
+add_executable(045
+  misc/Amazon/distBetweenNodes.cc
+  leetcode/cppinclude/cpputility.h)
