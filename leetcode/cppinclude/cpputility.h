@@ -64,6 +64,26 @@ namespace CPPUtility
     return cand;
   }
 
+  template <>
+  inline std::string twoDVectorStr<std::string>(std::vector<std::vector<std::string>> matrix)
+  {
+    std::string cand = "\n[";
+    for(int j = 0; j < matrix.size(); ++j)
+    {
+      j == 0 ? cand += "[" : cand += " [";
+      int i;
+      auto vec = matrix[j];
+      for(i = 0; i < vec.size(); ++i)
+      {
+        cand += vec[i];
+        i != vec.size() - 1 ? cand += "," : cand += "";
+      }
+      j == matrix.size() - 1 ? cand += "]" : cand += "]\n";
+    }
+    cand += "]\n";
+    return cand;
+  }  
+
   // pretty print 2D vector
   template <typename T>
   void prettyPrint2DVector(std::ostream& theStream, std::vector<std::vector<T>> matrix)
