@@ -662,3 +662,7 @@ add_executable(044
 add_executable(045
   misc/Amazon/distBetweenNodes.cc
   leetcode/cppinclude/cpputility.h)
+
+add_executable(046
+  misc/Amazon/prioritizedOrders/prioritizedOrders.cc
+  leetcode/cppinclude/cpputility.h)
