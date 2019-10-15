@@ -31,4 +31,19 @@ namespace CPPUtility
     }
     return res;
   }
+
+  std::string twoDArrayIntStrC(int numRows, int numColumns, int **area) {
+    std::string cand = "[";
+    for(int i = 0; i < numRows; ++i) {
+      i == 0 ? cand += "[" : cand += " [";
+      int j;
+      for(j = 0; j < numColumns; ++j) {
+        cand += std::to_string(area[i][j]);
+        j != numColumns - 1? cand += "," : cand += "";
+      }
+      i == numRows - 1? cand += "]" : cand += "]\n";
+    }
+    cand += "]\n";
+    return cand;
+  }  
 }

@@ -666,3 +666,7 @@ add_executable(045
 add_executable(046
   misc/Amazon/prioritizedOrders/prioritizedOrders.cc
   leetcode/cppinclude/cpputility.h)
+
+add_executable(047
+  misc/Amazon/minimumDistance/minimumDistance.cc
+  leetcode/cppinclude/cpputility.cc)
