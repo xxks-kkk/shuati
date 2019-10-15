@@ -14,7 +14,7 @@
 
 Similar to LC63. Unique Path II; Same question as LC505 (?): Ball cannot stop rolling (i.e., change direction) until hit the wall but this assumption probably not true in the actual problem.
 
-
+- See "minimumDistance" (https://github.com/xxks-kkk/shuati/tree/ab8ba809c852152dcfe7f0d52027105361440cd2/misc/Amazon/minimumDistance)
 
 ## LC 675. Cut off Tree for Golf Event
 
