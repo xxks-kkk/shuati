@@ -8,14 +8,13 @@
 
 - https://raw.githubusercontent.com/xxks-kkk/shuati/master/leetcode/438-FindAllAnagramsInAString/findAllAnagramsInAString.cc
 
-## Find the min steps of maze
+## Find the min steps of maze (i.e., minimumDistance)
 
 意思是说有一个M*N的maze，0代表可以通过，1代表不可以通过，然后给你一个出口（x,y），找从（0,0）到出口的最少steps，如果找不到path就返回-1
 
 Similar to LC63. Unique Path II; Same question as LC505 (?): Ball cannot stop rolling (i.e., change direction) until hit the wall but this assumption probably not true in the actual problem.
 
-- https://raw.githubusercontent.com/xxks-kkk/shuati/master/leetcode/63-UniquePathsII/uniquePathsII.py
-- https://raw.githubusercontent.com/xxks-kkk/shuati/master/leetcode/505-TheMazeII/theMazeII.cc
+- See "minimumDistance" (https://github.com/xxks-kkk/shuati/tree/ab8ba809c852152dcfe7f0d52027105361440cd2/misc/Amazon/minimumDistance)
 
 ## LC 675. Cut off Tree for Golf Event
 
@@ -28,7 +27,7 @@ Ex1:
 [1, 1, 3, 1]
 ]
 上图中的1代表平地，可以走。 0代表坑，不能走。 大于1的数字代表树木，需要砍掉。规则是从上下左右四个角开始任选一个开始走，先砍数字小的树木。 比如2 < 3，那么就得先走2。
-上图如果从右下角开始走依次经过的坐标是： （1， 3） -> (0, 3) -> (1, 3) -> (1, 2) -> (1, 1) -> (1, 0) 所以返回的最小步数是5， 因为通过这个路径可以修平第二层的球场[1, 1, 3, 1]， 并‍‌‌‍‌‌‍‍‍‌‌‌‍‌‌‌‌且走到左下角终点。
+上图如果从右下角开始走依次经过的坐标是： （1， 3） -> (0, 3) -> (1, 3) -> (1, 2) -> (1, 1) -> (1, 0) 所以返回的最小步数是5， 因为通过这个路径可以修平第二层的球场[1, 1, 3, 1]， 并‍且走到左下角终点。
 Ex2:
 [
 [1, 0]
@@ -123,6 +122,11 @@ values= [5,6,3,1,2,4], n is the size of values, node1 is 2, node2 is 4, then fun
   2
 
 - Similar to LC863 in terms of how to solve it (https://www.cnblogs.com/grandyang/p/10686922.html)
+
+## Prioritized Orders
+
+- See "prioritizedOrders.jpeg" for problem description (https://github.com/xxks-kkk/shuati/blob/2ac851a237ffedb0758867f5e1312e2edcc2ca78/misc/Amazon/prioritizedOrders/prioritizedOrders.jpeg)
+- https://raw.githubusercontent.com/xxks-kkk/shuati/2ac851a237ffedb0758867f5e1312e2edcc2ca78/misc/Amazon/prioritizedOrders/prioritizedOrders.cc
 
 # Reference
 

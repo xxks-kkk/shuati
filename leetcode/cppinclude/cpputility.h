@@ -118,6 +118,9 @@ namespace CPPUtility
     return cand;
   }
 
+  // twoDArrayIntstr returns string representation of given two dimension C-array of int
+  std::string twoDArrayIntStrC(int numRows, int numColumns, int **area);
+
   template <>
   inline std::string oneDVectorStr<char>(const std::vector<char>& vec) {
     std::string cand = "[";
