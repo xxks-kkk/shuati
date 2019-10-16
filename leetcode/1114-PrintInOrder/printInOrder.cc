@@ -105,5 +105,8 @@ void test()
 
 int main()
 {
-  test();
+  for(int i = 0; i < 10; ++i) {
+    // Test repeatedly to detect any potential race condition
+    test();    
+  }
 }
