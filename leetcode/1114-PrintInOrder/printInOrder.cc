@@ -7,21 +7,27 @@
 #include <thread>
 #include <unordered_map>
 #include <vector>
+#include <mutex>
 
 using namespace std;
 
+mutex some_mutex;
+
 void printFirst()
 {
+  lock_guard<mutex> guard(some_mutex);
   cout << "first" << std::flush;
 }
 
 void printSecond()
 {
+  lock_guard<mutex> guard(some_mutex);
   cout << "second" << std::flush;
 }
 
 void printThird()
 {
+  lock_guard<mutex> guard(some_mutex);
   cout << "third" << std::flush;
 }
 
@@ -85,7 +91,7 @@ void test()
     vector<thread> threads;
     for (int i = 0; i < 3; ++i)
     {
-      threads.emplace_back(m[i+1].first, foo, m[i+1].second);
+      threads.emplace_back(m[test_case.input[i]].first, foo, m[test_case.input[i]].second);
     }
     for (auto &&th : threads)
     {
