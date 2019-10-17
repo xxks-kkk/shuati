@@ -1,13 +1,14 @@
 #include "cpputility.h"
+#include <condition_variable>
 #include <functional>
 #include <iostream>
+#include <mutex>
 #include <semaphore.h>
 #include <sstream>
 #include <string>
 #include <thread>
 #include <unordered_map>
 #include <vector>
-#include <mutex>
 
 using namespace std;
 
@@ -15,56 +16,68 @@ mutex some_mutex;
 
 void printFirst()
 {
-  lock_guard<mutex> guard(some_mutex);
   cout << "first" << std::flush;
 }
 
 void printSecond()
 {
-  lock_guard<mutex> guard(some_mutex);
   cout << "second" << std::flush;
 }
 
 void printThird()
 {
-  lock_guard<mutex> guard(some_mutex);
   cout << "third" << std::flush;
 }
 
-class Foo
-{
-protected:
-  sem_t firstJobDone;
-  sem_t secondJobDone;
-
+class Semaphore {
+	size_t avail;
+	std::mutex m;
+	std::condition_variable cv;
 public:
-  Foo()
-  {
-    sem_init(&firstJobDone, 0, 0);
-    sem_init(&secondJobDone, 0, 0);
-  }
+	/** Default constructor. Default semaphore is a binary semaphore **/
+	explicit Semaphore(size_t avail_ = 1) : avail(avail_) { }
 
-  void first(function<void()> printFirst)
-  {
-    // printFirst() outputs "first". Do not change or remove this line.
-    printFirst();
-    sem_post(&firstJobDone);
-  }
+	void acquire() {
+		std::unique_lock<std::mutex> lk(m);
+		cv.wait(lk, [this] { return avail > 0; });
+		avail--;
+		lk.unlock();
+	}
 
-  void second(function<void()> printSecond)
-  {
-    sem_wait(&firstJobDone);
-    // printSecond() outputs "second". Do not change or remove this line.
-    printSecond();
-    sem_post(&secondJobDone);
-  }
+	void release() {
+		m.lock();
+		avail++;
+		m.unlock();
+		cv.notify_one();
+	}
 
-  void third(function<void()> printThird)
-  {
-    sem_wait(&secondJobDone);
-    // printThird() outputs "third". Do not change or remove this line.
-    printThird();
-  }
+	size_t available() const {
+		return avail;
+	}
+};
+
+Semaphore a(0);
+Semaphore b(0);
+
+class Foo {
+public:
+    Foo() {}
+
+    void first(function<void()> printFirst) {
+        printFirst();
+        a.release();
+    }
+
+    void second(function<void()> printSecond) {
+        a.acquire();
+        printSecond();
+        b.release();
+    }
+
+    void third(function<void()> printThird) {
+        b.acquire();
+        printThird();
+    }
 };
 
 void test()
@@ -82,6 +95,10 @@ void test()
   vector<testCase> test_cases = {
       {{1, 2, 3}, "firstsecondthird"},
       {{1, 3, 2}, "firstsecondthird"},
+      {{2, 1, 3}, "firstsecondthird"},
+      {{2, 3, 1}, "firstsecondthird"},
+      {{3, 1, 2}, "firstsecondthird"},
+      {{3, 2, 1}, "firstsecondthird"},
   };
   for (auto &&test_case : test_cases)
   {
@@ -111,8 +128,9 @@ void test()
 
 int main()
 {
-  for(int i = 0; i < 10; ++i) {
+  for (int i = 0; i < 10; ++i)
+  {
     // Test repeatedly to detect any potential race condition
-    test();    
+    test();
   }
 }
