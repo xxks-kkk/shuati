@@ -59,13 +59,12 @@ public:
   }
 };
 
-Semaphore firstJobDone(0);
-Semaphore secondJobDone(0);
-
 class Foo
 {
+  Semaphore firstJobDone;
+  Semaphore secondJobDone;
 public:
-  Foo() {}
+  Foo(): firstJobDone(0), secondJobDone(0) {}
 
   void first(function<void()> printFirst)
   {
@@ -115,7 +114,8 @@ void test()
     vector<thread> threads;
     for (int i = 0; i < 3; ++i)
     {
-      threads.emplace_back(m[test_case.input[i]].first, foo, m[test_case.input[i]].second);
+      // We use the same object across multiple threads
+      threads.emplace_back(m[test_case.input[i]].first, ref(foo), m[test_case.input[i]].second);
     }
     for (auto &&th : threads)
     {
