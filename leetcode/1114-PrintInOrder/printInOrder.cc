@@ -12,8 +12,6 @@
 
 using namespace std;
 
-mutex some_mutex;
-
 void printFirst()
 {
   cout << "first" << std::flush;
@@ -29,55 +27,64 @@ void printThird()
   cout << "third" << std::flush;
 }
 
-class Semaphore {
-	size_t avail;
-	std::mutex m;
-	std::condition_variable cv;
+class Semaphore
+{
+  size_t avail;
+  std::mutex m;
+  std::condition_variable cv;
+
 public:
-	/** Default constructor. Default semaphore is a binary semaphore **/
-	explicit Semaphore(size_t avail_ = 1) : avail(avail_) { }
+  /** Default constructor. Default semaphore is a binary semaphore **/
+  explicit Semaphore(size_t avail_ = 1) : avail(avail_) {}
 
-	void acquire() {
-		std::unique_lock<std::mutex> lk(m);
-		cv.wait(lk, [this] { return avail > 0; });
-		avail--;
-		lk.unlock();
-	}
+  void wait()
+  {
+    std::unique_lock<std::mutex> lk(m);
+    cv.wait(lk, [this] { return avail > 0; });
+    avail--;
+    lk.unlock();
+  }
 
-	void release() {
-		m.lock();
-		avail++;
-		m.unlock();
-		cv.notify_one();
-	}
+  void post()
+  {
+    m.lock();
+    avail++;
+    m.unlock();
+    cv.notify_one();
+  }
 
-	size_t available() const {
-		return avail;
-	}
+  size_t available() const
+  {
+    return avail;
+  }
 };
 
-Semaphore a(0);
-Semaphore b(0);
+Semaphore firstJobDone(0);
+Semaphore secondJobDone(0);
 
-class Foo {
+class Foo
+{
 public:
-    Foo() {}
+  Foo() {}
 
-    void first(function<void()> printFirst) {
-        printFirst();
-        a.release();
-    }
+  void first(function<void()> printFirst)
+  {
+    printFirst();
+    firstJobDone.post();
+  }
 
-    void second(function<void()> printSecond) {
-        a.acquire();
-        printSecond();
-        b.release();
-    }
+  void second(function<void()> printSecond)
+  {
+    firstJobDone.wait();
+    printSecond();
+    secondJobDone.post();
+  }
 
-    void third(function<void()> printThird) {
-        b.acquire();
-        printThird();
-    }
+  void third(function<void()> printThird)
+  {
+    secondJobDone.wait();
+    printThird();
+  }
 };
 
 void test()
