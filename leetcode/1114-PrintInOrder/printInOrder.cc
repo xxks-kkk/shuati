@@ -3,12 +3,12 @@
 #include <functional>
 #include <iostream>
 #include <mutex>
-#include <semaphore.h>
 #include <sstream>
 #include <string>
 #include <thread>
 #include <unordered_map>
 #include <vector>
+#include "mysemaphore.h"
 
 using namespace std;
 
@@ -26,38 +26,6 @@ void printThird()
 {
   cout << "third" << std::flush;
 }
-
-class Semaphore
-{
-  size_t avail;
-  std::mutex m;
-  std::condition_variable cv;
-
-public:
-  /** Default constructor. Default semaphore is a binary semaphore **/
-  explicit Semaphore(size_t avail_ = 1) : avail(avail_) {}
-
-  void wait()
-  {
-    std::unique_lock<std::mutex> lk(m);
-    cv.wait(lk, [this] { return avail > 0; });
-    avail--;
-    lk.unlock();
-  }
-
-  void post()
-  {
-    m.lock();
-    avail++;
-    m.unlock();
-    cv.notify_one();
-  }
-
-  size_t available() const
-  {
-    return avail;
-  }
-};
 
 class Foo
 {

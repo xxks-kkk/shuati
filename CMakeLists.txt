@@ -502,7 +502,8 @@ add_executable(977
   leetcode/977-SquaresofaSortedArray/squaresofaSortedArray.cc)
 
 add_executable(1114
-  leetcode/1114-PrintInOrder/printInOrder.cc)      
+  leetcode/1114-PrintInOrder/printInOrder.cc
+  leetcode/cppinclude/mysemaphore.cc)      
       
 add_executable(00
   leetcode/cppinclude/queue.tpp

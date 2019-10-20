@@ -19,5 +19,7 @@
 #include <iterator>
 #include <fstream>
 #include <set>
+#include <mutex>
+#include <condition_variable>
 
 #endif //SHUATI_SHARED_HEADERS_H
