@@ -17,7 +17,7 @@ Semaphore::post()
   cv.notify_one();
 }
 
-int
+size_t
 Semaphore::available() const {
   return avail;
 }
