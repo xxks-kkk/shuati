@@ -493,36 +493,40 @@ add_executable(811
   leetcode/811-SubdomainVisitCount/subdomainVisitCount.cc)
 
 add_executable(829
-        leetcode/829-ConsecutiveNumbersSum/consecutiveNumbersSum.cc)
+  leetcode/829-ConsecutiveNumbersSum/consecutiveNumbersSum.cc)
 
 add_executable(842
-        leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
+  leetcode/842-SplitArrayintoFibonacciSequence/splitArrayintoFibonacciSequence.cc)
 
 add_executable(977
-        leetcode/977-SquaresofaSortedArray/squaresofaSortedArray.cc)
+  leetcode/977-SquaresofaSortedArray/squaresofaSortedArray.cc)
+
+add_executable(1114
+  leetcode/1114-PrintInOrder/printInOrder.cc
+  leetcode/cppinclude/mysemaphore.cc)      
       
 add_executable(00
-        leetcode/cppinclude/queue.tpp
-        leetcode/cppinclude/queue.h
-        misc/QueueArrayImplementation/queueArrayImplementation.cc)
+  leetcode/cppinclude/queue.tpp
+  leetcode/cppinclude/queue.h
+  misc/QueueArrayImplementation/queueArrayImplementation.cc)
 
 add_executable(001
-        misc/GetFruits/getFruits.cc)
+  misc/GetFruits/getFruits.cc)
 
 add_executable(002
-        misc/HDRT/simplePrint.c)
+  misc/HDRT/simplePrint.c)
 
 add_executable(003
-        misc/ReformattingDates/reformattingDates.cc)
+  misc/ReformattingDates/reformattingDates.cc)
 
 add_executable(004
-        misc/MaximizingProfitFromStocks/maximizingProfitFromStocks.cc)
+  misc/MaximizingProfitFromStocks/maximizingProfitFromStocks.cc)
 
 add_executable(005
-        misc/IsThisATree/isThisATree.cc)
+  misc/IsThisATree/isThisATree.cc)
 
 add_executable(006
-        misc/FindTheWinner/findTheWinner.cc)
+  misc/FindTheWinner/findTheWinner.cc)
 
 add_executable(007
         misc/SmartSale/smartSale.cc)
