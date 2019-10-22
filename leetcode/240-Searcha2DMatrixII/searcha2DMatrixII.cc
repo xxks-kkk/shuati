@@ -9,8 +9,9 @@ public:
       if (matrix.empty() || matrix[0].empty()) return false;
       int num_rows = matrix.size();
       int num_cols = matrix[0].size();
-      for(int i = num_rows - 1; i >= 0;) {
-        for(int j = 0; j < num_cols;) {
+      int i = num_rows - 1;
+      int j = 0;
+      while(i >= 0 && j < num_cols) {
           int element = matrix[i][j];
           if (element == target) {
             return true;
@@ -18,11 +19,8 @@ public:
             i--;
           } else if (element < target) {
             j++;
-          }
-          if (i < 0 || j == num_cols) goto ret;
-        }
+          }        
       }
-    ret:
       return false;
     }
 };
