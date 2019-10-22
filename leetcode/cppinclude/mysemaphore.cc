@@ -12,7 +12,7 @@ Semaphore::wait()
 void
 Semaphore::post()
 {
-  std::unique_lock<std::mutex> lk(m);
+  std::lock_guard<std::mutex> lk(m);
   avail++;
   cv.notify_one();
 }
