@@ -457,7 +457,11 @@ add_executable(632
 
 add_executable(636
   leetcode/636-ExclusiveTimeofFunctions/exclusiveTimeofFunctions.cc)
-      
+
+add_executable(647
+  leetcode/647-PalindromicSubstrings/palindromicSubstrings.cc
+  leetcode/cppinclude/cpputility.h)
+
 add_executable(658
   leetcode/658-FindKClosestElements/findKClosestElements.cpp)
 
