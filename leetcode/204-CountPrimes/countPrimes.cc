@@ -8,29 +8,32 @@
 
 #include <cassert>
 #include <vector>
+#include <queue>
 
 using namespace std;
 
 class Solution {
 public:
-    // Method: The Sieve of Eratosthenes (http://mathforum.org/dr.math/faq/faq.prime.num.html)
-    int countPrimes(int n) {
-        vector<bool> notPrime (n, false);
-        int count = 0;
-        // i < n b/c we are asked to count number of prime number "smaller than" n
-        for(int i = 2; i < n; ++i)
+  int countPrimes(int n) {
+    // is_prime[i] represents if i is prime or not. Initially, set each to true.
+    // excepting 0 and 1 (ignore for now). Then use sieving to eliminate nonprime.
+    deque<bool> is_prime (n, true);
+    int count = 0;
+    // i < n b/c we are asked to count number of prime number "smaller than" n
+    for(int i = 2; i < n; ++i)
+    {
+      if (is_prime[i])
+      {
+        count++;
+        // Sieve i's multiples.
+        for(int j = i; j < n; j+=i)
         {
-            if (notPrime[i] == false)
-            {
-                count++;
-                for(int j = 2; i*j < n; ++j)
-                {
-                    notPrime[i*j] = true;
-                }
-            }
+          is_prime[j] = false;
         }
-        return count;
+      }
     }
+    return count;
+  }
 };
 
 using ptr2countPrimes = int (Solution::*)(int);
@@ -38,10 +41,23 @@ using ptr2countPrimes = int (Solution::*)(int);
 void test(ptr2countPrimes pfcn)
 {
     Solution sol;
-    int n = 10;
-    assert((sol.*pfcn)(n) == 4);
-    n = 11;
-    assert((sol.*pfcn)(n) == 4);
+    struct testCase {
+      int n;
+      int expected;
+    };
+    vector<testCase> test_cases = {
+      {10, 4},
+      {11, 4}
+    };
+    for(auto&& test_case: test_cases) {
+      auto got = (sol.*pfcn)(test_case.n);
+      if (got != test_case.expected) {
+        printf("countPrimes(%d) = %d\n",
+               test_case.n,
+               test_case.expected);
+        assert(false);
+      }
+    }
 }
 
 int main()
