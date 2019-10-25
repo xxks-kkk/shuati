@@ -445,6 +445,9 @@ add_executable(505
 add_executable(509
   leetcode/509-FibonacciNumber/fibonacciNumber.cc)
 
+add_executable(535
+  leetcode/535-EncodeandDecodeTinyURL/encodeandDecodeTinyURL.cc)
+
 add_executable(567
   leetcode/567-PermutationInString/permutationInString.cc)
 
