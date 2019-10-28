@@ -165,14 +165,14 @@ add_executable(110
   leetcode/cppinclude/bt.cc)
 
 add_executable(121
-        leetcode/121-BestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cc)
+  leetcode/121-BestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cc)
 
 add_executable(122
-        leetcode/122-BestTimetoBuyandSellStockII/bestTimetoBuyandSellStockII.cc)
+  leetcode/122-BestTimetoBuyandSellStockII/bestTimetoBuyandSellStockII.cc)
 
 add_executable(124
-        leetcode/124-BinaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cc
-        leetcode/cppinclude/bt.cc)
+  leetcode/124-BinaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cc
+  leetcode/cppinclude/bt.cc)
 
 add_executable(128
   leetcode/128-LongestConsecutiveSequence/longestConsecutiveSequence.cc)
@@ -181,25 +181,30 @@ add_executable(133
   leetcode/133-CloneGraph/cloneGraph.cc
   leetcode/cppinclude/graph_leetcode.h)
 
+add_executable(138
+  leetcode/138-CopyListWithRandomPointer/copyListWithRandomPointer.cc
+  leetcode/cppinclude/linkedList_node_rand.h
+  leetcode/cppinclude/cpputility.h)
+
 add_executable(140
   leetcode/140-WordBreakII/wordBreakII.cc)
 
 add_executable(141
-        leetcode/141-LinkedListCycle/linkedListCycle.cc
-        leetcode/cppinclude/linkedList.cc)
+  leetcode/141-LinkedListCycle/linkedListCycle.cc
+  leetcode/cppinclude/linkedList.cc)
 
 add_executable(145
-        leetcode/145-BinaryTreePostorderTraversal/binaryTreePostorderTraversal.cc
-        leetcode/cppinclude/bt.cc)
+  leetcode/145-BinaryTreePostorderTraversal/binaryTreePostorderTraversal.cc
+  leetcode/cppinclude/bt.cc)
 
 add_executable(146
-        leetcode/146-LRUCache/lRUCache.cc)
+  leetcode/146-LRUCache/lRUCache.cc)
 
 add_executable(155
-        leetcode/155-MinStack/minStack.cc)
+  leetcode/155-MinStack/minStack.cc)
 
 add_executable(159
-        leetcode/159-LongestSubstringWithAtMostTwoDistinctCharacters/longestSubstringWithAtMostTwoDistinctCharacters.cc)
+  leetcode/159-LongestSubstringWithAtMostTwoDistinctCharacters/longestSubstringWithAtMostTwoDistinctCharacters.cc)
 
 add_executable(160
   leetcode/160-IntersectionofTwoLinkedLists/intersectionofTwoLinkedLists.cc
