@@ -186,11 +186,6 @@ add_executable(138
   include/cppinclude/cpputility.h
   include/jsoncpp/jsoncpp.cpp)
 
-add_executable(138
-  leetcode/138-CopyListWithRandomPointer/copyListWithRandomPointer.cc
-  leetcode/cppinclude/linkedList_node_rand.h
-  leetcode/cppinclude/cpputility.h)
-
 add_executable(140
   leetcode/140-WordBreakII/wordBreakII.cc)
 
