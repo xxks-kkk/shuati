@@ -39,8 +39,7 @@ endif()
 # Specify the build directory
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/cmake-build-debug)
 
-include_directories(leetcode)
-include_directories(include/cppinclude)
+include_directories(leetcode include/cppinclude include)
 
 add_executable(2
         leetcode/2-AddTwoNumbers/addTwoNumbers.cc
@@ -181,7 +180,7 @@ add_executable(133
 
 add_executable(138
   leetcode/138-CopyListWithRandomPointer/copyListWithRandomPointer.cc
-  include/cppinclude/linkedList_node_rand.h
+  include/cppinclude/linkedList_rand.cc
   include/cppinclude/cpputility.h)
 
 add_executable(140

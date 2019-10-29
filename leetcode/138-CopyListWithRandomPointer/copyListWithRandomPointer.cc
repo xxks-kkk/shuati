@@ -1,4 +1,4 @@
-#include "linkedList_node_rand.h"
+#include "linkedList_rand.h"
 #include "cpputility.h"
 #include <unordered_map>
 
