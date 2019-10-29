@@ -50,6 +50,17 @@ void test(ptr2copyRandomList pfcn, const char* pfcn_name) {
   };
   for(auto&& test_case: test_cases) {
     auto head = LinkedListRandom::list2list(test_case.input);
+    auto new_head = (sol.*pfcn)(head);
+    auto new_head_repr = LinkedListRandom::printList(new_head);
+    if (new_head_repr != test_case.input) {
+      cout << "test_case.input length: " << static_cast<int>(test_case.input.length()) << endl; 
+      cout << "new_head_repr length: " << static_cast<int>(new_head_repr.length()) << endl;          
+      printf("%s(%s) = %s\n",
+             pfcn_name,
+             test_case.input.c_str(),
+             new_head_repr.c_str());
+      assert(false);
+    }
   }
 }
 
