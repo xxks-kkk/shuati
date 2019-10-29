@@ -41,7 +41,16 @@ struct testFuncsInfo {
 };
 
 void test(ptr2copyRandomList pfcn, const char* pfcn_name) {
-  // TODO: See #167
+  Solution sol;
+  struct testCase {
+    string input;
+  };
+  vector<testCase> test_cases = {
+    {R"({"$id":"1","next":{"$id":"2","next":null,"random":{"$ref":"2"},"val":2},"random":{"$ref":"2"},"val":1})"},
+  };
+  for(auto&& test_case: test_cases) {
+    auto head = LinkedListRandom::list2list(test_case.input);
+  }
 }
 
 int main() {

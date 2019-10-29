@@ -39,7 +39,7 @@ endif()
 # Specify the build directory
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/cmake-build-debug)
 
-include_directories(leetcode include/cppinclude include)
+include_directories(leetcode include/cppinclude include include/jsoncpp)
 
 add_executable(2
         leetcode/2-AddTwoNumbers/addTwoNumbers.cc
@@ -178,10 +178,13 @@ add_executable(133
   leetcode/133-CloneGraph/cloneGraph.cc
   include/cppinclude/graph_leetcode.h)
 
+#TODO: is there a way to include jsoncpp.cpp automatically whenever we include
+# the .cc that has dependency on it (e.g., linkedList_rand.cc)
 add_executable(138
   leetcode/138-CopyListWithRandomPointer/copyListWithRandomPointer.cc
   include/cppinclude/linkedList_rand.cc
-  include/cppinclude/cpputility.h)
+  include/cppinclude/cpputility.h
+  include/jsoncpp/jsoncpp.cpp)
 
 add_executable(140
   leetcode/140-WordBreakII/wordBreakII.cc)
