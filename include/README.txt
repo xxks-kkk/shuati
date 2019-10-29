@@ -1,2 +1,2 @@
-- RapidJSON (https://github.com/Tencent/rapidjson)
-  version: bb5f966b9939d6cdfbac3462a0410e185099b3af (10/21/19)
+- JSONCpp (https://github.com/open-source-parsers/jsoncpp)
+  version: 2703c306a3168e15613d94e57fb8832138d9155d

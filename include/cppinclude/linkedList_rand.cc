@@ -22,15 +22,9 @@ LinkedListRandom::list2list(std::string rawJson)
   std::unordered_map<int, Node*>  m; //<id, Node corresponding with id>
   std::unordered_map<Node*, int> m3; //<Node, the id this Node's random ptr points to>
   std::queue<Json::Value> q;
-  Node *head;
-  head = new Node(std::stoi(root["$id"].asString()), nullptr, nullptr);
-  std::cout << head->val << std::endl;
-  if (!root["next"].isNull()) {
-    q.push(root["next"]);
-  }
-  m[std::stoi(root["$id"].asString())] = head;
-  m3[head] = std::stoi(root["random"]["$ref"].asString());
+  Node *head = new Node(0, nullptr, nullptr);
   auto curr = head;
+  q.push(root);
   while(!q.empty()) {
     auto node = q.front(); q.pop();
     int id = std::stoi(node["$id"].asString());
@@ -38,18 +32,16 @@ LinkedListRandom::list2list(std::string rawJson)
     curr->next = new Node(id, nullptr, nullptr);
     m3[curr->next] = ref;
     m[id] = curr->next;
-    //m2[id] = curr;
-    //m2[ref] = nullptr;
     if (!node["next"].isNull()) q.push(node["next"]);
     curr = curr->next;
   }
   // add the random pointer
-  curr = head;
+  curr = head->next;
   while(curr) {
     curr->random = m[m3[curr]];
     curr = curr->next;
   }
-  return head;
+  return head->next;
 }
 
 // transform a linked list to the json representation of linked list
