@@ -1,4 +1,4 @@
-#include "linkedList_node_rand.h"
+#include "linkedList_rand.h"
 #include "cpputility.h"
 #include <unordered_map>
 
@@ -41,7 +41,25 @@ struct testFuncsInfo {
 };
 
 void test(ptr2copyRandomList pfcn, const char* pfcn_name) {
-  // TODO: See #167
+  Solution sol;
+  struct testCase {
+    string input;
+  };
+  vector<testCase> test_cases = {
+    {R"({"$id":"1","next":{"$id":"2","next":null,"random":{"$ref":"2"},"val":2},"random":{"$ref":"2"},"val":1})"},
+  };
+  for(auto&& test_case: test_cases) {
+    auto head = LinkedListRandom::list2list(test_case.input);
+    auto new_head = (sol.*pfcn)(head);
+    auto new_head_repr = LinkedListRandom::printList(new_head);
+    if (new_head_repr != test_case.input) {
+      printf("%s(%s) = %s\n",
+             pfcn_name,
+             test_case.input.c_str(),
+             new_head_repr.c_str());
+      assert(false);
+    }
+  }
 }
 
 int main() {

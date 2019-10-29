@@ -61,7 +61,7 @@
  * };
  */
 
-#include "cppinclude/bt.h"
+#include "bt.h"
 #include <queue>
 #include <vector>
 #include <cassert>
