@@ -31,6 +31,38 @@ public:
     }
     return res;
   }
+  // Optimized approach (EPI p.446)
+  Node* copyRandomList2(Node* head) {
+    if (head == nullptr) return nullptr;
+    // Stage 1: Makes a copy of the original list without assigning the random
+    //          field, and creates the mapping for each node in the original list
+    //          to the copied list
+    auto iter = head;
+    while (iter) {
+      auto new_node = new Node(iter->val, iter->next, nullptr);
+      iter->next = new_node;
+      iter = new_node->next;
+    }
+
+    // Stage 2: Assigns the random field in the copied list
+    iter = head;
+    while(iter) {
+      if (iter->random) {
+        iter->next->random = iter->random->next;
+      }
+      iter = iter->next->next;
+    }
+
+    // Stage 3: Reverts the original list, and assigns the next field of the copied list
+    iter = head;
+    auto new_list_head = iter->next;
+    while(iter->next) {
+      auto temp = iter->next;
+      iter->next = temp->next;
+      iter = temp;
+    }
+    return new_list_head;
+  }  
 };
 
 using ptr2copyRandomList = Node* (Solution::*)(Node*);
@@ -65,8 +97,9 @@ void test(ptr2copyRandomList pfcn, const char* pfcn_name) {
 int main() {
   vector<testFuncsInfo> func_array = {
     FUNC_DEF(&Solution::copyRandomList)
+    FUNC_DEF(&Solution::copyRandomList2)
   };
   for(auto&& func : func_array) {
     test(func.pfcn, func.pfcn_name);
-  }  
+  }
 }
