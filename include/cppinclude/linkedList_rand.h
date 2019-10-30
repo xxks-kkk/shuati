@@ -8,24 +8,23 @@ class Node
 {
 public:
   int val;
-  Node *next;
-  Node *random;
+  std::shared_ptr<Node> next;
+  std::shared_ptr<Node> random;
 
   Node() {}
-  Node(int _val, Node *_next, Node *_random) : val(_val), next(_next), random(_random) {}
-// private:
-//   std::unique_ptr<Node> node;
+  Node(int _val, std::shared_ptr<Node> _next, std::shared_ptr<Node> _random) :
+    val(_val), next(_next), random(_random) {}
 };
 
 class LinkedListRandom
 {
 public:
   // transform the json representation of linked list into the linked list
-  static Node *list2list(std::string rawJson);
+  static std::shared_ptr<Node> list2list(const std::string &rawJson);
   // transform a linked list to the json representation of linked list
-  static std::string printList(Node *head);
+  static std::string printList(const std::shared_ptr<Node> &head);
   // delete the linked list
-  static void freeList(Node *&head);
+  static void freeList(std::shared_ptr<Node>& head);
 };
 
 #endif

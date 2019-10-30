@@ -4,8 +4,8 @@
 #include <unordered_map>
 
 // transform the json representation of linked list into the linked list
-Node *
-LinkedListRandom::list2list(std::string rawJson)
+std::shared_ptr<Node>
+LinkedListRandom::list2list(const std::string &rawJson)
 {
   // parse the json first
   const int rawJsonLength = static_cast<int>(rawJson.length());
@@ -22,7 +22,8 @@ LinkedListRandom::list2list(std::string rawJson)
   std::unordered_map<int, Node *> m;  //<id, Node corresponding with id>
   std::unordered_map<Node *, int> m3; //<Node, the id this Node's random ptr points to>
   std::queue<Json::Value> q;
-  Node *head = new Node(0, nullptr, nullptr);
+  //Node *head = new Node(0, nullptr, nullptr);
+  std::shared_ptr<Node> head = std::make_shared<Node>(0, nullptr, nullptr);
   auto curr = head;
   q.push(root);
   while (!q.empty())
@@ -32,9 +33,10 @@ LinkedListRandom::list2list(std::string rawJson)
     int id = std::stoi(node["$id"].asString());
     int val = node["val"].asInt();
     int ref = std::stoi(node["random"]["$ref"].asString());
-    curr->next = new Node(val, nullptr, nullptr);
-    m3[curr->next] = ref;
-    m[id] = curr->next;
+    //curr->next = new Node(val, nullptr, nullptr);
+    curr->next = std::make_shared<Node>(val, nullptr, nullptr);
+    m3[(curr->next).get()] = ref;
+    m[id] = (curr->next).get();
     if (!node["next"].isNull())
       q.push(node["next"]);
     curr = curr->next;
@@ -43,14 +45,14 @@ LinkedListRandom::list2list(std::string rawJson)
   curr = head->next;
   while (curr)
   {
-    curr->random = m[m3[curr]];
+    curr->random = std::shared_ptr<Node>(m[m3[curr.get()]]);
     curr = curr->next;
   }
   return head->next;
 }
 
 Json::Value
-printListHelper(Node *head)
+printListHelper(const std::shared_ptr<Node> &head)
 {
   Json::Value root;
   if (head == nullptr)
@@ -91,23 +93,23 @@ printListHelper(Node *head)
 
 // transform a linked list to the json representation of linked list
 std::string
-LinkedListRandom::printList(Node *head)
+LinkedListRandom::printList(const std::shared_ptr<Node> &head)
 {
   // build JSON DOM
   Json::Value root = printListHelper(head);
   Json::StreamWriterBuilder builder;
   builder["indentation"] = ""; // JSON document written in one line
   const std::string json_file = Json::writeString(builder, root);
-  return json_file; 
+  return json_file;
 }
 
 // delete the linked list
-void LinkedListRandom::freeList(Node *&head)
+void LinkedListRandom::freeList(std::shared_ptr<Node> &head)
 {
-  if (head == nullptr)
-  {
-    return;
-  }
-  LinkedListRandom::freeList(head->next);
-  delete (head);
+  // if (head == nullptr)
+  // {
+  //   return;
+  // }
+  // LinkedListRandom::freeList(head->next);
+  // delete head;
 }
