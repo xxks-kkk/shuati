@@ -19,7 +19,7 @@ public:
     return res;
   }
 private:
-  string longestPalindromeHelper(string s, int left, int right) {
+  string longestPalindromeHelper(const string& s, int left, int right) {
     string res = "";
     while(left >= 0 && right < s.length() && s[left] == s[right]) {
       if (left == right) res += s[right];
