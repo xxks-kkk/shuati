@@ -83,32 +83,36 @@ add_executable(25
         include/cppinclude/linkedList.h)
 
 add_executable(27
-        leetcode/27-RemoveElement/removeElement.cc)
+  leetcode/27-RemoveElement/removeElement.cc)
 
 add_executable(30
-        leetcode/30-SubstringwithConcatenationofAllWords/substringwithConcatenationofAllWords.cc)
+  leetcode/30-SubstringwithConcatenationofAllWords/substringwithConcatenationofAllWords.cc)
 
 add_executable(32
-        leetcode/32-LongestValidParentheses/longestValidParentheses.cc)
+  leetcode/32-LongestValidParentheses/longestValidParentheses.cc)
 
 add_executable(35
-        leetcode/35-SearchInsertPosition/searchInsertPosition.cc)
+  leetcode/35-SearchInsertPosition/searchInsertPosition.cc)
 
 add_executable(37
-        leetcode/37-SudokuSolver/sudokuSolver.cc)
+  leetcode/37-SudokuSolver/sudokuSolver.cc)
 
 add_executable(39
-        leetcode/39-CombinationSum/combinationSum.cc)
+  leetcode/39-CombinationSum/combinationSum.cc)
   
 add_executable(42
-        leetcode/42-TrappingRainWater/trappingRainWater.cc)
+  leetcode/42-TrappingRainWater/trappingRainWater.cc)
 
 add_executable(53
-        leetcode/53-MaximumSubarray/maximumSubarray.cc)
+  leetcode/53-MaximumSubarray/maximumSubarray.cc)
 
 add_executable(54
-        leetcode/54-SpiralMatrix/spiralMatrix.cc)
+  leetcode/54-SpiralMatrix/spiralMatrix.cc)
 
+add_executable(56
+  leetcode/56-MergeIntervals/mergeIntervals.cpp
+  include/cppinclude/cpputility.h)
+      
 add_executable(62
   leetcode/62-UniquePaths/uniquePaths.cc)
 
