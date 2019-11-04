@@ -42,32 +42,36 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/cmake-build-debug)
 include_directories(leetcode include/cppinclude include include/jsoncpp)
 
 add_executable(2
-        leetcode/2-AddTwoNumbers/addTwoNumbers.cc
-        include/cppinclude/linkedList.cc)
+  leetcode/2-AddTwoNumbers/addTwoNumbers.cc
+  include/cppinclude/linkedList.cc)
 
 add_executable(4
-        leetcode/4-MedianofTwoSortedArrays/medianofTwoSortedArrays.cc)
+  leetcode/4-MedianofTwoSortedArrays/medianofTwoSortedArrays.cc)
 
+add_executable(5
+  leetcode/5-LongestPalindromicSubstring/longestPalindromicSubstring.cc
+  include/cppinclude/cpputility.h)
+     
 add_executable(9
-        leetcode/9-PalindromeNumber/palindromeNumber.cc)
+  leetcode/9-PalindromeNumber/palindromeNumber.cc)
 
 add_executable(10
-        leetcode/10-RegularExpressionMatching/regularExpressionMatching.cc)
+  leetcode/10-RegularExpressionMatching/regularExpressionMatching.cc)
 
 add_executable(14
-        leetcode/14-LongestCommonPrefix/longestCommonPrefix.cc
-        include/cppinclude/trie.h
-        include/cppinclude/trie.cc)
+  leetcode/14-LongestCommonPrefix/longestCommonPrefix.cc
+  include/cppinclude/trie.h
+  include/cppinclude/trie.cc)
 
 add_executable(20
-        leetcode/20-ValidParentheses/validParentheses.cc)
+  leetcode/20-ValidParentheses/validParentheses.cc)
 
 add_executable(21
-        leetcode/21-MergeTwoSortedList/mergeTwoSortedList.c
-        leetcode/cinclude/linkedlist.c)
+  leetcode/21-MergeTwoSortedList/mergeTwoSortedList.c
+  leetcode/cinclude/linkedlist.c)
 
 add_executable(22
-        leetcode/22-GenerateParentheses/generateParentheses.cc)
+  leetcode/22-GenerateParentheses/generateParentheses.cc)
       
 add_executable(23
         leetcode/23-MergekSortedLists/mergekSortedLists.cc
