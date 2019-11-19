@@ -91,6 +91,10 @@ add_executable(30
 add_executable(32
   leetcode/32-LongestValidParentheses/longestValidParentheses.cc)
 
+add_executable(33
+  leetcode/33-SearchInRotatedSortedArray/searchInRotatedSortedArray.cc
+  include/cppinclude/cpputility.h)
+
 add_executable(35
   leetcode/35-SearchInsertPosition/searchInsertPosition.cc)
 
