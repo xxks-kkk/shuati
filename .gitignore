@@ -30,3 +30,4 @@ target
 .idea-python
 go.test
 venv
+target_list.txt
