@@ -6,6 +6,7 @@ matrix:
       compiler: gcc
       os: osx
       script:
+        - chmod 755 testall.sh
         - ./testall.sh
 
     - language: rust
