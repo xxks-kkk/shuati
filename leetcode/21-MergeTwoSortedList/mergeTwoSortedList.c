@@ -22,7 +22,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-#include "cinclude/linkedlist.h"
+#include "linkedlist.h"
 
 struct ListNode *
 mergeTwoLists(struct ListNode *l1, struct ListNode *l2)

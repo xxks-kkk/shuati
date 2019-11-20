@@ -6,10 +6,15 @@ matrix:
       compiler: gcc
       os: osx
       before_script:
-       - cmake .
+        - cmake .
+      env:
+        - BLD_DIR=$(pwd)/cmake-build-debug
       script:
-       - make all
-       - "for a in $(ls | grep '^[0-9]*$'); do ./$a; done"
+        - make all
+        - cd $BLD_DIR/leetcode/
+        - "for a in $(ls | grep '^[0-9]*$'); do ./$a; done"
+        - cd $BLD_DIR/misc/
+        - "for a in $(ls | grep '^[0-9]*$'); do ./$a; done"
 
     - language: rust
       rust: nightly

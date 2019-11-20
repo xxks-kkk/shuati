@@ -1,4 +1,4 @@
-#include "cinclude/linkedlist.h"
+#include "linkedlist.h"
 
 // Given an array, convert it into the linked list
 struct ListNode *
