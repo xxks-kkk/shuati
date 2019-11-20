@@ -45,3 +45,4 @@ set(INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 
 add_subdirectory(leetcode)
 add_subdirectory(misc)
+add_subdirectory(hackerrank)
