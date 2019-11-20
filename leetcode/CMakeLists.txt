@@ -179,8 +179,8 @@ add_executable(138
   138-CopyListWithRandomPointer/copyListWithRandomPointer.cc
   ${INCLUDE_DIR}/cppinclude/linkedList_rand.cc
   ${INCLUDE_DIR}/cppinclude/cpputility.h
-  ${INCLUDE_DIR}/jsoncpp/jsoncpp.cpp)
-target_include_directories(138 PRIVATE ${INCLUDE_DIR}/cppinclude ${INCLUDE_DIR}/jsoncpp)
+  ${THIRD_PARTY_INCLUDE_DIR}/jsoncpp/jsoncpp.cpp)
+target_include_directories(138 PRIVATE ${INCLUDE_DIR}/cppinclude ${THIRD_PARTY_INCLUDE_DIR}/jsoncpp)
 
 add_executable(140
   140-WordBreakII/wordBreakII.cc)

@@ -42,6 +42,9 @@ set(CMAKE_BUILD_DIR ${PROJECT_SOURCE_DIR}/cmake-build-debug)
 
 # Specify the root of the include directory
 set(INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
+set(THIRD_PARTY_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/third-party)
+
+# Specify the CMakeModules dir
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/CMakeModules)
 
 include(Macros)
