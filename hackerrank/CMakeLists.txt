@@ -3,8 +3,8 @@ project(shuati/leetcode)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BUILD_DIR}/hackerrank)
 
 # For batch test purpose (see testall.sh)
-file(WRITE target_list.txt
-  "IPAddressValidation\n")
+write_targets_to_file(target_list.txt
+  IPAddressValidation)
 configure_file(target_list.txt target_list.txt COPYONLY)
 
 configure_file(IPAddressValidation/input001.txt input001.txt COPYONLY)
