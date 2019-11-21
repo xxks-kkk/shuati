@@ -23,7 +23,10 @@ def test_leetcode():
         if p.match(file):
             print("test: {}".format(file))
             subprocess.run(
-                [os.path.join(exec_dir, file)], check=True, capture_output=True
+                [os.path.join(exec_dir, file)],
+                check=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
             )
     print("leetcode all PASS")
 
@@ -40,7 +43,10 @@ def test_misc():
         if p.match(file):
             print("test: {}".format(file))
             subprocess.run(
-                [os.path.join(exec_dir, file)], check=True, capture_output=True
+                [os.path.join(exec_dir, file)],
+                check=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
             )
     print("misc all PASS")
 
@@ -57,7 +63,12 @@ def test_hackerrank():
         binary = [line.rstrip("\n") for line in f]
         for b in binary:
             print("test: {}".format(b))
-            subprocess.run([os.path.join(exec_dir, b)], check=True, capture_output=True)
+            subprocess.run(
+                [os.path.join(exec_dir, b)],
+                check=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+            )
     print("hackerrank all PASS")
 
 
