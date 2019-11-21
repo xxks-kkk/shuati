@@ -356,6 +356,7 @@ add_executable(285
   ${INCLUDE_DIR}/cinclude/bst.c)
 target_include_directories(285 PRIVATE ${INCLUDE_DIR}/cinclude)
 
+configure_file(289-GameOfLife/input.txt input289.txt COPYONLY)
 add_executable(289
   289-GameOfLife/gameOfLife.cc
   ${INCLUDE_DIR}/cppinclude/cpputility.cc)

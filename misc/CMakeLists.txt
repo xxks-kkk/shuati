@@ -17,6 +17,7 @@ add_executable(002
 add_executable(003
   ReformattingDates/reformattingDates.cc)
 
+configure_file(MaximizingProfitFromStocks/input.txt input004.txt COPYONLY)
 add_executable(004
   MaximizingProfitFromStocks/maximizingProfitFromStocks.cc)
 

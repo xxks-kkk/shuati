@@ -181,5 +181,5 @@ main()
     test( pfcn );
 
     Solution2 sol;
-    sol.gameOfLife("/Users/zeyuan/Documents/projects/shuati/leetcode/289-GameOfLife/input.txt", "output.txt");
+    sol.gameOfLife("input289.txt", "output.txt");
 }
