@@ -48,8 +48,17 @@ def test_misc():
 def test_hackerrank():
     """
     Test generated binary of hackerrank/
+
+    We parse 'target_list.txt' file for the list of binaries, which is written by CMake
     """
-    pass
+    exec_dir = os.path.join(BLD_DIR, "hackerrank")
+    os.chdir(exec_dir)
+    with open("target_list.txt") as f:
+        binary = [line.rstrip("\n") for line in f]
+        for b in binary:
+            print("test: {}".format(b))
+            subprocess.run([os.path.join(exec_dir, b)], check=True, capture_output=True)
+    print("hackerrank all PASS")
 
 
 def testall():
