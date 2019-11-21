@@ -5,6 +5,8 @@ matrix:
     - language:
         - cpp
         - python3
+      python:
+        - "3.7"
       compiler: gcc
       os: osx
       script:
