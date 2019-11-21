@@ -2,12 +2,13 @@ sudo: false
 dist: trusty
 matrix:
   include:
-    - language: cpp
+    - language:
+        - cpp
+        - python3
       compiler: gcc
       os: osx
       script:
-        - chmod 755 testall.sh
-        - ./testall.sh
+        - python3 testall.py
 
     - language: rust
       rust: nightly
