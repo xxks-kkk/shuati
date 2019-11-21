@@ -1,7 +1,7 @@
 #ifndef BST_H
 #define BST_H
 
-#include "cinclude/shared_headers.h"
+#include "shared_headers.h"
 
 struct TreeNode
 {

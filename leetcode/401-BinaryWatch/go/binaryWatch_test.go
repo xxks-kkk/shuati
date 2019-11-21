@@ -1,7 +1,7 @@
 package binaryWatch
 
 import (
-	"github.com/xxks-kkk/shuati/leetcode/goinclude"
+	"github.com/xxks-kkk/shuati/include/goinclude"
 	"testing"
 )
 

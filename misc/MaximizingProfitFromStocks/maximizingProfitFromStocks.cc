@@ -70,7 +70,7 @@ private:
 
 void test()
 {
-    string inputFile = "/Users/zeyuan/Documents/projects/shuati/misc/MaximizingProfitFromStocks/input.txt";
+    string inputFile = "input004.txt";
     Solution sol;
     sol.maxProfit(inputFile);
 }

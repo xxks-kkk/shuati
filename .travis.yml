@@ -2,14 +2,13 @@ sudo: false
 dist: trusty
 matrix:
   include:
-    - language: cpp
+    - language:
+        - cpp
+        - python3
       compiler: gcc
       os: osx
-      before_script:
-       - cmake .
       script:
-       - make all
-       - "for a in $(ls | grep '^[0-9]*$'); do ./$a; done"
+        - python3 testall.py
 
     - language: rust
       rust: nightly

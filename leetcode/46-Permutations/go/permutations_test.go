@@ -3,7 +3,7 @@ package permutations
 import (
 	"errors"
 	"fmt"
-	"github.com/xxks-kkk/shuati/leetcode/goinclude"
+	"github.com/xxks-kkk/shuati/include/goinclude"
 	"sync"
 	"testing"
 )

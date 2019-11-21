@@ -8,5 +8,5 @@ int main() {
   printf( "%c\n", *s );        // 1   <- '1' as char value
   printf( "%c\n", *(s + 1) );  // 2   <- '2' as char value
   printf( "%s\n", s );         // 12345
-  printf( "%s\n", *s );        //
+  //printf( "%s\n", *s );      // Seg fault
 }

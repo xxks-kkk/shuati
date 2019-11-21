@@ -1,4 +1,4 @@
-#include "cinclude/bst.h"
+#include "bst.h"
 
 /* Example BST:
  *
