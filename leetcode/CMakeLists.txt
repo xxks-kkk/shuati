@@ -1,11 +1,16 @@
 project(shuati/leetcode)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BUILD_DIR}/leetcode)
+set(CMAKE_JAVA_TARGET_OUTPUT_DIR ${CMAKE_BUILD_DIR}/leetcode/Java)
+
+add_jar(1_JAVA ${PROJECT_SOURCE_DIR}/1-TwoSum/TwoSum.java)
+add_test(NAME TwoSum.java COMMAND ${Java_JAVA_EXECUTABLE} -cp ${CMAKE_JAVA_TARGET_OUTPUT_DIR}/1_JAVA.jar TwoSum)
 
 add_executable(2
   2-AddTwoNumbers/addTwoNumbers.cc
   ${INCLUDE_DIR}/cppinclude/linkedList.cc)
 target_include_directories(2 PRIVATE ${INCLUDE_DIR}/cppinclude)
+add_test(NAME addTwoNumbers.cc COMMAND 2)
 
 add_executable(4
   4-MedianofTwoSortedArrays/medianofTwoSortedArrays.cc)

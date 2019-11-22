@@ -8,7 +8,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Always use libc++ on Clang
 include(CheckCXXSourceRuns)
- macro(CHECK_CXX_COMPILER_AND_LINKER_FLAGS _RESULT _CXX_FLAGS _LINKER_FLAGS) 
+macro(CHECK_CXX_COMPILER_AND_LINKER_FLAGS _RESULT _CXX_FLAGS _LINKER_FLAGS) 
    set(CMAKE_REQUIRED_FLAGS ${_CXX_FLAGS}) 
    set(CMAKE_REQUIRED_LIBRARIES ${_LINKER_FLAGS}) 
    set(CMAKE_REQUIRED_QUIET TRUE) 
@@ -35,6 +35,13 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
      message(STATUS "shuati: NOT using libc++.") 
    endif() 
 endif()
+
+# Setup Java
+find_package(Java REQUIRED COMPONENTS Development)
+set(CMAKE_JAVA_COMPILE_FLAGS "-g")
+include(UseJava)
+
+include(CTest)
 
 # Specify the build directory
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/cmake-build-debug)
