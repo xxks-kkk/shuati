@@ -6,11 +6,11 @@ using namespace std;
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-      // invariant:
+      // keep the following invariant during the partitioning:
       // bottom: [0, smaller)
       // equal: [smaller, equal)
       // unclassified: [equal, larger)
-      // larger: [larger, nums.size())
+      // top: [larger, nums.size())
       int smaller = 0, equal = 0, larger = nums.size();
       int pivot = 1;
       while (equal < larger) {
