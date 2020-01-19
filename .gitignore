@@ -31,3 +31,4 @@ target
 go.test
 venv
 target_list.txt
+env/

@@ -95,6 +95,12 @@ target_include_directories(56 PRIVATE ${INCLUDE_DIR}/cppinclude)
 add_executable(62
   62-UniquePaths/uniquePaths.cc)
 
+add_executable(75
+  75-SortColors/sortColors.cc
+  ${INCLUDE_DIR}/cppinclude/cpputility.h)
+target_include_directories(75 PRIVATE ${INCLUDE_DIR}/cppinclude)
+add_test(NAME sortColors.cc COMMAND 75)
+
 add_executable(78
   78-Subsets/subsets.cc)
 
