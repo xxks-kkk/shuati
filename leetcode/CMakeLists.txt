@@ -21,6 +21,10 @@ add_executable(5
   ${INCLUDE_DIR}/cppinclude/cpputility.h)
 target_include_directories(5 PRIVATE ${INCLUDE_DIR}/cppinclude)
 
+add_executable(8
+  8-StringToInteger/stringToInteger.cc)
+add_test(NAME stringToInteger.cc COMMAND 8)
+
 add_executable(9
   9-PalindromeNumber/palindromeNumber.cc)
 
