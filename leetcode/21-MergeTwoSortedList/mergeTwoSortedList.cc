@@ -10,6 +10,7 @@
 #include "cpputility.h"
 #include "linkedList.h"
 #include <vector>
+#include <memory>
 
 using namespace std;
 
@@ -17,39 +18,19 @@ class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
       ListNode* sentinel = new ListNode(0);
-      auto ptr = sentinel;
-      auto cur1 = l1, cur2 = l2;
-      while(cur1 && cur2) {
-        if (cur1->val < cur2->val) {
-          ListNode* tmp = cur1->next;
-          ptr->next = cur1;
-          cur1->next = nullptr;
-          ptr = cur1;
-          cur1 = tmp;
-        } else if (cur1->val == cur2->val) {
-          ListNode* tmp1 = cur1->next;
-          ListNode* tmp2 = cur2->next;
-          ptr->next = cur1;
-          ptr = cur1;
-          ptr->next = cur2;
-          ptr = cur2;
-          cur1 = tmp1;
-          cur2 = tmp2;
-        } else {
-          ListNode* tmp = cur2->next;
-          ptr->next = cur2;
-          cur2->next = nullptr;
-          ptr = cur2;
-          cur2 = tmp;
-        }
+      auto tail = sentinel;
+      while(l1 && l2) {
+        appendNode(l1->val < l2->val ? &l1 : &l2, &tail);
       }
-      if (cur1) {
-        ptr->next = cur1;
-      } else if (cur2) {
-        ptr->next = cur2;
-      }
+      tail->next = (l1 ? l1 : l2);
       return sentinel->next;
     }
+private:
+  void appendNode(ListNode** node, ListNode** tail) {
+    (*tail)->next = *node;
+    *tail = *node;
+    *node = (*node)->next;
+  }
 };
 
 using ptr2mergeTwoLists = ListNode* (Solution::*)(ListNode*, ListNode*);
