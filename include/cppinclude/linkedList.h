@@ -18,14 +18,16 @@ struct ListNode
 class LinkedList
 {
 public:
-    LinkedList();
-    ~LinkedList();
-    // transform a vector to a corresponding linked list
-    ListNode* list2list(const std::vector<int> & nums);
-    // transform a linked list to a vector
-    std::vector<int> printList(ListNode* head);
-    // delete the linked list
-    void freeList(ListNode *&head);
+  LinkedList();
+  ~LinkedList();
+  // transform a vector to a corresponding linked list
+  ListNode* list2list(const std::vector<int> & nums);
+  // transform a linked list to a vector
+  std::vector<int> printList(ListNode* head);
+  // delete the linked list
+  void freeList(ListNode *&head);
+  // compare two lists to see if they are equal;
+  bool cmpTwoList(ListNode* l1, ListNode* l2);
 private:
     class Impl;
     std::unique_ptr<Impl> pImpl;

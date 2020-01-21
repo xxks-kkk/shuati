@@ -9,6 +9,7 @@ matrix:
       os: osx
       script:
         - python3 testall.py
+        - cd cmake-build-debug && ctest
 
     - language: rust
       rust: nightly
