@@ -41,6 +41,13 @@ add_executable(21
   ${INCLUDE_DIR}/cinclude/linkedlist.c)
 target_include_directories(21 PRIVATE ${INCLUDE_DIR}/cinclude)
 
+add_executable(21-cpp
+  21-MergeTwoSortedList/mergeTwoSortedList.cc
+  ${INCLUDE_DIR}/cppinclude/linkedList.cc
+  ${INCLUDE_DIR}/cppinclude/cpputility.cc)
+target_include_directories(21-cpp PRIVATE ${INCLUDE_DIR}/cppinclude)
+add_test(NAME mergeTwoSortedList.cc COMMAND make 21-cpp)
+
 add_executable(22
   22-GenerateParentheses/generateParentheses.cc)
       

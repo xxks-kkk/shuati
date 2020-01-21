@@ -42,6 +42,20 @@ public:
         freeList(head->next);
         delete (head);
     }
+
+  bool cmpTwoList(ListNode *l1, ListNode *l2) {
+    auto cur1 = l1, cur2 = l2;
+    while (cur1 && cur2) {
+      if (cur1->val != cur2->val) {
+        return false;
+      }
+      cur1 = cur1->next;
+      cur2 = cur2->next;
+    }
+    if (cur1 != nullptr || cur2 != nullptr)
+      return false;
+    return true;
+  }
 };
 
 LinkedList::LinkedList(): pImpl{new Impl}{};
@@ -64,6 +78,12 @@ void
 LinkedList::freeList(ListNode *&head)
 {
     pImpl->freeList(head);
+}
+
+bool
+LinkedList::cmpTwoList(ListNode* l1, ListNode* l2)
+{
+  return pImpl->cmpTwoList(l1, l2);
 }
 
 
