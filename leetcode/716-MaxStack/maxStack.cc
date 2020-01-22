@@ -12,50 +12,45 @@ public:
 
   void push(int x)
   {
-    element_with_cached_max_.emplace(ElementWithCachedMax{x, element_with_cached_max_.empty() ? x : peekMax()});
+    int max = maxStack.empty()? x : maxStack.top();
+    maxStack.emplace(max > x ? max: x);
+    stk.emplace(x);
   }
 
   int pop()
   {
-    int pop_element = element_with_cached_max_.top().element;
-    element_with_cached_max_.pop();
+    int pop_element = stk.top();
+    maxStack.pop();
+    stk.pop();
     return pop_element;
   }
 
   int top()
   {
-    return element_with_cached_max_.top().element;
+    return stk.top();
   }
 
   int peekMax()
   {
-    return element_with_cached_max_.top().max;
+    return maxStack.top();
   }
 
   int popMax()
   {
-    stack<ElementWithCachedMax> buffer;
-    while (element_with_cached_max_.top().element != element_with_cached_max_.top().max)
-    {
-      buffer.emplace(element_with_cached_max_.top());
-      element_with_cached_max_.pop();
-    }
-    int pop_max = element_with_cached_max_.top().element;
-    element_with_cached_max_.pop();
-    while (!buffer.empty())
-    {
-      element_with_cached_max_.emplace(buffer.top());
+    int max = peekMax();
+    stack<int> buffer;
+    while(top() != max) buffer.emplace(pop());
+    pop();
+    while(!buffer.empty()) {
+      push(buffer.top());
       buffer.pop();
     }
-    return pop_max;
+    return max;
   }
 
 private:
-  struct ElementWithCachedMax
-  {
-    int element, max;
-  };
-  stack<ElementWithCachedMax> element_with_cached_max_;
+  stack<int> stk;
+  stack<int> maxStack;
 };
 
 void test() {
