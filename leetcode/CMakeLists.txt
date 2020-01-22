@@ -50,7 +50,7 @@ add_executable(21-cpp
   ${INCLUDE_DIR}/cppinclude/linkedList.cc
   ${INCLUDE_DIR}/cppinclude/cpputility.cc)
 target_include_directories(21-cpp PRIVATE ${INCLUDE_DIR}/cppinclude)
-add_test(NAME mergeTwoSortedList.cc COMMAND make 21-cpp)
+add_test(NAME mergeTwoSortedList.cc COMMAND 21-cpp)
 
 add_executable(22
   22-GenerateParentheses/generateParentheses.cc)
@@ -561,6 +561,10 @@ target_include_directories(675 PRIVATE ${INCLUDE_DIR}/cppinclude)
         
 add_executable(704
   704-BinarySearch/binarySearch.cc)
+
+add_executable(716
+  716-MaxStack/maxStack.cc)
+add_test(NAME maxStack.cc COMMAND 716)
 
 add_executable(739
   739-DailyTemperatures/dailyTemperatures.cc)
