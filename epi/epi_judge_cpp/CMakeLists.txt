@@ -203,7 +203,10 @@ add_executable(sort_almost_sorted_array sort_almost_sorted_array.cc)
 add_executable(sort_increasing_decreasing_array sort_increasing_decreasing_array.cc)
 add_executable(sort_list sort_list.cc)
 add_executable(sorted_array_remove_dups sorted_array_remove_dups.cc)
-add_executable(sorted_arrays_merge sorted_arrays_merge.cc)
+
+add_executable(sorted_arrays_merge sorted_arrays_merge.cc) # EPI 10.1
+add_test(NAME sorted_arrays_merge COMMAND sorted_arrays_merge)
+
 add_executable(sorted_list_to_bst sorted_list_to_bst.cc)
 add_executable(sorted_lists_merge sorted_lists_merge.cc)
 add_executable(spiral_ordering spiral_ordering.cc)
