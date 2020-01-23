@@ -29,6 +29,9 @@
 //    Return false.
 
 #include "bt.h"
+#include "cpputility.h"
+
+using namespace std;
 
 struct BalancedStatusWithHeight
 {
@@ -68,16 +71,34 @@ private:
     }
 };
 
+using ptr2isBalanced = bool (Solution::*)(TreeNode*);
+
+void test(ptr2isBalanced pfcn) {
+  Solution sol;
+  BT bt;
+  struct testCase {
+    vector<int> tree;
+    bool expected;
+  };
+  vector<testCase> test_cases = {
+    { {3,9,20,NULLPTR,NULLPTR,15,7}, true},
+    {{1,2,2,3,3,NULLPTR,NULLPTR,4,4}, false}
+  };
+  for (auto&& test_case: test_cases) {
+    auto root = bt.list2Tree(test_case.tree);
+    auto got = (sol.*pfcn)(root);
+    bt.freeTree(root);
+    if (got != test_case.expected) {
+      printf("%s returns %s\n",
+             CPPUtility::oneDVectorStr(test_case.tree).c_str(),
+             got == true ? "true" : "false");
+      assert(false);
+    }
+  }
+}
+
 int main()
 {
-    BT bt;
-    Solution sol;
-    std::vector<int> nums = {3,9,20,NULLPTR,NULLPTR,15,7};
-    auto root = bt.list2Tree(nums);
-    assert(sol.isBalanced(root));
-    bt.freeTree(root);
-    nums = {1,2,2,3,3,NULLPTR,NULLPTR,4,4};
-    root = bt.list2Tree(nums);
-    assert(!sol.isBalanced(root));
-    bt.freeTree(root);
+  ptr2isBalanced pfcn = &Solution::isBalanced;
+  test(pfcn);
 }

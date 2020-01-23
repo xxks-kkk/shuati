@@ -173,8 +173,10 @@ target_include_directories(108 PRIVATE ${INCLUDE_DIR}/cppinclude)
 
 add_executable(110
   110-BalancedBinaryTree/balancedBinaryTree.cc
-  ${INCLUDE_DIR}/cppinclude/bt.cc)
+  ${INCLUDE_DIR}/cppinclude/bt.cc
+  ${INCLUDE_DIR}/cppinclude/cpputility.cc)
 target_include_directories(110 PRIVATE ${INCLUDE_DIR}/cppinclude)
+add_test(NAME balancedBinaryTree.cc COMMAND 110)
 
 add_executable(121
   121-BestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cc)
