@@ -80,6 +80,12 @@ add_executable(33
   ${INCLUDE_DIR}/cppinclude/cpputility.h)
 target_include_directories(33 PRIVATE ${INCLUDE_DIR}/cppinclude)
 
+add_executable(34
+  34-SearchForARange/searchForARange.cc
+  ${INCLUDE_DIR}/cppinclude/cpputility.h)
+target_include_directories(34 PRIVATE ${INCLUDE_DIR}/cppinclude)
+add_test(NAME searchForARange.cc COMMAND 34)
+
 add_executable(35
   35-SearchInsertPosition/searchInsertPosition.cc)
 
