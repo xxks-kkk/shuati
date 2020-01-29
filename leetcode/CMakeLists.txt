@@ -580,6 +580,12 @@ add_executable(739
 add_executable(784
   784-LetterCasePermutation/letterCasePermutation.cc)
 
+add_executable(785
+  785-IsGraphBipartite/isGraphBipartite.cc
+  ${INCLUDE_DIR}/cppinclude/cpputility.h)
+target_include_directories(785 PRIVATE ${INCLUDE_DIR}/cppinclude)
+add_test(NAME isGraphBipartite.cc  COMMAND 785)
+
 add_executable(796
   796-RotateString/rotateString.cc)
 
