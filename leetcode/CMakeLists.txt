@@ -604,6 +604,12 @@ add_executable(842
 add_executable(977
   977-SquaresofaSortedArray/squaresofaSortedArray.cc)
 
+add_executable(987
+  987-VerticalOrderTraversalofaBinaryTree/verticalOrderTraversalofaBinaryTree.cc
+  ${INCLUDE_DIR}/cppinclude/bt.h)
+target_include_directories(987 PRIVATE ${INCLUDE_DIR}/cppinclude)
+add_test(NAME verticalOrderTraversalofaBinaryTree.cc COMMAND 987)
+
 add_executable(1114
   1114-PrintInOrder/printInOrder.cc
   ${INCLUDE_DIR}/cppinclude/mysemaphore.cc)
