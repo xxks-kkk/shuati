@@ -54,7 +54,7 @@ add_test(NAME mergeTwoSortedList.cc COMMAND 21-cpp)
 
 add_executable(22
   22-GenerateParentheses/generateParentheses.cc)
-      
+
 add_executable(23
   23-MergekSortedLists/mergekSortedLists.cc
   ${INCLUDE_DIR}/cppinclude/linkedList.cc)
@@ -94,7 +94,7 @@ add_executable(37
 
 add_executable(39
   39-CombinationSum/combinationSum.cc)
-  
+
 add_executable(42
   42-TrappingRainWater/trappingRainWater.cc)
 
@@ -108,7 +108,7 @@ add_executable(56
   56-MergeIntervals/mergeIntervals.cpp
   ${INCLUDE_DIR}/cppinclude/cpputility.h)
 target_include_directories(56 PRIVATE ${INCLUDE_DIR}/cppinclude)
-      
+
 add_executable(62
   62-UniquePaths/uniquePaths.cc)
 
@@ -131,7 +131,7 @@ target_include_directories(76 PRIVATE ${INCLUDE_DIR}/cppinclude)
 
 add_executable(77
   77-Combinations/combinations.cc)
-      
+
 add_executable(88
   88-MergeSortedArray/mergeSortedArray.cc)
 
@@ -139,7 +139,7 @@ add_executable(95
   95-UniqueBinarySearchTreesII/uniqueBinarySearchTreesII.cc
   ${INCLUDE_DIR}/cppinclude/bt.h)
 target_include_directories(95 PRIVATE ${INCLUDE_DIR}/cppinclude)
-        
+
 add_executable(98
   98-ValidateBinarySearchTree/validateBinarySearchTree.cc
   ${INCLUDE_DIR}/cppinclude/bt.cc)
@@ -282,7 +282,7 @@ add_executable(214
 
 add_executable(216
   216-CombinationSumIII/combinationSumIII.cc)
-      
+
 add_executable(222
   222-CountCompleteTreeNodes/countCompleteTreeNodes.cc
   ${INCLUDE_DIR}/cppinclude/bt.cc)
@@ -293,7 +293,7 @@ add_executable(224
 
 add_executable(225
   225-ImplementStackUsingQueues/implementStackUsingQueues.cc)
-      
+
 add_executable(230
   230-KthSmallestElementinaBST/kthSmallestElementinaBST.cc
   ${INCLUDE_DIR}/cppinclude/bt.cc)
@@ -397,7 +397,7 @@ add_executable(291
 
 add_executable(294
   294-FlipGameII/flipGameII.cc)
-      
+
 add_executable(295
   295-FindMedianfromDataStream/findMedianfromDataStream.cc)
 
@@ -476,7 +476,7 @@ add_executable(403
 
 add_executable(412
   412-FizzBuzz/fizzBuzz.c)
-        
+
 add_executable(414
   414-ThirdMaximumNumber/thirdMaximumNumber.cc)
 
@@ -517,6 +517,12 @@ target_include_directories(505 PRIVATE ${INCLUDE_DIR}/cppinclude)
 
 add_executable(509
   509-FibonacciNumber/fibonacciNumber.cc)
+
+add_executable(525
+        525-ContiguousArray/contiguousArray.cc
+        ${INCLUDE_DIR}/cppinclude/cpputility.h)
+target_include_directories(525 PRIVATE ${INCLUDE_DIR}/cppinclude)
+add_test(NAME contiguousArray.cc  COMMAND 525)
 
 add_executable(535
   535-EncodeandDecodeTinyURL/encodeandDecodeTinyURL.cc)
@@ -566,7 +572,7 @@ add_executable(675
   675-CutOffTreesforGolfEvent/cutOffTreesforGolfEvent.cc
   ${INCLUDE_DIR}/cppinclude/cpputility.h)
 target_include_directories(675 PRIVATE ${INCLUDE_DIR}/cppinclude)
-        
+
 add_executable(704
   704-BinarySearch/binarySearch.cc)
 
