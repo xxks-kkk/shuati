@@ -1,0 +1,195 @@
+{
+    "cited": {
+        "benchmark/neo4j-lubm": [
+            "Hlsch2017OnTP",
+            "LUBM"
+        ],
+        "glossary": [
+            "complete",
+            "silberschatz2019database",
+            "ramakrishnan2000database",
+            "pariskoutris784fall19lec1",
+            "optimalmeettopk2020",
+            "chaudhuri1998overview",
+            "miranker1997query",
+            "abiteboul1995foundations",
+            "TziavelisGR2020",
+            "pariskoutris784fall19lec3",
+            "pariskoutris784fall19lec4",
+            "Bernstein81usingsemi-joins"
+        ],
+        "papers/Angles2017": [
+            "Angles2017",
+            "dewitt2008mapreduce",
+            "neo4j2020",
+            "francis2018cypher",
+            "tinkerpop2020",
+            "dorpinghaus2020optimization",
+            "abiteboul1995foundations",
+            "barcelo2013querying"
+        ],
+        "papers/TziavelisGR2020": [
+            "TziavelisGR2020"
+        ],
+        "papers/bayardo1994optimal": [
+            "bayardo1994optimal"
+        ],
+        "papers/bernstein1981query": [
+            "bernstein1981query"
+        ],
+        "papers/chaudhuri1998overview": [
+            "chaudhuri1998overview",
+            "abiteboul1995foundations",
+            "haas1989extensible",
+            "graefe1987exodus",
+            "graefe1993volcano",
+            "graefe1995cascades"
+        ],
+        "papers/deutsch2019tigergraph": [
+            "deutsch2019tigergraph",
+            "roth1993database",
+            "hellerstein2007architecture",
+            "hong1993optimization",
+            "chang2014hawq",
+            "angles2018g",
+            "valiant2011bridging",
+            "rusu2019depth",
+            "chen1976entity",
+            "hong2012green",
+            "Angles2017",
+            "brin1998can",
+            "wood2012query",
+            "malewicz2010pregel",
+            "low2012distributed",
+            "giraph",
+            "gonzalez2012powergraph",
+            "abiteboul1995foundations"
+        ],
+        "papers/hellerstein2007architecture": [
+            "hellerstein2005anatomy",
+            "hellerstein2007architecture",
+            "selinger1979access",
+            "graefe1990encapsulation"
+        ],
+        "papers/kumar1992algorithms": [
+            "kumar1992algorithms"
+        ],
+        "papers/miranker1997query": [
+            "miranker1997query",
+            "kumar1992algorithms",
+            "bayardo1994optimal",
+            "Bernstein81usingsemi-joins",
+            "Dechter90enhancementschemes",
+            "bayardo1996complexity",
+            "bayardo1996processing",
+            "silberschatz2019database"
+        ],
+        "papers/veldhuizen2012leapfrog": [
+            "veldhuizen2012leapfrog",
+            "ngo2018wcoja",
+            "aref2015design",
+            "kalinsky2016flexible",
+            "grohe2014constraint",
+            "atserias2013size"
+        ],
+        "papers/zaniolo1993negation": [
+            "zaniolo1993negation"
+        ],
+        "research-direction": [
+            "bayardo1994optimal",
+            "silberschatz2019database"
+        ],
+        "systems/systems": [
+            "Angles2017"
+        ],
+        "systems/tigerGraph": [
+            "tigergraph_tigergraph_nodate",
+            "chang2014hawq",
+            "sethi2019presto",
+            "deutsch2019tigergraph",
+            "lee_tigergraph_2018",
+            "noauthor_multigraph_nodate",
+            "noauthor_tigergraph_nodate",
+            "wu2018property",
+            "noauthor_distributed_nodate",
+            "noauthor_gsql_2019",
+            "rusu2019depth",
+            "angles2014linked",
+            "szarnyas2018early",
+            "wu_amazon_2018",
+            "wu_what_2018",
+            "shen_half-terabyte_2018",
+            "dewitt2008mapreduce"
+        ],
+        "systems/virtuoso": [
+            "virtuoso-opensource",
+            "erling2009rdf",
+            "boncz2014advances"
+        ],
+        "topics/conjunctive_queries": [
+            "abiteboul1995foundations"
+        ],
+        "topics/csp": [
+            "kumar1992algorithms",
+            "russell2016artificial",
+            "csp",
+            "dechter1988network"
+        ],
+        "topics/database_theory_preliminary": [
+            "abiteboul1995foundations"
+        ],
+        "topics/indexing": [
+            "complete"
+        ],
+        "topics/linear-programming": [
+            "timroughgardencs261lecture7",
+            "timroughgardencs261lecture8",
+            "strang2016introduction"
+        ],
+        "topics/mapreduce": [
+            "dean2008mapreduce",
+            "dewitt2008mapreduce"
+        ],
+        "topics/mpp": [
+            "ryan_database_2018",
+            "dewitt1990gamma",
+            "hunt2010zookeeper",
+            "chang2014hawq",
+            "dageville2016snowflake",
+            "laurent2020data"
+        ],
+        "topics/query_execution_and_compilation": [
+            "complete",
+            "silberschatz2019database",
+            "emory_database_course"
+        ],
+        "topics/query_optimization": [
+            "silberschatz2019database"
+        ],
+        "topics/relational-model-alice03": [
+            "abiteboul1995foundations"
+        ],
+        "topics/relational_algebra": [
+            "complete"
+        ],
+        "topics/relational_model": [
+            "complete"
+        ],
+        "topics/semijoin": [
+            "silberschatz2019database",
+            "complete",
+            "abiteboul1995foundations"
+        ],
+        "topics/wcoja": [
+            "atserias2013size",
+            "grohe2014constraint",
+            "ngo2018wcoja",
+            "veldhuizen2012leapfrog"
+        ],
+        "topics/yannakakis": [
+            "northeasterpart2",
+            "pariskoutris784fall19lec4",
+            "Bernstein81usingsemi-joins"
+        ]
+    }
+}

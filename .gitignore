@@ -31,4 +31,8 @@ target
 go.test
 venv
 target_list.txt
+build/
 env/
+*.sav.bak
+*.bak
+*.sav
