@@ -1,0 +1,2548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/leetcode/151-ReverseWordsInAString/reverseWordsInAString.py" line="31" mnemonic="0" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="shuati" targetName="438" />
+      <config projectName="shuati" targetName="437" />
+      <config projectName="shuati" targetName="039" />
+      <config projectName="shuati" targetName="56" />
+      <config projectName="shuati" targetName="54" />
+      <config projectName="shuati" targetName="53" />
+      <config projectName="shuati" targetName="283" />
+      <config projectName="shuati" targetName="162" />
+      <config projectName="shuati" targetName="041" />
+      <config projectName="shuati" targetName="040" />
+      <config projectName="shuati" targetName="160" />
+      <config projectName="shuati" targetName="320" />
+      <config projectName="shuati" targetName="045" />
+      <config projectName="shuati" targetName="165" />
+      <config projectName="shuati" targetName="044" />
+      <config projectName="shuati" targetName="285" />
+      <config projectName="shuati" targetName="043" />
+      <config projectName="shuati" targetName="042" />
+      <config projectName="shuati" targetName="443" />
+      <config projectName="shuati" targetName="322" />
+      <config projectName="shuati" targetName="289" />
+      <config projectName="shuati" targetName="047" />
+      <config projectName="shuati" targetName="046" />
+      <config projectName="shuati" targetName="200" />
+      <config projectName="shuati" targetName="207" />
+      <config projectName="shuati" targetName="204" />
+      <config projectName="shuati" targetName="567" />
+      <config projectName="shuati" targetName="842" />
+      <config projectName="shuati" targetName="62" />
+      <config projectName="shuati" targetName="208" />
+      <config projectName="shuati" targetName="609" />
+      <config projectName="shuati" targetName="294" />
+      <config projectName="shuati" targetName="291" />
+      <config projectName="shuati" targetName="210" />
+      <config projectName="shuati" targetName="298" />
+      <config projectName="shuati" targetName="451" />
+      <config projectName="shuati" targetName="297" />
+      <config projectName="shuati" targetName="295" />
+      <config projectName="shuati" targetName="214" />
+      <config projectName="shuati" targetName="213" />
+      <config projectName="shuati" targetName="333" />
+      <config projectName="shuati" targetName="70" />
+      <config projectName="shuati" targetName="337" />
+      <config projectName="shuati" targetName="216" />
+      <config projectName="shuati" targetName="739" />
+      <config projectName="shuati" targetName="977" />
+      <config projectName="shuati" targetName="78" />
+      <config projectName="shuati" targetName="77" />
+      <config projectName="shuati" targetName="76" />
+      <config projectName="shuati" targetName="463" />
+      <config projectName="shuati" targetName="186" />
+      <config projectName="shuati" targetName="460" />
+      <config projectName="shuati" targetName="346" />
+      <config projectName="shuati" targetName="225" />
+      <config projectName="shuati" targetName="224" />
+      <config projectName="shuati" targetName="582" />
+      <config projectName="shuati" targetName="103" />
+      <config projectName="shuati" targetName="344" />
+      <config projectName="shuati" targetName="102" />
+      <config projectName="shuati" targetName="222" />
+      <config projectName="shuati" targetName="101" />
+      <config projectName="shuati" targetName="189" />
+      <config projectName="shuati" targetName="505" />
+      <config projectName="shuati" targetName="108" />
+      <config projectName="shuati" targetName="349" />
+      <config projectName="shuati" targetName="107" />
+      <config projectName="shuati" targetName="347" />
+      <config projectName="shuati" targetName="00" />
+      <config projectName="shuati" targetName="88" />
+      <config projectName="shuati" targetName="509" />
+      <config projectName="shuati" targetName="232" />
+      <config projectName="shuati" targetName="110" />
+      <config projectName="shuati" targetName="230" />
+      <config projectName="shuati" targetName="632" />
+      <config projectName="shuati" targetName="350" />
+      <config projectName="shuati" targetName="236" />
+      <config projectName="shuati" targetName="235" />
+      <config projectName="shuati" targetName="234" />
+      <config projectName="shuati" targetName="238" />
+      <config projectName="shuati" targetName="95" />
+      <config projectName="shuati" targetName="636" />
+      <config projectName="shuati" targetName="99" />
+      <config projectName="shuati" targetName="10" />
+      <config projectName="shuati" targetName="98" />
+      <config projectName="shuati" targetName="14" />
+      <config projectName="shuati" targetName="001" />
+      <config projectName="shuati" targetName="122" />
+      <config projectName="shuati" targetName="121" />
+      <config projectName="shuati" targetName="242" />
+      <config projectName="shuati" targetName="362" />
+      <config projectName="shuati" targetName="240" />
+      <config projectName="shuati" targetName="005" />
+      <config projectName="shuati" targetName="5" />
+      <config projectName="shuati" targetName="004" />
+      <config projectName="shuati" targetName="4" />
+      <config projectName="shuati" targetName="003" />
+      <config projectName="shuati" targetName="366" />
+      <config projectName="shuati" targetName="124" />
+      <config projectName="shuati" targetName="002" />
+      <config projectName="shuati" targetName="2" />
+      <config projectName="shuati" targetName="009" />
+      <config projectName="shuati" targetName="9" />
+      <config projectName="shuati" targetName="008" />
+      <config projectName="shuati" targetName="128" />
+      <config projectName="shuati" targetName="007" />
+      <config projectName="shuati" targetName="403" />
+      <config projectName="shuati" targetName="006" />
+      <config projectName="shuati" targetName="369" />
+      <config projectName="shuati" targetName="647" />
+      <config projectName="shuati" targetName="23" />
+      <config projectName="shuati" targetName="22" />
+      <config projectName="shuati" targetName="21" />
+      <config projectName="shuati" targetName="20" />
+      <config projectName="shuati" targetName="27" />
+      <config projectName="shuati" targetName="25" />
+      <config projectName="shuati" targetName="250" />
+      <config projectName="shuati" targetName="490" />
+      <config projectName="shuati" targetName="1114" />
+      <config projectName="shuati" targetName="012" />
+      <config projectName="shuati" targetName="133" />
+      <config projectName="shuati" targetName="011" />
+      <config projectName="shuati" targetName="253" />
+      <config projectName="shuati" targetName="010" />
+      <config projectName="shuati" targetName="016" />
+      <config projectName="shuati" targetName="412" />
+      <config projectName="shuati" targetName="015" />
+      <config projectName="shuati" targetName="257" />
+      <config projectName="shuati" targetName="014" />
+      <config projectName="shuati" targetName="013" />
+      <config projectName="shuati" targetName="255" />
+      <config projectName="shuati" targetName="019" />
+      <config projectName="shuati" targetName="414" />
+      <config projectName="shuati" targetName="017" />
+      <config projectName="shuati" targetName="138" />
+      <config projectName="shuati" targetName="30" />
+      <config projectName="shuati" targetName="535" />
+      <config projectName="shuati" targetName="811" />
+      <config projectName="shuati" targetName="658" />
+      <config projectName="shuati" targetName="33" />
+      <config projectName="shuati" targetName="32" />
+      <config projectName="shuati" targetName="37" />
+      <config projectName="shuati" targetName="35" />
+      <config projectName="shuati" targetName="39" />
+      <config projectName="shuati" targetName="140" />
+      <config projectName="shuati" targetName="261" />
+      <config projectName="shuati" targetName="260" />
+      <config projectName="shuati" targetName="380" />
+      <config projectName="shuati" targetName="662" />
+      <config projectName="shuati" targetName="023" />
+      <config projectName="shuati" targetName="663" />
+      <config projectName="shuati" targetName="022" />
+      <config projectName="shuati" targetName="784" />
+      <config projectName="shuati" targetName="021" />
+      <config projectName="shuati" targetName="020" />
+      <config projectName="shuati" targetName="141" />
+      <config projectName="shuati" targetName="027" />
+      <config projectName="shuati" targetName="268" />
+      <config projectName="shuati" targetName="301" />
+      <config projectName="shuati" targetName="026" />
+      <config projectName="shuati" targetName="146" />
+      <config projectName="shuati" targetName="025" />
+      <config projectName="shuati" targetName="024" />
+      <config projectName="shuati" targetName="387" />
+      <config projectName="shuati" targetName="145" />
+      <config projectName="shuati" targetName="704" />
+      <config projectName="shuati" targetName="426" />
+      <config projectName="shuati" targetName="305" />
+      <config projectName="shuati" targetName="029" />
+      <config projectName="shuati" targetName="028" />
+      <config projectName="shuati" targetName="669" />
+      <config projectName="shuati" targetName="42" />
+      <config projectName="shuati" targetName="829" />
+      <config projectName="shuati" targetName="030" />
+      <config projectName="shuati" targetName="272" />
+      <config projectName="shuati" targetName="270" />
+      <config projectName="shuati" targetName="034" />
+      <config projectName="shuati" targetName="155" />
+      <config projectName="shuati" targetName="033" />
+      <config projectName="shuati" targetName="675" />
+      <config projectName="shuati" targetName="796" />
+      <config projectName="shuati" targetName="274" />
+      <config projectName="shuati" targetName="032" />
+      <config projectName="shuati" targetName="031" />
+      <config projectName="shuati" targetName="797" />
+      <config projectName="shuati" targetName="273" />
+      <config projectName="shuati" targetName="394" />
+      <config projectName="shuati" targetName="159" />
+      <config projectName="shuati" targetName="038" />
+      <config projectName="shuati" targetName="037" />
+      <config projectName="shuati" targetName="036" />
+      <config projectName="shuati" targetName="278" />
+      <config projectName="shuati" targetName="035" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="67cf7a3f-239e-4d65-92e5-1d45a3a620b9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.idea/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/CMakeFiles/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/shuati$matrixWithKeyAndDoor.coverage" NAME="matrixWithKeyAndDoor Coverage Results" MODIFIED="1521162379801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/MatrixWithKeyAndDoor" />
+    <SUITE FILE_PATH="coverage/shuati$diceSum.coverage" NAME="diceSum Coverage Results" MODIFIED="1519628125967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/DiceSum" />
+    <SUITE FILE_PATH="coverage/shuati$divideTwoIntegers.coverage" NAME="divideTwoIntegers Coverage Results" MODIFIED="1514452548529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/29-DivideTwoIntegers" />
+    <SUITE FILE_PATH="coverage/shuati$climbTheHill.coverage" NAME="climbTheHill Coverage Results" MODIFIED="1537155371538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/ClimbTheHill" />
+    <SUITE FILE_PATH="coverage/shuati$validParentheses.coverage" NAME="validParentheses Coverage Results" MODIFIED="1514379291950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/20-ValidParentheses" />
+    <SUITE FILE_PATH="coverage/shuati$bleedingInk.coverage" NAME="bleedingInk Coverage Results" MODIFIED="1519788721991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/BleedingInk" />
+    <SUITE FILE_PATH="coverage/shuati$longestPalindromicSubstring.coverage" NAME="longestPalindromicSubstring Coverage Results" MODIFIED="1513666840970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring" />
+    <SUITE FILE_PATH="coverage/shuati$permutationSequence.coverage" NAME="permutationSequence Coverage Results" MODIFIED="1515126554211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/60-PermutationSequence" />
+    <SUITE FILE_PATH="coverage/shuati$searchA2DMatrix.coverage" NAME="searchA2DMatrix Coverage Results" MODIFIED="1515467997067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/74-SearchA2DMatrix" />
+    <SUITE FILE_PATH="coverage/shuati$emailProcessing.coverage" NAME="emailProcessing Coverage Results" MODIFIED="1537550739901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/EmailProcessing" />
+    <SUITE FILE_PATH="coverage/shuati$deleteAndEarn.coverage" NAME="deleteAndEarn Coverage Results" MODIFIED="1520717268245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/DeleteAndEarn" />
+    <SUITE FILE_PATH="coverage/shuati$populatingNextRightPointersInEachNodeII.coverage" NAME="populatingNextRightPointersInEachNodeII Coverage Results" MODIFIED="1516541738037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/117-PopulatingNextRightPointersInEachNodeII" />
+    <SUITE FILE_PATH="coverage/shuati$searchForARange_2.coverage" NAME="searchForARange-2 Coverage Results" MODIFIED="1514506094705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/34-SearchForARange" />
+    <SUITE FILE_PATH="coverage/shuati$reverseWordsInAString.coverage" NAME="reverseWordsInAString Coverage Results" MODIFIED="1517002419573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/151-ReverseWordsInAString" />
+    <SUITE FILE_PATH="coverage/shuati$binaryTreeTilt.coverage" NAME="binaryTreeTilt Coverage Results" MODIFIED="1519252096238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/563-BinaryTreeTilt" />
+    <SUITE FILE_PATH="coverage/shuati$rotateList.coverage" NAME="rotateList Coverage Results" MODIFIED="1515208259793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/61-RotateList" />
+    <SUITE FILE_PATH="coverage/shuati$subarraySumEqualsK.coverage" NAME="subarraySumEqualsK Coverage Results" MODIFIED="1521142572490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/560-SubarraySumEqualsK" />
+    <SUITE FILE_PATH="coverage/shuati$searchForARange.coverage" NAME="searchForARange Coverage Results" MODIFIED="1514506287900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/34-SearchForARange" />
+    <SUITE FILE_PATH="coverage/shuati$pathSumII.coverage" NAME="pathSumII Coverage Results" MODIFIED="1516380511855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/113-PathSumII" />
+    <SUITE FILE_PATH="coverage/shuati$gasStation.coverage" NAME="gasStation Coverage Results" MODIFIED="1517455550571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/134-GasStation" />
+    <SUITE FILE_PATH="coverage/shuati$inorderSuccessorinBST.coverage" NAME="inorderSuccessorinBST Coverage Results" MODIFIED="1521136874420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/285-InorderSuccessorinBST" />
+    <SUITE FILE_PATH="coverage/shuati$binaryTreeLevelOrderTraversal.coverage" NAME="binaryTreeLevelOrderTraversal Coverage Results" MODIFIED="1516327394273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/102-BinaryTreeLevelOrderTraversal" />
+    <SUITE FILE_PATH="coverage/shuati$earliestValidTime.coverage" NAME="earliestValidTime Coverage Results" MODIFIED="1535501836181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/EarliestValidTime" />
+    <SUITE FILE_PATH="coverage/shuati$numberOfIslands.coverage" NAME="numberOfIslands Coverage Results" MODIFIED="1519069585993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/200-NumberOfIslands" />
+    <SUITE FILE_PATH="coverage/shuati$populatingNextRightPointersinEachNode.coverage" NAME="populatingNextRightPointersinEachNode Coverage Results" MODIFIED="1516473747672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/116-PopulatingNextRightPointersinEachNode" />
+    <SUITE FILE_PATH="coverage/shuati$minimumMovesToEqualArrayElements.coverage" NAME="minimumMovesToEqualArrayElements Coverage Results" MODIFIED="1519589799595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/453-MinimumMovesToEqualArrayElements" />
+    <SUITE FILE_PATH="coverage/shuati$validSudoku.coverage" NAME="validSudoku Coverage Results" MODIFIED="1514542503085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/36-ValidSudoku" />
+    <SUITE FILE_PATH="coverage/shuati$constructBinaryTreeFromInorderAndPostorderTraversal.coverage" NAME="constructBinaryTreeFromInorderAndPostorderTraversal Coverage Results" MODIFIED="1516380570745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/106-ConstructBinaryTreeFromInorderAndPostorderTraversal" />
+    <SUITE FILE_PATH="coverage/shuati$summRootToLeafNumbers.coverage" NAME="summRootToLeafNumbers Coverage Results" MODIFIED="1516628720964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/129-SumRootToLeafNumbers" />
+    <SUITE FILE_PATH="coverage/shuati$integerToRoman.coverage" NAME="integerToRoman Coverage Results" MODIFIED="1520574532799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/12-IntegerToRoman" />
+    <SUITE FILE_PATH="coverage/shuati$stringToInteger.coverage" NAME="stringToInteger Coverage Results" MODIFIED="1513669580493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/8-StringToInteger" />
+    <SUITE FILE_PATH="coverage/shuati$binarySearch_2.coverage" NAME="binarySearch-2 Coverage Results" MODIFIED="1515744361762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/BinarySearch" />
+    <SUITE FILE_PATH="coverage/shuati$searchForARange_1.coverage" NAME="searchForARange-1 Coverage Results" MODIFIED="1514509067687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/34-SearchForARange" />
+    <SUITE FILE_PATH="coverage/shuati$catchingAnInsiderTrader.coverage" NAME="catchingAnInsiderTrader Coverage Results" MODIFIED="1519620935614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/catchingAnInsiderTrader" />
+    <SUITE FILE_PATH="coverage/shuati$subsetsII.coverage" NAME="subsetsII Coverage Results" MODIFIED="1515941400692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/90-SubsetsII" />
+    <SUITE FILE_PATH="coverage/shuati$removeDuplicatesFromSortedArrayII.coverage" NAME="removeDuplicatesFromSortedArrayII Coverage Results" MODIFIED="1515767800054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/80-RemoveDuplicatesFromSortedArrayII" />
+    <SUITE FILE_PATH="coverage/shuati$removeDuplicatesFromSortedListII.coverage" NAME="removeDuplicatesFromSortedListII Coverage Results" MODIFIED="1515905283986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/82-RemoveDuplicatesFromSortedListII" />
+    <SUITE FILE_PATH="coverage/shuati$compareVersionNumbers.coverage" NAME="compareVersionNumbers Coverage Results" MODIFIED="1518373163057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/165-CompareVersionNumbers" />
+    <SUITE FILE_PATH="coverage/shuati$reverseWordsInAStringII.coverage" NAME="reverseWordsInAStringII Coverage Results" MODIFIED="1518590288400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/186-ReverseWordsInAStringII" />
+    <SUITE FILE_PATH="coverage/shuati$missingRanges.coverage" NAME="missingRanges Coverage Results" MODIFIED="1518151397470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/163-MissingRanges" />
+    <SUITE FILE_PATH="coverage/shuati$wordSearch.coverage" NAME="wordSearch Coverage Results" MODIFIED="1515762970906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/79-WordSearch" />
+    <SUITE FILE_PATH="coverage/shuati$movingAveragefromDataStream.coverage" NAME="movingAveragefromDataStream Coverage Results" MODIFIED="1519166673469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/346-MovingAveragefromDataStream" />
+    <SUITE FILE_PATH="coverage/shuati$maximumProductSubarray.coverage" NAME="maximumProductSubarray Coverage Results" MODIFIED="1518054190542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/152-MaximumProductSubarray" />
+    <SUITE FILE_PATH="coverage/shuati$spiralMatrixII.coverage" NAME="spiralMatrixII Coverage Results" MODIFIED="1515073908032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/59-SpiralMatrixII" />
+    <SUITE FILE_PATH="coverage/shuati$heaters.coverage" NAME="heaters Coverage Results" MODIFIED="1514513268686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/475-Heaters" />
+    <SUITE FILE_PATH="coverage/shuati$combinations.coverage" NAME="combinations Coverage Results" MODIFIED="1514876693957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/77-Combinations" />
+    <SUITE FILE_PATH="coverage/shuati$longestPalindromicSubstring_DP.coverage" NAME="longestPalindromicSubstring-DP Coverage Results" MODIFIED="1513557781533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring" />
+    <SUITE FILE_PATH="coverage/shuati$binaryTreePreorderTraversal.coverage" NAME="binaryTreePreorderTraversal Coverage Results" MODIFIED="1517786371703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/144-BinaryTreePreorderTraversal" />
+    <SUITE FILE_PATH="coverage/shuati$implementstrStr.coverage" NAME="implementstrStr Coverage Results" MODIFIED="1521147237206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/28-ImplementstrStr" />
+    <SUITE FILE_PATH="coverage/shuati$wordLadder.coverage" NAME="wordLadder Coverage Results" MODIFIED="1516628254401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/127-WordLadder" />
+    <SUITE FILE_PATH="coverage/shuati$zigZagConversion.coverage" NAME="zigZagConversion Coverage Results" MODIFIED="1513666918381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/6-ZigZagConversion" />
+    <SUITE FILE_PATH="coverage/shuati$swapNodesInPairs.coverage" NAME="swapNodesInPairs Coverage Results" MODIFIED="1514440402808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/24-SwapNodesInPairs" />
+    <SUITE FILE_PATH="coverage/shuati$letterCombinationsOfAPhoneNumber.coverage" NAME="letterCombinationsOfAPhoneNumber Coverage Results" MODIFIED="1514418098229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/17-LetterCombinationsOfAPhoneNumber" />
+    <SUITE FILE_PATH="coverage/shuati$multiplyStrings.coverage" NAME="multiplyStrings Coverage Results" MODIFIED="1514811408627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/43-MultiplyStrings" />
+    <SUITE FILE_PATH="coverage/shuati$repeatedDNASequences.coverage" NAME="repeatedDNASequences Coverage Results" MODIFIED="1518766913930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/187-RepeatedDNASequences" />
+    <SUITE FILE_PATH="coverage/shuati$binarySearch.coverage" NAME="binarySearch Coverage Results" MODIFIED="1515669267212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/BinarySearch" />
+    <SUITE FILE_PATH="coverage/shuati$surroundedRegions.coverage" NAME="surroundedRegions Coverage Results" MODIFIED="1516768602456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/130-SurroundedRegions" />
+    <SUITE FILE_PATH="coverage/shuati$reverseLinkedListII.coverage" NAME="reverseLinkedListII Coverage Results" MODIFIED="1516138652527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/92-ReverseLinkedListII" />
+    <SUITE FILE_PATH="coverage/shuati$searchInRotatedSortedArray.coverage" NAME="searchInRotatedSortedArray Coverage Results" MODIFIED="1514458741275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/33-SearchInRotatedSortedArray" />
+    <SUITE FILE_PATH="coverage/shuati$wiggleSort.coverage" NAME="wiggleSort Coverage Results" MODIFIED="1516846700949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/280-WiggleSort" />
+    <SUITE FILE_PATH="coverage/shuati$sortList.coverage" NAME="sortList Coverage Results" MODIFIED="1517892197271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/148-SortList" />
+    <SUITE FILE_PATH="coverage/shuati$uniquePathsII.coverage" NAME="uniquePathsII Coverage Results" MODIFIED="1515214723655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/63-UniquePathsII" />
+    <SUITE FILE_PATH="coverage/shuati$groupAnagrams.coverage" NAME="groupAnagrams Coverage Results" MODIFIED="1514952137167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/49-GroupAnagrams" />
+    <SUITE FILE_PATH="coverage/shuati$mergeIntervals.coverage" NAME="mergeIntervals Coverage Results" MODIFIED="1515071048949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/56-MergeIntervals" />
+    <SUITE FILE_PATH="coverage/shuati$scraper.coverage" NAME="scraper Coverage Results" MODIFIED="1513487280504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/shuati$spiralMatrix.coverage" NAME="spiralMatrix Coverage Results" MODIFIED="1515051556763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/54-SpiralMatrix" />
+    <SUITE FILE_PATH="coverage/shuati$rotateImage.coverage" NAME="rotateImage Coverage Results" MODIFIED="1514891281629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/48-RotateImage" />
+    <SUITE FILE_PATH="coverage/shuati$generateParentheses.coverage" NAME="generateParentheses Coverage Results" MODIFIED="1514425680511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/22-GenerateParentheses" />
+    <SUITE FILE_PATH="coverage/shuati$binaryTreeRightSideView.coverage" NAME="binaryTreeRightSideView Coverage Results" MODIFIED="1518940355541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/199-BinaryTreeRightSideView" />
+    <SUITE FILE_PATH="coverage/shuati$sortColors.coverage" NAME="sortColors Coverage Results" MODIFIED="1515483905106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/75-SortColors" />
+    <SUITE FILE_PATH="coverage/shuati$permutations.coverage" NAME="permutations Coverage Results" MODIFIED="1514873118380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/46-Permutations" />
+    <SUITE FILE_PATH="coverage/shuati$cloneGraph.coverage" NAME="cloneGraph Coverage Results" MODIFIED="1517455154366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/133-CloneGraph" />
+    <SUITE FILE_PATH="coverage/shuati$flattenBinaryTreeToLinkedList.coverage" NAME="flattenBinaryTreeToLinkedList Coverage Results" MODIFIED="1516462842674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/114-FlattenBinaryTreeToLinkedList" />
+    <SUITE FILE_PATH="coverage/shuati$palindromePartitioning.coverage" NAME="palindromePartitioning Coverage Results" MODIFIED="1517122488276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/131-PalindromePartitioning" />
+    <SUITE FILE_PATH="coverage/shuati$nextPermutation.coverage" NAME="nextPermutation Coverage Results" MODIFIED="1514452943722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/31-NextPermutation" />
+    <SUITE FILE_PATH="coverage/shuati$romanToInteger.coverage" NAME="romanToInteger Coverage Results" MODIFIED="1520576197746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/13-RomantoInteger" />
+    <SUITE FILE_PATH="coverage/shuati$lowestCommonAncestorOfABinaryTree.coverage" NAME="lowestCommonAncestorOfABinaryTree Coverage Results" MODIFIED="1516850453567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/236-LowestCommonAncestorOfABinaryTree" />
+    <SUITE FILE_PATH="coverage/shuati$simplifyPath.coverage" NAME="simplifyPath Coverage Results" MODIFIED="1515329124541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/71-SimplifyPath" />
+    <SUITE FILE_PATH="coverage/shuati$searchInRotatedSortedArrayII.coverage" NAME="searchInRotatedSortedArrayII Coverage Results" MODIFIED="1515853921688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/81-SearchInRotatedSortedArrayII" />
+    <SUITE FILE_PATH="coverage/shuati$largestNumber.coverage" NAME="largestNumber Coverage Results" MODIFIED="1518561645780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/179-LargestNumber" />
+    <SUITE FILE_PATH="coverage/shuati$findMinimuminRotatedSortedArray.coverage" NAME="findMinimuminRotatedSortedArray Coverage Results" MODIFIED="1515641341732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/153-FindMinimuminRotatedSortedArray" />
+    <SUITE FILE_PATH="coverage/shuati$4Sum.coverage" NAME="4Sum Coverage Results" MODIFIED="1514173848875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/18-4Sum" />
+    <SUITE FILE_PATH="coverage/shuati$insertionSortList.coverage" NAME="insertionSortList Coverage Results" MODIFIED="1517889673253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/147-InsertionSortList" />
+    <SUITE FILE_PATH="coverage/shuati$oneEditDistance.coverage" NAME="oneEditDistance Coverage Results" MODIFIED="1518063800930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/161-OneEditDistance" />
+    <SUITE FILE_PATH="coverage/shuati$addTwoNumbersII.coverage" NAME="addTwoNumbersII Coverage Results" MODIFIED="1514431364412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/445-AddTwoNumbersII" />
+    <SUITE FILE_PATH="coverage/shuati$binaryTreeUpsideDown.coverage" NAME="binaryTreeUpsideDown Coverage Results" MODIFIED="1519172510686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/156-BinaryTreeUpsideDown" />
+    <SUITE FILE_PATH="coverage/shuati$pow.coverage" NAME="pow Coverage Results" MODIFIED="1514963179162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/50-Pow_x_n" />
+    <SUITE FILE_PATH="coverage/shuati$wordBreak.coverage" NAME="wordBreak Coverage Results" MODIFIED="1517726398023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/139-WordBreak" />
+    <SUITE FILE_PATH="coverage/shuati$movieRating.coverage" NAME="movieRating Coverage Results" MODIFIED="1520727528286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/MovieRating" />
+    <SUITE FILE_PATH="coverage/shuati$permutationsII.coverage" NAME="permutationsII Coverage Results" MODIFIED="1514883426961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/47-PermutationsII" />
+    <SUITE FILE_PATH="coverage/shuati$fractiontoRecurringDecimal.coverage" NAME="fractiontoRecurringDecimal Coverage Results" MODIFIED="1518379447004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/166-FractiontoRecurringDecimal" />
+    <SUITE FILE_PATH="coverage/shuati$waysToCompleteKraken.coverage" NAME="waysToCompleteKraken Coverage Results" MODIFIED="1515242056495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/waysToCompleteKraken" />
+    <SUITE FILE_PATH="coverage/shuati$uniqueBinarySearchTreesII.coverage" NAME="uniqueBinarySearchTreesII Coverage Results" MODIFIED="1516265059096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/95-UniqueBinarySearchTreesII" />
+    <SUITE FILE_PATH="coverage/shuati$subsets.coverage" NAME="subsets Coverage Results" MODIFIED="1515746230399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/78-Subsets" />
+    <SUITE FILE_PATH="coverage/shuati$minimumPathSum.coverage" NAME="minimumPathSum Coverage Results" MODIFIED="1515246128991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/64-MinimumPathSum" />
+    <SUITE FILE_PATH="coverage/shuati$singleNumberII.coverage" NAME="singleNumberII Coverage Results" MODIFIED="1517722140612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/137-SingleNumberII" />
+    <SUITE FILE_PATH="coverage/shuati$removeDuplicatesFromSortedArray.coverage" NAME="removeDuplicatesFromSortedArray Coverage Results" MODIFIED="1515763275240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/26-RemoveDuplicatesFromSortedArray" />
+    <SUITE FILE_PATH="coverage/shuati$kthLargestElementInAnArray.coverage" NAME="kthLargestElementInAnArray Coverage Results" MODIFIED="1516941776420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/215-KthLargestElementInAnArray" />
+    <SUITE FILE_PATH="coverage/shuati$restoreIPAddresses.coverage" NAME="restoreIPAddresses Coverage Results" MODIFIED="1516142721663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/93-RestoreIPAddresses" />
+    <SUITE FILE_PATH="coverage/shuati$combinationSum.coverage" NAME="combinationSum Coverage Results" MODIFIED="1514803845863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/39-CombinationSum" />
+    <SUITE FILE_PATH="coverage/shuati$jumpGame.coverage" NAME="jumpGame Coverage Results" MODIFIED="1515059435413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/55-JumpGame" />
+    <SUITE FILE_PATH="coverage/shuati$evaluateReversePolishNotation.coverage" NAME="evaluateReversePolishNotation Coverage Results" MODIFIED="1517940081262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/150-EvaluateReversePolishNotation" />
+    <SUITE FILE_PATH="coverage/shuati$findPeakElement.coverage" NAME="findPeakElement Coverage Results" MODIFIED="1518131882579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/162-FindPeakElement" />
+    <SUITE FILE_PATH="coverage/shuati$summaryRanges.coverage" NAME="summaryRanges Coverage Results" MODIFIED="1518372329897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/228-SummaryRanges" />
+    <SUITE FILE_PATH="coverage/shuati$combinationSumII.coverage" NAME="combinationSumII Coverage Results" MODIFIED="1514803886106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/40-CombinationSumII" />
+    <SUITE FILE_PATH="coverage/shuati$reorderList.coverage" NAME="reorderList Coverage Results" MODIFIED="1517779879559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/143-ReorderList" />
+    <SUITE FILE_PATH="coverage/shuati$setMatrixZeroes.coverage" NAME="setMatrixZeroes Coverage Results" MODIFIED="1515419704918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/73-SetMatrixZeroes" />
+    <SUITE FILE_PATH="coverage/shuati$foldersAndCows.coverage" NAME="foldersAndCows Coverage Results" MODIFIED="1520197432220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/FoldersAndCows" />
+    <SUITE FILE_PATH="coverage/shuati$royalNames.coverage" NAME="royalNames Coverage Results" MODIFIED="1520631564686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc/RoyalNames" />
+    <SUITE FILE_PATH="coverage/shuati$triangle.coverage" NAME="triangle Coverage Results" MODIFIED="1516547883557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/120-Triangle" />
+    <SUITE FILE_PATH="coverage/shuati$partitionList.coverage" NAME="partitionList Coverage Results" MODIFIED="1515917309796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/83-PartitionList" />
+    <SUITE FILE_PATH="coverage/shuati$decodeWays.coverage" NAME="decodeWays Coverage Results" MODIFIED="1516123212868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/91-DecodeWays" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="shuati" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring/longestPalindromicSubstring.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring/longestPalindromicSubstring-2.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+    <option name="SCHEME" value="Project" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>outfile.open</find>
+      <find>outfile.close()</find>
+      <find>accumulate</find>
+      <find>tellg</find>
+      <find>seekg</find>
+      <find>Utility</find>
+      <find>getline</find>
+      <find>disjoint</find>
+      <find>pair</find>
+      <find>typedef</find>
+      <find>dimension</find>
+      <find>malloc</find>
+      <find>sizeof</find>
+      <find>ge</find>
+      <find>puts</find>
+      <find>new</find>
+      <find>stringstream</find>
+      <find>'NULL'</find>
+      <find>26</find>
+      <find>'a'</find>
+      <find>vector&lt;string&gt;()</find>
+      <find>struct Com</find>
+      <find>unordered_set</find>
+      <find>vector&lt;int&gt;()</find>
+      <find>sliding window</find>
+      <find>lowest comm</find>
+      <find>median</find>
+      <find>author</find>
+      <find>union</find>
+      <find>sol.*pfcn</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>MyQueue</replace>
+      <replace>TreeNode</replace>
+      <replace>val</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/misc/RangeQueryForText/rangeQueryForText.h" />
+        <option value="$PROJECT_DIR$/misc/RangeQueryForText/rangeQueryForText.cc" />
+        <option value="$PROJECT_DIR$/misc/DictionaryTask/test.cc" />
+        <option value="$PROJECT_DIR$/misc/DictionaryTask/dictionary.h" />
+        <option value="$PROJECT_DIR$/misc/DictionaryTask/dictionary.cc" />
+        <option value="$PROJECT_DIR$/misc/ExternGroupBy/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/misc/ExternGroupBy/unitTests.cc" />
+        <option value="$PROJECT_DIR$/misc/ExternGroupBy/externGroupBy.h" />
+        <option value="$PROJECT_DIR$/misc/ExternGroupBy/externGroupBy.cc" />
+        <option value="$PROJECT_DIR$/leetcode/128-LongestConsecutiveSequence/longestConsecutiveSequence.cc" />
+        <option value="$PROJECT_DIR$/leetcode/128-LongestConsecutiveSequence/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/394-DecodeString/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/394-DecodeString/decodeString.cc" />
+        <option value="$PROJECT_DIR$/leetcode/403-FrogJump/frogJump.cc" />
+        <option value="$PROJECT_DIR$/leetcode/403-FrogJump/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/426-ConvertBinarySearchTreeToSortedDoublyLinkedList/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/426-ConvertBinarySearchTreeToSortedDoublyLinkedList/convertBinarySearchTreeToSortedDoublyLinkedList.cc" />
+        <option value="$PROJECT_DIR$/leetcode/189-RotateArray/rotateArray.cc" />
+        <option value="$PROJECT_DIR$/leetcode/189-RotateArray/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/438-FindAllAnagramsInAString/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/438-FindAllAnagramsInAString/findAllAnagramsInAString.cc" />
+        <option value="$PROJECT_DIR$/leetcode/204-CountPrimes/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/204-CountPrimes/countPrimes.cc" />
+        <option value="$PROJECT_DIR$/leetcode/238-ProductofArrayExceptSelf/productofArrayExceptSelf.cc" />
+        <option value="$PROJECT_DIR$/leetcode/238-ProductofArrayExceptSelf/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/295-FindMedianfromDataStream/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/295-FindMedianfromDataStream/findMedianfromDataStream.cc" />
+        <option value="$PROJECT_DIR$/leetcode/141-LinkedListCycle/linkedListCycle.cc" />
+        <option value="$PROJECT_DIR$/leetcode/274-H-index/h-index.cc" />
+        <option value="$PROJECT_DIR$/leetcode/274-H-index/README.md" />
+        <option value="$PROJECT_DIR$/leetcode/305-NumberOfIslandsII/numberOfIslandsII.cc" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/misc/Quora2020/validLetters.cc" />
+        <option value="$PROJECT_DIR$/misc/Quora2020/cutRibbon.cc" />
+        <option value="$PROJECT_DIR$/misc/Quora2020/README.txt" />
+        <option value="$PROJECT_DIR$/misc/Quora2020/divideArray.cc" />
+        <option value="$PROJECT_DIR$/leetcode/490-TheMaze/theMaze.cc" />
+        <option value="$PROJECT_DIR$/leetcode/505-TheMazeII/theMazeII.cc" />
+        <option value="$PROJECT_DIR$/leetcode/cppinclude/shared_headers.h" />
+        <option value="$PROJECT_DIR$/leetcode/675-CutOffTreesforGolfEvent/cutOffTreesforGolfEvent.cc" />
+        <option value="$PROJECT_DIR$/leetcode/cppinclude/cpputility.h" />
+        <option value="$PROJECT_DIR$/misc/Amazon/buyFruits.cc" />
+        <option value="$PROJECT_DIR$/misc/Amazon/distBetweenNodes.cc" />
+        <option value="$PROJECT_DIR$/leetcode/cppinclude/cpputility.cc" />
+        <option value="$PROJECT_DIR$/misc/Amazon/minimumDistance/minimumDistance.cc" />
+        <option value="$PROJECT_DIR$/misc/Amazon/README.txt" />
+        <option value="$PROJECT_DIR$/leetcode/240-Searcha2DMatrixII/searcha2DMatrixII.cc" />
+        <option value="$PROJECT_DIR$/leetcode/102-BinaryTreeLevelOrderTraversal/binaryTreeLevelOrderTraversal.cc" />
+        <option value="$PROJECT_DIR$/leetcode/210-CourseScheduleII/courseScheduleII.cc" />
+        <option value="$PROJECT_DIR$/include/cppinclude/linkedList_rand.cc" />
+        <option value="$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring/longestPalindromicSubstring.cc" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="shuati/invalid/Python facet" />
+    </ignored-facets>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="MOrhCMYd" />
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="shuati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuati" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shuati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuati" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shuati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuati" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="5-LongestPalindromicSubstring" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/zeyuan/Documents/projects/shuati/leetcode/412-FizzBuzz/fizzBuzz.c" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.5">
+    <configuration name="00" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="00" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="00">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="001" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="001" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="001">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="002" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="002" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="002">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="003" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="003" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="003">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="004" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="004" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="004">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="005" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="005" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="005">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="006" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="006" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="006">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="007" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="007" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="007">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="008" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="008" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="008">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="009" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="009" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="009">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="010" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="010" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="010">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="011" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="011" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="011">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="012" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="012" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="012">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="013" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="013" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="013">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="014" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="014" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="014">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="015" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="015" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="015">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="016" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="016" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="016">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="017" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="017" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="017">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="019" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/misc/BleedingInk" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="019" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="305">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="020" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="020" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="020">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="021" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="021" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="021">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="022" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="022" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="022">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="023" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="023" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="023">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="024" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="024" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="024">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="025" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="025" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="025">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="026" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="026" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="026">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="027" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="027" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="027">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="028" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="028" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="028">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="029" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="029" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="029">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="030" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="030" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="030">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="031" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="031" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="031">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="032" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="032" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="032">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="033" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="033" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="033">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="034" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="034" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="034">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="035" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="035" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="035">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="036" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="036" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="036">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="037" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="037" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="037">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="038" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="038" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="038">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="039" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="039" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="039">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="040" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="040" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="040">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="041" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="041" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="041">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="042" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="042" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="042">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="043" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="043" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="043">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="044" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="044" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="044">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="045" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="045" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="045">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="046" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="046" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="046">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="047" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="047" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="047">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="10" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="10" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="10">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="101" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="101" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="101">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="102" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="102" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="102">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="103" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="103" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="103">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="107" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="107" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="107">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="108" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="108" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="108">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="110" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="110" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="110">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1114" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="1114" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="1114">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="121" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="121" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="121">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="122" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="122" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="122">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="124" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="124" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="124">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="128" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="128" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="128">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="133" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="133" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="133">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="138" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="138" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="138">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="14" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="14" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="14">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="140" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="140" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="140">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="141" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="141" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="141">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="145" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="145" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="145">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="146" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="146" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="146">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="155" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="155" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="155">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="159" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="159" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="159">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="160" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="160" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="160">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="162" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="162" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="162">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="165" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="165" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="165">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="186" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="186" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="186">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="189" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="189" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="189">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="20" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="20" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="20">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="200" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="200" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="200">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="204" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="204" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="204">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="207" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="207" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="207">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="208" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="208" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="208">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="21" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="21" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="21">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="210" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="210" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="210">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="213" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="213" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="213">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="214" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="214" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="214">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="216" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="216" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="216">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="22" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="22" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="22">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="222" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="222" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="222">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="224" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="224" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="224">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="225" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="225" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="225">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="23" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="23" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="23">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="230" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="230" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="230">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="232" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="232" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="232">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="234" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="234" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="234">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="235" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="235" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="235">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="236" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="236" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="236">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="238" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="238" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="238">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="240" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="240" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="240">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="242" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="242" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="242">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="25" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="25" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="25">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="250" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="250" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="250">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="253" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="253" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="253">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="255" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="255" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="255">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="257" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="257" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="257">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="260" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="260" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="260">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="261" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="261" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="261">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="268" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="268" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="268">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="27" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="27" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="27">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="270" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="270" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="270">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="272" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="272" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="272">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="273" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="273" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="273">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="274" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="274" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="274">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="278" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="278" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="278">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="283" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="283" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="283">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="285" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="285" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="285">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="289" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="289" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="289">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="291" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="291" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="291">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="294" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="294" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="294">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="295" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="295" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="295">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="297" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="297" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="297">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="298" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="298" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="298">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="30" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="30" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="30">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="301" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="301" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="301">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="305" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="305" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="305">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="32" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="32" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="32">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="320" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="320" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="320">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="322" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="322" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="322">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="33" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="33" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="33">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="333" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="333" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="333">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="337" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="337" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="337">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="344" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="344" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="344">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="346" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="346" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="346">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="347" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="347" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="347">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="349" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="349" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="349">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="35" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="35" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="35">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="350" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="350" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="350">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="362" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="362" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="362">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="366" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="366" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="366">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="369" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="369" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="369">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="37" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="37" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="37">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="380" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="380" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="380">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="387" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="387" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="387">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="39" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="39" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="39">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="394" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="394" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="394">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="403" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="403" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="403">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="412" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="412" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="412">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="414" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="414" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="414">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="42" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="42" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="42">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="426" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="426" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="426">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="437" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="437" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="437">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="438" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="438" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="438">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="443" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="443" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="443">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="451" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="451" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="451">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="460" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="460" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="460">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="463" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="463" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="463">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="490" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="490" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="490">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="5" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="5">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="505" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="505" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="505">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="509" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="509" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="509">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="53" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="53" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="53">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="535" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="535" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="535">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="54" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="54" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="54">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="56" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="56" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="56">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="567" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="567" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="567">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="582" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="582" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="582">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="609" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="609" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="609">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="62" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="62" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="62">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="632" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="632" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="632">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="636" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="636" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="636">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="647" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="647" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="647">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="658" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="658" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="658">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="662" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="662" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="662">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="663" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="663" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="663">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="669" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="669" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="669">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="675" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="675" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="675">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="70" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="70" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="70">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="704" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="704" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="704">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="739" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="739" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="739">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="76" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="76" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="76">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="77" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="77" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="77">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="78" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="78" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="78">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="784" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="784" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="784">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="796" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="796" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="796">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="797" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="797" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="797">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="811" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="811" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="811">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="829" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="829" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="829">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="842" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="842" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="842">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="88" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="88" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="88">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="9" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="9" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="9">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="95" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="95" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="95">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="977" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="977" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="977">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="98" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="98" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="98">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="99" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="shuati" TARGET_NAME="99" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="99">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="shuati" RUN_TARGET_NAME="238" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bleedingInk" type="PythonConfigurationType" factoryName="Python">
+      <module name="shuati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.5/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc/BleedingInk" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/BleedingInk/bleedingInk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="climbTheHill" type="PythonConfigurationType" factoryName="Python">
+      <module name="shuati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc/ClimbTheHill" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/ClimbTheHill/climbTheHill.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="earliestValidTime" type="PythonConfigurationType" factoryName="Python">
+      <module name="shuati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc/EarliestValidTime" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/EarliestValidTime/earliestValidTime.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="implementstrStr" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="shuati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/28-ImplementstrStr" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/28-ImplementstrStr/implementstrStr.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="inorderSuccessorinBST" type="PythonConfigurationType" factoryName="Python">
+      <module name="shuati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/285-InorderSuccessorinBST" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/285-InorderSuccessorinBST/inorderSuccessorinBST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="isThisATree" type="PythonConfigurationType" factoryName="Python">
+      <module name="shuati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.5/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc/IsThisATree" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/IsThisATree/isThisATree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="matrixWithKeyAndDoor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="shuati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc/MatrixWithKeyAndDoor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/MatrixWithKeyAndDoor/matrixWithKeyAndDoor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="numberOfIslands" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="shuati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda2/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/200-NumberOfIslands" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/200-NumberOfIslands/numberOfIslands.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="subarraySumEqualsK" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="shuati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/560-SubarraySumEqualsK" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/560-SubarraySumEqualsK/subarraySumEqualsK.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.00" />
+      <item itemvalue="Application.001" />
+      <item itemvalue="Application.002" />
+      <item itemvalue="Application.003" />
+      <item itemvalue="Application.004" />
+      <item itemvalue="Application.005" />
+      <item itemvalue="Application.006" />
+      <item itemvalue="Application.007" />
+      <item itemvalue="Application.008" />
+      <item itemvalue="Application.009" />
+      <item itemvalue="Application.010" />
+      <item itemvalue="Application.011" />
+      <item itemvalue="Application.012" />
+      <item itemvalue="Application.013" />
+      <item itemvalue="Application.014" />
+      <item itemvalue="Application.015" />
+      <item itemvalue="Application.016" />
+      <item itemvalue="Application.017" />
+      <item itemvalue="Application.019" />
+      <item itemvalue="Application.020" />
+      <item itemvalue="Application.021" />
+      <item itemvalue="Application.022" />
+      <item itemvalue="Application.023" />
+      <item itemvalue="Application.024" />
+      <item itemvalue="Application.025" />
+      <item itemvalue="Application.026" />
+      <item itemvalue="Application.027" />
+      <item itemvalue="Application.028" />
+      <item itemvalue="Application.029" />
+      <item itemvalue="Application.030" />
+      <item itemvalue="Application.031" />
+      <item itemvalue="Application.032" />
+      <item itemvalue="Application.033" />
+      <item itemvalue="Application.034" />
+      <item itemvalue="Application.035" />
+      <item itemvalue="Application.036" />
+      <item itemvalue="Application.037" />
+      <item itemvalue="Application.038" />
+      <item itemvalue="Application.039" />
+      <item itemvalue="Application.040" />
+      <item itemvalue="Application.041" />
+      <item itemvalue="Application.042" />
+      <item itemvalue="Application.043" />
+      <item itemvalue="Application.044" />
+      <item itemvalue="Application.045" />
+      <item itemvalue="Application.046" />
+      <item itemvalue="Application.047" />
+      <item itemvalue="Application.10" />
+      <item itemvalue="Application.101" />
+      <item itemvalue="Application.102" />
+      <item itemvalue="Application.103" />
+      <item itemvalue="Application.107" />
+      <item itemvalue="Application.108" />
+      <item itemvalue="Application.110" />
+      <item itemvalue="Application.1114" />
+      <item itemvalue="Application.121" />
+      <item itemvalue="Application.122" />
+      <item itemvalue="Application.124" />
+      <item itemvalue="Application.128" />
+      <item itemvalue="Application.133" />
+      <item itemvalue="Application.138" />
+      <item itemvalue="Application.14" />
+      <item itemvalue="Application.140" />
+      <item itemvalue="Application.141" />
+      <item itemvalue="Application.145" />
+      <item itemvalue="Application.146" />
+      <item itemvalue="Application.155" />
+      <item itemvalue="Application.159" />
+      <item itemvalue="Application.160" />
+      <item itemvalue="Application.162" />
+      <item itemvalue="Application.165" />
+      <item itemvalue="Application.186" />
+      <item itemvalue="Application.189" />
+      <item itemvalue="Application.2" />
+      <item itemvalue="Application.20" />
+      <item itemvalue="Application.200" />
+      <item itemvalue="Application.204" />
+      <item itemvalue="Application.207" />
+      <item itemvalue="Application.208" />
+      <item itemvalue="Application.21" />
+      <item itemvalue="Application.210" />
+      <item itemvalue="Application.213" />
+      <item itemvalue="Application.214" />
+      <item itemvalue="Application.216" />
+      <item itemvalue="Application.22" />
+      <item itemvalue="Application.222" />
+      <item itemvalue="Application.224" />
+      <item itemvalue="Application.225" />
+      <item itemvalue="Application.23" />
+      <item itemvalue="Application.230" />
+      <item itemvalue="Application.232" />
+      <item itemvalue="Application.234" />
+      <item itemvalue="Application.235" />
+      <item itemvalue="Application.236" />
+      <item itemvalue="Application.238" />
+      <item itemvalue="Application.240" />
+      <item itemvalue="Application.242" />
+      <item itemvalue="Application.25" />
+      <item itemvalue="Application.250" />
+      <item itemvalue="Application.253" />
+      <item itemvalue="Application.255" />
+      <item itemvalue="Application.257" />
+      <item itemvalue="Application.260" />
+      <item itemvalue="Application.261" />
+      <item itemvalue="Application.268" />
+      <item itemvalue="Application.27" />
+      <item itemvalue="Application.270" />
+      <item itemvalue="Application.272" />
+      <item itemvalue="Application.273" />
+      <item itemvalue="Application.274" />
+      <item itemvalue="Application.278" />
+      <item itemvalue="Application.283" />
+      <item itemvalue="Application.285" />
+      <item itemvalue="Application.289" />
+      <item itemvalue="Application.291" />
+      <item itemvalue="Application.294" />
+      <item itemvalue="Application.295" />
+      <item itemvalue="Application.297" />
+      <item itemvalue="Application.298" />
+      <item itemvalue="Application.30" />
+      <item itemvalue="Application.301" />
+      <item itemvalue="Application.305" />
+      <item itemvalue="Application.32" />
+      <item itemvalue="Application.320" />
+      <item itemvalue="Application.322" />
+      <item itemvalue="Application.33" />
+      <item itemvalue="Application.333" />
+      <item itemvalue="Application.337" />
+      <item itemvalue="Application.344" />
+      <item itemvalue="Application.346" />
+      <item itemvalue="Application.347" />
+      <item itemvalue="Application.349" />
+      <item itemvalue="Application.35" />
+      <item itemvalue="Application.350" />
+      <item itemvalue="Application.362" />
+      <item itemvalue="Application.366" />
+      <item itemvalue="Application.369" />
+      <item itemvalue="Application.37" />
+      <item itemvalue="Application.380" />
+      <item itemvalue="Application.387" />
+      <item itemvalue="Application.39" />
+      <item itemvalue="Application.394" />
+      <item itemvalue="Application.4" />
+      <item itemvalue="Application.403" />
+      <item itemvalue="Application.412" />
+      <item itemvalue="Application.414" />
+      <item itemvalue="Application.42" />
+      <item itemvalue="Application.426" />
+      <item itemvalue="Application.437" />
+      <item itemvalue="Application.438" />
+      <item itemvalue="Application.443" />
+      <item itemvalue="Application.451" />
+      <item itemvalue="Application.460" />
+      <item itemvalue="Application.463" />
+      <item itemvalue="Application.490" />
+      <item itemvalue="Application.5" />
+      <item itemvalue="Application.505" />
+      <item itemvalue="Application.509" />
+      <item itemvalue="Application.53" />
+      <item itemvalue="Application.535" />
+      <item itemvalue="Application.54" />
+      <item itemvalue="Application.56" />
+      <item itemvalue="Application.567" />
+      <item itemvalue="Application.582" />
+      <item itemvalue="Application.609" />
+      <item itemvalue="Application.62" />
+      <item itemvalue="Application.632" />
+      <item itemvalue="Application.636" />
+      <item itemvalue="Application.647" />
+      <item itemvalue="Application.658" />
+      <item itemvalue="Application.662" />
+      <item itemvalue="Application.663" />
+      <item itemvalue="Application.669" />
+      <item itemvalue="Application.675" />
+      <item itemvalue="Application.70" />
+      <item itemvalue="Application.704" />
+      <item itemvalue="Application.739" />
+      <item itemvalue="Application.76" />
+      <item itemvalue="Application.77" />
+      <item itemvalue="Application.78" />
+      <item itemvalue="Application.784" />
+      <item itemvalue="Application.796" />
+      <item itemvalue="Application.797" />
+      <item itemvalue="Application.811" />
+      <item itemvalue="Application.829" />
+      <item itemvalue="Application.842" />
+      <item itemvalue="Application.88" />
+      <item itemvalue="Application.9" />
+      <item itemvalue="Application.95" />
+      <item itemvalue="Application.977" />
+      <item itemvalue="Application.98" />
+      <item itemvalue="Application.99" />
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Python.bleedingInk" />
+      <item itemvalue="Python.isThisATree" />
+      <item itemvalue="Python.climbTheHill" />
+      <item itemvalue="Python.earliestValidTime" />
+      <item itemvalue="Python.inorderSuccessorinBST" />
+      <item itemvalue="Python.subarraySumEqualsK" />
+      <item itemvalue="Python.implementstrStr" />
+      <item itemvalue="Python.matrixWithKeyAndDoor" />
+      <item itemvalue="Python.numberOfIslands" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.numberOfIslands" />
+        <item itemvalue="Python.matrixWithKeyAndDoor" />
+        <item itemvalue="Python.implementstrStr" />
+        <item itemvalue="Python.subarraySumEqualsK" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67cf7a3f-239e-4d65-92e5-1d45a3a620b9" name="Default" comment="" />
+      <created>1509740131461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509740131461</updated>
+      <workItem from="1521758542782" duration="82000" />
+      <workItem from="1521758708797" duration="41000" />
+      <workItem from="1523073535759" duration="546000" />
+      <workItem from="1523074087646" duration="55000" />
+      <workItem from="1523074163661" duration="2343000" />
+      <workItem from="1523076543692" duration="86000" />
+      <workItem from="1523076632385" duration="189000" />
+      <workItem from="1523076823458" duration="109000" />
+      <workItem from="1523076933715" duration="8620000" />
+      <workItem from="1526435275977" duration="9904000" />
+      <workItem from="1526734064537" duration="3764000" />
+      <workItem from="1526738415768" duration="4158000" />
+      <workItem from="1526742902684" duration="262000" />
+      <workItem from="1526743232934" duration="1524000" />
+      <workItem from="1526744807127" duration="1170000" />
+      <workItem from="1526783089481" duration="5616000" />
+      <workItem from="1526803760864" duration="219900000" />
+      <workItem from="1529971461968" duration="40733000" />
+      <workItem from="1530979770789" duration="574000" />
+      <workItem from="1531591015547" duration="38101000" />
+      <workItem from="1531961545870" duration="22677000" />
+      <workItem from="1532225706011" duration="24117000" />
+      <workItem from="1532406343683" duration="594000" />
+      <workItem from="1532490513924" duration="46055000" />
+      <workItem from="1533483306045" duration="8247000" />
+      <workItem from="1534693112728" duration="1807000" />
+      <workItem from="1535208968212" duration="172000" />
+      <workItem from="1536549941879" duration="3409000" />
+      <workItem from="1536964029098" duration="8603000" />
+      <workItem from="1537157937219" duration="1673000" />
+      <workItem from="1537196412250" duration="20040000" />
+      <workItem from="1537580968047" duration="10885000" />
+      <workItem from="1537722096178" duration="5712000" />
+      <workItem from="1537838418505" duration="82531000" />
+      <workItem from="1538258677150" duration="17676000" />
+      <workItem from="1538340691919" duration="121112000" />
+      <workItem from="1539665352625" duration="8000" />
+      <workItem from="1539665556116" duration="14746000" />
+      <workItem from="1539880877949" duration="1307000" />
+      <workItem from="1539963101472" duration="161410000" />
+      <workItem from="1540961386198" duration="19603000" />
+      <workItem from="1541876689203" duration="15000" />
+      <workItem from="1541889544633" duration="55000" />
+      <workItem from="1541897775731" duration="547000" />
+      <workItem from="1541900948532" duration="15961000" />
+      <workItem from="1544908275304" duration="4875000" />
+      <workItem from="1544913547985" duration="250000" />
+      <workItem from="1570159400473" duration="11151000" />
+      <workItem from="1570567876938" duration="709000" />
+      <workItem from="1570655135321" duration="9855000" />
+      <workItem from="1571276111308" duration="1199000" />
+      <workItem from="1571334158863" duration="1550000" />
+      <workItem from="1571973545095" duration="3887000" />
+      <workItem from="1572545801888" duration="2427000" />
+      <workItem from="1573695705044" duration="315000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="963109000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24878837" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32956383" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48455805" visible="true" weight="0.35231316" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4892772" weight="0.5017794" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49041533" weight="0.2550415" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32941177" />
+      <window_info anchor="bottom" id="CMake" order="10" sideWeight="0.496875" weight="0.32626727" />
+      <window_info anchor="bottom" id="SFDX" order="11" />
+      <window_info anchor="bottom" id="Execute Anonymous" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32941177" />
+      <window_info anchor="bottom" id="Log Manager" order="14" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32952183" />
+      <window_info anchor="bottom" id="Salesforce" order="16" />
+      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.51544195" side_tool="true" weight="0.20729166" />
+      <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="19" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Cargo" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2454739" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32956383" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48455805" visible="true" weight="0.2882353" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4892772" weight="0.44479167" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49041533" weight="0.2602941" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32941177" />
+      <window_info anchor="bottom" id="CMake" order="10" sideWeight="0.496875" weight="0.32708332" />
+      <window_info anchor="bottom" id="SFDX" order="11" />
+      <window_info anchor="bottom" id="Execute Anonymous" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32941177" />
+      <window_info anchor="bottom" id="Log Manager" order="14" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32952183" />
+      <window_info anchor="bottom" id="Salesforce" order="16" />
+      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.51544195" side_tool="true" weight="0.20729166" />
+      <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="19" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Cargo" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="7" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode/134-GasStation/gasStation.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode/166-FractiontoRecurringDecimal/fractiontoRecurringDecimal.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode/346-MovingAveragefromDataStream/movingAveragefromDataStream.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode/156-BinaryTreeUpsideDown/binaryTreeUpsideDown.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/misc/Quora2020/goodTuple.cc</url>
+          <line>9</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/misc/Quora2020/validLetters.cc</url>
+          <line>11</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/misc/Quora2020/rotataMatrixAmongDiagonals.cc</url>
+          <line>23</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/leetcode/675-CutOffTreesforGolfEvent/cutOffTreesforGolfEvent.cc</url>
+          <line>25</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/cppinclude/linkedList_rand.cc</url>
+          <line>99</line>
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>i==9</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==13</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i == 12</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i == 9</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sum == 3</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>links[b][0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s[20]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s.substr(begin,4)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s.substr(12,4)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s.substr(12,3)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s[12:15]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s[12,3]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s[12]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>words_set.size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/leetcode/102-BinaryTreeLevelOrderTraversal/binaryTreeLevelOrderTraversal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="24" selection-start-line="24" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/56-MergeIntervals/mergeIntervals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/9-PalindromeNumber/palindromeNumber.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="43" selection-start-line="43" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/78-Subsets/subsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/79-WordSearch/wordSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="19" selection-start-line="19" selection-end-line="44" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/274-H-index/README.md" />
+    <entry file="file://$PROJECT_DIR$/leetcode/274-H-index/h-index.cc" />
+    <entry file="file://$PROJECT_DIR$/leetcode/46-Permutations/permutations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-157" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/15-3Sum/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-190" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/49-GroupAnagrams/groupAnagrams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-168" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/15-3Sum/3Sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake" />
+    <entry file="file://$PROJECT_DIR$/leetcode/305-NumberOfIslandsII/numberOfIslandsII.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/261-GraphValidTree/graphValidTree.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Quora2020/goodTuple.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Quora2020/validLetters.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Quora2020/rotataMatrixAmongDiagonals.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/394-DecodeString/decodeString.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Quora2020/sortdiagonal.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Quora2020/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="153" column="3" lean-forward="true" selection-start-line="153" selection-start-column="3" selection-end-line="153" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Quora2020/cutRibbon.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Quora2020/divideArray.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/490-TheMaze/theMaze.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="1323" selection-start-line="1323" selection-end-line="1323" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3310" selection-start-line="3310" selection-end-line="3310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/505-TheMazeII/theMazeII.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/cppinclude/shared_headers.h" />
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/iterator">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="1557" selection-start-line="1557" selection-end-line="1557" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/675-CutOffTreesforGolfEvent/cutOffTreesforGolfEvent.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Amazon/distBetweenNodes.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Amazon/buyFruits.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-157">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="497" column="18" selection-start-line="497" selection-start-column="18" selection-end-line="497" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/1114-PrintInOrder/printInOrder.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/cppinclude/cpputility.cc" />
+    <entry file="file://$PROJECT_DIR$/leetcode/cppinclude/cpputility.h" />
+    <entry file="file://$PROJECT_DIR$/misc/Amazon/minimumDistance/minimumDistance.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/Amazon/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/240-Searcha2DMatrixII/searcha2DMatrixII.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/102-BinaryTreeLevelOrderTraversal/binaryTreeLevelOrderTraversal.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="16" selection-start-line="16" selection-end-line="37" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/cppinclude/graph.cc" />
+    <entry file="file://$PROJECT_DIR$/leetcode/210-CourseScheduleII/courseScheduleII.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/jsoncpp/jsoncpp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="2601" selection-start-line="2601" selection-end-line="2601" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/cppinclude/linkedList_rand.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/__string">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/string">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="1602" selection-start-line="1602" selection-end-line="1602" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring/longestPalindromicSubstring-2py" />
+    <entry file="file://$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring/longestPalindromicSubstring-3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring/longestPalindromicSubstring-1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring/longestPalindromicSubstring.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/5-LongestPalindromicSubstring/longestPalindromicSubstring-2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
