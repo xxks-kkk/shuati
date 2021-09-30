@@ -17,6 +17,19 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.zhu45.shuati.java</groupId>
+            <artifactId>java-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.zhu45.shuati.java</groupId>
+            <artifactId>java-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
