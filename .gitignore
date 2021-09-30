@@ -4,7 +4,6 @@
 .project
 \#*
 .#*
-main
 *.out
 *.dot
 main.dSYM
@@ -16,7 +15,6 @@ scratch
 cmake-build-debug/
 *.dSYM
 cmake_install.cmake
-Makefile
 CMakeCache.txt
 CMakeFiles/
 gdb.txt
@@ -40,4 +38,3 @@ out/
 *.iml
 .idea-cpp/
 .idea-java/
-java/leetcode/
