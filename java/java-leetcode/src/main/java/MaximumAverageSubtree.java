@@ -13,34 +13,21 @@ public class MaximumAverageSubtree
         return maximum;
     }
 
-    private Pair maximumAverageSubtreeHelper(TreeNode root) {
+    /**
+     * @return double[]: 1st element is number of nodes; 2nd element is subtree sum
+     */
+    private double[] maximumAverageSubtreeHelper(TreeNode root) {
         if (root == null) {
-            return new Pair(0, 1);
+            return new double[]{0, 0};
         }
-        else if (root.left == null && root.right == null) {
-            if ((double) root.val > maximum) {
-                maximum = root.val;
-            }
-            return new Pair(1, root.val);
+        double[] left = maximumAverageSubtreeHelper(root.left);
+        double[] right = maximumAverageSubtreeHelper(root.right);
+        double sum = root.val + left[1] + right[1];
+        double numNodes = 1 + left[0] + right[0];
+        double average = sum / numNodes;
+        if (average > maximum) {
+            maximum = average;
         }
-        else {
-            int sum = root.val;
-            int numNodes = 1;
-            if (root.left != null) {
-                Pair pair = maximumAverageSubtreeHelper(root.left);
-                sum += pair.value;
-                numNodes += pair.key;
-            }
-            if (root.right != null) {
-                Pair pair = maximumAverageSubtreeHelper(root.right);
-                sum += pair.value;
-                numNodes += pair.key;
-            }
-            double average = sum / (double) numNodes;
-            if (average > maximum) {
-                maximum = average;
-            }
-            return new Pair(numNodes, sum);
-        }
+        return new double[]{numNodes, sum};
     }
 }
