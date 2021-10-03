@@ -1,8 +1,12 @@
-.. _lc525-continus-array.rst:
+.. _leetcode.rst:
 
-#######################
-LC525. Contiguous Array
-#######################
+#################
+Leetcode Problems
+#################
+
+*********************
+525. Contiguous Array
+*********************
 
 .. note::
 
@@ -26,11 +30,22 @@ and each 0 subtracts one from :math:`sum`. If :math:`sum` is found in :math:`m`,
    When algorithm checks first 1, :math:`sum` becomes :math:`-1` again. The algorithm finds an :math:`A`, which is :math:`[0,1]`.
    Intuitively, we can have the following picture:
 
-   .. figure:: /_static/lc525-contiguous-array/intuition-example.png
+   .. figure:: /_static/lc525/intuition-example.png
 
       :math:`{\color{red} \text{Red arrow}}` indicates :math:`A = [0,1]` with the property that number of 0s equal to number of 1s.
 
    Let :math:`i_1` denote the index of the number that corresponds to :math:`m[s_1]`. Let :math:`i_2` denote the index of the number
    that :math:`sum = s_1`. Then, to calculate the length of :math:`A`, we have :math:`i_2 - (i_1 + 1) + 1`, which is
    :math:`i_2 - i_1`. In this example, :math:`A = [0,1]` has length :math:`2 - (0 + 1) + 1 = 2`.
-   
+
+
+******************************************************
+1481. Least Number of Unique Integers after K Removals
+******************************************************
+
+There is :math:`O(n)` solution (compared to priority queue :math:`O(n\log n)` solution) available as well.
+
+`ref <https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/discuss/686335/JavaPython-3-Greedy-Alg.%3A-3-methods-from-O(nlogn)-to-O(n)-w-brief-explanation-and-analysis.>`__
+
+
+
