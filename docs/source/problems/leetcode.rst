@@ -39,6 +39,55 @@ and each 0 subtracts one from :math:`sum`. If :math:`sum` is found in :math:`m`,
    :math:`i_2 - i_1`. In this example, :math:`A = [0,1]` has length :math:`2 - (0 + 1) + 1 = 2`.
 
 
+*****************************
+1041. Robot Bounded In Circle
+*****************************
+
+.. note::
+
+   `This Youtube video <https://youtu.be/nKv2LnC_g6E>`_ has a great explanation, which explains the idea behind
+   `this LC post <https://leetcode.com/problems/robot-bounded-in-circle/discuss/290856/JavaC%2B%2BPython-Let-Chopper-Help-Explain>`__.
+
+The central idea is to realize the connection between the impact of instructions on robot and conditions when circle can happen. One whole execution of ``instructions``
+can impact the robot in two ways:
+
+1. change the robot position; and 
+2. change the direction that the robot is facing.
+
+Robot can be bounded in a circle if after one whole execution of ``instructions``,
+
+1. the robot stays at :math:`(0,0)`; or
+2. the robot is no longer facing north. 
+
+Let's consider a few examples.
+
+.. proof:example::
+
+   Suppose ``instructions = "GG"``. Initially, the robot is facing north (indicated by a direction vector :math:`\langle 0,1 \rangle`). After two ``G``, the
+   robot moves to the position :math:`(0,2)` and is still facing north. In this case, no matter how many times ``instructions`` are executed, robot is still
+   facing north and circle can never be formed.
+
+.. proof:example::
+
+   Suppose ``instructions = "GGLL"``. After two ``G``, the robot is at :math:`(0,2)` facing north. Now, ``L`` will make the robot turn left (the direction vector
+   is :math:`\langle -1,0 \rangle`) and another ``L`` will make the robot turn left again (the direction vector is :math:`\langle 0,-1 \rangle`). In this case,
+   one more ``instructions`` execution make the robot back to the origin.
+
+.. proof:example::
+
+   Suppose ``instructions = "GGR"``. After two ``G``, the robot is at :math:`(0,2)` facing north. Now, ``R`` will make the robot turn right (the direction vector
+   is :math:`\langle 1,0 \rangle`). The robot follows such instruction will get back to :math:`(0,0)` after additional three executions as shown in :numref:`GGR-example`.
+
+   .. _GGR-example:
+   .. figure:: /_static/lc1041/GGR-example.png
+
+      Illustration of ``instructions = "GGR"`` makes the robot back to the origin and thus, form a circle.
+
+Implementation wise, make sure the direction change is calculated correctly. For example, when the robot change from facing north to facing west. The direction vector changes
+from :math:`\langle 0,1 \rangle` to :math:`\langle -1,0 \rangle`. If the direction vector is :math:`\langle vec_x, vec_y \rangle`, then after the direction change, the direction vector
+becomes :math:`\langle -vec_y, vec_x \rangle`.
+      
+
 ******************************************************
 1481. Least Number of Unique Integers after K Removals
 ******************************************************
