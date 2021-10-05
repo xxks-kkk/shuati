@@ -1,7 +1,8 @@
 // LC-1041
 public class RobotBoundedInCircle
 {
-    public boolean isRobotBounded(String instructions) {
+    public boolean isRobotBounded(String instructions)
+    {
         int vecX = 0; // x coordinate of direction vector
         int vecY = 1; // y coordinate of direction vector
         int posX = 0; // x coordinate of robot
@@ -23,7 +24,9 @@ public class RobotBoundedInCircle
                 vecY = -1 * tmp;
             }
         }
-        if (posX == 0 && posY == 0) return true;
+        if (posX == 0 && posY == 0) {
+            return true;
+        }
         return vecX != 0 || vecY != 1;
     }
 }

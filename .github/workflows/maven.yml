@@ -25,5 +25,5 @@ jobs:
     - name: Test with Maven
       run: |
           cd java/
-          mvn -B package --file pom.xml
+          mvn clean install 
 

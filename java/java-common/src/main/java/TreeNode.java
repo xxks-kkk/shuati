@@ -1,5 +1,3 @@
-import org.junit.jupiter.params.ParameterizedTest;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -10,13 +8,15 @@ public class TreeNode
     TreeNode left;
     TreeNode right;
 
-    public TreeNode(int val) {
+    public TreeNode(int val)
+    {
         this.val = val;
         this.left = null;
         this.right = null;
     }
 
-    public TreeNode(int val, TreeNode left, TreeNode right) {
+    public TreeNode(int val, TreeNode left, TreeNode right)
+    {
         this.val = val;
         this.left = left;
         this.right = right;
@@ -25,9 +25,11 @@ public class TreeNode
     /**
      * Convert given list of numbers into a binary tree. The numbers
      * in the list are assumed to be ordered by level-order traversal.
+     *
      * @return the root of the binary tree
      */
-    public static TreeNode list2Tree(List<Integer> nums) {
+    public static TreeNode list2Tree(List<Integer> nums)
+    {
         if (!nums.isEmpty()) {
             Queue<TreeNode> queue = new LinkedList<>();
             TreeNode root = new TreeNode(nums.get(0));

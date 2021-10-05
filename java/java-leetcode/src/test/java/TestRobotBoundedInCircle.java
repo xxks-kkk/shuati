@@ -16,7 +16,8 @@ public class TestRobotBoundedInCircle
         robotBoundedInCircle = new RobotBoundedInCircle();
     }
 
-    private static Object[][] testMaximumAverageSubtreeDataProvider() {
+    private static Object[][] testMaximumAverageSubtreeDataProvider()
+    {
         return new Object[][] {
                 {"RRGRRGLLLRLGGLGLLGRLRLGLRLRRGLGGLLRRRLRLRLLGRGLGRRRGRLG", false},
                 {"GGR", true}
@@ -25,7 +26,8 @@ public class TestRobotBoundedInCircle
 
     @ParameterizedTest
     @MethodSource("testMaximumAverageSubtreeDataProvider")
-    public void testMaximumAverageSubtree(String instructions, boolean expectation) {
+    public void testMaximumAverageSubtree(String instructions, boolean expectation)
+    {
         assertEquals(expectation, robotBoundedInCircle.isRobotBounded(instructions));
     }
 }
