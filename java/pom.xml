@@ -12,6 +12,7 @@
     <modules>
         <module>java-leetcode</module>
         <module>java-common</module>
+        <module>java-others</module>
     </modules>
 
     <properties>
@@ -24,6 +25,11 @@
             <dependency>
                 <groupId>org.zhu45.shuati.java</groupId>
                 <artifactId>java-leetcode</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.zhu45.shuati.java</groupId>
+                <artifactId>java-others</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
