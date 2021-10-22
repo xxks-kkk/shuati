@@ -15,17 +15,15 @@ public class MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts
     }
 
     private long maxDistanceBetweenTwoCuts(int[] cuts, int size) {
-        long maxDistanceBetweenTwoCuts = 0;
-        int[] cutsWithBoundaries = new int[cuts.length + 2];
-        System.arraycopy(cuts, 0, cutsWithBoundaries, 0, cuts.length);
-        cutsWithBoundaries[cuts.length] = 0;
-        cutsWithBoundaries[cuts.length + 1] = size;
-        Arrays.sort(cutsWithBoundaries);
-        for (int i = 1; i < cutsWithBoundaries.length; ++i) {
-            if (cutsWithBoundaries[i] - cutsWithBoundaries[i-1] > maxDistanceBetweenTwoCuts) {
-                maxDistanceBetweenTwoCuts = cutsWithBoundaries[i] - cutsWithBoundaries[i-1];
+        Arrays.sort(cuts);
+        long maxDistanceBetweenTwoCuts = cuts[0];
+        for (int i = 1; i < cuts.length; ++i) {
+            if (cuts[i] - cuts[i-1] > maxDistanceBetweenTwoCuts) {
+                maxDistanceBetweenTwoCuts = cuts[i] - cuts[i-1];
             }
         }
+        // We need to consider the distance between last cut and the boundary (i.e., size)
+        maxDistanceBetweenTwoCuts = Math.max(maxDistanceBetweenTwoCuts, size - cuts[cuts.length-1]);
         return maxDistanceBetweenTwoCuts;
     }
 }
