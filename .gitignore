@@ -29,7 +29,7 @@ target
 go.test
 venv
 target_list.txt
-build/
+docs/build/
 env/
 *.sav.bak
 *.bak
