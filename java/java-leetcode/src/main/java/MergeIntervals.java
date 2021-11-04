@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 
 // LC-56
+// Alternative idea: https://github.com/xxks-kkk/shuati/tree/master/leetcode/56-MergeIntervals
 public class MergeIntervals
 {
     public int[][] merge(int[][] intervals)
