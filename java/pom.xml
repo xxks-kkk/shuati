@@ -13,6 +13,7 @@
         <module>java-leetcode</module>
         <module>java-common</module>
         <module>java-others</module>
+        <module>java-hackerrank</module>
     </modules>
 
     <properties>
@@ -30,6 +31,11 @@
             <dependency>
                 <groupId>org.zhu45.shuati.java</groupId>
                 <artifactId>java-others</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.zhu45.shuati.java</groupId>
+                <artifactId>java-hackerrank</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
