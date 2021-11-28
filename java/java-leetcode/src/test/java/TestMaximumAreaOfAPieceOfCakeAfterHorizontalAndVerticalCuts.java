@@ -19,9 +19,9 @@ public class TestMaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts
     private static Object[][] testTestMaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCutsDataProvider()
     {
         return new Object[][] {
-//                {5, 4, new int[] {1, 2, 4}, new int[] {1, 3}, 4},
-//                {5, 4, new int[] {3, 1}, new int[] {1}, 6},
-//                {5, 4, new int[] {3}, new int[] {3}, 9},
+                {5, 4, new int[] {1, 2, 4}, new int[] {1, 3}, 4},
+                {5, 4, new int[] {3, 1}, new int[] {1}, 6},
+                {5, 4, new int[] {3}, new int[] {3}, 9},
                 {1000000000, 1000000000, new int[]{2}, new int[]{2}, 81}
         };
     }
