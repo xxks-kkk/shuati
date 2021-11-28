@@ -156,7 +156,30 @@ Let's consider a few examples.
 Implementation wise, make sure the direction change is calculated correctly. For example, when the robot change from facing north to facing west. The direction vector changes
 from :math:`\langle 0,1 \rangle` to :math:`\langle -1,0 \rangle`. If the direction vector is :math:`\langle vec_x, vec_y \rangle`, then after the direction change, the direction vector
 becomes :math:`\langle -vec_y, vec_x \rangle`.
-      
+
+************************************
+1152. AnalyzeUserWebsiteVisitPattern
+************************************
+
+.. note::
+   
+   `ref <https://leetcode.com/problems/analyze-user-website-visit-pattern/discuss/355606/Java-Very-Easy-Understand-With-Explanation>`__
+
+The brute force solution is sufficient for this problem. A few remarks:
+
+- We can use the following nested loops to generate all possible list of length 3 following the same ordering from a given list::
+
+        for (int i = 0; i < list.size(); i++) {
+                        for (int j = i + 1; j < list.size(); j++) {
+                                            for (int k = j + 1; k < list.size(); k++) {
+
+  In general, to generate all possible length :math:`k`, we need :math:`k` nested loops.
+
+- Be alert the case of "visit the same 3-seq in one user". That is , one user may visit the same pattern multiple times.
+
+- We don't have to sort timestamps and then username and website following the ordering of timestamp at the very beginning.
+  We can sort websites by timestamp for each individual user, e.g., ``list.sort(Comparator.comparingInt(a -> a.time));``
+  
 
 ******************************************************
 1481. Least Number of Unique Integers after K Removals

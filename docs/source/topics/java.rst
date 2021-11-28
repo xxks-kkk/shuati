@@ -29,6 +29,8 @@ Array
 - `extend each list inside a 2D list with one more element using lambda <https://github.com/xxks-kkk/shuati/blob/914af3077ebbbd55fe76fd2cea5aa667ebb54e4a/java/java-leetcode/src/main/java/ThreeSum.java#L50>`__.
   An example is: Given ``[[1,2],[3,4]]``, we add ``5`` to each list and obtain ``[[1,2,5],[3,4,5]]``.
 
+- `create List<String> from String[] <https://github.com/xxks-kkk/shuati/blob/74bc965b4f491e6ad81fc3afc3ea3748352b1a56/java/java-leetcode/src/main/java/AnalyzeUserWebsiteVisitPattern.java#L51-L53>`__  
+
 ========
 Hash Map
 ========
