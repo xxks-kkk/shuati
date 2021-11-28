@@ -23,6 +23,11 @@ Array
 
 - `convert List<List<Integer>> into int[][] <https://github.com/xxks-kkk/shuati/blob/3dfeb445d035093afa2027059dab378d0c93c9f6/java/java-leetcode/src/main/java/MergeIntervals.java#L26>`__
 
+- `get a subarray from an array using lambda <https://github.com/xxks-kkk/shuati/blob/914af3077ebbbd55fe76fd2cea5aa667ebb54e4a/java/java-leetcode/src/main/java/ThreeSum.java#L48>`__.
+  Note that ``i+1`` and ``nums.length`` are inclusive, i.e., :math:`[i+1, nums.length]`.
+
+- `extend each list inside a 2D list with one more element using lambda <https://github.com/xxks-kkk/shuati/blob/914af3077ebbbd55fe76fd2cea5aa667ebb54e4a/java/java-leetcode/src/main/java/ThreeSum.java#L50>`__.
+  An example is: Given ``[[1,2],[3,4]]``, we add ``5`` to each list and obtain ``[[1,2,5],[3,4,5]]``.
 
 ========
 Hash Map
