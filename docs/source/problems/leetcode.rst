@@ -4,6 +4,58 @@
 Leetcode Problems
 #################
 
+********
+15. 3Sum
+********
+
+.. note::
+
+   - `Youtube video <https://youtu.be/jzZsG8n2R9A>`__
+
+The hard part of this problem is on how to make sure the solution set doesn't contain duplicate
+triplets. Let :math:`(a,b,c)` represent a triplet that is part of the solution set. We have to
+ensure that :math:`a` will be unique for each triplet in the solution set; otherwise, we may
+run into the possibilities of including duplicates because :math:`a = -(b+c)` and :math:`a`
+values are the same for two triplets, the rest two values are likely the same.
+
+.. proof:example::
+
+   Suppose ``nums = [-3,3,4,-3,1,2]``. For the first :math:`-3`, we find :math:`(-3,1,2)`.
+   Now, when we use the second :math:`-3` as the :math:`a` value, we will find :math:`(-3,1,2)` again,
+   which will be duplicate.
+
+Then, the central idea to solve this problem is for each unique :math:`a` value, we reduce the problem
+into a variant of twoSum problem: find all pairs of two sums without duplicate given array has been sorted.
+
+We first sort ``nums``. Doing so helps us to identify all unique :math:`a` values efficiently and more importantly,
+help us to find all pairs of two sums without duplicate efficiently by leveraging the fact that the array is sorted.
+
+It is general hard to find all pairs of two sums without duplicate using hash map approach because it is very hard to
+remove duplicates. Instead, we use two pointers approach, which is similar method to solve
+`2Sum II <https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/>`__.
+
+The idea follows: we use two pointers to point to two sides of the array. We move left or right pointer given the
+sum is smaller than target or bigger than the target (see ``findAllTwoSums`` in solution). The key part is how to update
+pointer when we hit a sum equals to the target. As pointed out in the Youtube video, we can just update left pointer
+by one (or more if we hit duplicates: think about it, find two sums without duplicate is just a 3Sum problem reduced to
+2Sum version). The reason we don't need to update right pointer is because once we update left pointer, the side effect
+causes the sum bigger than target and in the next iteration of the while loop, the right pointer will be updated automatically.
+The end result is that we have each unique value pointed by left pointer corresponds to a unique value pointed by right pointer.
+     
+.. note::
+
+   I think there is a connection to binary search as well. Maybe think a bit more to master this idea.
+
+In summary, the takeaways are:
+
+- Ensure :math:`a` value being unique by using sorting and reduce the problem into a variant of twoSum problem
+  (the two pointer solution is similar to `2Sum II <https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/>`__)
+
+- Find all pairs of two sums without duplicate is hopeless to achieve uses traditional hash map approach as in twoSum problem.
+  Instead, we should sort the array first and uses two pointers approach instead.
+
+- In two pointer approach, when sum meets target, we only need to update left pointer.   
+
 *********************
 525. Contiguous Array
 *********************
