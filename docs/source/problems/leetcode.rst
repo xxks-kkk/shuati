@@ -4,6 +4,14 @@
 Leetcode Problems
 #################
 
+********************
+13. Roman to Integer
+********************
+
+Unlike what I have done previously, I use LL(1) parser idea where I look ahead for
+one more character. I think `this solution <https://github.com/xxks-kkk/shuati/blob/master/java/java-leetcode/src/main/java/RomanToInteger.java>`__
+is much more intuitive than what I have done `previously <https://github.com/xxks-kkk/shuati/tree/master/leetcode/13-RomantoInteger>`__.
+
 ********
 15. 3Sum
 ********
