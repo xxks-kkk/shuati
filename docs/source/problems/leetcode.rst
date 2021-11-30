@@ -116,7 +116,12 @@ and each 0 subtracts one from :math:`sum`. If :math:`sum` is found in :math:`m`,
    that :math:`sum = s_1`. Then, to calculate the length of :math:`A`, we have :math:`i_2 - (i_1 + 1) + 1`, which is
    :math:`i_2 - i_1`. In this example, :math:`A = [0,1]` has length :math:`2 - (0 + 1) + 1 = 2`.
 
+********************
+64. Minimum Path Sum
+********************
 
+This is a classic DP problem. For space optimization, we can directly modify input ``grid``.
+         
 *****************************
 1041. Robot Bounded In Circle
 *****************************
