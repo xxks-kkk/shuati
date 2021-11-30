@@ -29,5 +29,7 @@ public class TestProductOfArrayExceptSelf
     {
         int[] ret = productOfArrayExceptSelf.productExceptSelf(nums);
         Assertions.assertArrayEquals(expectation, ret);
+        int[] ret2 = productOfArrayExceptSelf.productExceptSelf2(nums);
+        Assertions.assertArrayEquals(expectation, ret2);
     }
 }

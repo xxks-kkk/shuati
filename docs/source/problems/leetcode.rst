@@ -121,7 +121,24 @@ and each 0 subtracts one from :math:`sum`. If :math:`sum` is found in :math:`m`,
 ********************
 
 This is a classic DP problem. For space optimization, we can directly modify input ``grid``.
-         
+
+*********************************
+238. Product of Array Except Self
+*********************************
+
+The `intuitive solution <https://github.com/xxks-kkk/shuati/blob/0e4e83d39d199a1562be22adadc5df8cd51d19c1/java/java-leetcode/src/main/java/ProductOfArrayExceptSelf.java>` uses prefix product and suffix product.
+
+In order to reduce the extra space to :math:`O(1)`, there are two insights:
+
+- We can use ``res`` (the final result array) to hold prefix product. Naively, we may want to use ``res`` to hold whole
+  ``productFromLeft``. But, note that for the last position, we don't need to multiply the number. For example, for
+  ``nums = [1,2,3,4]``, we don't need :math:`24` for position 3; :math:`6` is enough. In other words,
+  ``productFromLeft = [1,2,6,24]`` but we just need ``[1,1,2,6]`` because for the final answer, we need to divide 24 by 4
+  anyway. In other words, ``res`` is almost same as productFromLeft but we "push" the whole array to right for one position.
+
+- We can use one integer to keep track of accumulated suffix product, instead of the whole array. Then, we can just
+  multiply the accumulated suffix product into ``res`` to obtain the final answer.
+
 *****************************
 1041. Robot Bounded In Circle
 *****************************
