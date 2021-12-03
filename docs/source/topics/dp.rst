@@ -4,4 +4,6 @@
 Dynamic Programming
 ###################
 
-- :ref:`problems/leetcode:53. Maximum Subarray`
+
+- :ref:`53.rst`
+  

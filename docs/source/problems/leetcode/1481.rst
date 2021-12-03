@@ -1,0 +1,9 @@
+.. _1481.rst:
+
+******************************************************
+1481. Least Number of Unique Integers after K Removals
+******************************************************
+
+There is :math:`O(n)` solution (compared to priority queue :math:`O(n\log n)` solution) available as well.
+
+`ref <https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/discuss/686335/JavaPython-3-Greedy-Alg.%3A-3-methods-from-O(nlogn)-to-O(n)-w-brief-explanation-and-analysis.>`__

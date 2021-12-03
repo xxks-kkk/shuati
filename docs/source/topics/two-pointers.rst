@@ -4,4 +4,4 @@
 Two Pointers
 ############
 
-- :ref:`problems/leetcode:15. 3Sum`
+- :ref:`15.rst`

@@ -1,0 +1,7 @@
+.. _64.rst:
+
+********************
+64. Minimum Path Sum
+********************
+
+This is a classic DP problem. For space optimization, we can directly modify input ``grid``.
