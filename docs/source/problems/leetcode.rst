@@ -6,6 +6,7 @@ Leetcode Problems
 
 .. toctree::
    :glob:
+   :maxdepth: 1
 
    leetcode/*
 
