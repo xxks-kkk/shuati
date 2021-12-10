@@ -144,3 +144,8 @@ Then, we have
    \end{equation}
 
 Then, the solution is :math:`\max(a(i,j))` for :math:`i \in [0,m]` and :math:`j \in [0,n]`.   
+
+To find the actual LCS, what we can do is to note the index of the element of :math:`X` (:math:`Y` also
+works) where maximum is reached (denoted :math:`e`). Then, we just take a substring :math:`X[e - max, e]`.
+See `ref <https://leetcode.com/discuss/interview-question/1273766/longest-common-substring>`__ for the idea
+(code itself may not be correct).
