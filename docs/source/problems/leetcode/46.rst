@@ -1,0 +1,35 @@
+.. _46.rst:
+
+****************
+46. Permutations
+****************
+
+The idea is exactly the same as :ref:`77.rst`. We first think of :math:`k`-nested loops and then reduce it to a recursion form.
+The algorithm is following:
+
+.. _permutations-recursion-algorithm:
+.. pcode::
+
+     \begin{algorithm}
+     \caption{Permutations (recursion algorithm)}
+     \begin{algorithmic}
+     \PROCEDURE{permutes}{$nums, k, used=[0_0, \dots, 0_{nums.length-1}], tmp=[], res=\emptyset$}
+     \IF{k = 0} \COMMENT{We're at the $k=0$th loop}
+       \STATE add $tmp$ to $res$
+     \ENDIF
+     \FOR{$i = 0$ \TO $nums.length$}
+       \IF{$used[i] \neq 1$}
+         \STATE $used[i] = 1$
+         \STATE $tmp \mathrel{+}= [nums[i]]$
+         \STATE \CALL{permutes}{$nums, k-1, used, tmp, res$}
+         \STATE $used[i] = 0$
+         \STATE $tmp \mathrel{-}= [nums[i]]$
+       \ENDIF
+     \ENDFOR
+     \ENDPROCEDURE
+     \end{algorithmic}
+     \end{algorithm}
+
+The new thing in this problem is thse use of ``used`` array to keep track of which element has been used (indicated by :math:`1`) and
+which hasn't (indicated by :math:`0`). We also need a variable :math:`k` to keep track of which nested-loop the algorithm is currently in
+so that the algorithm can start to pop the callstack when it is in the base case.

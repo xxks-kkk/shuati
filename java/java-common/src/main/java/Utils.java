@@ -30,26 +30,22 @@ public class Utils
             expectation.get(i).sort(Comparator.comparingInt(a -> a));
         }
         ret.sort((a, b) -> {
-            if (!Objects.equals(a.get(0), b.get(0))) {
-                return a.get(0) - b.get(0);
+            int len = Math.min(a.size(), b.size());
+            for (int i = 0; i < len; ++i) {
+                if (!Objects.equals(a.get(0), b.get(0))) {
+                    return a.get(i) - b.get(i);
+                }
             }
-            else if (!Objects.equals(a.get(1), b.get(1))) {
-                return a.get(1) - b.get(1);
-            }
-            else {
-                return a.get(2) - b.get(2);
-            }
+            return a.get(len - 1) - b.get(len - 1);
         });
         expectation.sort((a, b) -> {
-            if (!Objects.equals(a.get(0), b.get(0))) {
-                return a.get(0) - b.get(0);
+            int len = Math.min(a.size(), b.size());
+            for (int i = 0; i < len; ++i) {
+                if (!Objects.equals(a.get(0), b.get(0))) {
+                    return a.get(i) - b.get(i);
+                }
             }
-            else if (!Objects.equals(a.get(1), b.get(1))) {
-                return a.get(1) - b.get(1);
-            }
-            else {
-                return a.get(2) - b.get(2);
-            }
+            return a.get(len - 1) - b.get(len - 1);
         });
         for (int i = 0; i < ret.size(); ++i) {
             if (expectation.get(i).size() != ret.get(i).size()) {
