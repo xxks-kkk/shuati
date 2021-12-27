@@ -15,7 +15,7 @@ export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
 # See https://www.sphinx-doc.org/
 python3 -m venv env/
 source env/bin/activate
-pip install -U Sphinx sphinxcontrib-bibtex cloud_sptheme sphinxcontrib-proof sphinx-markdown-tables
+pip install -U Sphinx sphinxcontrib-bibtex cloud_sptheme sphinxcontrib-proof sphinx-markdown-tables sphinxcontrib-pseudocode
 make clean
 make html
 

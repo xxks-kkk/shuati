@@ -4,7 +4,7 @@
 238. Product of Array Except Self
 *********************************
 
-The `intuitive solution <https://github.com/xxks-kkk/shuati/blob/0e4e83d39d199a1562be22adadc5df8cd51d19c1/java/java-leetcode/src/main/java/ProductOfArrayExceptSelf.java>` uses prefix product and suffix product.
+The `intuitive solution <https://github.com/xxks-kkk/shuati/blob/0e4e83d39d199a1562be22adadc5df8cd51d19c1/java/java-leetcode/src/main/java/ProductOfArrayExceptSelf.java>`_ uses prefix product and suffix product.
 
 In order to reduce the extra space to :math:`O(1)`, there are two insights:
 

@@ -1,0 +1,155 @@
+.. _77.rst:
+
+****************
+77. Combinations
+****************
+
+This is a classic backtracking problem. Here is a general thinking to handle this type of problem.
+
+.. proof:theorem:: Key idea
+
+   We treat backtracking type of problem as a CSP problem. In specific, we solve the problem
+   using :math:`k`-nested loops [#f1]_ and then reduce the :math:`k`-nested loops into recursion format.
+
+Take this problem as an example. If we know :math:`k` beforehand (i.e., :math:`k` is a fixed constant), we
+can easily write the following algorithm to solve the problem. Suppose :math:`k = 2`, then,
+
+.. _k-nested-loops:
+.. pcode::
+
+       \begin{algorithm}
+       \caption{$k$-nested loops algorithm}
+       \begin{algorithmic}
+       \PROCEDURE{combine}{$n, k=2$}
+       \STATE $res = \emptyset$ \COMMENT{$res$ contains a list of combination}
+       \FOR{$i = n$ \TO $1$}
+       \FOR{$j = i-1$ \TO $1$}
+       \STATE add $(i,j)$ to $res$ \COMMENT{$k=2$. Thus, each combination contains two elements}
+       \ENDFOR
+       \ENDFOR
+       \RETURN $res$
+       \ENDPROCEDURE
+       \end{algorithmic}
+       \end{algorithm}
+
+Because we know :math:`k = 2`, we only have two nested loops in our algorithm. However, in reality, we don't
+know :math:`k` beforehand (i.e., :math:`k` is a variable fed into our algorithm), we don't know how many
+nested loops we need to write explicitly in our algorithm. This naturally leads to recursion [#f2]_.
+
+We can translate :numref:`k-nested-loops` into recursion as follows (again, for illustration purpose,
+we assume :math:`k = 2`):
+
+.. _k-nested-loops2:
+.. pcode::
+   :linenos:
+
+     \begin{algorithm}
+     \caption{$k$-nested loops algorithm (version 2)}
+     \begin{algorithmic}
+     \PROCEDURE{combine}{$n, k=2$}
+     \STATE $tmp = []$
+     \STATE $res = \emptyset$
+     \FOR{$i = n$ \TO $1$}
+       \STATE $tmp \mathrel{+}= [i]$ \COMMENT{append $i$ to $tmp$. $tmp = [i]$}
+       \FOR{$j = i-1$ \TO $1$}
+         \STATE $tmp \mathrel{+}= [j]$ \COMMENT{$tmp = [i,j]$}
+         \STATE add $tmp$ to $res$
+         \STATE $tmp \mathrel{-}= [j]$
+       \ENDFOR
+       \STATE $tmp \mathrel{-}= [j]$
+     \ENDFOR
+     \ENDPROCEDURE
+     \end{algorithmic}
+     \end{algorithm}
+
+:numref:`k-nested-loops2` is essentially the same as :numref:`k-nested-loops`: instead of constructing each
+individual answer at the inner most loop directly, e.g., :math:`(i,j)`, :numref:`k-nested-loops2` uses a
+local variable :math:`tmp` to construct the answer incrementally as the algorithm executs from the outermost loop
+to the innermost loop.
+
+The key observation on :numref:`k-nested-loops2` is that if we look at each individual loop, they are identical
+to each other. After the loop condition, the algorithm first adds :math:`i` to :math:`tmp` (i.e., :math:`tmp \pluseq [i]`),
+then the algorithm execution goes to inner loop. After inner loop finishes execution, the algorithm decrements :math:`i`
+from :math:`tmp`. When the algorithm reaches inner loop, the same pattern repeats, i.e., add element to :math:`tmp`,
+let inner loop's inner loop performs computation, and remove element from :math:`tmp`. The only special case is when
+there is no more inner loop to go. In other words, if we number each loop as :math:`k`th loop,
+we treat Line 8 of :numref:`k-nested-loops2` as the :math:`k = 0` loop.
+
+With description above, we clearly see the induction step and the base step, which are required to form a recursion.
+Then, we can transform :numref:`k-nested-loops2` to its recursion form. Along the way, we don't need to prefix :math:`k`
+any more.
+
+.. _k-nested-loops3:
+.. pcode::
+
+     \begin{algorithm}
+     \caption{$k$-nested loops algorithm (recursion version)}
+     \begin{algorithmic}
+     \PROCEDURE{combine}{$p=n, q=k, res=\emptyset, tmp=[]$}
+     \IF{q = 0} \COMMENT{We're at the $k=0$th loop}
+       \STATE add $tmp$ to $res$
+     \ENDIF
+     \FOR{$i = p$ \TO $1$}
+       \STATE $tmp \mathrel{+}= [i]$
+       \STATE \CALL{combine}{$i-1, q-1, res, tmp$}
+       \STATE $tmp \mathrel{-}= [i]$
+     \ENDFOR
+     \ENDPROCEDURE
+     \end{algorithmic}
+     \end{algorithm}
+
+.. note::
+
+   MariaDB has its join algorithm structured like :numref:`k-nested-loops3`
+     
+Just for the completeness, this problem can be viewed as a CSP, where there are :math:`k` variables and
+the constraints are no duplicate value appears in the solution to CSP, i.e., the complete assignment
+to all :math:`k` variables. The constraints can be enforced by modifying domain values given the previous
+variables' assignments. In TT-style, the algorithm can be written
+
+.. _csp-style-algorithm:
+.. pcode::
+
+     \begin{algorithm}
+     \caption{CSP-style algorithm}
+     \begin{algorithmic}
+     \PROCEDURE{combine}{$n, k$}
+     \STATE impose an ordering on the variables: $X_1, \dots, X_k$
+     \STATE initialize iterators $I_1, \dots, I_n$ for scanning the domain of each variable
+     \STATE $i \leftarrow 1$
+     \STATE $res = \emptyset$
+     \WHILE{\TRUE}
+       \STATE $v =$ \CALL{next}{$I_i$} \COMMENT{The constraint is enforced here by reducing domain of $X_i$}
+       \IF{$v = nil$}
+         \IF{$i = 1$}
+           \STATE \RETURN $res$
+         \ELSE
+           \STATE $i = i-1$
+         \ENDIF
+       \ELIF {$v$ instantiate $X_i$} \COMMENT{there is no constraint because the constraint is implemented by domain}
+         \IF {$i = k$}
+           \STATE add $tmp$ to $res$
+         \ELSE
+           \STATE $i \mathrel{+}= 1$
+           \STATE \CALL{reset}{$I_i$}
+         \ENDIF
+       \ENDIF
+     \ENDWHILE
+     \ENDPROCEDURE
+     \end{algorithmic}
+     \end{algorithm}   
+
+
+Certainly, :numref:`csp-style-algorithm` is much more verbose than :numref:`k-nested-loops3` and thus, it's not vise to use it during the interview.
+
+     
+.. rubric:: Footnotes
+
+.. [#f1] Alternatively, we can think the problem as a :math:`k`-way join evaluation problem and solve it using
+         :math:`k`-nested loop join.
+
+.. [#f2] This analogy (i.e., motivation) leads to recursion is quite natural. We have something similar in database:
+         answer query using relational algebra has the limitation on :math:`k` - :math:`k` has to be fixed. That's
+         exactly why Datalog shine - it can handle the query where :math:`k` is unknown at priori. Aside remark,
+         datalog is more powerful in terms of recursion but it suffers when negation is introduced compared to
+         relational algebra.

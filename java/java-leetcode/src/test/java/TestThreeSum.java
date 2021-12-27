@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TestThreeSum
@@ -38,38 +39,6 @@ public class TestThreeSum
     public void testThreeSum(int[] nums, List<List<Integer>> expectation)
     {
         List<List<Integer>> ret = threeSum.threeSum(nums);
-        assertEquals(expectation.size(), ret.size());
-        for (int i = 0; i < ret.size(); ++i) {
-            ret.get(i).sort(Comparator.comparingInt(a -> a));
-            expectation.get(i).sort(Comparator.comparingInt(a -> a));
-        }
-        ret.sort((a, b) -> {
-            if (!Objects.equals(a.get(0), b.get(0))) {
-                return a.get(0) - b.get(0);
-            }
-            else if (!Objects.equals(a.get(1), b.get(1))) {
-                return a.get(1) - b.get(1);
-            }
-            else {
-                return a.get(2) - b.get(2);
-            }
-        });
-        expectation.sort((a, b) -> {
-            if (!Objects.equals(a.get(0), b.get(0))) {
-                return a.get(0) - b.get(0);
-            }
-            else if (!Objects.equals(a.get(1), b.get(1))) {
-                return a.get(1) - b.get(1);
-            }
-            else {
-                return a.get(2) - b.get(2);
-            }
-        });
-        for (int i = 0; i < ret.size(); ++i) {
-            assertEquals(expectation.get(i).size(), ret.get(i).size());
-            for (int j = 0; j < ret.get(i).size(); ++j) {
-                assertEquals(expectation.get(i).get(j), ret.get(i).get(j));
-            }
-        }
+        assertTrue(Utils.checkListOfList(ret, expectation));
     }
 }

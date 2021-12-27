@@ -31,6 +31,7 @@ extensions = [
     "sphinx.ext.todo",
     "sphinxcontrib.proof",
     "sphinx_markdown_tables",
+    "sphinxcontrib.pseudocode"
 ]
 
 # Suppress dublicate labels warning

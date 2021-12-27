@@ -38,3 +38,4 @@ out/
 *.iml
 .idea-cpp/
 .idea-java/
+pseudocode*
