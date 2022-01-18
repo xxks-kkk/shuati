@@ -1,0 +1,27 @@
+.. _257.rst:
+
+######################
+257. Binary Tree Paths
+######################
+
+The following code may be more optimized than our existing solution by
+leveraging the property of ``String`` in Java.
+
+.. todo::
+
+   Figure out exactly what's the property of ``String`` that allows us
+   to essentially avoid ``tmp.remove(tmp.size() - 1);`` in our existing solution.
+
+.. code-block:: java
+
+   public List<String> binaryTreePaths(TreeNode root) {
+       List<String> answer = new ArrayList<String>();
+       if (root != null) searchBT(root, "", answer);
+       return answer;
+   }
+   
+   private void searchBT(TreeNode root, String path, List<String> answer) {
+       if (root.left == null && root.right == null) answer.add(path + root.val);
+       if (root.left != null) searchBT(root.left, path + root.val + "->", answer);
+       if (root.right != null) searchBT(root.right, path + root.val + "->", answer);
+   }

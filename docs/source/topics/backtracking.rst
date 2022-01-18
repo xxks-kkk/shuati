@@ -7,3 +7,4 @@ Backtracking
 - :ref:`77.rst` introduces the key idea to think about the backtracking problem. Same idea is also applicable to:
 
   - :ref:`46.rst`
+  - :ref:`257.rst`

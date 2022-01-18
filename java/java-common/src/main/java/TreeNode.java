@@ -37,7 +37,10 @@ public class TreeNode
             int i = 1;
             while (!queue.isEmpty() && i < nums.size()) {
                 TreeNode node = queue.poll();
-                TreeNode left = new TreeNode(nums.get(i));
+                if (node == null) {
+                    continue;
+                }
+                TreeNode left = nums.get(i) == null ? null : new TreeNode(nums.get(i));
                 queue.add(left);
                 node.left = left;
                 i++;
