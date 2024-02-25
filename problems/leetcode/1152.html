@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1152. AnalyzeUserWebsiteVisitPattern &#8212; Shuati  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/cloud-cust.css?v=ebf6eb6e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/proof.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/mathtools", "[tex]/color"]}, "tex": {"macros": {"ojoin": "{\\rule[-0.12ex]{.3em}{.4pt}\\llap{\\rule[1.2ex]{.3em}{.4pt}}}", "leftouterjoin": "{\\mathrel{\\ojoin\\mkern-6.5mu\\Join}}", "rightouterjoin": "{\\mathrel{\\Join\\mkern-6.5mu\\ojoin}}", "fullouterjoin": "{\\mathrel{\\ojoin\\mkern-6.5mu\\Join\\mkern-6.5mu\\ojoin}}", "antijoin": "{\\mathrel{\\mkern3mu\\bar{\\ltimes}\\mkern3mu}}", "project": "{\\mbox{$\\pi$}}", "Project": "{\\mbox{$\\Pi$}}", "select": "{\\mbox{$\\sigma$}}", "cross": "{\\mbox{$\\times$}}", "join": "{\\mbox{$~\\Join~$}}", "semijoin": "{\\mbox{$\\ltimes$}}", "rightsemijoin": "{\\mbox{$\\rtimes$}}", "dup": "{\\mbox{$\\delta$}}", "grouping": "{\\mbox{$\\gamma$}}", "Rename": "{\\mbox{\\Large$\\rho$}}", "rename": "{\\mbox{$\\rho$}}", "sorting": "{\\mbox{$\\tau$}}", "softo": "{\\mathrel{\\tilde{O}}}", "true": "{\\mathrel{\\top}}", "false": "{\\mathrel{\\bot}}", "set": ["{\\left\\lbrace #1\\right\\rbrace}", 1], "databaseschema": "{\\mathcal{D}}", "databaseinstance": "{\\mathcal{I}}", "pluseq": "{\\mathrel{+}=}", "minuseq": "{\\mathrel{-}=}"}, "packages": {"[+]": ["mathtools", "color"]}, "tags": "ams"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="13. Roman to Integer" href="13.html" />
+    <link rel="prev" title="1143. Longest Common Subsequence" href="1143.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="13.html" title="13. Roman to Integer"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="1143.html" title="1143. Longest Common Subsequence"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../index.html">Shuati  documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../problems.html" >Problems</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../leetcode.html" accesskey="U">Leetcode Problems</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">1152. AnalyzeUserWebsiteVisitPattern</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="analyzeuserwebsitevisitpattern">
+<span id="rst"></span><h1>1152. AnalyzeUserWebsiteVisitPattern<a class="headerlink" href="#analyzeuserwebsitevisitpattern" title="Link to this heading">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://leetcode.com/problems/analyze-user-website-visit-pattern/discuss/355606/Java-Very-Easy-Understand-With-Explanation">ref</a></p>
+</div>
+<p>The brute force solution is sufficient for this problem. A few remarks:</p>
+<ul>
+<li><p>We can use the following nested loops to generate all possible list of length 3 following the same ordering from a given list:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">list</span><span class="o">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">list</span><span class="o">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">k</span> <span class="o">=</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="nb">list</span><span class="o">.</span><span class="n">size</span><span class="p">();</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</pre></div>
+</div>
+<p>In general, to generate all possible length <span class="math notranslate nohighlight">\(k\)</span>, we need <span class="math notranslate nohighlight">\(k\)</span> nested loops.</p>
+</li>
+<li><p>Be alert the case of “visit the same 3-seq in one user”. That is , one user may visit the same pattern multiple times.</p></li>
+<li><p>We don’t have to sort timestamps and then username and website following the ordering of timestamp at the very beginning.
+We can sort websites by timestamp for each individual user, e.g., <code class="docutils literal notranslate"><span class="pre">list.sort(Comparator.comparingInt(a</span> <span class="pre">-&gt;</span> <span class="pre">a.time));</span></code></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="1143.html"
+                          title="Previous page">&larr; 1143. Longest Common Subsequence</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="13.html"
+                          title="Next page">&rarr; 13. Roman to Integer</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/problems/leetcode/1152.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="13.html" title="13. Roman to Integer"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="1143.html" title="1143. Longest Common Subsequence"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../index.html">Shuati  documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../problems.html" >Problems</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../leetcode.html" >Leetcode Problems</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">1152. AnalyzeUserWebsiteVisitPattern</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Zeyuan Hu.
+      Last updated on Feb 25, 2024.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>

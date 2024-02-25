@@ -1,0 +1,14 @@
+.. _278.rst:
+
+######################
+278. First Bad Version
+######################
+
+This problem is equivalent as "finding the first appearance of the target number in a sorted array".
+
+.. todo::
+
+   In combination `solution <https://leetcode.com/problems/first-bad-version/solution/>`_ and
+   `prove by induction <http://www.cs.cornell.edu/courses/cs211/2006sp/Lectures/L06-Induction/binary_search.html>`__
+   to formally show that when ``leftptr`` and ``rightptr`` eventually both meet and it must be the first bad version.
+   This is helpful to show the correctness for this general type of problem.

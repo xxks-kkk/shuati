@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>53. Maximum Subarray &#8212; Shuati  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/cloud-cust.css?v=ebf6eb6e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/proof.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/mathtools", "[tex]/color"]}, "tex": {"macros": {"ojoin": "{\\rule[-0.12ex]{.3em}{.4pt}\\llap{\\rule[1.2ex]{.3em}{.4pt}}}", "leftouterjoin": "{\\mathrel{\\ojoin\\mkern-6.5mu\\Join}}", "rightouterjoin": "{\\mathrel{\\Join\\mkern-6.5mu\\ojoin}}", "fullouterjoin": "{\\mathrel{\\ojoin\\mkern-6.5mu\\Join\\mkern-6.5mu\\ojoin}}", "antijoin": "{\\mathrel{\\mkern3mu\\bar{\\ltimes}\\mkern3mu}}", "project": "{\\mbox{$\\pi$}}", "Project": "{\\mbox{$\\Pi$}}", "select": "{\\mbox{$\\sigma$}}", "cross": "{\\mbox{$\\times$}}", "join": "{\\mbox{$~\\Join~$}}", "semijoin": "{\\mbox{$\\ltimes$}}", "rightsemijoin": "{\\mbox{$\\rtimes$}}", "dup": "{\\mbox{$\\delta$}}", "grouping": "{\\mbox{$\\gamma$}}", "Rename": "{\\mbox{\\Large$\\rho$}}", "rename": "{\\mbox{$\\rho$}}", "sorting": "{\\mbox{$\\tau$}}", "softo": "{\\mathrel{\\tilde{O}}}", "true": "{\\mathrel{\\top}}", "false": "{\\mathrel{\\bot}}", "set": ["{\\left\\lbrace #1\\right\\rbrace}", 1], "databaseschema": "{\\mathcal{D}}", "databaseinstance": "{\\mathcal{I}}", "pluseq": "{\\mathrel{+}=}", "minuseq": "{\\mathrel{-}=}"}, "packages": {"[+]": ["mathtools", "color"]}, "tags": "ams"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="64. Minimum Path Sum" href="64.html" />
+    <link rel="prev" title="525. Contiguous Array" href="525.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="64.html" title="64. Minimum Path Sum"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="525.html" title="525. Contiguous Array"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../index.html">Shuati  documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../problems.html" >Problems</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../leetcode.html" accesskey="U">Leetcode Problems</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">53. Maximum Subarray</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="maximum-subarray">
+<span id="rst"></span><h1>53. Maximum Subarray<a class="headerlink" href="#maximum-subarray" title="Link to this heading">¶</a></h1>
+<p>This is an reiteration of <a class="reference external" href="https://github.com/xxks-kkk/shuati/tree/master/leetcode/53-MaximumSubarray">what I have written previously</a>,
+i.e., <a class="reference external" href="https://github.com/xxks-kkk/shuati/blob/e2ac10de8b1a7690e2b6b05060281b178bfdc30a/leetcode/53-MaximumSubarray/maximumSubarray.cc#L56">maxSubArray3</a>).</p>
+<p>The problem is solved using dynamic programming. Given a sequence of <span class="math notranslate nohighlight">\(k\)</span> numbers: <span class="math notranslate nohighlight">\(nums = \set{n_1, \dots, n_k}\)</span>, suppose we
+have found the maximum subarray sum <span class="math notranslate nohighlight">\(S_i\)</span> for <span class="math notranslate nohighlight">\(n_1, \dots n_i\)</span>, we want to find the maximum subarray sum for <span class="math notranslate nohighlight">\(n_1, \dots n_{i+1}\)</span>.
+Then, <span class="math notranslate nohighlight">\(S_{i+1}\)</span> can either be <span class="math notranslate nohighlight">\(S_i\)</span> or the subarray sum that includes <span class="math notranslate nohighlight">\(n_{i+1}\)</span>. For the subarray sum that includes <span class="math notranslate nohighlight">\(n_{i+1}\)</span>,
+it can either be the sum of elements in subarray that previously ends at <span class="math notranslate nohighlight">\(n_i\)</span> and now includes <span class="math notranslate nohighlight">\(n_{i+1}\)</span> or the subarray that only includes
+<span class="math notranslate nohighlight">\(n_{i+1}\)</span>, depending on which sum is larger.</p>
+<p>In code, we use <code class="docutils literal notranslate"><span class="pre">maxEndingHere</span></code> to denote the sum of elements in subarray that ends at <span class="math notranslate nohighlight">\(n_i\)</span> and we compute new <code class="docutils literal notranslate"><span class="pre">maxEndingHere</span></code> based on
+value of <span class="math notranslate nohighlight">\(n_{i+1}\)</span> as described above, i.e., including <span class="math notranslate nohighlight">\(n_{i+1}\)</span> into <code class="docutils literal notranslate"><span class="pre">maxEndingHere</span></code> or just use <span class="math notranslate nohighlight">\(n_{i+1}\)</span>. Then, we update
+<code class="docutils literal notranslate"><span class="pre">globalMax</span></code>, which denotes <span class="math notranslate nohighlight">\(S_i\)</span> previously and <span class="math notranslate nohighlight">\(S_{i+1}\)</span> after the update.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="525.html"
+                          title="Previous page">&larr; 525. Contiguous Array</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="64.html"
+                          title="Next page">&rarr; 64. Minimum Path Sum</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/problems/leetcode/53.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="64.html" title="64. Minimum Path Sum"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="525.html" title="525. Contiguous Array"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../index.html">Shuati  documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../problems.html" >Problems</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../leetcode.html" >Leetcode Problems</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">53. Maximum Subarray</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Zeyuan Hu.
+      Last updated on Feb 25, 2024.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>

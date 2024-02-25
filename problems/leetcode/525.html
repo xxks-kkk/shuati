@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>525. Contiguous Array &#8212; Shuati  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/cloud-cust.css?v=ebf6eb6e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/proof.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/mathtools", "[tex]/color"]}, "tex": {"macros": {"ojoin": "{\\rule[-0.12ex]{.3em}{.4pt}\\llap{\\rule[1.2ex]{.3em}{.4pt}}}", "leftouterjoin": "{\\mathrel{\\ojoin\\mkern-6.5mu\\Join}}", "rightouterjoin": "{\\mathrel{\\Join\\mkern-6.5mu\\ojoin}}", "fullouterjoin": "{\\mathrel{\\ojoin\\mkern-6.5mu\\Join\\mkern-6.5mu\\ojoin}}", "antijoin": "{\\mathrel{\\mkern3mu\\bar{\\ltimes}\\mkern3mu}}", "project": "{\\mbox{$\\pi$}}", "Project": "{\\mbox{$\\Pi$}}", "select": "{\\mbox{$\\sigma$}}", "cross": "{\\mbox{$\\times$}}", "join": "{\\mbox{$~\\Join~$}}", "semijoin": "{\\mbox{$\\ltimes$}}", "rightsemijoin": "{\\mbox{$\\rtimes$}}", "dup": "{\\mbox{$\\delta$}}", "grouping": "{\\mbox{$\\gamma$}}", "Rename": "{\\mbox{\\Large$\\rho$}}", "rename": "{\\mbox{$\\rho$}}", "sorting": "{\\mbox{$\\tau$}}", "softo": "{\\mathrel{\\tilde{O}}}", "true": "{\\mathrel{\\top}}", "false": "{\\mathrel{\\bot}}", "set": ["{\\left\\lbrace #1\\right\\rbrace}", 1], "databaseschema": "{\\mathcal{D}}", "databaseinstance": "{\\mathcal{I}}", "pluseq": "{\\mathrel{+}=}", "minuseq": "{\\mathrel{-}=}"}, "packages": {"[+]": ["mathtools", "color"]}, "tags": "ams"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="53. Maximum Subarray" href="53.html" />
+    <link rel="prev" title="46. Permutations" href="46.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="53.html" title="53. Maximum Subarray"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="46.html" title="46. Permutations"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../index.html">Shuati  documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../problems.html" >Problems</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../leetcode.html" accesskey="U">Leetcode Problems</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">525. Contiguous Array</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="contiguous-array">
+<span id="rst"></span><h1>525. Contiguous Array<a class="headerlink" href="#contiguous-array" title="Link to this heading">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>problem: <span id="id1">[<a class="reference internal" href="../../bib.html#id3" title="LeetCode. 525. Contiguous Array. URL: https://leetcode.com/problems/contiguous-array/ (visited on 2020-08-02).">Lee</a>]</span></p></li>
+<li><p><a class="reference external" href="https://github.com/xxks-kkk/shuati/tree/master/leetcode/525-ContiguousArray">solution</a></p></li>
+<li><p>ref: <span id="id2">[<a class="reference internal" href="../../bib.html#id2" title="wh0ami. Sliding Window for Beginners [Problems | Template | Sample Solutions]. URL: https://leetcode.com/discuss/general-discussion/657507/Sliding-Window-for-Beginners-Problems-or-Template-or-Sample-Solutions (visited on 2020-08-02).">wh0ami</a>]</span></p></li>
+</ul>
+</div>
+<p>The key idea of this problem is to use a hashmap <span class="math notranslate nohighlight">\(m\)</span> to keep track of
+unique sum of numbers that the algorithm has seen so far (denoted as <span class="math notranslate nohighlight">\(s\)</span>) and
+the associated index of the number that reaches <span class="math notranslate nohighlight">\(s\)</span> for the first time (denoted as <span class="math notranslate nohighlight">\(idx\)</span>).
+<span class="math notranslate nohighlight">\(m\)</span> then can be used to identify the desired subarray (denoted as <span class="math notranslate nohighlight">\(A\)</span>) as following: algorithm computes accumulated
+sum of numbers that have seen so far (denoted as <span class="math notranslate nohighlight">\(sum\)</span>). Then, if <cite>sum</cite> is already in <span class="math notranslate nohighlight">\(m\)</span>,
+then it must be that we have found <span class="math notranslate nohighlight">\(A\)</span> with starting index <span class="math notranslate nohighlight">\(m[sum]\)</span> because each 1 adds one to <span class="math notranslate nohighlight">\(sum\)</span>
+and each 0 subtracts one from <span class="math notranslate nohighlight">\(sum\)</span>. If <span class="math notranslate nohighlight">\(sum\)</span> is found in <span class="math notranslate nohighlight">\(m\)</span>, it must be that the same number of 0s and
+1s have seen since the value corresponds to <span class="math notranslate nohighlight">\(sum\)</span> first added in <span class="math notranslate nohighlight">\(m\)</span>.</p>
+<div class="proof proof-type-example" id="id3">
+
+    <div class="proof-title">
+        <span class="proof-type">Example 7</span>
+        
+    </div><div class="proof-content">
+<p>Consider <span class="math notranslate nohighlight">\(nums = [0,0,1,1,1,0,0]\)</span>. The corresponding <span class="math notranslate nohighlight">\(sum\)</span> is
+<span class="math notranslate nohighlight">\([-1,-2,-1,0,1,0,-1]\)</span>. After the first 0, <span class="math notranslate nohighlight">\(m\)</span> contains <span class="math notranslate nohighlight">\(\langle 0,-1 \rangle, \langle -1,0 \rangle\)</span>.
+When algorithm checks first 1, <span class="math notranslate nohighlight">\(sum\)</span> becomes <span class="math notranslate nohighlight">\(-1\)</span> again. The algorithm finds an <span class="math notranslate nohighlight">\(A\)</span>, which is <span class="math notranslate nohighlight">\([0,1]\)</span>.
+Intuitively, we can have the following picture:</p>
+<figure class="align-default" id="id4">
+<img alt="../../_images/intuition-example.png" src="../../_images/intuition-example.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><span class="math notranslate nohighlight">\({\color{red} \text{Red arrow}}\)</span> indicates <span class="math notranslate nohighlight">\(A = [0,1]\)</span> with the property that number of 0s equal to number of 1s.</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Let <span class="math notranslate nohighlight">\(i_1\)</span> denote the index of the number that corresponds to <span class="math notranslate nohighlight">\(m[s_1]\)</span>. Let <span class="math notranslate nohighlight">\(i_2\)</span> denote the index of the number
+that <span class="math notranslate nohighlight">\(sum = s_1\)</span>. Then, to calculate the length of <span class="math notranslate nohighlight">\(A\)</span>, we have <span class="math notranslate nohighlight">\(i_2 - (i_1 + 1) + 1\)</span>, which is
+<span class="math notranslate nohighlight">\(i_2 - i_1\)</span>. In this example, <span class="math notranslate nohighlight">\(A = [0,1]\)</span> has length <span class="math notranslate nohighlight">\(2 - (0 + 1) + 1 = 2\)</span>.</p>
+</div></div></section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="46.html"
+                          title="Previous page">&larr; 46. Permutations</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="53.html"
+                          title="Next page">&rarr; 53. Maximum Subarray</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/problems/leetcode/525.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="53.html" title="53. Maximum Subarray"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="46.html" title="46. Permutations"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../index.html">Shuati  documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../problems.html" >Problems</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../leetcode.html" >Leetcode Problems</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">525. Contiguous Array</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Zeyuan Hu.
+      Last updated on Feb 25, 2024.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>

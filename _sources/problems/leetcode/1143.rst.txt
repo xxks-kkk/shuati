@@ -1,0 +1,151 @@
+.. _1143.rst:
+
+################################
+1143. Longest Common Subsequence
+################################
+
+:cite:`Plaxton2019`, `ref <https://leetcode.com/problems/longest-common-subsequence/discuss/348884/C%2B%2B-with-picture-O(nm)>`__
+
+*********
+Main Idea
+*********
+
+.. proof:definition:: subsequence
+
+   A **subsequence** of a sequence :math:`Z` is any sequence obtainable from
+   :math:`Z` by removing zero or more elements of :math:`Z`.
+
+.. proof:definition:: longest common subsequence (LCS)
+
+   We are given two sequences :math:`X = x_1, \dots, x_m` and
+   :math:`Y = y_1, \dots, y_n`. A **longest common subsequence (LCS)**
+   of :math:`X` and :math:`Y` is a longest sequence that is a subsequence
+   of both :math:`X` and :math:`Y`.
+
+   .. note::
+
+      We index elements of a sequence with 1 instead of 0. It won't make
+      much difference theoretically but it matters for the
+      :ref:`implementation <problems/leetcode/1143:Handle Base Case>`.
+           
+We solve this problem using dynamic programming. For all :math:`i`
+and :math:`j` such that :math:`i \in [0,m]` and :math:`j \in [0,n]`, let
+
+.. math::
+
+   a(i,j) = \text{the length of an LCS of }X_i = x_1, \dots, x_i~\text{and}~
+   Y_j = y_1, \dots, y_j
+
+There are three possible cases:
+
+- If :math:`i = 0` or :math:`j = 0`, :math:`a(0,j) = 0` and :math:`a(i,0) = 0`
+  because elements of a sequence indexed beginning at 0 and when :math:`i = 0`,
+  that means :math:`X_i` is non-existent and thus, by the definition of
+  :math:`a(i,j)`, :math:`a(0,j) = 0`. Same argument applies for :math:`j = 0`.
+
+For the rest two cases, we assume :math:`i > 0` and :math:`j > 0`.
+
+- If :math:`x_i = y_j`, then there is an LCS of :math:`X_i` and :math:`Y_j` that
+  consists of an LCS of :math:`X_{i-1}` and :math:`Y_{j-1}` followed by the symbol
+  :math:`x_i = y_j`. Thus, for the length of such LCS, we have :math:`a(i,j) = a(i-1, j-1) + 1`.
+
+- If :math:`x_i \neq y_j`, then an LCS of :math:`X_i` and :math:`Y_j` is
+  either an LCS of :math:`X_{i-1}` and :math:`Y_j` or an LCS of :math:`X_i` and :math:`Y_{j-1}`
+  depending on which one has longer length. So, for the length, we have
+  :math:`a(i,j) = \max(a(i-1,j), a(i,j-1))`.
+
+In summary, we have
+
+.. math::
+
+   \begin{equation} \label{dp-formula}
+   a(i,j) =
+   \begin{cases}
+   0, & \text{if}~i=0~\text{or}~j=0 \\
+   a(i-1,j-1) + 1, &\text{if}~i>0~\text{and}~j>0~\text{and}~x_i = y_j \\
+   \max(a(i-1,j),a(i,j-1)),              &\text{if}~i>0~\text{and}~j>0~\text{and}~x_i \neq y_j
+   \end{cases}
+   \end{equation}
+
+We can compute all the :math:`a(i,j)` values in :math:`O(mn)` operations. We can trace backwards in the table
+of :math:`a(i,j)` values to obtain an optimal solution in :math:`O(m+n)` operations.
+
+**********************
+Implementation Details
+**********************
+
+================
+Handle Base Case
+================
+
+In the above, we consider elements of the sequence with 1-indexed. In actual implementation, the
+elements of the sequence (e.g., characters of a string) are often 0-indexed. This can cause
+some trouble in the implementation because we need to handle the special case of :math:`a(0,j)` and
+:math:`a(i,0)` as they are no longer 0 for sure; they can be 0 or 1. In other words, :math:`a(i,j)`
+becomes (denoted as :math:`a'(i,j)`)
+
+.. math::
+   
+   a'(i,j) = \text{the length of an LCS of }X_i = x_0, \dots, x_i~\text{and}~
+   Y_j = y_0, \dots, y_j
+
+
+Consider two possible examples:
+
+- :math:`X = aaa` and :math:`Y = aa`. Then, :math:`a'(0,j) = 1` for :math:`j \in [0,1]` and
+  :math:`a'(i,0) = 1` for :math:`i \in [0,2]`.
+
+- :math:`X = aba` and :math:`Y = b`. Then, :math:`a'(0,0) = 0` but :math:`a'(1,0) = 1` and :math:`a'(2,0) = 1`.        
+
+To avoid special handling for the base case (:math:`i = 0` or :math:`j = 0`), what we can do is to
+create a dp table with dimension :math:`(m+1) \times (n+1)` instead of :math:`m \times n`. Doing so,
+we follow :math:`\eqref{dp-formula}` precisely and when we compare character, instead of doing 
+``text1.charAt(i) == text2.charAt(j)``, we do ``text1.charAt(i-1) == text2.charAt(j-1)``.
+
+Put it differently, to implement :math:`\eqref{dp-formula}` precisely, we need to make dp table
+dimension :math:`(m+1) \times (n+1)` instead of :math:`m \times n`.
+
+==================
+Space Optimization
+==================
+
+Check out `ref1 <https://leetcode.com/problems/longest-common-subsequence/discuss/351689/JavaPython-3-Two-DP-codes-of-O(mn)-and-O(min(m-n))-spaces-w-picture-and-analysis>`__
+and `ref2 <https://leetcode.com/problems/longest-common-subsequence/discuss/348884/C%2B%2B-with-picture-O(nm)>`__.
+
+*******
+Variant
+*******
+
+The same idea is applicable to the problem of longest common substring (LCS).
+We use the same notation of :math:`X = x_1, \dots, x_m` and :math:`Y = y_1, \dots, y_n`.
+Then, for all :math:`i` and :math:`j` such that :math:`i \in [0,m]` and :math:`j \in [0,n]`, let
+
+.. math::
+
+   a(i,j) = \text{the length of the common substring that ends at}~x_i~\text{and}~y_j
+
+"ends at :math:`x_i`" means substring that includes :math:`x_i` as the last element.
+
+.. note::
+
+   How :math:`a(i,j)` defined here differs from :math:`a(i,j)` defined previously.
+
+Then, we have   
+
+.. math::
+
+   \begin{equation} \label{dp-formula2}
+   a(i,j) =
+   \begin{cases}
+   0, & \text{if}~i=0~\text{or}~j=0 \\
+   a(i-1,j-1) + 1, &\text{if}~i>0~\text{and}~j>0~\text{and}~x_i = y_j \\
+   0,              &\text{if}~i>0~\text{and}~j>0~\text{and}~x_i \neq y_j
+   \end{cases}
+   \end{equation}
+
+Then, the solution is :math:`\max(a(i,j))` for :math:`i \in [0,m]` and :math:`j \in [0,n]`.   
+
+To find the actual LCS, what we can do is to note the index of the element of :math:`X` (:math:`Y` also
+works) where maximum is reached (denoted :math:`e`). Then, we just take a substring :math:`X[e - max, e]`.
+See `ref <https://leetcode.com/discuss/interview-question/1273766/longest-common-substring>`__ for the idea
+(code itself may not be correct).

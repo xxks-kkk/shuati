@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>77. Combinations &#8212; Shuati  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/cloud-cust.css?v=ebf6eb6e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/proof.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/mathtools", "[tex]/color"]}, "tex": {"macros": {"ojoin": "{\\rule[-0.12ex]{.3em}{.4pt}\\llap{\\rule[1.2ex]{.3em}{.4pt}}}", "leftouterjoin": "{\\mathrel{\\ojoin\\mkern-6.5mu\\Join}}", "rightouterjoin": "{\\mathrel{\\Join\\mkern-6.5mu\\ojoin}}", "fullouterjoin": "{\\mathrel{\\ojoin\\mkern-6.5mu\\Join\\mkern-6.5mu\\ojoin}}", "antijoin": "{\\mathrel{\\mkern3mu\\bar{\\ltimes}\\mkern3mu}}", "project": "{\\mbox{$\\pi$}}", "Project": "{\\mbox{$\\Pi$}}", "select": "{\\mbox{$\\sigma$}}", "cross": "{\\mbox{$\\times$}}", "join": "{\\mbox{$~\\Join~$}}", "semijoin": "{\\mbox{$\\ltimes$}}", "rightsemijoin": "{\\mbox{$\\rtimes$}}", "dup": "{\\mbox{$\\delta$}}", "grouping": "{\\mbox{$\\gamma$}}", "Rename": "{\\mbox{\\Large$\\rho$}}", "rename": "{\\mbox{$\\rho$}}", "sorting": "{\\mbox{$\\tau$}}", "softo": "{\\mathrel{\\tilde{O}}}", "true": "{\\mathrel{\\top}}", "false": "{\\mathrel{\\bot}}", "set": ["{\\left\\lbrace #1\\right\\rbrace}", 1], "databaseschema": "{\\mathcal{D}}", "databaseinstance": "{\\mathcal{I}}", "pluseq": "{\\mathrel{+}=}", "minuseq": "{\\mathrel{-}=}"}, "packages": {"[+]": ["mathtools", "color"]}, "tags": "ams"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/katex_autorenderer_77.js"></script>
+
+    
+    
+     
+        <script src="../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Others" href="../others.html" />
+    <link rel="prev" title="64. Minimum Path Sum" href="64.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../others.html" title="Others"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="64.html" title="64. Minimum Path Sum"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../index.html">Shuati  documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../problems.html" >Problems</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../leetcode.html" accesskey="U">Leetcode Problems</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">77. Combinations</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="combinations">
+<span id="rst"></span><h1>77. Combinations<a class="headerlink" href="#combinations" title="Link to this heading">¶</a></h1>
+<p>This is a classic backtracking problem. Here is a general thinking to handle this type of problem.</p>
+<div class="proof proof-type-theorem" id="id3">
+
+    <div class="proof-title">
+        <span class="proof-type">Theorem 8</span>
+        
+            <span class="proof-title-name">(Key idea)</span>
+        
+    </div><div class="proof-content">
+<p>We treat backtracking type of problem as a CSP problem. In specific, we solve the problem
+using <span class="math notranslate nohighlight">\(k\)</span>-nested loops <a class="footnote-reference brackets" href="#f1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and then reduce the <span class="math notranslate nohighlight">\(k\)</span>-nested loops into recursion format.</p>
+</div></div><p>Take this problem as an example. If we know <span class="math notranslate nohighlight">\(k\)</span> beforehand (i.e., <span class="math notranslate nohighlight">\(k\)</span> is a fixed constant), we
+can easily write the following algorithm to solve the problem. Suppose <span class="math notranslate nohighlight">\(k = 2\)</span>, then,</p>
+<div class="pseudocode" id="id4">
+<span id="k-nested-loops"></span><div class="pseudocode-caption">
+</div><div class="pseudocode-content">
+<pre id="2" style="display:hidden;">
+            \begin{algorithm}
+\caption{$k$-nested loops algorithm}
+\begin{algorithmic}
+\PROCEDURE{combine}{$n, k=2$}
+\STATE $res = \emptyset$ \COMMENT{$res$ contains a list of combination}
+\FOR{$i = n$ \TO $1$}
+\FOR{$j = i-1$ \TO $1$}
+\STATE add $(i,j)$ to $res$ \COMMENT{$k=2$. Thus, each combination contains two elements}
+\ENDFOR
+\ENDFOR
+\RETURN $res$
+\ENDPROCEDURE
+\end{algorithmic}
+\end{algorithm}
+        </pre></div></div><p>Because we know <span class="math notranslate nohighlight">\(k = 2\)</span>, we only have two nested loops in our algorithm. However, in reality, we don’t
+know <span class="math notranslate nohighlight">\(k\)</span> beforehand (i.e., <span class="math notranslate nohighlight">\(k\)</span> is a variable fed into our algorithm), we don’t know how many
+nested loops we need to write explicitly in our algorithm. This naturally leads to recursion <a class="footnote-reference brackets" href="#f2" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
+<p>We can translate <a class="reference internal" href="#k-nested-loops"><span class="std std-numref">Algorithm 2</span></a> into recursion as follows (again, for illustration purpose,
+we assume <span class="math notranslate nohighlight">\(k = 2\)</span>):</p>
+<div class="pseudocode" id="id5">
+<span id="k-nested-loops2"></span><div class="pseudocode-caption">
+</div><div class="pseudocode-content">
+<pre id="3" style="display:hidden;">
+              \begin{algorithm}
+  \caption{$k$-nested loops algorithm (version 2)}
+  \begin{algorithmic}
+  \PROCEDURE{combine}{$n, k=2$}
+  \STATE $tmp = []$
+  \STATE $res = \emptyset$
+  \FOR{$i = n$ \TO $1$}
+    \STATE $tmp \mathrel{+}= i$ \COMMENT{append $i$ to $tmp$. $tmp = [i]$}
+    \FOR{$j = i-1$ \TO $1$}
+      \STATE $tmp \mathrel{+}= j$ \COMMENT{$tmp = [i,j]$}
+      \STATE add $tmp$ to $res$
+      \STATE $tmp \mathrel{-}= j$
+    \ENDFOR
+    \STATE $tmp \mathrel{-}= i$
+  \ENDFOR
+  \ENDPROCEDURE
+  \end{algorithmic}
+  \end{algorithm}
+        </pre></div></div><p><a class="reference internal" href="#k-nested-loops2"><span class="std std-numref">Algorithm 3</span></a> is essentially the same as <a class="reference internal" href="#k-nested-loops"><span class="std std-numref">Algorithm 2</span></a>: instead of constructing each
+individual answer at the inner most loop directly, e.g., <span class="math notranslate nohighlight">\((i,j)\)</span>, <a class="reference internal" href="#k-nested-loops2"><span class="std std-numref">Algorithm 3</span></a> uses a
+local variable <span class="math notranslate nohighlight">\(tmp\)</span> to construct the answer incrementally as the algorithm executs from the outermost loop
+to the innermost loop.</p>
+<p>The key observation on <a class="reference internal" href="#k-nested-loops2"><span class="std std-numref">Algorithm 3</span></a> is that if we look at each individual loop, they are identical
+to each other. After the loop condition, the algorithm first adds <span class="math notranslate nohighlight">\(i\)</span> to <span class="math notranslate nohighlight">\(tmp\)</span> (i.e., <span class="math notranslate nohighlight">\(tmp \pluseq [i]\)</span>),
+then the algorithm execution goes to inner loop. After inner loop finishes execution, the algorithm decrements <span class="math notranslate nohighlight">\(i\)</span>
+from <span class="math notranslate nohighlight">\(tmp\)</span>. When the algorithm reaches inner loop, the same pattern repeats, i.e., add element to <span class="math notranslate nohighlight">\(tmp\)</span>,
+let inner loop’s inner loop performs computation, and remove element from <span class="math notranslate nohighlight">\(tmp\)</span>. The only special case is when
+there is no more inner loop to go. In other words, if we number each loop as <span class="math notranslate nohighlight">\(k`th loop,
+we treat Line 8 of :numref:`k-nested-loops2\)</span> as the <span class="math notranslate nohighlight">\(k = 0\)</span> loop.</p>
+<p>With description above, we clearly see the induction step and the base step, which are required to form a recursion.
+Then, we can transform <a class="reference internal" href="#k-nested-loops2"><span class="std std-numref">Algorithm 3</span></a> to its recursion form. Along the way, we don’t need to prefix <span class="math notranslate nohighlight">\(k\)</span>
+any more.</p>
+<div class="pseudocode" id="id6">
+<span id="k-nested-loops3"></span><div class="pseudocode-caption">
+</div><div class="pseudocode-content">
+<pre id="4" style="display:hidden;">
+            \begin{algorithm}
+\caption{$k$-nested loops algorithm (recursion version)}
+\begin{algorithmic}
+\PROCEDURE{combine}{$p=n, q=k, res=\emptyset, tmp=[]$}
+\IF{q = 0} \COMMENT{We're at the $k=0$th loop}
+  \STATE add $tmp$ to $res$
+\ENDIF
+\FOR{$i = p$ \TO $1$}
+  \STATE $tmp \mathrel{+}= i$
+  \STATE \CALL{combine}{$i-1, q-1, res, tmp$}
+  \STATE $tmp \mathrel{-}= i$
+\ENDFOR
+\ENDPROCEDURE
+\end{algorithmic}
+\end{algorithm}
+        </pre></div></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>MariaDB has its join algorithm structured like <a class="reference internal" href="#k-nested-loops3"><span class="std std-numref">Algorithm 4</span></a></p>
+</div>
+<p>Just for the completeness, this problem can be viewed as a CSP, where there are <span class="math notranslate nohighlight">\(k\)</span> variables and
+the constraints are no duplicate value appears in the solution to CSP, i.e., the complete assignment
+to all <span class="math notranslate nohighlight">\(k\)</span> variables. The constraints can be enforced by modifying domain values given the previous
+variables’ assignments. In TT-style, the algorithm can be written</p>
+<div class="pseudocode" id="id7">
+<span id="csp-style-algorithm"></span><div class="pseudocode-caption">
+</div><div class="pseudocode-content">
+<pre id="5" style="display:hidden;">
+            \begin{algorithm}
+\caption{CSP-style algorithm}
+\begin{algorithmic}
+\PROCEDURE{combine}{$n, k$}
+\STATE impose an ordering on the variables: $X_1, \dots, X_k$
+\STATE initialize iterators $I_1, \dots, I_n$ for scanning the domain of each variable
+\STATE $i \leftarrow 1$
+\STATE $res = \emptyset$
+\WHILE{\TRUE}
+  \STATE $v =$ \CALL{next}{$I_i$} \COMMENT{The constraint is enforced here by reducing domain of $X_i$}
+  \IF{$v = nil$}
+    \IF{$i = 1$}
+      \STATE \RETURN $res$
+    \ELSE
+      \STATE $i = i-1$
+    \ENDIF
+  \ELIF {$v$ instantiate $X_i$} \COMMENT{there is no constraint because the constraint is implemented by domain}
+    \IF {$i = k$}
+      \STATE add $tmp$ to $res$
+    \ELSE
+      \STATE $i \mathrel{+}= 1$
+      \STATE \CALL{reset}{$I_i$}
+    \ENDIF
+  \ENDIF
+\ENDWHILE
+\ENDPROCEDURE
+\end{algorithmic}
+\end{algorithm}
+        </pre></div></div><p>Certainly, <a class="reference internal" href="#csp-style-algorithm"><span class="std std-numref">Algorithm 5</span></a> is much more verbose than <a class="reference internal" href="#k-nested-loops3"><span class="std std-numref">Algorithm 4</span></a> and thus, it’s not vise to use it during the interview.</p>
+<p class="rubric">Footnotes</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="f1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Alternatively, we can think the problem as a <span class="math notranslate nohighlight">\(k\)</span>-way join evaluation problem and solve it using
+<span class="math notranslate nohighlight">\(k\)</span>-nested loop join.</p>
+</aside>
+<aside class="footnote brackets" id="f2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>This analogy (i.e., motivation) leads to recursion is quite natural. We have something similar in database:
+answer query using relational algebra has the limitation on <span class="math notranslate nohighlight">\(k\)</span> - <span class="math notranslate nohighlight">\(k\)</span> has to be fixed. That’s
+exactly why Datalog shine - it can handle the query where <span class="math notranslate nohighlight">\(k\)</span> is unknown at priori. Aside remark,
+datalog is more powerful in terms of recursion but it suffers when negation is introduced compared to
+relational algebra.</p>
+</aside>
+</aside>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="64.html"
+                          title="Previous page">&larr; 64. Minimum Path Sum</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="../others.html"
+                          title="Next page">&rarr; Others</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/problems/leetcode/77.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../others.html" title="Others"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="64.html" title="64. Minimum Path Sum"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../index.html">Shuati  documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../problems.html" >Problems</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../leetcode.html" >Leetcode Problems</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">77. Combinations</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Zeyuan Hu.
+      Last updated on Feb 25, 2024.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>

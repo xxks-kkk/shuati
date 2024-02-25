@@ -1,0 +1,19 @@
+.. _53.rst:
+
+********************
+53. Maximum Subarray
+********************
+
+This is an reiteration of `what I have written previously <https://github.com/xxks-kkk/shuati/tree/master/leetcode/53-MaximumSubarray>`__,
+i.e., `maxSubArray3 <https://github.com/xxks-kkk/shuati/blob/e2ac10de8b1a7690e2b6b05060281b178bfdc30a/leetcode/53-MaximumSubarray/maximumSubarray.cc#L56>`_).
+
+The problem is solved using dynamic programming. Given a sequence of :math:`k` numbers: :math:`nums = \set{n_1, \dots, n_k}`, suppose we
+have found the maximum subarray sum :math:`S_i` for :math:`n_1, \dots n_i`, we want to find the maximum subarray sum for :math:`n_1, \dots n_{i+1}`.
+Then, :math:`S_{i+1}` can either be :math:`S_i` or the subarray sum that includes :math:`n_{i+1}`. For the subarray sum that includes :math:`n_{i+1}`,
+it can either be the sum of elements in subarray that previously ends at :math:`n_i` and now includes :math:`n_{i+1}` or the subarray that only includes
+:math:`n_{i+1}`, depending on which sum is larger.
+
+In code, we use ``maxEndingHere`` to denote the sum of elements in subarray that ends at :math:`n_i` and we compute new ``maxEndingHere`` based on
+value of :math:`n_{i+1}` as described above, i.e., including :math:`n_{i+1}` into ``maxEndingHere`` or just use :math:`n_{i+1}`. Then, we update
+``globalMax``, which denotes :math:`S_i` previously and :math:`S_{i+1}` after the update.
+
